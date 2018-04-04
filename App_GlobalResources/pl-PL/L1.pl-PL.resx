@@ -1,0 +1,1527 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ACCCANCELLED" xml:space="preserve">
+    <value>To konto zostało anulowane</value>
+  </data>
+  <data name="ACCCHEAT" xml:space="preserve">
+    <value>To konto zostało zawieszone za oszukiwanie</value>
+  </data>
+  <data name="ACCINACTIVE" xml:space="preserve">
+    <value>To konto zostało zawieszone za nieaktywność</value>
+  </data>
+  <data name="ACCOUNT" xml:space="preserve">
+    <value>Konto</value>
+    <comment>In top menu</comment>
+  </data>
+  <data name="ACCSECURED" xml:space="preserve">
+    <value>Logowanie na to konto zostało zablokowane ze względów bezpieczeństwa. Skontaktuj się z administratorem żeby je odblokować</value>
+  </data>
+  <data name="ACCTOS" xml:space="preserve">
+    <value>To konto zostało zawieszone za naruszenia regulaminu (TOS)</value>
+  </data>
+  <data name="ADS" xml:space="preserve">
+    <value>Reklamy</value>
+    <comment>In top menu, in user top menu</comment>
+  </data>
+  <data name="ADVERTISE" xml:space="preserve">
+    <value>Reklama</value>
+    <comment>In top menu, in user top menu</comment>
+  </data>
+  <data name="BANNERS" xml:space="preserve">
+    <value>Bannery</value>
+    <comment>In user top menu</comment>
+  </data>
+  <data name="CONFIRMPASSWORD" xml:space="preserve">
+    <value>Potwierdź hasło</value>
+  </data>
+  <data name="DIRECT" xml:space="preserve">
+    <value>Bezpośredni</value>
+    <comment>In user top menu</comment>
+  </data>
+  <data name="EARN" xml:space="preserve">
+    <value>Zarabiaj</value>
+    <comment>In user top menu</comment>
+  </data>
+  <data name="ER_ALLFIELDSREQUIRED" xml:space="preserve">
+    <value>Login i Hasło są niezbędne do zalogowania</value>
+  </data>
+  <data name="ER_BADPASSWORD" xml:space="preserve">
+    <value>Niepoprawne hasło/a. Spróbuj jeszcze raz</value>
+  </data>
+  <data name="ER_BADPWD2" xml:space="preserve">
+    <value>Twoje Drugie Hasło jest niepoprawne</value>
+  </data>
+  <data name="ER_DUPLICATEEMAIL" xml:space="preserve">
+    <value>Przepraszamy, ten e-mail jest już zarejestrowany. Wybierz inny</value>
+  </data>
+  <data name="ER_INVALIDPASSWORD" xml:space="preserve">
+    <value>Hasło musi mieć pomiędzy 6-30 znaków i może zawierać tylko litery i cyfry</value>
+  </data>
+  <data name="ER_INVALIDUSERNAME" xml:space="preserve">
+    <value>Niepoprawny format Loginu</value>
+  </data>
+  <data name="ER_INVALIDPASS" xml:space="preserve">
+    <value>Niepoprawny format hasła</value>
+  </data>
+  <data name="ER_INVALIDUSERNAME3" xml:space="preserve">
+    <value>Przeprzaszamy, ten Login jest zajęty. Wybierz inny</value>
+  </data>
+  <data name="ER_LOGINUNSUCC" xml:space="preserve">
+    <value>Logowanie nie powiodło się. Spróbuj ponownie</value>
+  </data>
+  <data name="ER_USERLOCKEDOUT" xml:space="preserve">
+    <value>Ten użytkownik jest zablokowany</value>
+  </data>
+  <data name="ER_USER_NOTFOUND" xml:space="preserve">
+    <value>Nie ma takiego użytkownika</value>
+  </data>
+  <data name="FORUM" xml:space="preserve">
+    <value>Forum</value>
+    <comment>In top menu</comment>
+  </data>
+  <data name="GAMES" xml:space="preserve">
+    <value>Gry</value>
+    <comment>In user top menu</comment>
+  </data>
+  <data name="HISTORY" xml:space="preserve">
+    <value>Historia</value>
+    <comment>In user top menu</comment>
+  </data>
+  <data name="HOME" xml:space="preserve">
+    <value>Home</value>
+    <comment>In top menu</comment>
+  </data>
+  <data name="LEAVEBLANKIFNOTPWD2" xml:space="preserve">
+    <value>Zostaw puste jeśli nie masz Drugiego Hasła</value>
+  </data>
+  <data name="LIKES" xml:space="preserve">
+    <value>Lajki</value>
+    <comment>In user top menu</comment>
+  </data>
+  <data name="LOGIN" xml:space="preserve">
+    <value>Zaloguj</value>
+    <comment>In top menu</comment>
+  </data>
+  <data name="LOGOUT" xml:space="preserve">
+    <value>Wyloguj</value>
+    <comment>In top menu</comment>
+  </data>
+  <data name="MESSAGES" xml:space="preserve">
+    <value>Poczta</value>
+    <comment>In user top menu</comment>
+  </data>
+  <data name="OR" xml:space="preserve">
+    <value>LUB</value>
+  </data>
+  <data name="PASSWORD" xml:space="preserve">
+    <value>Hasło</value>
+  </data>
+  <data name="REFERRALS" xml:space="preserve">
+    <value>Poleceni</value>
+    <comment>In user top menu</comment>
+  </data>
+  <data name="REGISTER" xml:space="preserve">
+    <value>Rejestracja</value>
+    <comment>In top menu</comment>
+  </data>
+  <data name="REGISTERTEXT" xml:space="preserve">
+    <value>Zmień swoje finanse na zawsze. Zarejestruj DARMOWE konto</value>
+  </data>
+  <data name="REG_EMAIL" xml:space="preserve">
+    <value>Musi być prawidłowy i aktywny. Potrzebny jest nam do wysyłania ważnych wiadomości (np. odpowiedzi na Support Tickety), odzyskania hasła czy aktywacji konta</value>
+  </data>
+  <data name="REG_PASSWORD" xml:space="preserve">
+    <value>Wybierz swoje hasło. Musi mieć 4-80 znaków i składać się tylko z liter i cyfr</value>
+  </data>
+  <data name="REG_PIN" xml:space="preserve">
+    <value>To Twoje dodatkowe zabezpieczenie. Żadamy PINu podczas wypłąty środków lub zmian ustawień. Musi składać się z 4 cyfr</value>
+  </data>
+  <data name="REG_REFERER" xml:space="preserve">
+    <value>Nazwa użytkownika, który Cię polecił. Może być puste</value>
+  </data>
+  <data name="REG_USERNAME" xml:space="preserve">
+    <value>Wybierz swój login. Musi zawierać 4-20 znaków i składać się tylko z liter i cyfr. Musi zaczynać się od litery</value>
+  </data>
+  <data name="RENTED" xml:space="preserve">
+    <value>Wynajmowani</value>
+    <comment>In user top menu</comment>
+  </data>
+  <data name="RESETPWDSUCC" xml:space="preserve">
+    <value>Nowe hasło zostało do Ciebie wysłane</value>
+  </data>
+  <data name="RESETPWDTEXT" xml:space="preserve">
+    <value>Podaj swoją nazwę użytkownika i PIN, a wyślemy nowe hasło na Twój adres e-mail</value>
+  </data>
+  <data name="SECONDARYPASSWORD" xml:space="preserve">
+    <value>Drugie hasło</value>
+  </data>
+  <data name="SECURELOGINSSL" xml:space="preserve">
+    <value>Bezpiecznie logowanie przez SSL z bezpiecznym Titanem</value>
+  </data>
+  <data name="SEEYOU" xml:space="preserve">
+    <value>Do zobaczenia ponownie</value>
+  </data>
+  <data name="SEND" xml:space="preserve">
+    <value>Wyślij</value>
+  </data>
+  <data name="SETTINGS" xml:space="preserve">
+    <value>Ustawienia</value>
+    <comment>In user top menu</comment>
+  </data>
+  <data name="STATS" xml:space="preserve">
+    <value>Statystyki</value>
+    <comment>In user top menu</comment>
+  </data>
+  <data name="SUMMARY" xml:space="preserve">
+    <value>Pulpit</value>
+    <comment>In user top menu</comment>
+  </data>
+  <data name="TRANSFER" xml:space="preserve">
+    <value>Transfer</value>
+    <comment>In user top menu</comment>
+  </data>
+  <data name="TRY_AGAIN" xml:space="preserve">
+    <value>Spróbuj jeszcze raz</value>
+  </data>
+  <data name="USERNAME" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="YOUWILLREDIRECT" xml:space="preserve">
+    <value>Zostaniesz za chwilę przekierowany...</value>
+  </data>
+  <data name="ER_BADEMAILFORMAT" xml:space="preserve">
+    <value>Wpisz poprawny adres e-mail</value>
+  </data>
+  <data name="ER_PASSDIFFER" xml:space="preserve">
+    <value>Hasło/Potwierdzenie hasła nie pasują do siebie</value>
+  </data>
+  <data name="REG_CAPTCHA" xml:space="preserve">
+    <value>Wpisz tekst z obrazka</value>
+  </data>
+  <data name="REG_REQ_CONFIRM" xml:space="preserve">
+    <value>Potwierdzenie hasła nie może być puste</value>
+  </data>
+  <data name="REG_REQ_EMAIL" xml:space="preserve">
+    <value>Pole Email nie może być puste</value>
+  </data>
+  <data name="REG_REQ_PASS" xml:space="preserve">
+    <value>Pole hasło nie może być puste</value>
+  </data>
+  <data name="REG_REQ_USERNAME" xml:space="preserve">
+    <value>Pole Login nie może być puste</value>
+  </data>
+  <data name="REG_UNDERSTANDTOS" xml:space="preserve">
+    <value>Przeczytałem, rozumiem i akceptuje</value>
+  </data>
+  <data name="TERMSOFSERVICE" xml:space="preserve">
+    <value>Regulamin</value>
+  </data>
+  <data name="IFORGOTPWD" xml:space="preserve">
+    <value>Nie pamiętam hasła</value>
+  </data>
+  <data name="ER_BADPIN" xml:space="preserve">
+    <value>Niepoprawny format PINu</value>
+  </data>
+  <data name="ER_BADREF" xml:space="preserve">
+    <value>Twój polecający nie istnieje albo osiągnął swój limit poleconych</value>
+  </data>
+  <data name="ER_BADYEAR" xml:space="preserve">
+    <value>Niepoprawny format Roku Urodzenia</value>
+  </data>
+  <data name="REG_REQ_PIN" xml:space="preserve">
+    <value>Pole PIN nie może być puste</value>
+  </data>
+  <data name="REG_REQ_YEAR" xml:space="preserve">
+    <value>Pole Rok urodzenia nie może być puste</value>
+  </data>
+  <data name="ER_BADCAPTCHA" xml:space="preserve">
+    <value>Kod weryfikacyjny się nie zgadza</value>
+  </data>
+  <data name="REG_REQ_CAPTCHA" xml:space="preserve">
+    <value>Wpisz kod weryfikacyjny</value>
+  </data>
+  <data name="REG_REQ_TOS" xml:space="preserve">
+    <value>Musisz zaakceptować Regulamin (TOS)</value>
+  </data>
+  <data name="BIRTHYEAR" xml:space="preserve">
+    <value>Rok urodzenia</value>
+  </data>
+  <data name="DESIREDPIN" xml:space="preserve">
+    <value>Pożądany PIN</value>
+  </data>
+  <data name="ENTERPIN" xml:space="preserve">
+    <value>Podaj PIN dla dodatkowej weryfikacji</value>
+  </data>
+  <data name="REFERER" xml:space="preserve">
+    <value>Polecający</value>
+  </data>
+  <data name="VERIFICATION" xml:space="preserve">
+    <value>Weryfikacja</value>
+  </data>
+  <data name="ER_EMAILORPINBAD" xml:space="preserve">
+    <value>Email/PIN jest niepoprawny dla tego użytkownika</value>
+  </data>
+  <data name="CURRENTTIME" xml:space="preserve">
+    <value>Aktualny czas serwera to</value>
+  </data>
+  <data name="RESETTIME" xml:space="preserve">
+    <value>Kliknięte reklamy resetują się o </value>
+  </data>
+  <data name="BYVIEWINGEARN" xml:space="preserve">
+    <value>Za oglądnięcie tej reklamy zarobisz</value>
+    <comment>In View Ads hint</comment>
+  </data>
+  <data name="MORE" xml:space="preserve">
+    <value>więcej</value>
+  </data>
+  <data name="THISADLASTS" xml:space="preserve">
+    <value>Ta reklama trwa</value>
+  </data>
+  <data name="ALLRIGHTS" xml:space="preserve">
+    <value>Wszelkie prawa zastrzeżone</value>
+  </data>
+  <data name="LANGUAGE" xml:space="preserve">
+    <value>Język</value>
+  </data>
+  <data name="SMALLADS" xml:space="preserve">
+    <value>Małe reklamy</value>
+  </data>
+  <data name="STDADS" xml:space="preserve">
+    <value>Standardowe reklmay</value>
+  </data>
+  <data name="WAITFORAD" xml:space="preserve">
+    <value>Oczekiwanie na załadowanie się reklamy</value>
+  </data>
+  <data name="RESETPWD" xml:space="preserve">
+    <value>Zresetuj moje hasło</value>
+  </data>
+  <data name="DETECTEDCOUNTRY" xml:space="preserve">
+    <value>Wykryty kraj</value>
+  </data>
+  <data name="ACCLOCKED" xml:space="preserve">
+    <value>To konto zostało zawieszone przez administratora</value>
+  </data>
+  <data name="ACCNOTACTIVATED" xml:space="preserve">
+    <value>Konto nie zostało jeszcze aktywowane. Sprawdź swoją skrzynkę pocztową</value>
+  </data>
+  <data name="ADBALANCE" xml:space="preserve">
+    <value>Konto reklamowe</value>
+  </data>
+  <data name="ER_ALLFIELDSREQUIRED2" xml:space="preserve">
+    <value>Podaj Login, Hasło i Kod Werfikacyjny </value>
+  </data>
+  <data name="EXPIRES" xml:space="preserve">
+    <value>Wygrasa</value>
+  </data>
+  <data name="MAINBALANCE" xml:space="preserve">
+    <value>Konto główne</value>
+  </data>
+  <data name="MEMBERSHIP" xml:space="preserve">
+    <value>Członkostwo</value>
+  </data>
+  <data name="NEVER" xml:space="preserve">
+    <value>nigdy</value>
+  </data>
+  <data name="OP_FAIL" xml:space="preserve">
+    <value>Operacja zakończona niepowodzeniem</value>
+  </data>
+  <data name="OP_SUCCESS" xml:space="preserve">
+    <value>Operacja zakończona powodzeniem</value>
+  </data>
+  <data name="POINTS" xml:space="preserve">
+    <value>Punkty</value>
+  </data>
+  <data name="RENTALBALANCE" xml:space="preserve">
+    <value>Konto poleconych</value>
+  </data>
+  <data name="ST_ACTIVATED" xml:space="preserve">
+    <value>Twoje konto zostało aktywowane. Możesz się teraz zalogować</value>
+  </data>
+  <data name="ST_REGISTER1" xml:space="preserve">
+    <value>Twoje konto zostało utworzone i aktywowane. Możesz się teraz zalogować</value>
+  </data>
+  <data name="ST_REGISTER2" xml:space="preserve">
+    <value>Wysłaliśmy link aktywacyjny na podany przez Ciebie adres e-mail. Będziesz mógł się zalogować jak aktywujesz konto</value>
+  </data>
+  <data name="ST_RESET" xml:space="preserve">
+    <value>Twoje hasło zostało zresetowane. Wysłaliśmy nowe na Twój e-mail</value>
+  </data>
+  <data name="TRANSFERMONEY" xml:space="preserve">
+    <value>Transfer pieniędzy</value>
+  </data>
+  <data name="TRANSFERMONEYINFO" xml:space="preserve">
+    <value>Przetransferuj pieniądze na swoje konta dosłownie w klika sekund</value>
+  </data>
+  <data name="HISTORYINFO" xml:space="preserve">
+    <value>Przeglądaj z łatwością swoją historię. Wszystkie Twoje ważniejsze wydarzenia są logowane i wyświetlane tutaj</value>
+  </data>
+  <data name="NOTENOUGHFUNDS" xml:space="preserve">
+    <value>Nie masz wystarczająco dużo środków na swoim koncie</value>
+  </data>
+  <data name="INBOX" xml:space="preserve">
+    <value>Skrzynka odbiorcza</value>
+  </data>
+  <data name="NEWMESSAGE" xml:space="preserve">
+    <value>Nowa wiadomość</value>
+  </data>
+  <data name="ER_DISABLEDMESSAGE" xml:space="preserve">
+    <value>Przepraszamy, ten użytkownik wyłączył System Wiadomości</value>
+  </data>
+  <data name="ER_TEXT" xml:space="preserve">
+    <value>Tekst może zawierać tylko litery, cyfry i  .,!?@$&amp;:()+=%*</value>
+  </data>
+  <data name="ER_TEXT_TOLONG" xml:space="preserve">
+    <value>Tekst może mieć maksymalnie 300 znaków</value>
+  </data>
+  <data name="FROM" xml:space="preserve">
+    <value>Od</value>
+    <comment>In send message</comment>
+  </data>
+  <data name="REQ_TEXT" xml:space="preserve">
+    <value>Pole Tekst nie może być puste</value>
+  </data>
+  <data name="REQ_TO" xml:space="preserve">
+    <value>Pole 'Do' nie może być puste</value>
+  </data>
+  <data name="TO" xml:space="preserve">
+    <value>Do</value>
+    <comment>In send message (To:)</comment>
+  </data>
+  <data name="NOMESSAGES" xml:space="preserve">
+    <value>Nie masz żadnych wiadomości</value>
+  </data>
+  <data name="DATE" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="MESS_ERROR" xml:space="preserve">
+    <value>Nie możesz pisać sam do siebie. Forever alone?</value>
+  </data>
+  <data name="READ" xml:space="preserve">
+    <value>Przeczytaj</value>
+    <comment>In messages</comment>
+  </data>
+  <data name="REMOVE" xml:space="preserve">
+    <value>Usuń</value>
+  </data>
+  <data name="REPLY" xml:space="preserve">
+    <value>Odpowiedz</value>
+    <comment>In messages</comment>
+  </data>
+  <data name="SELECTED" xml:space="preserve">
+    <value>Zaznaczone</value>
+    <comment>selected checkbox actions</comment>
+  </data>
+  <data name="SUB_MESSAGES" xml:space="preserve">
+    <value>Wysyłaj i odbieraj wiadomości od/do innych użytkowników</value>
+  </data>
+  <data name="TEXT" xml:space="preserve">
+    <value>Tekst</value>
+  </data>
+  <data name="AND" xml:space="preserve">
+    <value>i</value>
+  </data>
+  <data name="FEELFREE" xml:space="preserve">
+    <value>Zapraszamy do zapoznania się ze stroną poniżej</value>
+    <comment>Surf</comment>
+  </data>
+  <data name="FORTHISAD" xml:space="preserve">
+    <value>za tę reklamę.</value>
+    <comment>[money] for this ad (Surf)</comment>
+  </data>
+  <data name="YOUVEBEENCREDITED" xml:space="preserve">
+    <value>Pomyślinie naliczono</value>
+    <comment>Surf</comment>
+  </data>
+  <data name="NODATA" xml:space="preserve">
+    <value>Brak danych do wyświetlenia</value>
+  </data>
+  <data name="REFLINK" xml:space="preserve">
+    <value>Twój link do polecania</value>
+  </data>
+  <data name="ALREADYWATCHED" xml:space="preserve">
+    <value>Oglądnąłeś już tę reklamę</value>
+  </data>
+  <data name="CAMEFROMURL" xml:space="preserve">
+    <value>Z</value>
+  </data>
+  <data name="CHART" xml:space="preserve">
+    <value>Wykres</value>
+  </data>
+  <data name="CLICKS" xml:space="preserve">
+    <value>Odsłony</value>
+  </data>
+  <data name="DAYSAGO" xml:space="preserve">
+    <value>dni temu</value>
+    <comment>X days ago</comment>
+  </data>
+  <data name="LASTCLICK" xml:space="preserve">
+    <value>Ostatnio kliknął</value>
+  </data>
+  <data name="NODIRECTREFERRALS" xml:space="preserve">
+    <value>Nie masz żadnych bezpośrednich poleconych</value>
+  </data>
+  <data name="REFCODE" xml:space="preserve">
+    <value>Twój kod do polecania</value>
+  </data>
+  <data name="REFERRALSINCE" xml:space="preserve">
+    <value>Polecony od</value>
+  </data>
+  <data name="TODAY" xml:space="preserve">
+    <value>dziś</value>
+  </data>
+  <data name="YESTERDAY" xml:space="preserve">
+    <value>wczoraj</value>
+  </data>
+  <data name="DIRECTINFO" xml:space="preserve">
+    <value>Powiedz znajomym o naszym serwisie i zarabiaj jeszcze więcej</value>
+  </data>
+  <data name="MANAGE" xml:space="preserve">
+    <value>Zarządzaj</value>
+  </data>
+  <data name="RENTEDINFO" xml:space="preserve">
+    <value>Wynajmuj poleconych i zarabiaj prawdziwe pieniądze. Opracuj swoją strategię i zacznij zyskiwać</value>
+  </data>
+  <data name="RENTNEW" xml:space="preserve">
+    <value>Wynajmij nowych</value>
+  </data>
+  <data name="CLICKEDINLAST" xml:space="preserve">
+    <value>Kliknął w ostatnich </value>
+    <comment>Clicked in the last X DAYS</comment>
+  </data>
+  <data name="DAYS" xml:space="preserve">
+    <value>dni</value>
+    <comment>X days</comment>
+  </data>
+  <data name="ER_RENT_CLICKS" xml:space="preserve">
+    <value>Nie masz wystarczająco dużo kliknięć aby wynajmować</value>
+  </data>
+  <data name="ER_RENT_INTERVAL" xml:space="preserve">
+    <value>Nie możesz jeszcze wynajmować</value>
+  </data>
+  <data name="ER_RENT_LIMIT" xml:space="preserve">
+    <value>Nie możesz przekroczyć swojego limitu poleconych</value>
+  </data>
+  <data name="ER_RENT_NOREFS" xml:space="preserve">
+    <value>Przepraszamy, nie mogliśmy znaleźć tylu poleconych do wynajęcia. Spróbój później</value>
+  </data>
+  <data name="LASTRENTED" xml:space="preserve">
+    <value>Ostatnie wynajmowanie</value>
+  </data>
+  <data name="MINCLICKS" xml:space="preserve">
+    <value>Minimalna liczba klinięć</value>
+  </data>
+  <data name="MINRENTINTERVAL" xml:space="preserve">
+    <value>Minimalny odstęp pomiędzy wyn.</value>
+  </data>
+  <data name="NONE" xml:space="preserve">
+    <value>brak</value>
+    <comment>"brak"</comment>
+  </data>
+  <data name="NORENTEDREFERRALS" xml:space="preserve">
+    <value>Nie masz żadnych wynajętych poleconych</value>
+  </data>
+  <data name="PRICEPERREF" xml:space="preserve">
+    <value>Koszt wynajmu 1 poleconego</value>
+  </data>
+  <data name="RENTALGUARANTEE" xml:space="preserve">
+    <value>Gwarancja poleconego</value>
+  </data>
+  <data name="RENTALTIME" xml:space="preserve">
+    <value>Czas wynajmu</value>
+  </data>
+  <data name="REQUIREMENTS" xml:space="preserve">
+    <value>Wymagania</value>
+  </data>
+  <data name="USEPOINTSDISCOUNT" xml:space="preserve">
+    <value>Dolicz zniżkę</value>
+  </data>
+  <data name="UPGRADE" xml:space="preserve">
+    <value>Upgrade</value>
+  </data>
+  <data name="UPGRADEINFO" xml:space="preserve">
+    <value>Kup Upgrade do swojego konta i zyskaj więcej. Sprawdź nasze plany</value>
+  </data>
+  <data name="ADCLICKEARNINGS" xml:space="preserve">
+    <value>Zarobki za kliknięcie</value>
+  </data>
+  <data name="ADPOINTSEARNINGS" xml:space="preserve">
+    <value>Punkty za klinkięcie</value>
+  </data>
+  <data name="AUTOPAY" xml:space="preserve">
+    <value>AutoPay</value>
+  </data>
+  <data name="AUTOPAYCOST" xml:space="preserve">
+    <value>Koszt AutoPay za 1 poleconego</value>
+  </data>
+  <data name="BASIC" xml:space="preserve">
+    <value>Zwykłe</value>
+    <comment>Reklamy: standardowe (in Upgrade Advertisements section)</comment>
+  </data>
+  <data name="COLOR" xml:space="preserve">
+    <value>Kolor</value>
+  </data>
+  <data name="DIRECTREFADCLICKEARNINGS" xml:space="preserve">
+    <value>Zarobki za kliknięcia bezpośreniego poleconego</value>
+  </data>
+  <data name="DIRECTREFLIMIT" xml:space="preserve">
+    <value>Limit bezpośrenich poleconych</value>
+  </data>
+  <data name="PREMIUM" xml:space="preserve">
+    <value>Premium</value>
+    <comment>Reklamy: premium(in Upgrade Advertisements section)</comment>
+  </data>
+  <data name="PRICE" xml:space="preserve">
+    <value>Cena</value>
+  </data>
+  <data name="RECYCLECOST" xml:space="preserve">
+    <value>Koszt recyklingu poleconego</value>
+  </data>
+  <data name="RENEWALDISCOUNT" xml:space="preserve">
+    <value>Zniżka przedłużania</value>
+  </data>
+  <data name="RENTEDREFADCLICKEARNINGS" xml:space="preserve">
+    <value>Zarobki za kliknięcia wynajętego poleconego</value>
+  </data>
+  <data name="RENTEDREFERRALLIMIT" xml:space="preserve">
+    <value>Limit wynajętych poleconych</value>
+  </data>
+  <data name="YES" xml:space="preserve">
+    <value>Tak</value>
+  </data>
+  <data name="EXPIRESIN" xml:space="preserve">
+    <value>Wygasa w ciągu</value>
+  </data>
+  <data name="ID" xml:space="preserve">
+    <value>Nr</value>
+    <comment>In rented referrals table (nr)</comment>
+  </data>
+  <data name="ADVADSINFO" xml:space="preserve">
+    <value>Zarządzaj swoimi kampaniami reklamowymi albo utwórz nową</value>
+    <comment>Advertise: ads</comment>
+  </data>
+  <data name="DESCRIPTION" xml:space="preserve">
+    <value>Opis</value>
+    <comment>advertise ads</comment>
+  </data>
+  <data name="ER_BADDESC" xml:space="preserve">
+    <value>Niepoprawny format opisu. Sprawdź wskazówki aby dowiedzieć się więcej</value>
+  </data>
+  <data name="ER_BADURL" xml:space="preserve">
+    <value>Twój URL jest niepoprawny</value>
+  </data>
+  <data name="ER_INVALIDTITLE" xml:space="preserve">
+    <value>Niepoprawny format Tyłutu. Sprawdź wskazówkę aby dowiedzieć się więcej</value>
+  </data>
+  <data name="FONTBOLD" xml:space="preserve">
+    <value>Pogrubienie</value>
+    <comment>Create ad (pogrubienie)</comment>
+  </data>
+  <data name="GEOLOCATION" xml:space="preserve">
+    <value>Geolokacja</value>
+  </data>
+  <data name="H_DESCRIPTION" xml:space="preserve">
+    <value>Opis nie jest wymagany. Musi zawierać 4-70 znaków i może składać się tylko z liter, cyfr i .,!?@$&amp;:()+=%*</value>
+  </data>
+  <data name="H_TITLE" xml:space="preserve">
+    <value>Tytuł musi mieć 4-30 znaków i musi składać się z liter, cyfr i  .,!?@$&amp;:()+=%*</value>
+  </data>
+  <data name="H_URL" xml:space="preserve">
+    <value>URL docelowy reklamy, np.: http://www.google.com</value>
+  </data>
+  <data name="NEWCAMPAIGN" xml:space="preserve">
+    <value>Nowa kampania</value>
+  </data>
+  <data name="NOADCAMPAIGNS" xml:space="preserve">
+    <value>Nie masz żadnych kampanii reklamowych</value>
+  </data>
+  <data name="NOBANNERCAMPS" xml:space="preserve">
+    <value>Nie masz żadnych kampanii bannerowych</value>
+  </data>
+  <data name="NOFBCAMPS" xml:space="preserve">
+    <value>Nie masz żadnych kampanii Facebookowych</value>
+  </data>
+  <data name="OPTION" xml:space="preserve">
+    <value>Opcja</value>
+    <comment>Banner option</comment>
+  </data>
+  <data name="PACK" xml:space="preserve">
+    <value>Pakiet</value>
+    <comment>Create ad</comment>
+  </data>
+  <data name="PREVIEW" xml:space="preserve">
+    <value>Podgląd</value>
+    <comment>Create ad</comment>
+  </data>
+  <data name="REQ_TITLE" xml:space="preserve">
+    <value>Tytuł jest wymagany</value>
+  </data>
+  <data name="REQ_URL" xml:space="preserve">
+    <value>URL jest wymagany</value>
+  </data>
+  <data name="TITLE" xml:space="preserve">
+    <value>Tytuł</value>
+  </data>
+  <data name="REFNOPROFITS" xml:space="preserve">
+    <value>Nie obejrzałeś wczoraj conajmniej &lt;b&gt;%n%&lt;/b&gt; reklam więc nie dostaniesz dziś żadnych należności od poleconych</value>
+    <comment>Leave '&lt;b&gt;%n%&lt;/b&gt;' unchanged!</comment>
+  </data>
+  <data name="RECYCLE" xml:space="preserve">
+    <value>Recykluj</value>
+  </data>
+  <data name="RENEW" xml:space="preserve">
+    <value>Przedłuż</value>
+  </data>
+  <data name="OPPREFAPARTIAL" xml:space="preserve">
+    <value>Operacja ukończona częściowo. Zmodyfikowano &lt;b&gt;%n%&lt;/b&gt; poleconych</value>
+    <comment>Leave '&lt;b&gt;%n%&lt;/b&gt;' unchanged! </comment>
+  </data>
+  <data name="OPPREFPARTIAL" xml:space="preserve">
+    <value>Operacja ukończona częściowo. Zmodyfikowano &lt;b&gt;%n%&lt;/b&gt; poleconych. Sprawdź stan konta</value>
+    <comment>Leave '&lt;b&gt;%n%&lt;/b&gt;' unchanged!</comment>
+  </data>
+  <data name="OPREFAP" xml:space="preserve">
+    <value>AutoPay może być wyłączony tylko dla poleconych wygasających w ciągu &lt;b&gt;%n2%+&lt;/b&gt; dni</value>
+    <comment>Leave '&lt;b&gt;%n2%+&lt;/b&gt;' unchanged!</comment>
+  </data>
+  <data name="FREE" xml:space="preserve">
+    <value>DARMO</value>
+    <comment>Next geolocation prices</comment>
+  </data>
+  <data name="GEOHINT" xml:space="preserve">
+    <value>Osoby z tych krajów będą jedynymi, którzy będą mogli zobaczyć reklamę</value>
+  </data>
+  <data name="LASTS" xml:space="preserve">
+    <value>trwa</value>
+    <comment>ad </comment>
+  </data>
+  <data name="VIEWS" xml:space="preserve">
+    <value>odsłony</value>
+    <comment>Ad views (odslony)</comment>
+  </data>
+  <data name="ACTIVE" xml:space="preserve">
+    <value>Aktywna</value>
+    <comment>Ad status</comment>
+  </data>
+  <data name="AFTERSTART" xml:space="preserve">
+    <value>od rozpoczęcia</value>
+    <comment>X days after start</comment>
+  </data>
+  <data name="AWAITINGAPPROVAL" xml:space="preserve">
+    <value>Oczekuje na akceptację</value>
+    <comment>Ad status</comment>
+  </data>
+  <data name="BUY" xml:space="preserve">
+    <value>Kup</value>
+  </data>
+  <data name="BUYCREDITS" xml:space="preserve">
+    <value>Kup więcej odsłon</value>
+  </data>
+  <data name="CREATED" xml:space="preserve">
+    <value>Data utworzenia</value>
+    <comment>Created date</comment>
+  </data>
+  <data name="DESC" xml:space="preserve">
+    <value>Opis</value>
+    <comment>Shorten form of description </comment>
+  </data>
+  <data name="ENDSON" xml:space="preserve">
+    <value>Koniec</value>
+    <comment>Ad ends: &lt;date&gt;</comment>
+  </data>
+  <data name="FINISHED" xml:space="preserve">
+    <value>Ukończona</value>
+    <comment>Ad status</comment>
+  </data>
+  <data name="PAUSE" xml:space="preserve">
+    <value>Wstrzymaj</value>
+    <comment>Pause ad</comment>
+  </data>
+  <data name="PAUSED" xml:space="preserve">
+    <value>Wstrzymana</value>
+    <comment>Ad status</comment>
+  </data>
+  <data name="PROGRESS" xml:space="preserve">
+    <value>Postęp</value>
+  </data>
+  <data name="REJECTED" xml:space="preserve">
+    <value>Odrzucona</value>
+    <comment>Ad status</comment>
+  </data>
+  <data name="STATUS" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="TIME" xml:space="preserve">
+    <value>Czas</value>
+  </data>
+  <data name="VIEWSBIG" xml:space="preserve">
+    <value>Odsłony</value>
+  </data>
+  <data name="BURL" xml:space="preserve">
+    <value>Obrazek bannera</value>
+  </data>
+  <data name="CLICKSSMALL" xml:space="preserve">
+    <value>odsłony</value>
+  </data>
+  <data name="H_BANNERURL" xml:space="preserve">
+    <value>Obrazek bannera. Wymiary obrazka muszą się zgadzać z typem bannera. Obsługiwane rozszerzenia: JPG, PNG, GIF</value>
+  </data>
+  <data name="IMAGE" xml:space="preserve">
+    <value>Obrazek</value>
+  </data>
+  <data name="EXPIREWARNING" xml:space="preserve">
+    <value>Twój Upgrade wygasa w ciągu 3 dni. Kup nowy aby utrzymać wszystkich swoich poleconych oraz inne przywileje</value>
+  </data>
+  <data name="NOTENOUGHPOINTS" xml:space="preserve">
+    <value>Nie masz wystarczająco dużo punktów</value>
+  </data>
+  <data name="WARNINGUPGRADE" xml:space="preserve">
+    <value>Masz aktywny Upgrade. Zakup nowego wyeliminuje stary</value>
+  </data>
+  <data name="ACHIEVEMENTS" xml:space="preserve">
+    <value>Osiągnięcia</value>
+  </data>
+  <data name="ACHIEVEMENT_1" xml:space="preserve">
+    <value>Dla tych, którzy przeprowadzili więcej niż %n% kampanii bannerowych/kampanie bannerowe</value>
+    <comment>Leave %n% alone !!</comment>
+  </data>
+  <data name="ACHIEVEMENT_2" xml:space="preserve">
+    <value>Dla tych, którzy przeprowadzili więcej niż %n% kampanii/kampanie Facebook</value>
+    <comment>Leave %n% alone !!</comment>
+  </data>
+  <data name="ACHIEVEMENT_3" xml:space="preserve">
+    <value>Dla tych, którzy przeprowadzili więcej niż %n% kampanii PTC/kampanie PTC</value>
+    <comment>Leave %n% alone !!</comment>
+  </data>
+  <data name="ACHIEVEMENT_4" xml:space="preserve">
+    <value>Dla tych, którzy kliknęli więcej niż %n% reklam</value>
+    <comment>Leave %n% alone !!</comment>
+  </data>
+  <data name="ACHIEVEMENT_5" xml:space="preserve">
+    <value>Dla tych, którzy zarobili więcej niż $%n%</value>
+    <comment>Leave %n% alone !!</comment>
+  </data>
+  <data name="ACHIEVEMENT_6" xml:space="preserve">
+    <value>Dla tych, którzy mieli więcej niż %n% bezpośrednich poleconych</value>
+    <comment>Leave %n% alone !!</comment>
+  </data>
+  <data name="ACHIEVEMENT_7" xml:space="preserve">
+    <value>Dla tych, którzy mieli więcej niż %n% wynajętych poleconych</value>
+    <comment>Leave %n% alone !!</comment>
+  </data>
+  <data name="ACHIEVEMENT_8" xml:space="preserve">
+    <value>Dla tych, którzy przetransferowali więcej niż $%n% za jedym razem</value>
+    <comment>Leave %n% alone !!</comment>
+  </data>
+  <data name="ENTRY" xml:space="preserve">
+    <value>Wpis</value>
+    <comment>HIstory entry</comment>
+  </data>
+  <data name="FORPURCHASED" xml:space="preserve">
+    <value>za</value>
+    <comment>purchased for $10</comment>
+  </data>
+  <data name="HISTORY_1" xml:space="preserve">
+    <value>Wypłata </value>
+    <comment>Cashout of $100</comment>
+  </data>
+  <data name="HISTORY_2" xml:space="preserve">
+    <value>Zakupiono</value>
+    <comment>Purchased 1000 ad clicks</comment>
+  </data>
+  <data name="HISTORY_3" xml:space="preserve">
+    <value>Zarejestrowano nowe konto. Witamy </value>
+  </data>
+  <data name="HISTORY_4" xml:space="preserve">
+    <value>Przetransferowano</value>
+  </data>
+  <data name="HISTORY_5" xml:space="preserve">
+    <value>Twój upgrade wygasł</value>
+  </data>
+  <data name="HISTORY_6" xml:space="preserve">
+    <value>Kupiono nowy upgrade</value>
+  </data>
+  <data name="ACHIEVEMENTSMENU" xml:space="preserve">
+    <value>Trofea</value>
+    <comment>shorten form is needed for menu (Achievements is too long)</comment>
+  </data>
+  <data name="ALLHISTORYLOGS" xml:space="preserve">
+    <value>Wszystkie logi</value>
+  </data>
+  <data name="LATESTHISTORY" xml:space="preserve">
+    <value>Ostatnia aktywność</value>
+  </data>
+  <data name="ACHIEVEMENTSINFO" xml:space="preserve">
+    <value>Zdobądź sławę i punkty poprzez zbieranie nowych osiągnięć</value>
+  </data>
+  <data name="ALLAVAILABLEACHIVS" xml:space="preserve">
+    <value>Wszystkie dostępne osiągnięcia</value>
+  </data>
+  <data name="NEWACHIEVEMENTS" xml:space="preserve">
+    <value>Masz nowe osiągniecie/osiągnięcia!</value>
+  </data>
+  <data name="NOACHIVS" xml:space="preserve">
+    <value>Nie masz żadnych osiągnieć. Postaraj się bardziej!</value>
+  </data>
+  <data name="POINTSREWARD" xml:space="preserve">
+    <value>Nagroda punktowa</value>
+    <comment>in achievements</comment>
+  </data>
+  <data name="CASHOUT" xml:space="preserve">
+    <value>Wypłata</value>
+  </data>
+  <data name="CASHOUTINFO" xml:space="preserve">
+    <value>Wypłać swoje pieniądze kiedy tylko chcesz</value>
+  </data>
+  <data name="LIMIT" xml:space="preserve">
+    <value>Limit</value>
+    <comment>Cashout limit</comment>
+  </data>
+  <data name="CASHOUTLIMITINFO" xml:space="preserve">
+    <value>Aby wypłacić pieniądze musisz osiągnąć dany limit. Limit zależy od ilości wykonanych wypłat w przeszłości</value>
+  </data>
+  <data name="ER_BADPIN2" xml:space="preserve">
+    <value>Nieporawny PIN</value>
+  </data>
+  <data name="HAVENTREACHLIMIT" xml:space="preserve">
+    <value>Nie osiągnąłeś jeszcze swojego limitu wypłaty</value>
+  </data>
+  <data name="REST" xml:space="preserve">
+    <value>Pozostałe</value>
+    <comment>1,2,3 cashout limit Rest: $2.00</comment>
+  </data>
+  <data name="AVATARURL" xml:space="preserve">
+    <value>URL Avatara</value>
+  </data>
+  <data name="MESSAGEOFFINFO" xml:space="preserve">
+    <value>Wyłączyłeś System Wiadomości. Nie możesz pisać/zarządzać/odbierać wiadomości</value>
+  </data>
+  <data name="MESSAGESSYSTEM" xml:space="preserve">
+    <value>System Wiadomości</value>
+  </data>
+  <data name="OFF" xml:space="preserve">
+    <value>wył</value>
+    <comment>turned off</comment>
+  </data>
+  <data name="ON" xml:space="preserve">
+    <value>wł</value>
+    <comment>turned on</comment>
+  </data>
+  <data name="REQ_AVATARURL" xml:space="preserve">
+    <value>URL avatara jest niezbędny</value>
+  </data>
+  <data name="SAVE" xml:space="preserve">
+    <value>Zapisz</value>
+    <comment>Like Save settings</comment>
+  </data>
+  <data name="SETTINGSINFO" xml:space="preserve">
+    <value>Zarządzaj swoim kontem. Wszystkie ustawienia możesz zmienić tutaj</value>
+  </data>
+  <data name="ER_MUSTPNGJPG" xml:space="preserve">
+    <value>Awatar musi być obrazkiem .JPG lub .PNG</value>
+  </data>
+  <data name="H_LEAVEBLANK" xml:space="preserve">
+    <value>Zostaw puste jeśli nie chcesz zmieniać</value>
+  </data>
+  <data name="JPGPNG" xml:space="preserve">
+    <value>Musi być JPG/PNG i ładny</value>
+  </data>
+  <data name="MESSAGEONOFF" xml:space="preserve">
+    <value>Jeżeli wyłączysz System Wiadomości nie będziesz mógł pisać/zarządzać/odbierać wiadomości</value>
+  </data>
+  <data name="NEWPASS" xml:space="preserve">
+    <value>Nowe hasło</value>
+  </data>
+  <data name="NEWPASS2" xml:space="preserve">
+    <value>Potwierdź nowe hasło</value>
+  </data>
+  <data name="NEWPIN" xml:space="preserve">
+    <value>Nowy PIN</value>
+  </data>
+  <data name="NEWSECPASS" xml:space="preserve">
+    <value>Nowe drugie hasło</value>
+  </data>
+  <data name="SETTINGSSUCC" xml:space="preserve">
+    <value>Ustawienia pomyślnie zmienione</value>
+  </data>
+  <data name="CONTACT" xml:space="preserve">
+    <value>Kontakt</value>
+  </data>
+  <data name="FAQ" xml:space="preserve">
+    <value>Najczęściej Zadawane Pytania (FAQ)</value>
+  </data>
+  <data name="HELP" xml:space="preserve">
+    <value>Pomoc</value>
+  </data>
+  <data name="PAYMENTPROOFS" xml:space="preserve">
+    <value>Dowody Wypłat</value>
+  </data>
+  <data name="PRIVACYPOLICY" xml:space="preserve">
+    <value>Polityka Prywatności</value>
+  </data>
+  <data name="CONTACTFORM" xml:space="preserve">
+    <value>Formularz kontaktowy</value>
+  </data>
+  <data name="CONTACTINFO" xml:space="preserve">
+    <value>Potrzebujesz się z nami skontaktować? Wypełnij poniższy formularz albo napisz do nas bezpośrednio na konto emailowe</value>
+  </data>
+  <data name="DIRECTCONTACT" xml:space="preserve">
+    <value>Bezpośrendni kontakt</value>
+  </data>
+  <data name="HELP1" xml:space="preserve">
+    <value>Sprawdź najpierw Najczęściej Zadawane Pytania (FAQ). Może Twój problem jest nam znany i tam znajdziesz rozwiązanie</value>
+  </data>
+  <data name="HELP2" xml:space="preserve">
+    <value>Może inni też mieli tego typu problem? Przeszukaj forum albo załóż nowy temat</value>
+  </data>
+  <data name="HELP3" xml:space="preserve">
+    <value>Jeśli jednak Twoja sprawa jest naprawdę pilna i nie możesz nigdzie znaleźć rozwiązania, skontaktuj się z nami</value>
+  </data>
+  <data name="HELPINFO" xml:space="preserve">
+    <value>Potrzebujesz pomocy? Jesteś we właściwym miejscu</value>
+  </data>
+  <data name="PROOFSINFO" xml:space="preserve">
+    <value>Sprawdź nasze ostatnie wypłaty poniżej. Zrzuty ekranu są udostępnianie na forum</value>
+  </data>
+  <data name="AMOUNT" xml:space="preserve">
+    <value>Kwota</value>
+  </data>
+  <data name="COUNTRY" xml:space="preserve">
+    <value>Kraj</value>
+  </data>
+  <data name="INSTANT" xml:space="preserve">
+    <value>Błyskawicznie</value>
+  </data>
+  <data name="MANUAL" xml:space="preserve">
+    <value>Manualnie</value>
+  </data>
+  <data name="NOPROOFS" xml:space="preserve">
+    <value>Dopiero wystartowaliśmy i nie ma jeszcze żadnych dowodów wypłaty</value>
+  </data>
+  <data name="TYPE" xml:space="preserve">
+    <value>Typ</value>
+  </data>
+  <data name="VIA" xml:space="preserve">
+    <value>Przez</value>
+    <comment>Via PayPal</comment>
+  </data>
+  <data name="LATESTNEWS" xml:space="preserve">
+    <value>Aktualności</value>
+  </data>
+  <data name="SENDSUPPORTTICKET" xml:space="preserve">
+    <value>Wyślij Support Ticketa</value>
+  </data>
+  <data name="CONSTANTBANNER" xml:space="preserve">
+    <value>Banner Stały</value>
+  </data>
+  <data name="CONSTANTBANNERINFO" xml:space="preserve">
+    <value>Wyświetlany na &lt;b&gt;wszystkich&lt;/b&gt; stronach</value>
+  </data>
+  <data name="ER_BANNERISNOTVALID" xml:space="preserve">
+    <value>Banner jest niepoprawny (format lub/i wymiary)</value>
+  </data>
+  <data name="ER_BANNERNOTSELECTED" xml:space="preserve">
+    <value>Banner nie został przesłany</value>
+  </data>
+  <data name="NORMALBANNER" xml:space="preserve">
+    <value>Normalny banner</value>
+  </data>
+  <data name="NORMALBANNERINFO" xml:space="preserve">
+    <value>Wyświetlany przy każdej reklamie</value>
+  </data>
+  <data name="BANNERDURT" xml:space="preserve">
+    <value>Zmiany będą widoczne do %n% minut (bannery są buforowane)</value>
+    <comment>Leave %n% unchanged</comment>
+  </data>
+  <data name="NORECORDS" xml:space="preserve">
+    <value>Brak danych</value>
+  </data>
+  <data name="COMPLETED" xml:space="preserve">
+    <value>Ukończono</value>
+  </data>
+  <data name="CONNECTWITHFACEBOOK" xml:space="preserve">
+    <value>Połącz się ze swoim kontem na Facebooku, abyśmy mogli sprawdzić czy rzeczywiście polubiłeś dany fanpage i czy wypłacić Ci należności</value>
+  </data>
+  <data name="FRIENDS" xml:space="preserve">
+    <value>Znajomi</value>
+  </data>
+  <data name="HAVENTLIKED" xml:space="preserve">
+    <value>Nie polubiłeś tego fanpage'a. Ponieważ czasami potrzeba trochę czasu na zaktualizowanie API Facebooka, spróbuj ponownie za minutę</value>
+  </data>
+  <data name="MYFRIENDSNMBERLOW" xml:space="preserve">
+    <value>Liczba moich znajomych jest za mała. Dlaczego?</value>
+  </data>
+  <data name="MYFRIENDSNMBERLOWANSW" xml:space="preserve">
+    <value>Ponieważ niektórzy z nich użyli Facebookowej opcji "turn off all platform apps" i są niedostępni dla żadnej aplikacji</value>
+  </data>
+  <data name="NOTCONNECTEDTOFB" xml:space="preserve">
+    <value>Nie połączono z Facebookiem</value>
+  </data>
+  <data name="NOTMEETREQUIREMENTS" xml:space="preserve">
+    <value>Nie spełniasz wymagań</value>
+  </data>
+  <data name="PICTURE" xml:space="preserve">
+    <value>Obrazek</value>
+  </data>
+  <data name="WHATSREWARD" xml:space="preserve">
+    <value>Jaka jest nagroda za każdego lajka?</value>
+  </data>
+  <data name="YOUCONNECTEDWITHFACEBOOK" xml:space="preserve">
+    <value>Pomyślnie połączono z Facebookiem. Polub fanpage'a i kliknij w przycisk aby odebrać nagrodę</value>
+  </data>
+  <data name="NEEDED" xml:space="preserve">
+    <value>Potrzeba</value>
+    <comment>in Earn Facebook</comment>
+  </data>
+  <data name="YOUEARNPOINTS" xml:space="preserve">
+    <value>Dostajesz %n% punktów za każdego fanpage'a, którego polubisz</value>
+    <comment>Leavce %n% unchanged</comment>
+  </data>
+  <data name="SHORTURL" xml:space="preserve">
+    <value>Skrócony URL</value>
+  </data>
+  <data name="ER_BADFBURL" xml:space="preserve">
+    <value>Niepoprawny URL Fanpage'a</value>
+  </data>
+  <data name="H_FBURL" xml:space="preserve">
+    <value>URL Fanpage'a. Usuń wszystkie argumenty GET i zostaw tylko nazwę. Np.: http://www.facebook.com/asp.net LUB https://www.facebook.com/asp.net</value>
+  </data>
+  <data name="NUMBEROFREQFRENDS" xml:space="preserve">
+    <value>Wymagana liczba znajomych</value>
+  </data>
+  <data name="PROFILEPICREQ" xml:space="preserve">
+    <value>Zdjęcie profilowe obowiązkowe</value>
+  </data>
+  <data name="OUTADSINFO" xml:space="preserve">
+    <value>Utwórz nową kampanię i zapłać korzystając z PayPal/Payzy. Po wysłaniu płatności toja kampania będzie miała status 'Oczekuje na zatwierdzenie'. Po zatwierdzeniu zostanie natychmiastowo aktywowana</value>
+  </data>
+  <data name="OUTEMAILINFO" xml:space="preserve">
+    <value>Zostaniesz poinformowany o zmianie statusu Twojej kampanii (Zatwierdzona = Aktywna lub Odrzucona)</value>
+  </data>
+  <data name="PAYVIA" xml:space="preserve">
+    <value>Zapłać przez PayPal/Payza</value>
+  </data>
+  <data name="OUT1" xml:space="preserve">
+    <value>W zależności od swoich potrzeb, możesz reklamować się w różnorodny sposób. Wybierz poniżej najbardziej pasującą opcję dla Ciebie</value>
+  </data>
+  <data name="OUT10" xml:space="preserve">
+    <value>Reklama bez rejestracji</value>
+  </data>
+  <data name="OUT11" xml:space="preserve">
+    <value>Jeśeli nie chcesz się zakładać konta</value>
+  </data>
+  <data name="OUT12" xml:space="preserve">
+    <value>Natychmiastowa aktywacja po zatwierdzeniu reklamy</value>
+  </data>
+  <data name="OUT13" xml:space="preserve">
+    <value>Powiadomienia na temat statusu kampanii (na e-mail)</value>
+  </data>
+  <data name="OUT2" xml:space="preserve">
+    <value>Zarejestruj się </value>
+  </data>
+  <data name="OUT3" xml:space="preserve">
+    <value>Jeśli chcesz wykorzystać wszystkie funkcje</value>
+  </data>
+  <data name="OUT4" xml:space="preserve">
+    <value>Utwórz nową kampanię PTC / Banner / Facebook / TrafficGrid</value>
+  </data>
+  <data name="OUT5" xml:space="preserve">
+    <value>Flitr demograficzny</value>
+  </data>
+  <data name="OUT6" xml:space="preserve">
+    <value>Zaawansowana ochrona przeciwko oszustwom</value>
+  </data>
+  <data name="OUT7" xml:space="preserve">
+    <value>Pauzuj i Wznawiaj swoją kampanię kiedy tylko chcesz</value>
+  </data>
+  <data name="OUT8" xml:space="preserve">
+    <value>Zakup dodatkowe odsłony</value>
+  </data>
+  <data name="OUT9" xml:space="preserve">
+    <value>Analiza postępu</value>
+  </data>
+  <data name="STATISTICS" xml:space="preserve">
+    <value>Statystyki</value>
+  </data>
+  <data name="LIKESSMALL" xml:space="preserve">
+    <value>lajki</value>
+    <comment>Non-capitalized version of Facebook likes</comment>
+  </data>
+  <data name="CURRENTPIN" xml:space="preserve">
+    <value>Aktualny Kod PIN</value>
+  </data>
+  <data name="SECONDS" xml:space="preserve">
+    <value>sekund </value>
+    <comment>Ad lasts X seconds</comment>
+  </data>
+  <data name="DEMOCHECK" xml:space="preserve">
+    <value>Nie można wykonać tej operacji w wersji demonstacyjnej</value>
+  </data>
+  <data name="ALLCLICKSMADE" xml:space="preserve">
+    <value>Wszystkie kliknięcia na Twoje konto</value>
+  </data>
+  <data name="ALLCREDITEDMONEY" xml:space="preserve">
+    <value>Zarobione pieniądze</value>
+  </data>
+  <data name="CLICKSTOCHART" xml:space="preserve">
+    <value>Klikniecia</value>
+    <comment>'Clicks' displayed on the charts NO SPECIAL CHARACTERS</comment>
+  </data>
+  <data name="DAYSTOCHART" xml:space="preserve">
+    <value>Dni</value>
+    <comment>'Days' displayed on the charts NO SPECIAL CHARACTERS</comment>
+  </data>
+  <data name="STATSINFO" xml:space="preserve">
+    <value>To są statystyki powiązane z Twoim kontem. Aby zobaczyć statystyki dotyczące poszczególnych poleconych, przejdź do listy poleconych i kliknij 'Zobacz wykres'</value>
+  </data>
+  <data name="USERCLICKSMADE" xml:space="preserve">
+    <value>Twoje kliknięcia</value>
+  </data>
+  <data name="YOUHAVE" xml:space="preserve">
+    <value>masz </value>
+  </data>
+  <data name="ONOFF" xml:space="preserve">
+    <value>Wł/Wył</value>
+  </data>
+  <data name="ACCBLACK" xml:space="preserve">
+    <value>To konto zostało zbanowane ponieważ jego aspekt (IP/Kraj/Nazwa) został zakazany</value>
+  </data>
+  <data name="COUNTRYFORBID" xml:space="preserve">
+    <value>Twój kraj został wpisany na czarną listę. Nie możesz się zarejestrować</value>
+  </data>
+  <data name="IPFORBID" xml:space="preserve">
+    <value>Twój adres IP został wpisany na czarną listę. Nie możesz się zarejestrować</value>
+  </data>
+  <data name="UNAMEFORBID" xml:space="preserve">
+    <value>Ta nazwa jest zabroniona</value>
+  </data>
+  <data name="MANUALPP" xml:space="preserve">
+    <value>Wymaga zatwierdzenia przez administratora</value>
+  </data>
+  <data name="PAYOUTTYPE" xml:space="preserve">
+    <value>Typ wypłaty</value>
+  </data>
+  <data name="PRNOTPAID" xml:space="preserve">
+    <value>Masz %var1% zleconą wypłatę o łącznej wartości %var2% . Pierwsza zlecona %var3%</value>
+  </data>
+  <data name="CLICKSSTRAIGHT" xml:space="preserve">
+    <value>Kliki</value>
+  </data>
+  <data name="ERROR" xml:space="preserve">
+    <value>Błąd :(</value>
+  </data>
+  <data name="ERROR_INFO" xml:space="preserve">
+    <value>Spóbuj odświeżyć/przelogować się/ponownie za 5 minut. Jeśli problem się powtarza, skontaktuj się z administratorem</value>
+  </data>
+  <data name="COMPLETEDTASKS" xml:space="preserve">
+    <value>Ukończone zadania</value>
+  </data>
+  <data name="FEATUREDISABLED" xml:space="preserve">
+    <value>Opcja wyłączona przez administratora</value>
+  </data>
+  <data name="HISTORY_7" xml:space="preserve">
+    <value>Zatwierdzono offerwall za </value>
+  </data>
+  <data name="OFFERCLICKINFO" xml:space="preserve">
+    <value>Kliknij w obrazek poniżej aby aktywować Offerwall. Po zakończeniu danej akcji, automatycznie naliczymy Ci punkty (po tym jak akcja zostanie zweryfikowana). Nic się nie dzieje po kliknięciu? Wyłącz AdBlock'a</value>
+  </data>
+  <data name="OFFERSHORTINFO" xml:space="preserve">
+    <value>Po zakończeniu danej akcji, automatycznie naliczymy Ci punkty (po tym jak akcja zostanie zweryfikowana)</value>
+  </data>
+  <data name="ADDNEW" xml:space="preserve">
+    <value>Dodaj nowych</value>
+  </data>
+  <data name="FRIENDSINFO" xml:space="preserve">
+    <value>Dodawaj nowych znajomych i kontaktuj sięz nimi łatwo - jednym kliknięciem</value>
+  </data>
+  <data name="NOFRIENDS" xml:space="preserve">
+    <value>Nie masz żadnych znajomych :( Forever alone?</value>
+  </data>
+  <data name="NOREFBACKDATA" xml:space="preserve">
+    <value>Aktualnie nie ma żadnych stron RefBack</value>
+  </data>
+  <data name="PEOPLE" xml:space="preserve">
+    <value>Ludzie</value>
+  </data>
+  <data name="REFBACK1" xml:space="preserve">
+    <value>Poniżej znajduje się lista stron do systemu RefBack</value>
+  </data>
+  <data name="REFBACK2" xml:space="preserve">
+    <value>Zarejestruj się na danej stronie korzystając z podanego linku polecającego i zostań aktywnym poleconym. Po tym jak klikniesz przycisk poniżej, administrator będzie mógł monitorować Twoje postępy. Jeżeli będziesz aktywnym poleconym dostaniesz zapłatę od administratora (jak tylko on o tym zdecyduje)</value>
+  </data>
+  <data name="REFBACK3" xml:space="preserve">
+    <value>Płatności są realizowane ręcznie, zwyczajowo po każdym cashoucie administratora. Powodzenia!</value>
+  </data>
+  <data name="REFBACK4" xml:space="preserve">
+    <value>Zarejestruj się jako: %username1%, a jak zajęte to: %username2%</value>
+  </data>
+  <data name="REFBACK5" xml:space="preserve">
+    <value>Nie klikaj przycisku jeżeli nie rozumiesz zasad, nie zarejestrowałeś się albo nie planujesz aktywnie klikać. Możesz zostać zbanowany</value>
+  </data>
+  <data name="REFDECLARATION" xml:space="preserve">
+    <value>Zarejestrowałem się i zostanę aktywnym poleconym</value>
+  </data>
+  <data name="REFDECLARED" xml:space="preserve">
+    <value>Zadeklarowałeś się, że będziesz tu aktywnym poleconym</value>
+  </data>
+  <data name="REQUESTSUCCESS" xml:space="preserve">
+    <value>Zaproszenie pomyślnie wysłane. Twój znajomy musi najpierw potwierdzić waszą zanjomość zanim dodamy go do Twojej listy</value>
+  </data>
+  <data name="GAMESWAR" xml:space="preserve">
+    <value>Nie widzisz tabeli wyników albo gry? Wyłącz AdBlocka</value>
+  </data>
+  <data name="ACHIEVEMENT_10" xml:space="preserve">
+    <value>Dla tych, którzy wygrali więcej niż %n% razy w TrafficGrid</value>
+  </data>
+  <data name="ACHIEVEMENT_9" xml:space="preserve">
+    <value>Dla tych, którzy przeprowadzili więcej niż %n% kampanie/kampanii TrafficGrid</value>
+  </data>
+  <data name="HISTORY_8" xml:space="preserve">
+    <value>Wygrałeś na TrafficGrid</value>
+  </data>
+  <data name="TGCHANCES" xml:space="preserve">
+    <value>Szanse na wygranie czegokolwiek na TrafficGrid</value>
+  </data>
+  <data name="TGHITS" xml:space="preserve">
+    <value>Dostępna ilość dziennych klików na TrafficGrid</value>
+  </data>
+  <data name="TGSHORTED" xml:space="preserve">
+    <value>Czas trwania reklam na TrafficGrid</value>
+  </data>
+  <data name="TRAFFICGRIDADINFO1" xml:space="preserve">
+    <value>Jeśli chcesz wygenerować dużo taniego ruchu na swojej stronie, TrafficGrid to najlepsza opcja dla Ciebie. Tania, masywna ilość odwiedziń wygenerowana przez naszych użytkowników, którzy chcą wygrać nagrody w TrafficGrid'zie. Wypróbuj tę opcję reklamy!</value>
+  </data>
+  <data name="WONERROR" xml:space="preserve">
+    <value>Wygrałeś poleconego ale nie możemy go dodać ponieważ osiągnąłeś swój limit poleconych</value>
+  </data>
+  <data name="WONNOTHING" xml:space="preserve">
+    <value>Nic nie wygrałeś :( Powodzenia następnym razem!</value>
+  </data>
+  <data name="DRRLIMITPLUS" xml:space="preserve">
+    <value>Limit bezp. polec.</value>
+  </data>
+  <data name="FROMDR" xml:space="preserve">
+    <value>za 1 klik bezp. poleconego</value>
+  </data>
+  <data name="FROMRR" xml:space="preserve">
+    <value>za 1 klik wyn. poleconego</value>
+  </data>
+  <data name="LATESTWINNERS" xml:space="preserve">
+    <value>Ostatnich 10 wygranych</value>
+  </data>
+  <data name="PRIZES" xml:space="preserve">
+    <value>Prizes</value>
+  </data>
+  <data name="REACHEDHITS" xml:space="preserve">
+    <value>Doszedłeś do swojego limitu TrafficGrid. Kup Upgrade albo wróć jutro</value>
+  </data>
+  <data name="TGINFO" xml:space="preserve">
+    <value>Kliknij na TrafficGrid, oglądnij reklamę i wygraj niesamowite nagrody!</value>
+  </data>
+  <data name="TOPWINNERS" xml:space="preserve">
+    <value>Top 10 wygranych</value>
+  </data>
+  <data name="YOURACCOUNT" xml:space="preserve">
+    <value>Twoje konto</value>
+  </data>
+  <data name="YOURCHANCES" xml:space="preserve">
+    <value>Your chances</value>
+  </data>
+  <data name="YOUWON" xml:space="preserve">
+    <value>Wygrałeś </value>
+  </data>
+  <data name="PRIZE" xml:space="preserve">
+    <value>Nagroda</value>
+  </data>
+  <data name="YOUMUSTBELOGGED" xml:space="preserve">
+    <value>Musisz być zalogowany jeśli chcesz zarabiać pieniądze za oglądanie reklam</value>
+  </data>
+  <data name="ALREADYSENT" xml:space="preserve">
+    <value>Wysłaliśmy Ci już SMS z kodem</value>
+  </data>
+  <data name="CONFIRM" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="IPAPROXY" xml:space="preserve">
+    <value>Twój adres IP został rozpoznany jako proxy</value>
+  </data>
+  <data name="RECPIN" xml:space="preserve">
+    <value>Otrzymany kod</value>
+  </data>
+  <data name="SENDSMSBUTTON" xml:space="preserve">
+    <value>Wyślij SMS z kodem</value>
+  </data>
+  <data name="SMSINFO" xml:space="preserve">
+    <value>Podaj swój numer telefonu i wpisz otrzymany kod w pole poniżej</value>
+  </data>
+  <data name="SMSVERIFICATION" xml:space="preserve">
+    <value>Weryfikacja SMS</value>
+  </data>
+  <data name="WRONGCODE" xml:space="preserve">
+    <value>Kod, który wprowadziłeś jest niepoprawny</value>
+  </data>
+  <data name="ACCOUNTDAYS" xml:space="preserve">
+    <value>Dni od zarejestr. </value>
+  </data>
+  <data name="CONTEST1" xml:space="preserve">
+    <value>Konk. bezp. polec.</value>
+  </data>
+  <data name="CONTEST2" xml:space="preserve">
+    <value>Konk. wyn. polec.</value>
+  </data>
+  <data name="CONTEST3" xml:space="preserve">
+    <value>Konk. kliknięć</value>
+  </data>
+  <data name="CONTEST4" xml:space="preserve">
+    <value>Konk. transferów</value>
+  </data>
+  <data name="CONTEST5" xml:space="preserve">
+    <value>Konk. Offerwalls</value>
+  </data>
+  <data name="CONTEST6" xml:space="preserve">
+    <value>Konk. CrowdFlower</value>
+  </data>
+  <data name="CONTESTINFO" xml:space="preserve">
+    <value>Żeby wziąźć udział w konkursie musisz spełnić wszystkie wymagania i kliknąć przycisk 'Weź udział'</value>
+  </data>
+  <data name="CONTESTS" xml:space="preserve">
+    <value>Konkursy</value>
+  </data>
+  <data name="DURATION" xml:space="preserve">
+    <value>Czas trwania</value>
+  </data>
+  <data name="LATESTKINDWINNERS" xml:space="preserve">
+    <value>Ostatni zwycięzcy tego typu konkursów</value>
+  </data>
+  <data name="NAME" xml:space="preserve">
+    <value>Nazwa</value>
+  </data>
+  <data name="PARTICIPATE" xml:space="preserve">
+    <value>Weź udział</value>
+  </data>
+  <data name="HISTORY_9" xml:space="preserve">
+    <value>Wygrałeś konkurs</value>
+  </data>
+  <data name="NOCONTESTS" xml:space="preserve">
+    <value>Obecnie nie ma żadnych konkursów tego typu</value>
+  </data>
+  <data name="YOUCANTMULTIPLE" xml:space="preserve">
+    <value>Nie możesz oglądać jednocześnie kilku reklam</value>
+  </data>
+</root>

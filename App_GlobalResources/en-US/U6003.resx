@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="PUBLISHERSBANNERCLICKPROFIT" xml:space="preserve">
+    <value>Publishers Banner Click Profit</value>
+  </data>
+  <data name="PUBLISHERSCPAOFFERPROFIT" xml:space="preserve">
+    <value>Publishers CPA Offers Profit</value>
+  </data>
+  <data name="PUBLISHERSINTEXTADCLICKPROFIT" xml:space="preserve">
+    <value>Publishers InText Ad Click Profit</value>
+  </data>
+  <data name="PUBLISHERSPTCOFFERWALLPROFIT" xml:space="preserve">
+    <value>Publishers PTC Offer Walls Profit</value>
+  </data>
+  <data name="OFFERTITLE" xml:space="preserve">
+    <value>Offer Title</value>
+  </data>
+  <data name="ADPACKTIMEDESC" xml:space="preserve">
+    <value>Unless your account is in Vacation Mode, you must watch at least {0} ads each week to take part in our revenue. So far you have watched {1}/{2} ads and you have {3} left.</value>
+  </data>
+  <data name="INVALIDIMAGEORDIMENSION" xml:space="preserve">
+    <value>Invalid image or dimensions (max {0}x{1})</value>
+  </data>
+  <data name="PTC" xml:space="preserve">
+    <value>PTC</value>
+  </data>
+  <data name="NOWEBINARS" xml:space="preserve">
+    <value>There are no upcoming Webinars.</value>
+  </data>
+  <data name="WEBINARS" xml:space="preserve">
+    <value>Webinars</value>
+  </data>
+  <data name="WEBINARSDESC" xml:space="preserve">
+    <value>View the upcoming Webinars.</value>
+  </data>
+  <data name="SKYPECONTACT" xml:space="preserve">
+    <value>Skype username to contact with you</value>
+  </data>
+  <data name="ALREADYREPRESENTANT" xml:space="preserve">
+    <value>You have already sent the request to become a representative.</value>
+  </data>
+  <data name="REPRESENTATIVESLIMIT" xml:space="preserve">
+    <value>Maximum number of representatives from particular country is {0}</value>
+  </data>
+  <data name="SURFWARNING" xml:space="preserve">
+    <value>This window must remain active to complete the activity.</value>
+  </data>
+  <data name="VIEWANDCOMPLETESLIDESHOW" xml:space="preserve">
+    <value>View this website and complete the slideshow.</value>
+  </data>
+  <data name="DONE" xml:space="preserve">
+    <value>Done</value>
+  </data>
+  <data name="ALLOWAUTOSURF" xml:space="preserve">
+    <value>Allow Autosurf</value>
+  </data>
+  <data name="ALLOWMOBILEDEVICES" xml:space="preserve">
+    <value>Allow mobile devices</value>
+  </data>
+  <data name="ALLOWPCUSERS" xml:space="preserve">
+    <value>Allow PC users</value>
+  </data>
+  <data name="PUBLISHBANNERSUNAVAILABLEHEADER" xml:space="preserve">
+    <value>Publishing Banners is unavailable at the moment.</value>
+  </data>
+  <data name="PUBLISHBANNERSUNAVAILABLEREASON" xml:space="preserve">
+    <value>You either have not add a Website yet, or the Administrator has not configured available iframe Dimensions.</value>
+  </data>
+  <data name="CAMPAIGNCREATED" xml:space="preserve">
+    <value>Your campaign has been created.</value>
+  </data>
+  <data name="ERR_MAXDAILYVIEWS" xml:space="preserve">
+    <value>Max daily views must be an integer number greater than 0.</value>
+  </data>
+  <data name="MAXSINGLEUSERDAILYVIEWS" xml:space="preserve">
+    <value>Max daily views by a single user</value>
+  </data>
+  <data name="REQ_MAXDAILYVIEWS" xml:space="preserve">
+    <value>Max daily views field is required.</value>
+  </data>
+  <data name="FANPAGEEXISTS" xml:space="preserve">
+    <value>Sorry, this fanpage already exists.</value>
+  </data>
+  <data name="BUYCAMPAIGNSTOJOINMATRIX" xml:space="preserve">
+    <value>Join Matrix by creating at least one of the following campaigns:</value>
+  </data>
+  <data name="LEVELSINMATRIX" xml:space="preserve">
+    <value>Number of levels in Matrix</value>
+  </data>
+  <data name="MATRIX" xml:space="preserve">
+    <value>Matrix</value>
+  </data>
+  <data name="MATRIXRESTRICTION" xml:space="preserve">
+    <value>You must have at least one active campaign of the following types to be a part of it: {0}.</value>
+  </data>
+  <data name="MATRIXWILLSHUFFLE" xml:space="preserve">
+    <value>Matrix will be rebuilt in {0}. </value>
+  </data>
+  <data name="MYMATRIXLEVEL" xml:space="preserve">
+    <value>My Matrix level</value>
+  </data>
+  <data name="SLOTSTAKENINLASTLEVEL" xml:space="preserve">
+    <value>Slots taken in the last level</value>
+  </data>
+  <data name="MAXACTIVEINSTANCES" xml:space="preserve">
+    <value>Maximum Active Instances</value>
+  </data>
+  <data name="NOPTC" xml:space="preserve">
+    <value>There is no PTC ads for you right now.</value>
+  </data>
+  <data name="MINTRANSFER" xml:space="preserve">
+    <value>Minimum one-time transfer amount</value>
+  </data>
+  <data name="NORESULTS" xml:space="preserve">
+    <value>There are no results matching your query.</value>
+  </data>
+  <data name="NEWCONVERSATION" xml:space="preserve">
+    <value>New conversation</value>
+  </data>
+  <data name="DRPTCCLICKEARNINGS" xml:space="preserve">
+    <value>PTC Direct Referral click earnings</value>
+  </data>
+  <data name="PTCCLICKEARNINGS" xml:space="preserve">
+    <value>PTC click earnings</value>
+  </data>
+  <data name="RRPTCCLICKEARNINGS" xml:space="preserve">
+    <value>PTC Rented Referral click earnings</value>
+  </data>
+  <data name="FINDPEOPLE" xml:space="preserve">
+    <value>Find people</value>
+  </data>
+</root>

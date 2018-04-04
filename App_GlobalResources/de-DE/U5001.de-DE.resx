@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="PACKSREQUIREDTOOPENCLOSE" xml:space="preserve">
+    <value>%n% benötigt zum öffnen/schliessen</value>
+    <comment>Leave %n% unchanged</comment>
+  </data>
+  <data name="MYPACKS" xml:space="preserve">
+    <value>Meine Pakete</value>
+  </data>
+  <data name="OPENINSTANCES" xml:space="preserve">
+    <value>Geöffnete Instanzen</value>
+  </data>
+  <data name="PACKSADDED" xml:space="preserve">
+    <value>Pakete hinzugefügt</value>
+  </data>
+  <data name="PACKSREQUIREDTOCLOSE" xml:space="preserve">
+    <value>Pakete benötigt um zu schliessen</value>
+  </data>
+  <data name="SHOWFINISHEDONLY" xml:space="preserve">
+    <value>Nur beendete anzeigen</value>
+    <comment>Leave %a% and %b% unchanged</comment>
+  </data>
+  <data name="CREATORCLOSECUSTOMGROUPSUCCESS" xml:space="preserve">
+    <value>Ihre Gruppe wurde geschlossen. Jeder %a% in dieser Gruppe wird nun %b%% mehr Profit produzieren</value>
+  </data>
+  <data name="PROFITRAISEDBY" xml:space="preserve">
+    <value>AdPack ROI</value>
+  </data>
+  <data name="ADPACKADCHANGEWARNING" xml:space="preserve">
+    <value>Falls Sie Ihre %n% Kampagne zu einer ohne Banner wechseln, erhalten Sie keine Einblendungen. Diese Änderung ist unumkehrbar.</value>
+  </data>
+  <data name="BANNERIMPRESSIONS" xml:space="preserve">
+    <value>Banner Einblendungen</value>
+  </data>
+  <data name="CHANGECAMPAIGN" xml:space="preserve">
+    <value>Wechsle die Kampagne</value>
+  </data>
+  <data name="YOUCANCHANGECAMPAIGN" xml:space="preserve">
+    <value>Sie können die Kampagne für %n% im Manage Reiter wechseln.?5001</value>
+    <comment>Leave %n% unchanged</comment>
+  </data>
+  <data name="ADSPERDAY" xml:space="preserve">
+    <value>Anzeigen pro Tag</value>
+  </data>
+  <data name="DISPLAYTIME" xml:space="preserve">
+    <value>Anzeigedauer</value>
+  </data>
+  <data name="STARTPAGE" xml:space="preserve">
+    <value>Startseite</value>
+  </data>
+  <data name="STARTPAGEDESCRIPTION" xml:space="preserve">
+    <value>Falls Sie eine Anzeige mit einer Startseite erstellt haben, wird diese als erstes in der Warteschlange zum entsprechenden angegebenen Datum angezeigt.</value>
+  </data>
+  <data name="PEOPLEWHOJOINED" xml:space="preserve">
+    <value>Neue Kunden </value>
+  </data>
+  <data name="DIRECTREFADPACKEARNING" xml:space="preserve">
+    <value>Direkte Empfehlung %n% Empfehlungsbonus</value>
+    <comment>Leave %n% unchanged</comment>
+  </data>
+  <data name="UNLIMITED" xml:space="preserve">
+    <value>Unbegrenzt</value>
+  </data>
+  <data name="LOGINAD" xml:space="preserve">
+    <value>Anzeige beim Login</value>
+  </data>
+  <data name="TOTAL" xml:space="preserve">
+    <value>Gesamt</value>
+  </data>
+  <data name="STATSDESCRIPTION" xml:space="preserve">
+    <value>Betrachte den letzten und gesamten Verdienst</value>
+  </data>
+  <data name="STATSDESCRIPTION2" xml:space="preserve">
+    <value>Betrachte die letzten und gesamten Klicks</value>
+  </data>
+  <data name="TOTALPOINTSCREDITEDTOYOU" xml:space="preserve">
+    <value>Insgesamt %n% Ihrem Konto gutgeschrieben.</value>
+    <comment>Leave %n% unchanged</comment>
+  </data>
+  <data name="YOURACTIONS" xml:space="preserve">
+    <value>Ihre Handlungen</value>
+  </data>
+  <data name="LASTACTIVITY" xml:space="preserve">
+    <value>Letzte Aktivität</value>
+  </data>
+  <data name="TOTALMONEYBYREFERRAL" xml:space="preserve">
+    <value>Gesamtbetrag welches Ihr Empfehlungsnehmer an Bonus generiert hat</value>
+  </data>
+</root>

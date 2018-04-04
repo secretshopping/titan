@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Coinbase</name>
+    </assembly>
+    <members>
+        <member name="M:Coinbase.CoinbaseApi.#ctor(System.String,System.String,System.Boolean,System.Net.WebProxy,System.Boolean)">
+            <summary>
+            The main class for making Coinbase API calls.
+            </summary>
+            <param name="apiKey">Your API key</param>
+            <param name="apiSecret">Your API secret</param>
+            <param name="useTimeApi">Use Coinbase's Time API in signing requests. Results in 2 requests per call 
+            (one to get time, one to send signed request). Uses coinbase server to prevent clock skew. If useTimeApi=false
+            you must make sure your server time does not drift apart from Coinbase's server time. Read more here: 
+            https://developers.coinbase.com/api/v2#api-key </param>
+        </member>
+        <member name="M:Coinbase.CoinbaseApi.#ctor(System.String,System.String,System.String,System.String,System.Boolean,System.Net.WebProxy)">
+            <summary>
+            The main class for making Coinbase API calls.
+            </summary>
+            <param name="apiKey">Your API Key</param>
+            <param name="apiSecret">Your API Secret </param>
+            <param name="customApiEndpoint">A custom URL endpoint. Typically, you'd use this if you want to use the sandbox URL.</param>
+            <param name="useTimeApi">Use Coinbase's Time API in signing requests. Results in 2 requests per call 
+            (one to get time, one to send signed request). Uses coinbase server to prevent clock skew. If useTimeApi=false
+            you must make sure your server time does not drift apart from Coinbase's server time. Read more here: 
+            https://developers.coinbase.com/api/v2#api-key </param>
+        </member>
+        <member name="M:Coinbase.CoinbaseApi.SendRequest(System.String,System.Object,RestSharp.Method)">
+            <summary>
+            Sends a Raw Json object model to the endpoint using an HTTP method.
+            Recommended use is to use a JObject for the body or a serializable typesafe class.
+            </summary>
+            <param name="endpoint">The API endpoint. Ex: /checkout, /orders, /time</param>
+            <param name="body">The JSON request body</param>
+            <param name="httpMethod">The HTTP method to use. Default: POST.</param>
+        </member>
+        <member name="M:Coinbase.CoinbaseApi.SendRequest``1(System.String,System.Object,RestSharp.Method)">
+            <summary>
+            Sends a Raw Json object model to the endpoint using an HTTP method.
+            Recommended use is to use a JObject for the body or a serializable typesafe class.
+            </summary>
+            <typeparam name="TResponse">Type T of CoinbaseResponse.Data</typeparam>
+            <param name="endpoint">The API endpoint. Ex: /checkout, /orders, /time</param>
+            <param name="body">The JSON request body</param>
+            <param name="httpMethod">The HTTP method to use. Default: POST.</param>
+        </member>
+        <member name="M:Coinbase.CoinbaseApi.SendGetRequest``1(System.String,System.Collections.Generic.KeyValuePair{System.String,System.String}[])">
+            <summary>
+            Sends a get request to the endpoint using GET HTTP method.
+            </summary>
+            <typeparam name="TResponse">Type T of CoinbaseResponse.Data</typeparam>
+            <param name="endpoint">The API endpoint. Ex: /checkout, /orders, /time</param>
+            <param name="queryParams">Query URL parameters to include in the GET request.</param>
+        </member>
+        <member name="M:Coinbase.CoinbaseApi.CreateCheckout(Coinbase.ObjectModel.CheckoutRequest)">
+            <summary>
+            Creates a new merchant order checkout product.
+            All checkouts and subsequent orders created using this endpoint are created for merchant’s primary account.
+            Using this endpoint to create checkouts and orders is useful when you want to build a merchant checkout experience with Coinbase’s merchant tools.
+            </summary>
+        </member>
+        <member name="M:Coinbase.CoinbaseApi.GetTime">
+            <summary>
+            Get the API server time.
+            </summary>
+        </member>
+        <member name="M:Coinbase.CoinbaseApi.GetCheckoutUrl(Coinbase.ObjectModel.CoinbaseResponse)">
+            <summary>
+            Get the final checkout redirect URL from a CoinbaseResponse. The response
+            from CreateCheckout() call should be used.
+            </summary>
+            <param name="checkoutResponse">The response from calling CreateCheckout()</param>
+            <returns>The redirect URL for the customer checking out</returns>
+        </member>
+        <member name="M:Coinbase.CoinbaseApi.GetNotification(System.String)">
+            <summary>
+            Gets a notification object from JSON.
+            </summary>
+            <param name="json">Received from Coinbase in the HTTP callback</param>
+            <returns></returns>
+        </member>
+        <member name="P:Coinbase.ObjectModel.CoinbaseResponse`1.Errors">
+            <summary>
+            Error responses described here:
+            https://developers.coinbase.com/api/v2?shell#error-response
+            </summary>
+        </member>
+        <member name="P:Coinbase.ObjectModel.CoinbaseResponse`1.Warnings">
+            <summary>
+            Warning responses described here:
+            https://developers.coinbase.com/api/v2?shell#error-response
+            </summary>
+        </member>
+        <member name="P:Coinbase.ObjectModel.Notification.UnverifiedOrder">
+            <summary>
+            You must first verify the order before this property becomes available.
+            Verify the notification by calling CoinbaseApi.VerifyNotification() with the Notification and the associated "X-Signature" (or CB-SIGNATURE) request header value.
+            </summary>
+        </member>
+        <member name="M:Coinbase.Serialization.JsonNetSerializer.#ctor">
+            <summary>
+            Default serializer
+            </summary>
+        </member>
+        <member name="M:Coinbase.Serialization.JsonNetSerializer.#ctor(Newtonsoft.Json.JsonSerializerSettings)">
+            <summary>
+            Default serializer with overload for allowing custom Json.NET settings
+            </summary>
+        </member>
+        <member name="M:Coinbase.Serialization.JsonNetSerializer.Serialize(System.Object)">
+            <summary>
+            Serialize the object as JSON
+            </summary>
+            <param name="obj">Object to serialize</param>
+            <returns>JSON as String</returns>
+        </member>
+        <member name="P:Coinbase.Serialization.JsonNetSerializer.DateFormat">
+            <summary>
+            Unused for JSON Serialization
+            </summary>
+        </member>
+        <member name="P:Coinbase.Serialization.JsonNetSerializer.RootElement">
+            <summary>
+            Unused for JSON Serialization
+            </summary>
+        </member>
+        <member name="P:Coinbase.Serialization.JsonNetSerializer.Namespace">
+            <summary>
+            Unused for JSON Serialization
+            </summary>
+        </member>
+        <member name="P:Coinbase.Serialization.JsonNetSerializer.ContentType">
+            <summary>
+            Content type for serialized content
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ACC1" xml:space="preserve">
+    <value>Optionen für Personen mit Handicap: hören Sie eine Frage und beantworten diese!</value>
+    <comment>Captcha</comment>
+  </data>
+  <data name="CLICKORTOUCH" xml:space="preserve">
+    <value>Klick the {0}</value>
+    <comment>Captcha, leave {0} untouched</comment>
+  </data>
+  <data name="ADVERTISEON" xml:space="preserve">
+    <value>Inseriere in:</value>
+  </data>
+  <data name="EXTERNALWEBSITES" xml:space="preserve">
+    <value>Externe Webseiten</value>
+  </data>
+  <data name="INTEXTADS" xml:space="preserve">
+    <value>In Textanzeigen</value>
+  </data>
+  <data name="INTEXTADSDESC" xml:space="preserve">
+    <value>In Textanzeigen geliefertes Zielwort basierend auf den Text des Herausgebers der Webseite. Herausgeber wird nur eine Vergütung erhalten, wenn die Anzeige angeklickt wird.</value>
+  </data>
+  <data name="INTEXTADSDESCFORPUBLISHER" xml:space="preserve">
+    <value>In Textanzeigen geliefertes Zielwort basierend auf den Text des Herausgebers der Webseite. Herausgeber wird nur eine Vergütung erhalten, wenn die Anzeige angeklickt wird. Platzieren Sie den JavaScript Code auf einer Ihrer Webseiten um die Verdienstmöglichkeiten zu steigern!</value>
+  </data>
+  <data name="MUSTADDTAGS" xml:space="preserve">
+    <value>Bitte mindestens eine Notiz hinzufügen.</value>
+  </data>
+  <data name="MYURLS" xml:space="preserve">
+    <value>Meine URLs</value>
+  </data>
+  <data name="NUMBEROFURLSERROR" xml:space="preserve">
+    <value>Bitte wählen Sie {0} url(s) für das ausgewählte Paket.</value>
+  </data>
+  <data name="PLEASEADDURLSFIRST" xml:space="preserve">
+    <value>Bitte erst Urls ergänzen (Inserieren/Meine URLs).</value>
+  </data>
+  <data name="PTCOFFERWALLS" xml:space="preserve">
+    <value>PTC Offer Walls???</value>
+  </data>
+  <data name="PTCOFFERWALLSDESC" xml:space="preserve">
+    <value>PTC Offer Walls gibt Ihnen die Möglichkeit mehrere Webseiten gleichzeitig zu inserieren. Kunden werden nur bezahlt, wenn alle Anzeigen angeschaut wurden.</value>
+  </data>
+  <data name="REFRESHICON" xml:space="preserve">
+    <value>Icon neu laden</value>
+    <comment>Captcha</comment>
+  </data>
+  <data name="REFRESHIMAGE" xml:space="preserve">
+    <value>Neu laden: neues Bild generieren!</value>
+    <comment>Captcha</comment>
+  </data>
+  <data name="SOUNDICON" xml:space="preserve">
+    <value>Icon für Sound</value>
+    <comment>Captcha</comment>
+  </data>
+  <data name="TAG" xml:space="preserve">
+    <value>Notiz</value>
+  </data>
+  <data name="TAGS" xml:space="preserve">
+    <value>Notizen</value>
+  </data>
+  <data name="THISURLHASBEENREJECTED" xml:space="preserve">
+    <value>Diese URL  wurde vom Support abgelehnt.</value>
+  </data>
+  <data name="TOOMANYTAGS" xml:space="preserve">
+    <value>Maximale Anzahl erlaubter Notizen {0}.</value>
+  </data>
+  <data name="TYPEBELOW" xml:space="preserve">
+    <value>Tippen Sie unten die korrekte &lt;strong&gt;Antwort&lt;/strong&gt; zu dem was Sie hören. Zahlen oder Buchstaben:</value>
+    <comment>Captcha</comment>
+  </data>
+  <data name="YOURURLSDESCRIPTION" xml:space="preserve">
+    <value>Fügen Sie URLs hinzu, welche Sie in Ihren Kampagnen verwenden möchten.</value>
+  </data>
+  <data name="PUBLISHERREPLACEVARIABLES" xml:space="preserve">
+    <value>Ersetzen Sie der hervorgehobenen Variablen mit Kundendaten welche die Angebote auf Ihrer Webseite akzeptiert haben.</value>
+  </data>
+  <data name="GENDEROPTIONS" xml:space="preserve">
+    <value>Geschlecht: Nichts, Männlich, Weiblich</value>
+  </data>
+  <data name="PBAGE" xml:space="preserve">
+    <value>Kundenalter welcher Ihr Angebot angenommen hat. Wir senden diese Information zurück, wenn es Teil der Tracking URL ist.</value>
+  </data>
+  <data name="PBGENDER" xml:space="preserve">
+    <value>Geschlecht des Kunden welcher Ihr Angebot angenommen hat.  Wir senden diese Information zurück, wenn es Teil der Tracking URL ist.</value>
+  </data>
+  <data name="UPNEXT" xml:space="preserve">
+    <value>Demnächst</value>
+  </data>
+  <data name="WATCHED" xml:space="preserve">
+    <value>Angeschaut</value>
+  </data>
+  <data name="WATCHING" xml:space="preserve">
+    <value>Anschauend</value>
+  </data>
+  <data name="NEWFACEBOOKUNAVAILABLEHEADER" xml:space="preserve">
+    <value>Inserieren auf Facebook ist zur Zeit nicht möglich.</value>
+  </data>
+  <data name="NEWFACEBOOKUNAVAILABLEREASON" xml:space="preserve">
+    <value>Facebook wurde noch nicht vom Administrator konfiguriert.</value>
+  </data>
+  <data name="ADPACKTYPES" xml:space="preserve">
+    <value>{0} Typen</value>
+  </data>
+  <data name="NEWS" xml:space="preserve">
+    <value>News</value>
+  </data>
+  <data name="REPRESENT" xml:space="preserve">
+    <value>Wenn Sie unsere Produkte präsentieren möchten {0} und somit extra Einnahmen über den Empfehlungsbonus generieren möchten, senden Sie uns bitte eine Nachricht</value>
+  </data>
+  <data name="REPRESENTATIVES" xml:space="preserve">
+    <value>Gebietsleiter</value>
+  </data>
+  <data name="REPRESENTINFO" xml:space="preserve">
+    <value>Werden Sie Gebietsleiter und erhöhen Sie Ihr Einkommen. Bitte füllen Sie alle Felder unten aus und senden uns das Anfrageformular zu.</value>
+  </data>
+  <data name="LANGUAGES" xml:space="preserve">
+    <value>Sprachen die zur Kontaktaufnahme genutzt werden.</value>
+  </data>
+  <data name="EMAILREGISTRED" xml:space="preserve">
+    <value>Die eingegebene Email-Adresse ist bereits registriert.</value>
+  </data>
+  <data name="WHYBECOMEREPRESENTATIVE" xml:space="preserve">
+    <value>Warum möchten Sie Gebietsleiter werden? Erklären Sie es uns in ein paar Worten.</value>
+  </data>
+  <data name="EMAILCONTACT" xml:space="preserve">
+    <value>Email-Adresse, unter der wir Sie erreichen können</value>
+  </data>
+  <data name="JOINTOREPRESENTATION" xml:space="preserve">
+    <value>Join to {0}'s representation.???</value>
+  </data>
+  <data name="NAMEOFREPRESENTATION" xml:space="preserve">
+    <value>Titel für Sie als Gebietsleiter</value>
+  </data>
+  <data name="PHONECONTACT" xml:space="preserve">
+    <value>Telefonnummer, unter der wir Sie erreichen können</value>
+  </data>
+  <data name="REGISTREDUSER" xml:space="preserve">
+    <value>Sie müssen bereits ein registrierter Kunde sein.</value>
+  </data>
+  <data name="REPRESENTEDUNIT" xml:space="preserve">
+    <value>which you will be representing.???Kontext</value>
+  </data>
+  <data name="WHY" xml:space="preserve">
+    <value>Warum</value>
+  </data>
+  <data name="BANNERPACKERROR" xml:space="preserve">
+    <value>Sie können diesen Banner nicht hinzufügen, diese Bannergröße wurde noch nicht konfiguriert.</value>
+  </data>
+  <data name="CASH" xml:space="preserve">
+    <value>Bar</value>
+  </data>
+  <data name="NEWBANNERUNAVAILABLEREASON" xml:space="preserve">
+    <value>Diese Bannergröße wurde noch nicht konfiguriert.</value>
+  </data>
+</root>

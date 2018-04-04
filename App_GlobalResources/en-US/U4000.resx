@@ -1,0 +1,436 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ACTEMAILSENT" xml:space="preserve">
+    <value>Because you changed your e-mail address, we sent an activation link to your new e-mail address. Once it's confirmed, the address will be changed.</value>
+  </data>
+  <data name="ADVERTISEMENT" xml:space="preserve">
+    <value>Advertisement</value>
+  </data>
+  <data name="BADFORMAT" xml:space="preserve">
+    <value>Incorrect number format</value>
+  </data>
+  <data name="CAPTCHAINFO" xml:space="preserve">
+    <value>Enter the verification code to proceed</value>
+  </data>
+  <data name="DAYS" xml:space="preserve">
+    <value>Days</value>
+  </data>
+  <data name="ENTERVAC" xml:space="preserve">
+    <value>Enter the mode</value>
+  </data>
+  <data name="EXITVAC" xml:space="preserve">
+    <value>Exit the mode</value>
+  </data>
+  <data name="EXITVACSURE" xml:space="preserve">
+    <value>Are you sure you want to exit Vacation Mode?</value>
+  </data>
+  <data name="GENERAL" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="PAYMENT" xml:space="preserve">
+    <value>Payment</value>
+  </data>
+  <data name="PERDAY" xml:space="preserve">
+    <value>per day</value>
+    <comment>Cost: $10 per day</comment>
+  </data>
+  <data name="AUCTIONS" xml:space="preserve">
+    <value>Auctions</value>
+  </data>
+  <data name="SERVERTIME" xml:space="preserve">
+    <value>Server time</value>
+  </data>
+  <data name="SUPPORT" xml:space="preserve">
+    <value>Support</value>
+  </data>
+  <data name="VACATIONMODE" xml:space="preserve">
+    <value>Vacation Mode</value>
+  </data>
+  <data name="VACATIONMODEINFO" xml:space="preserve">
+    <value>When your account is in Vacation Mode:  &lt;br/&gt;&lt;br/&gt;1. You cannot withdraw your money&lt;br/&gt; 2. You will not lose money because of your inactivity (inactivity fee, revenue shares, etc.)</value>
+  </data>
+  <data name="YOUAREINVAC" xml:space="preserve">
+    <value>You are in Vacation Mode until</value>
+    <comment>You are in Vacation Mode until 11-11-2015</comment>
+  </data>
+  <data name="YOUAREINVACATIONMODE" xml:space="preserve">
+    <value>Your account is in Vacation Mode. For more information please go to &lt;i&gt;Settings-Vacation Mode&lt;/i&gt; page</value>
+  </data>
+  <data name="ADDEDCAMPAIGNS" xml:space="preserve">
+    <value>Your campaigns</value>
+  </data>
+  <data name="APPROVED" xml:space="preserve">
+    <value>Approved</value>
+  </data>
+  <data name="AUCTIONCLOSES" xml:space="preserve">
+    <value>Closes in</value>
+    <comment>Auction closes in</comment>
+  </data>
+  <data name="DISPLAYTIME" xml:space="preserve">
+    <value>Display time</value>
+  </data>
+  <data name="HIGHESTBID" xml:space="preserve">
+    <value>Highest bid</value>
+  </data>
+  <data name="PAYOUT" xml:space="preserve">
+    <value>Payout</value>
+  </data>
+  <data name="INSTANTPAYOUT" xml:space="preserve">
+    <value>Instant payout</value>
+  </data>
+  <data name="BANNERONDISPLAY" xml:space="preserve">
+    <value>On display!</value>
+    <comment>Auctions status: banner on display</comment>
+  </data>
+  <data name="CLOSED" xml:space="preserve">
+    <value>Closed!</value>
+    <comment>Auction closed</comment>
+  </data>
+  <data name="NEXT" xml:space="preserve">
+    <value>Next</value>
+    <comment>Banner display time</comment>
+  </data>
+  <data name="NOBIDSYET" xml:space="preserve">
+    <value>No bids</value>
+  </data>
+  <data name="NOW" xml:space="preserve">
+    <value>Now</value>
+    <comment>Banner display time</comment>
+  </data>
+  <data name="ADVERTISEHERE" xml:space="preserve">
+    <value>Advertise here</value>
+  </data>
+  <data name="AUCTION" xml:space="preserve">
+    <value>Auction</value>
+  </data>
+  <data name="AUCTIONCLOSED" xml:space="preserve">
+    <value>Sorry, this auction is closed</value>
+  </data>
+  <data name="AUCTIONFOR" xml:space="preserve">
+    <value>Auction for</value>
+  </data>
+  <data name="BIDPLACED" xml:space="preserve">
+    <value>Bid successfully placed</value>
+  </data>
+  <data name="EARNINGS" xml:space="preserve">
+    <value>Earnings</value>
+  </data>
+  <data name="HOURLYAUCTIONS" xml:space="preserve">
+    <value>Hourly Auctions</value>
+  </data>
+  <data name="MARKET" xml:space="preserve">
+    <value>Market</value>
+  </data>
+  <data name="MARKETINFO" xml:space="preserve">
+    <value>Buy &amp; sell your investments from/to other members</value>
+  </data>
+  <data name="MYUNITS" xml:space="preserve">
+    <value>My Units</value>
+  </data>
+  <data name="NOSHARES" xml:space="preserve">
+    <value>You don't have any shares</value>
+  </data>
+  <data name="NOTENOUGHUNITS" xml:space="preserve">
+    <value>You don't have that much units to sell (maybe some of them are currently on the market)</value>
+  </data>
+  <data name="PAID" xml:space="preserve">
+    <value>PAID</value>
+    <comment>In banner bid</comment>
+  </data>
+  <data name="PLACEBID" xml:space="preserve">
+    <value>Place bid</value>
+  </data>
+  <data name="PORTFOLIOPRODUCTS" xml:space="preserve">
+    <value>Portfolio Products</value>
+  </data>
+  <data name="PORTFOLIOUNITS" xml:space="preserve">
+    <value>Portfolio Units</value>
+  </data>
+  <data name="PRODUCT" xml:space="preserve">
+    <value>Product</value>
+  </data>
+  <data name="SELLUNITS" xml:space="preserve">
+    <value>Sell Units</value>
+  </data>
+  <data name="SHARES" xml:space="preserve">
+    <value>Shares</value>
+  </data>
+  <data name="SHARESSUCC" xml:space="preserve">
+    <value>Shares bought successfully</value>
+  </data>
+  <data name="UNITS" xml:space="preserve">
+    <value>Units</value>
+  </data>
+  <data name="YOUWONAUCTION" xml:space="preserve">
+    <value>You won banner auction which will be displayed on</value>
+  </data>
+  <data name="YOUDONTHAVEANYSHARES" xml:space="preserve">
+    <value>You don't have any shares. Go to market and buy some</value>
+  </data>
+  <data name="GIFTCARDS" xml:space="preserve">
+    <value>Gift Cards</value>
+  </data>
+  <data name="GIFTCARDSINFO" xml:space="preserve">
+    <value>Exchange your %p% for varius cards &amp; bonuses!</value>
+    <comment>Leave %p% </comment>
+  </data>
+  <data name="NOGIFTCARDS" xml:space="preserve">
+    <value>There are no Gift Cards available for you at the moment. Come back soon</value>
+  </data>
+  <data name="CANCEL" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="CLOSE" xml:space="preserve">
+    <value>Close</value>
+    <comment>Close popup/window</comment>
+  </data>
+  <data name="EXCHANGENPFOR" xml:space="preserve">
+    <value>Exchange %n% %p% for %w%</value>
+    <comment>Exchange 10 Points for 100 clash of games</comment>
+  </data>
+  <data name="EXCHANGEPOINTS" xml:space="preserve">
+    <value>Exchange %p%</value>
+    <comment>Exchange points - reedem gif card section, Leave %p%</comment>
+  </data>
+  <data name="REQUESTSENTINFO" xml:space="preserve">
+    <value>Your Gift Code request has been sent. It will be verified by the administrator within 24 hours. &lt;br/&gt;You will receive your code on your email address</value>
+  </data>
+  <data name="THEREARENOCODES" xml:space="preserve">
+    <value>There are currently no codes for your country</value>
+  </data>
+  <data name="REWARD" xml:space="preserve">
+    <value>Reward</value>
+    <comment>Reward per each search</comment>
+  </data>
+  <data name="SEARCH" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="SEARCHINFO" xml:space="preserve">
+    <value>Earn %p% by using our search platform powered by Yahoo</value>
+  </data>
+  <data name="NEXTPAGE" xml:space="preserve">
+    <value>Next page</value>
+  </data>
+  <data name="PREVIOUSPAGE" xml:space="preserve">
+    <value>Previous page</value>
+  </data>
+  <data name="LATESTHISTORYLOGS" xml:space="preserve">
+    <value>The log below shows latest history from the last {0} days (shows up to {1} records).</value>
+  </data>
+  <data name="MORELOGS" xml:space="preserve">
+    <value>More logs</value>
+  </data>
+  <data name="GEONOTAVAILABLE" xml:space="preserve">
+    <value>Unfortunately, we are not able generate any %p% for your country at the moment</value>
+  </data>
+  <data name="LOGINTEXT" xml:space="preserve">
+    <value>Log In</value>
+  </data>
+  <data name="SORRYCOUNTRY" xml:space="preserve">
+    <value>Sorry, we are currently not available in your country</value>
+  </data>
+  <data name="PRICEPERUNIT" xml:space="preserve">
+    <value>Price per unit</value>
+  </data>
+  <data name="YOUMUSTBELOGGED" xml:space="preserve">
+    <value>You must be logged in to earn %p%</value>
+  </data>
+  <data name="FRAUDINFO" xml:space="preserve">
+    <value>Sorry, your account has been suspended, we have identified something unusual. %a%Contact us%b% for more information.</value>
+  </data>
+  <data name="ERRORAPI" xml:space="preserve">
+    <value>ERROR: Unable to connect to</value>
+  </data>
+  <data name="EMAILNOTINDATABASE" xml:space="preserve">
+    <value>We don't have such email address in the database</value>
+  </data>
+  <data name="PASSWORDLINKSENT" xml:space="preserve">
+    <value>We have sent an email with further instructions on given email address. Check your mailbox</value>
+  </data>
+  <data name="REQUESTEXPIRED" xml:space="preserve">
+    <value>This password request has expired. Please issue a new one</value>
+  </data>
+  <data name="ST_RESET" xml:space="preserve">
+    <value>Your password has been reset</value>
+  </data>
+  <data name="PLAYLIST" xml:space="preserve">
+    <value>Playlist</value>
+  </data>
+  <data name="VIDEOS" xml:space="preserve">
+    <value>videos</value>
+  </data>
+  <data name="NEXTVIDEO" xml:space="preserve">
+    <value>Next video</value>
+  </data>
+  <data name="PREVIOUSVIDEO" xml:space="preserve">
+    <value>Previous video</value>
+  </data>
+  <data name="TRYAGAIN" xml:space="preserve">
+    <value>Please try again in a few minutes</value>
+  </data>
+  <data name="CHAT" xml:space="preserve">
+    <value>Chat</value>
+  </data>
+  <data name="CLICKTOCOMPLETE" xml:space="preserve">
+    <value>Click to see the offer</value>
+  </data>
+  <data name="EVENTS" xml:space="preserve">
+    <value>Events</value>
+  </data>
+  <data name="OFFERNOTAVAIL" xml:space="preserve">
+    <value>Sorry, this offer is not available for you</value>
+  </data>
+  <data name="LOGS" xml:space="preserve">
+    <value>Logs</value>
+  </data>
+  <data name="MONEY" xml:space="preserve">
+    <value>Money</value>
+  </data>
+  <data name="TE" xml:space="preserve">
+    <value>Traffic Exchange</value>
+  </data>
+  <data name="BALANCELOG" xml:space="preserve">
+    <value>Balance Logs</value>
+  </data>
+  <data name="HISTORYLOG" xml:space="preserve">
+    <value>History Logs</value>
+  </data>
+  <data name="LATEST" xml:space="preserve">
+    <value>Latest</value>
+  </data>
+  <data name="TESHORT" xml:space="preserve">
+    <value>Traffic X</value>
+  </data>
+  <data name="MONEYSENT" xml:space="preserve">
+    <value>The money has been sent to your %p% account.</value>
+  </data>
+  <data name="THISWEBSITE" xml:space="preserve">
+    <value>This website</value>
+  </data>
+  <data name="ANONDIRECT" xml:space="preserve">
+    <value>Anonymous / Direct</value>
+  </data>
+  <data name="NOWPLAYING" xml:space="preserve">
+    <value>Now playing</value>
+  </data>
+  <data name="VIDEOINFO" xml:space="preserve">
+    <value>Get paid for watching your favourite videos.</value>
+  </data>
+</root>

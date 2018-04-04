@@ -1,0 +1,49 @@
+.brand .logo {
+    border: 14px solid transparent;
+    border-color: #4DCACA #31A3A3 #1D8888;
+    width: 28px;
+    height: 28px;
+    position: relative;
+    font-size: 0;
+    margin-right: 10px;
+    top: -9px;
+}
+
+.login-cover-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Custom Media Queries */
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    .login.login-v2 {
+        left: 0;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+    
+}
+
+@media only screen and (max-width : 350px) {
+
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+  
+}
+

@@ -1,0 +1,710 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ALLBETS" xml:space="preserve">
+    <value>Tous les paris</value>
+  </data>
+  <data name="AVATAR" xml:space="preserve">
+    <value>Avatar</value>
+  </data>
+  <data name="AVATARVALIDATOR" xml:space="preserve">
+    <value>Les dimensions de l'avatar doivent être égales ou inférieures à 100x100px</value>
+  </data>
+  <data name="BET" xml:space="preserve">
+    <value>Pari</value>
+  </data>
+  <data name="BETAMOUNT" xml:space="preserve">
+    <value>Montant du pari</value>
+  </data>
+  <data name="BETID" xml:space="preserve">
+    <value>Pari Id</value>
+  </data>
+  <data name="BETTOOLOW" xml:space="preserve">
+    <value>Votre pari doit être supérieur à</value>
+  </data>
+  <data name="BITCOINBALANCE" xml:space="preserve">
+    <value>Votre solde BitCoin:</value>
+  </data>
+  <data name="BITCOINBALANCETOOLOW" xml:space="preserve">
+    <value>Votre solde  BitCoin est trop faible</value>
+  </data>
+  <data name="CHANCEBELOWZERO" xml:space="preserve">
+    <value>Votre chance de gagner doit être supérieure à 0</value>
+  </data>
+  <data name="CHANCETOOHIGH" xml:space="preserve">
+    <value>Chance de gagner doit être inférieur à Max Win Chance</value>
+  </data>
+  <data name="CLICKTOWATCH" xml:space="preserve">
+    <value>Cliquez pour regarder l'annonce</value>
+  </data>
+  <data name="DICE" xml:space="preserve">
+    <value>Dice Game</value>
+  </data>
+  <data name="DICEGAMEDESCRIPTION" xml:space="preserve">
+    <value>Pariez pour gagner des BTC supplémentaires</value>
+  </data>
+  <data name="DIVEST" xml:space="preserve">
+    <value>Divest</value>
+  </data>
+  <data name="DIVESTALL" xml:space="preserve">
+    <value>Divest All</value>
+  </data>
+  <data name="DIVESTALLCONFIRMATION" xml:space="preserve">
+    <value>Voulez-vous vraiment céder tous vos placements?</value>
+  </data>
+  <data name="DIVESTAMOUNT" xml:space="preserve">
+    <value>Donner des fonds</value>
+  </data>
+  <data name="DIVESTCONFIRMATION" xml:space="preserve">
+    <value>Êtes-vous sûr de vouloir donner</value>
+  </data>
+  <data name="DIVESTDESCRIPTION" xml:space="preserve">
+    <value>Get your investment back into your balance. Specify the Kelly level that you used for investing.</value>
+  </data>
+  <data name="DIVESTKELLYINFO" xml:space="preserve">
+    <value>Unless you choose to divest all of your investments, you have to provide the same Kelly Level that you used for investing.</value>
+  </data>
+  <data name="DIVESTTOOHIGH" xml:space="preserve">
+    <value>Vous ne pouvez pas donner plus que votre montant total d'investissement.</value>
+  </data>
+  <data name="HI" xml:space="preserve">
+    <value>SALUT</value>
+  </data>
+  <data name="HOUSEPROFITTOOLOW" xml:space="preserve">
+    <value>Le profit doit être plus élevé</value>
+  </data>
+  <data name="INVALIDAVATAR" xml:space="preserve">
+    <value>Avatar image non valide</value>
+  </data>
+  <data name="INVEST" xml:space="preserve">
+    <value>Investir</value>
+  </data>
+  <data name="INVESTALL" xml:space="preserve">
+    <value>Investir tous</value>
+  </data>
+  <data name="INVESTAllCONFIRMATION" xml:space="preserve">
+    <value>Voulez-vous vraiment investir tous vos BitCoins?</value>
+  </data>
+  <data name="INVESTAMOUNT" xml:space="preserve">
+    <value>Montant Investissement</value>
+  </data>
+  <data name="INVESTCONFIRMATION" xml:space="preserve">
+    <value>Êtes-vous sûr de vouloir investir</value>
+  </data>
+  <data name="INVESTDESCRITPION" xml:space="preserve">
+    <value>Vous obtenez tous les gains du site, mais vous prenez également des pertes.</value>
+  </data>
+  <data name="INVESTMENTTOOLOW" xml:space="preserve">
+    <value>Vous ne pouvez pas investir 0 BitCoins ou moins </value>
+  </data>
+  <data name="KELLYERROR" xml:space="preserve">
+    <value>Kelly Level has to be greater than 0 and lower than</value>
+  </data>
+  <data name="KELLYINFO" xml:space="preserve">
+    <value>Insert Kelly Level (integer)</value>
+  </data>
+  <data name="KELLYLEVEL" xml:space="preserve">
+    <value>Kelly Level</value>
+  </data>
+  <data name="LASTCLIENTSEED" xml:space="preserve">
+    <value>Your client seed for that server seed was:</value>
+  </data>
+  <data name="LENDSOME" xml:space="preserve">
+    <value>Lend some of your BitCoin balance to the site for use as bankroll.</value>
+  </data>
+  <data name="LASTSERVERHASH" xml:space="preserve">
+    <value>The Last server seed hash was:</value>
+  </data>
+  <data name="LASTSERVERSEED" xml:space="preserve">
+    <value>The Last server seed was:</value>
+  </data>
+  <data name="LO" xml:space="preserve">
+    <value>LO</value>
+  </data>
+  <data name="MAXDIGITSINFO" xml:space="preserve">
+    <value>Insert amount with up to 8 decimal points.</value>
+  </data>
+  <data name="MAXKELLYINFO" xml:space="preserve">
+    <value>Max Kelly level is</value>
+  </data>
+  <data name="MAXPROFIT" xml:space="preserve">
+    <value>Profit maximum:</value>
+  </data>
+  <data name="MULTIPLIER" xml:space="preserve">
+    <value>Multiplier</value>
+  </data>
+  <data name="MULTIPLIERBELOWZERO" xml:space="preserve">
+    <value>Le multiplicateur doit être supérieur à 0</value>
+  </data>
+  <data name="MYBETS" xml:space="preserve">
+    <value>Mes paris</value>
+  </data>
+  <data name="NEWSERVERHASH" xml:space="preserve">
+    <value>We've picked a new server seed with this hash:</value>
+  </data>
+  <data name="NOBITCOINS" xml:space="preserve">
+    <value>Vous n'avez pas de BitCoins</value>
+  </data>
+  <data name="NUMBEROFROLLS" xml:space="preserve">
+    <value>The number of rolls you made with the last client seed is:</value>
+  </data>
+  <data name="OFFERWALLSINCLICKCONTEST" xml:space="preserve">
+    <value>Offerwalls inclus dans le concours</value>
+  </data>
+  <data name="PROFIT" xml:space="preserve">
+    <value>Bénéfice</value>
+  </data>
+  <data name="PROFITBELOWZERO" xml:space="preserve">
+    <value>Profit must be higher than 0</value>
+  </data>
+  <data name="PROFITTOOHIGH" xml:space="preserve">
+    <value>Le bénéfice doit être inférieur à</value>
+  </data>
+  <data name="RANDOMIZE" xml:space="preserve">
+    <value>Randomize</value>
+  </data>
+  <data name="RANDOMIZEROLLS" xml:space="preserve">
+    <value>Randomize your rolls</value>
+  </data>
+  <data name="RERANDOMIZESEED" xml:space="preserve">
+    <value>Type up to 24 random digits (0 through 9) to re-randomize with your own seed:</value>
+  </data>
+  <data name="ROLL" xml:space="preserve">
+    <value>Roll</value>
+  </data>
+  <data name="SITESBANKROLL" xml:space="preserve">
+    <value>Site's bankroll</value>
+  </data>
+  <data name="TARGET" xml:space="preserve">
+    <value>Cible</value>
+  </data>
+  <data name="THEFEE" xml:space="preserve">
+    <value>Les frais de transfert sont de %n% et sont payés par le destinataire</value>
+    <comment>Leave %n% unchanged</comment>
+  </data>
+  <data name="TIMELEFT" xml:space="preserve">
+    <value>Temps restant</value>
+  </data>
+  <data name="BITCOINS" xml:space="preserve">
+    <value>Bitcoins</value>
+  </data>
+  <data name="USER" xml:space="preserve">
+    <value>Utilisateur</value>
+  </data>
+  <data name="WINCHANCE" xml:space="preserve">
+    <value>Gagner des chances</value>
+  </data>
+  <data name="YOURINVESTMENTS" xml:space="preserve">
+    <value>Vos investissements</value>
+  </data>
+  <data name="DIVESTTOOLOW" xml:space="preserve">
+    <value>Vous ne pouvez pas donner 0 BTC ou moins</value>
+  </data>
+  <data name="MAXWINCHANCE" xml:space="preserve">
+    <value>Max Win Chance</value>
+  </data>
+  <data name="WITHKELLY" xml:space="preserve">
+    <value>With Kelly Level set to</value>
+  </data>
+  <data name="CLIENTSEEDNOTVALID1" xml:space="preserve">
+    <value>Your client seed must be 24 digits-long.</value>
+  </data>
+  <data name="CLIENTSEEDNOTVALID2" xml:space="preserve">
+    <value>The client seed can only consist of digits.</value>
+  </data>
+  <data name="DEPOSITBTCDESCRIPTION" xml:space="preserve">
+    <value>Pour déposer, envoyez Bitcoins à l'adresse indiquée ci-dessous. %n% Notez que votre dépôt aura besoin de %p% de confirmation avant d'être crédité sur votre compte.</value>
+    <comment>Leave %n% and %p% unchanged</comment>
+  </data>
+  <data name="DEPOSIT" xml:space="preserve">
+    <value>Dépôt</value>
+  </data>
+  <data name="DEPOSITUNAVAILABLE" xml:space="preserve">
+    <value>La fonctionnalité de dépôt BTC n'est pas disponible pour le moment.</value>
+  </data>
+  <data name="ROLLERROR" xml:space="preserve">
+    <value>Something went wrong, please try again</value>
+  </data>
+  <data name="ROLLERRORLOG" xml:space="preserve">
+    <value>RollTheDice: value lower than 0 or higher than 100</value>
+  </data>
+  <data name="INVALIDSHOUTBOXCOMMAND" xml:space="preserve">
+    <value>Invalid Shoutbox command</value>
+  </data>
+  <data name="TIPFROM" xml:space="preserve">
+    <value>Tip from</value>
+  </data>
+  <data name="TIPPED" xml:space="preserve">
+    <value>Prévenus</value>
+  </data>
+  <data name="SUCCESSFULTIP" xml:space="preserve">
+    <value>You have successfully tipped %n% BTC to</value>
+    <comment>Leave %n% unchanged</comment>
+  </data>
+  <data name="COMMANDWARNING" xml:space="preserve">
+    <value>To enable commands, type /enableCommands. Note that some commands may result in money loss.</value>
+  </data>
+  <data name="COMMANDSENABLED" xml:space="preserve">
+    <value>Les commandes sont maintenant activées!</value>
+  </data>
+  <data name="MUSTTIPMORETHANZERO" xml:space="preserve">
+    <value>Your tip must be greater than 0 and up to 8 decimal points</value>
+  </data>
+  <data name="FORUMCONTEST" xml:space="preserve">
+    <value>Concours du Forum</value>
+  </data>
+  <data name="ACCOUNTFIELDNOTBLANK" xml:space="preserve">
+    <value>Le champ Compte ne peut pas être vide</value>
+  </data>
+  <data name="LPAINFO" xml:space="preserve">
+    <value>LPA - Last Pointable Activity (date of last action, that brought you some points. E.g. offerwall completion)</value>
+  </data>
+  <data name="PEINFO" xml:space="preserve">
+    <value>PE - Points gagnés. Nombre total de points que cette filleule vous a valu.</value>
+  </data>
+  <data name="DISABLEADBLOCK" xml:space="preserve">
+    <value>Aaghh ... Il semble que vous utilisez un adblock</value>
+  </data>
+  <data name="DISABLEADBLOCKINFO" xml:space="preserve">
+    <value>Avec adblock activé,%n% est incapable d'afficher la plupart du contenu. Veuillez vous assurer de désactiver vous adblock sur %n% pour profiter pleinement de nos services.</value>
+    <comment>Leave %n% unchanged</comment>
+  </data>
+  <data name="POWEREDBY" xml:space="preserve">
+    <value>Propulsé par</value>
+    <comment>Powered by Titan</comment>
+  </data>
+  <data name="ADPACKDESCRIPTION1" xml:space="preserve">
+    <value>Visites sur des annonces PTC sans valeur, durée</value>
+  </data>
+  <data name="CONSTANTBANNER" xml:space="preserve">
+    <value>Impressions de bannières constantes %n% </value>
+    <comment>Leave %n% unchanged</comment>
+  </data>
+  <data name="CREATENEWADS" xml:space="preserve">
+    <value>Nouvelle publicité</value>
+  </data>
+  <data name="NORMALBANNER" xml:space="preserve">
+    <value>Impression bannière normale %n%</value>
+    <comment>Leave %n% unchanged</comment>
+  </data>
+  <data name="ADAWAITSAPPROVAL" xml:space="preserve">
+    <value>La publicité a été créée avec succès. elle sera disponible une fois qu'elle aura été approuvé par l'administrateur.</value>
+  </data>
+  <data name="BANNER" xml:space="preserve">
+    <value>Bannière</value>
+  </data>
+  <data name="CREATE" xml:space="preserve">
+    <value>Créer</value>
+  </data>
+  <data name="WATCHEDADPACKSADVERT" xml:space="preserve">
+    <value>Vous avez visionné %n% annonces aujourd'hui</value>
+    <comment>Leave %n% unchanged</comment>
+  </data>
+  <data name="CREATENEWCAMPAIGN" xml:space="preserve">
+    <value>Créer une nouvelle campagne</value>
+  </data>
+  <data name="ADVERTISEMENTS" xml:space="preserve">
+    <value>Annonces</value>
+  </data>
+  <data name="BUYADPACKDESCRIPTION" xml:space="preserve">
+    <value>Achetez %n% Publicités et obtenez une partie de notre chiffre d'affaires en un rien de temps.</value>
+    <comment>Leave %n% unchanged</comment>
+  </data>
+  <data name="CONSTANTBANNERNOTUPLOADED" xml:space="preserve">
+    <value>Vous n'avez pas envoyé de bannière %n%. Vous ne recevrez pas d'impressions pour cette bannière</value>
+    <comment>Leave %n% unchanged</comment>
+  </data>
+  <data name="NEWADPACKSADDESCRIPTION" xml:space="preserve">
+    <value>Créez une nouvelle annonce pour votre %n%. Les bannières ne sont pas obligatoires, mais le téléchargement vous permettra de profiter pleinement de %n%. Notez que de nouvelles publicités seront disponibles après approbation de l'administrateur.</value>
+    <comment>Leave %n% and %p% unchanged</comment>
+  </data>
+  <data name="NOADS" xml:space="preserve">
+    <value>Vous n'avez aucune publicité.</value>
+  </data>
+  <data name="NORMALBANNERNOTUPLOADED" xml:space="preserve">
+    <value>Vous n'avez pas envoyé de bannière %n%. Vous ne recevrez pas d'impressions pour cette bannière</value>
+    <comment>Leave %n% unchanged</comment>
+  </data>
+  <data name="NUMBEROFPACKS" xml:space="preserve">
+    <value>Nombre de %n%</value>
+    <comment>Leave %n% unchanged</comment>
+  </data>
+  <data name="CHECKURL" xml:space="preserve">
+    <value>Veuillez vérifier l'URL en utilisant le validateur</value>
+  </data>
+  <data name="URLCHECKBAD" xml:space="preserve">
+    <value>Désolé, cette URL semble invalide</value>
+  </data>
+  <data name="URLCHECKCLOSE" xml:space="preserve">
+    <value>Fermer pour terminer la validation</value>
+  </data>
+  <data name="URLCHECKEROK" xml:space="preserve">
+    <value>L'URL est valide</value>
+  </data>
+  <data name="CHECKURLTEXT" xml:space="preserve">
+    <value>Vérifier URL</value>
+  </data>
+  <data name="BUYADPACKSUCCESS" xml:space="preserve">
+    <value>Vous avez acheté avec succès %n% %p%</value>
+    <comment>Leave %n% and %p% unchanged</comment>
+  </data>
+  <data name="ADPACKEARNMAINDESCRIPTION" xml:space="preserve">
+    <value>You need to view at least %n% ads every day to take part in our revenue.</value>
+    <comment>Leave %n% unchanged</comment>
+  </data>
+  <data name="ADPACKMAINDESCRIPTION" xml:space="preserve">
+    <value>Créez du trafic sur votre site Web et gagnez de l'argent en même temps.</value>
+  </data>
+  <data name="ADPACKINFO" xml:space="preserve">
+    <value>Afficher des annonces pour générer des revenus à partir de votre %n%</value>
+    <comment>Leave %n% unchanged</comment>
+  </data>
+  <data name="RETURNEDMONEY" xml:space="preserve">
+    <value>%n% de sa valeur retournée en argent</value>
+    <comment>Leave %n% unchanged</comment>
+  </data>
+  <data name="CASHLINKS" xml:space="preserve">
+    <value>Cash Links</value>
+  </data>
+  <data name="CASHLINKSINFO" xml:space="preserve">
+    <value>Gagnez de l'argent supplémentaire sans investissement</value>
+  </data>
+  <data name="CLAIM" xml:space="preserve">
+    <value>Demander</value>
+  </data>
+  <data name="CREATEGROUPS" xml:space="preserve">
+    <value>Create groups</value>
+  </data>
+  <data name="JOINGROUP" xml:space="preserve">
+    <value>Rejoindre le groupe</value>
+  </data>
+  <data name="CANTCREATEGROUPOFTHISTYPE" xml:space="preserve">
+    <value>Vous ne pouvez pas créer un groupe de type spécifié</value>
+  </data>
+  <data name="CREATOR" xml:space="preserve">
+    <value>Créateur</value>
+  </data>
+  <data name="DAILYPROFITRAISEDBY" xml:space="preserve">
+    <value>Le bénéfice quotidien</value>
+  </data>
+  <data name="PACKSREQUIRED" xml:space="preserve">
+    <value>%n% requis</value>
+    <comment>Leave %n% unchanged</comment>
+  </data>
+  <data name="MOREADPACKSREQUIRED" xml:space="preserve">
+    <value>Vous devez ajouter au moins %n% %p% pour créer le groupe sélectionné</value>
+    <comment>Leave %n% and %p% unchanged</comment>
+  </data>
+  <data name="PACKSREQUIREDTOACCELERATE" xml:space="preserve">
+    <value>%n% nécessaire pour fermer</value>
+    <comment>Leave %n% unchanged</comment>
+  </data>
+  <data name="PACKSREQUIREDTOOPEN" xml:space="preserve">
+    <value>%n% nécessaire pour ouvrir</value>
+    <comment>Leave %n% unchanged</comment>
+  </data>
+  <data name="TOOMANYPACKS" xml:space="preserve">
+    <value>Le montant maximum de %n%  que vous pouvez acheter pour ce groupe est</value>
+    <comment>Leave %n% unchanged</comment>
+  </data>
+  <data name="ACTIONS" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="GROUPCREATOR" xml:space="preserve">
+    <value>Créateur du groupe</value>
+  </data>
+  <data name="MYADPACKS" xml:space="preserve">
+    <value>Mes %n%</value>
+    <comment>Leave %n% unchanged</comment>
+  </data>
+  <data name="MONEYRETURNED" xml:space="preserve">
+    <value>Argent retourné</value>
+  </data>
+  <data name="CANTBUYZEROADPACKS" xml:space="preserve">
+    <value>Le nombre de %n% doit être supérieur à 0</value>
+    <comment>Leave %n% unchanged</comment>
+  </data>
+  <data name="GROUPS" xml:space="preserve">
+    <value>Groupes</value>
+  </data>
+  <data name="LISTOF" xml:space="preserve">
+    <value>Liste de</value>
+  </data>
+  <data name="NOSTATS" xml:space="preserve">
+    <value>Aucune statistique à afficher</value>
+  </data>
+  <data name="NOTMEMBEROFGROUP" xml:space="preserve">
+    <value>Vous n'êtes pas membre d'un groupe créé par l'utilisateur.</value>
+  </data>
+  <data name="ALL" xml:space="preserve">
+    <value>Tout</value>
+  </data>
+  <data name="AVAILABLE" xml:space="preserve">
+    <value>Disponible</value>
+  </data>
+  <data name="CREATEGROUPSUCCESS" xml:space="preserve">
+    <value>Vous avez créé avec succès  %n% Group avec %p%. L'URL de votre groupe est: %u%</value>
+    <comment>Leave %n%, %p% and %u% unchanged</comment>
+  </data>
+  <data name="EMAIL" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="FACEBOOKPROFILE" xml:space="preserve">
+    <value>URL du profil Facebook</value>
+  </data>
+  <data name="NOTENOUGHADPACKSAVAILABLEFORGROUPS" xml:space="preserve">
+    <value>Vous n'avez pas assez de %n% disponible</value>
+    <comment>Leave %n%</comment>
+  </data>
+  <data name="PHONE" xml:space="preserve">
+    <value>Téléphone</value>
+  </data>
+  <data name="PICTURE" xml:space="preserve">
+    <value>Photo</value>
+  </data>
+  <data name="SKYPE" xml:space="preserve">
+    <value>Skype</value>
+  </data>
+  <data name="VIDEOURL" xml:space="preserve">
+    <value>URL de la vidéo</value>
+  </data>
+  <data name="CONTACTME" xml:space="preserve">
+    <value>Contactez moi</value>
+  </data>
+  <data name="ENTERREQUIREDFIELDS" xml:space="preserve">
+    <value>S'il vous plaît remplir tous les champs</value>
+  </data>
+  <data name="INVALIDIFRAME" xml:space="preserve">
+    <value>L'URL de la vidéo doit être une iframe valide.</value>
+  </data>
+  <data name="INVALIDPICTURE" xml:space="preserve">
+    <value>Image incorrecte</value>
+  </data>
+  <data name="JOINGROUPSUCCESS" xml:space="preserve">
+    <value>Vous avez rejoint avec succès %n% &gt;Groupe avec %p%</value>
+  </data>
+  <data name="JOINLEAVE" xml:space="preserve">
+    <value>Rejoindre / Quitter</value>
+  </data>
+  <data name="LEAVEGROUP" xml:space="preserve">
+    <value>Quitter le groupe</value>
+  </data>
+  <data name="OPENGROUP" xml:space="preserve">
+    <value>Groupe ouvert</value>
+  </data>
+  <data name="YOUMUSTCLOSEGROUPS" xml:space="preserve">
+    <value>Vous devez fermer au moins un de vos groupes avant d'en ouvrir un nouveau</value>
+  </data>
+  <data name="NOOPENGROUPS" xml:space="preserve">
+    <value>Il n'y a pas de groupes ouverts</value>
+  </data>
+  <data name="CLOSEDGROUPS" xml:space="preserve">
+    <value>Groupes fermés</value>
+  </data>
+  <data name="LEAVEGROUPSUCCESS" xml:space="preserve">
+    <value>Vous avez retiré avec succès %n% %p%</value>
+    <comment>Leave %n% and %p% unchanged</comment>
+  </data>
+  <data name="MYGROUPS" xml:space="preserve">
+    <value>Mes groupes</value>
+  </data>
+  <data name="NOCLOSEDGROUPS" xml:space="preserve">
+    <value>There is no group history</value>
+  </data>
+  <data name="NUMBEROFPARTICIPANTS" xml:space="preserve">
+    <value>Nombre de participants</value>
+  </data>
+  <data name="OPENGROUPS" xml:space="preserve">
+    <value>Groupes ouverts</value>
+  </data>
+  <data name="TOADD" xml:space="preserve">
+    <value>à ajouter</value>
+  </data>
+  <data name="TOWITHDRAW" xml:space="preserve">
+    <value>se retirer</value>
+  </data>
+  <data name="VACATIONINFO2" xml:space="preserve">
+    <value>Lorsque votre compte est en mode vacances: &lt;br/&gt; &lt;br/&gt; 1. Vous ne pouvez pas retirer votre argent. &lt;br/&gt; 2. Vous ne serez pas facturé pour votre inactivité. &lt;br/&gt; 3. Votre compte n'expire pas.</value>
+  </data>
+  <data name="STARTSURFING" xml:space="preserve">
+    <value>Commencez à surfer</value>
+  </data>
+  <data name="CPAGPT" xml:space="preserve">
+    <value>Offres CPA/GPT</value>
+  </data>
+  <data name="CPAGPT1" xml:space="preserve">
+    <value>Avant de soumettre - assurez-vous que vous avez compris et achevé tout comme l'annonceur voulait</value>
+  </data>
+  <data name="CPAGPT2" xml:space="preserve">
+    <value>Si vous recevez trop de soumissions refusées, vous risquez d'obtenir &lt;b&gt; une interdiction permanente &lt;/b&gt;</value>
+  </data>
+  <data name="CPAGPT3" xml:space="preserve">
+    <value>Si l'une de vos offres quotidiennes est refusée, vous ne pourrez plus jamais soumettre cette offre</value>
+  </data>
+  <data name="TRAFFICBALANCE" xml:space="preserve">
+    <value>Traffic balance</value>
+  </data>
+  <data name="UNLIMITED" xml:space="preserve">
+    <value>Illimité</value>
+  </data>
+  <data name="LOGINADPURCHASE" xml:space="preserve">
+    <value>Achat Login Ad</value>
+  </data>
+  <data name="LOGINADS" xml:space="preserve">
+    <value>Login Ads</value>
+  </data>
+  <data name="CANBEVIEWEDEVERY" xml:space="preserve">
+    <value>Peut être consulté tous les</value>
+  </data>
+  <data name="MINUTES" xml:space="preserve">
+    <value>min</value>
+  </data>
+  <data name="GROUPSINFO" xml:space="preserve">
+    <value>Gagnez de l'argent plus rapidement en rejoignant ou en créant des groupes.</value>
+  </data>
+  <data name="NOADSAVAILABLEFORUSER" xml:space="preserve">
+    <value>Il n'y a pas d'annonces disponibles pour vous en ce moment</value>
+  </data>
+  <data name="SELECTDIFFERENTDISPLAYDATE" xml:space="preserve">
+    <value>Veuillez sélectionner une date d'affichage différente</value>
+  </data>
+  <data name="GOTODASHBOARD" xml:space="preserve">
+    <value>Retour a l'admin</value>
+  </data>
+  <data name="THANKSFORVIEWINGTHISAD" xml:space="preserve">
+    <value>Merci d'avoir regarder cette annonce</value>
+  </data>
+  <data name="NOCAMPAIGN" xml:space="preserve">
+    <value>Achat sans campagne</value>
+  </data>
+  <data name="CURRENTAUTOMATICGROUPDESC1" xml:space="preserve">
+    <value>You are currently in Group number %a% - your daily money return is accelerated by %b%%.</value>
+    <comment>Leave %a% and %b% unchanged</comment>
+  </data>
+  <data name="CURRENTAUTOMATICGROUPDESC2" xml:space="preserve">
+    <value>Achetez au moins %a% %b% pour accélérer votre retour d'argent par %c%%</value>
+    <comment>Leave %a%, %b% and %c% unchanged</comment>
+  </data>
+  <data name="CUSTOMGROUPCLOSED" xml:space="preserve">
+    <value>Ce groupe a été fermé</value>
+  </data>
+  <data name="ADCREATEDBYADMIN" xml:space="preserve">
+    <value>La publicité a été créée avec succès.</value>
+  </data>
+</root>

@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="LEVELDOWNGRADED" xml:space="preserve">
+    <value>Herabgestuft auf</value>
+  </data>
+  <data name="ADPACKSREQUIRED" xml:space="preserve">
+    <value>Sie müssen {0} kaufen um diese Funktion zu aktivieren.</value>
+  </data>
+  <data name="LOGINADSCREDITS" xml:space="preserve">
+    <value>Login Anzeigen Gutschriften</value>
+  </data>
+  <data name="MAXSIZE" xml:space="preserve">
+    <value>Max Bildgröße ist {0}x{1}px.</value>
+  </data>
+  <data name="MOSTVOTED" xml:space="preserve">
+    <value>Meist gewählt</value>
+  </data>
+  <data name="UPGRADED" xml:space="preserve">
+    <value>Upgraded zu</value>
+  </data>
+  <data name="OFPRICE" xml:space="preserve">
+    <value>des Preises?5008</value>
+  </data>
+  <data name="USELOGINADSCREDITS" xml:space="preserve">
+    <value>Verwende Anzeigen Gutschrift</value>
+  </data>
+  <data name="WEEKLYLIMITERROR" xml:space="preserve">
+    <value>Sie können nicht Ihr wöchentliches Auszahlungslimit überschreiten ({0}). Sie haben diese Woche bereits {1} ausgezahlt bekommen.</value>
+  </data>
+  <data name="WITHDRAWLIMITENLARGEDBY" xml:space="preserve">
+    <value>Maximaler Auszahlungsbetrag verändert durch</value>
+  </data>
+  <data name="RECEIPTS" xml:space="preserve">
+    <value>Bestätigungen</value>
+  </data>
+  <data name="RECEIPTSINFO" xml:space="preserve">
+    <value>Betrachten und Download der Bestätigungen über den Kauf von Produkten.</value>
+  </data>
+  <data name="EDITED" xml:space="preserve">
+    <value>Editiert</value>
+  </data>
+  <data name="BUYFORREFERRAL" xml:space="preserve">
+    <value>Kauf im Namen des Empfehlungsnehmers</value>
+  </data>
+  <data name="CANTBUYADPACKFORTHISUSER" xml:space="preserve">
+    <value>Das Maximale {1} welches Sie für einen Kunden kaufen können, ist {0}.</value>
+  </data>
+  <data name="SORRYDOWNGRADE" xml:space="preserve">
+    <value>Leider ist Ihr Status herabgestuft worden</value>
+  </data>
+  <data name="SORRYDOWNGRADETO" xml:space="preserve">
+    <value>Ihr Status wurde herabgestuft auf</value>
+  </data>
+  <data name="DRLIMITENLARGEDBY" xml:space="preserve">
+    <value>Direkter Empfehlungsbonus Limit vergrößert durch</value>
+  </data>
+  <data name="REWARDS" xml:space="preserve">
+    <value>Belohnungen</value>
+  </data>
+  <data name="SIGNATURE" xml:space="preserve">
+    <value>Unterschrift</value>
+  </data>
+  <data name="TESTIMONIALS" xml:space="preserve">
+    <value>Referenzen</value>
+  </data>
+  <data name="LEAVEFEEDBACK" xml:space="preserve">
+    <value>Gefällt Ihnen unser Angebot? Schreiben Sie uns und teilen Sie uns Ihre Erfahrungen mit.</value>
+  </data>
+  <data name="THANKSFORFEEDBACK" xml:space="preserve">
+    <value>Wir bedanken uns für Ihr Feedback</value>
+  </data>
+  <data name="TOTALVIEWS" xml:space="preserve">
+    <value>Gesamte Betrachtungen</value>
+  </data>
+  <data name="TOTALVIEWSDESC" xml:space="preserve">
+    <value>Betrachtungen - immer erhaltene Betrachtungen</value>
+  </data>
+  <data name="WALLETID" xml:space="preserve">
+    <value>Wallet ID</value>
+  </data>
+  <data name="MUSTUPGRADE" xml:space="preserve">
+    <value>Sie brauchen zuerst ein Upgrade für Ihr Konto</value>
+  </data>
+  <data name="CASHBALANCE" xml:space="preserve">
+    <value>Verfügbares Guthaben</value>
+  </data>
+  <data name="MUSTCONNECTFB" xml:space="preserve">
+    <value>Sie müssen sich zuerst mit Ihrem Facebook Konto verbinden.</value>
+  </data>
+  <data name="POINTSREVERSED" xml:space="preserve">
+    <value>{0} rückgängig gemacht.</value>
+  </data>
+  <data name="NOADPACKTYPES" xml:space="preserve">
+    <value>Es sind keine {0} Produkttypen zur Zeit verfügbar.</value>
+  </data>
+</root>

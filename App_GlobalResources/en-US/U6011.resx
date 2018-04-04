@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="REGISTERSPAMNOTE" xml:space="preserve">
+    <value>Note: After complete registration make sure you verify also the Spam Folder to find your Account Activation Link. Welcome!</value>
+  </data>
+  <data name="ACCOUNTACTIVATION" xml:space="preserve">
+    <value>Account Activation</value>
+  </data>
+  <data name="ACTIVATIONINFO" xml:space="preserve">
+    <value>To get access to all functions of {0} you have to pay one-time activation fee.</value>
+  </data>
+  <data name="NOACTIVEPAYMENTPROCESSORS" xml:space="preserve">
+    <value>There are no payment processors available in the system right now. Please contact the administrator.</value>
+  </data>
+  <data name="WEBSITEDONTALLOWIFRAME" xml:space="preserve">
+    <value>This website doesn't allow to be displayed in iframe</value>
+  </data>
+  <data name="CANTBUYZEROCRYPTOCURRENCY" xml:space="preserve">
+    <value>You can't buy 0 cryptocurrency.</value>
+  </data>
+  <data name="CANTSELLZEROCRYPTOCURRENCY" xml:space="preserve">
+    <value>You can't sell 0 cryptocurrency.</value>
+  </data>
+  <data name="NOPERMISSIONS" xml:space="preserve">
+    <value>You don't have permission to display this content on this domain.</value>
+  </data>
+  <data name="UNAUTHORIZED" xml:space="preserve">
+    <value>Unauthorized</value>
+  </data>
+  <data name="ACTIVATE" xml:space="preserve">
+    <value>Activate</value>
+  </data>
+  <data name="ACTIVATIONFEEPAID" xml:space="preserve">
+    <value>Your account has been activated. You will be redirected in 5 seconds.</value>
+  </data>
+  <data name="HERE" xml:space="preserve">
+    <value>here</value>
+  </data>
+  <data name="YOUCANDEPOSITCASH" xml:space="preserve">
+    <value>You can deposit cash</value>
+  </data>
+  <data name="YOUCANPAYVIACASHBALANCE" xml:space="preserve">
+    <value>You can also pay via Cash Balance, but now you do not have enough credits.</value>
+  </data>
+  <data name="MEMBERSHIPMAXWITDRAWAL" xml:space="preserve">
+    <value>Membership - Maximum withdrawal of deposited amount</value>
+  </data>
+  <data name="PAYMENTS" xml:space="preserve">
+    <value>Payments</value>
+  </data>
+  <data name="PAYOUTREQUESTTOOHIGH" xml:space="preserve">
+    <value>You cannot withdraw more than &lt;strong&gt;{0}&lt;/strong&gt; due to settings of {1}</value>
+  </data>
+  <data name="PROPORTIONALLIMITSPROCESSOR" xml:space="preserve">
+    <value>Proportional Limits. See more in Maximum Withdrawal tab.</value>
+  </data>
+  <data name="AWAITINGBTCCONFIRMATION" xml:space="preserve">
+    <value>We received a BTC payment from you (transaction hash: {1}). After this transaction gets {0} confirmation(s), it will be credited into your account. </value>
+  </data>
+  <data name="QUICKSTARTGUIDE" xml:space="preserve">
+    <value>{0} Quick Start Guide</value>
+  </data>
+  <data name="QUICKSTARTGUIDEINFO" xml:space="preserve">
+    <value>Please take a few seconds to follow our Quick Start Guide.</value>
+  </data>
+  <data name="ENTER" xml:space="preserve">
+    <value>Enter</value>
+  </data>
+  <data name="DESTINATIONTAG" xml:space="preserve">
+    <value>Destination Tag (optional)</value>
+  </data>
+  <data name="NOINVESTMENTPLANS" xml:space="preserve">
+    <value>There is no available plans for you right now</value>
+  </data>
+  <data name="SUCCESSUPGRADEPLAN" xml:space="preserve">
+    <value>You have successfully upgraded to {0} plan</value>
+  </data>
+  <data name="PLANBUY" xml:space="preserve">
+    <value>Select which plan you want to buy</value>
+  </data>
+  <data name="PLANUPGRADE" xml:space="preserve">
+    <value>Select plan you want to upgrade to</value>
+  </data>
+  <data name="SURFADDETAILEDDESCRIPTION" xml:space="preserve">
+    <value>1. Create a campaign on the Advertisement tab &lt;br /&gt;
+    2. Once your ad is active go to Buy Surf Ads tab.</value>
+  </data>
+  <data name="ALLREFERRALS" xml:space="preserve">
+    <value>All referrals</value>
+  </data>
+  <data name="PERONE" xml:space="preserve">
+    <value>Per one</value>
+  </data>
+  <data name="REFACTIONSUCC" xml:space="preserve">
+    <value>The AutoPay has been successfully proceed on all referrals</value>
+  </data>
+  <data name="DESKTOP" xml:space="preserve">
+    <value>Desktop</value>
+  </data>
+  <data name="MOBILE" xml:space="preserve">
+    <value>Mobile</value>
+  </data>
+  <data name="PVPJACKPOTDESCRIPTION" xml:space="preserve">
+    <value>Feeling lucky? Buy pack of games and boost your income fighting with other users!</value>
+  </data>
+  <data name="PVPJACKPOTS" xml:space="preserve">
+    <value>PvP Jackpots</value>
+  </data>
+  <data name="BATTLELOST" xml:space="preserve">
+    <value>You have lost the battle.</value>
+  </data>
+  <data name="BATTLEWON" xml:space="preserve">
+    <value>You have won the battle!</value>
+  </data>
+  <data name="BUYSTAGE" xml:space="preserve">
+    <value>Buy Pack</value>
+  </data>
+  <data name="PLAY" xml:space="preserve">
+    <value>Play</value>
+  </data>
+  <data name="PLAYGAME" xml:space="preserve">
+    <value>Play Game</value>
+  </data>
+  <data name="SEARCHINGOPPONENT" xml:space="preserve">
+    <value>Searching opponent...</value>
+  </data>
+  <data name="NOSTAGESTOPLAY" xml:space="preserve">
+    <value>You don't have any stages to play.</value>
+  </data>
+  <data name="NOCREDITSINSYSTEM" xml:space="preserve">
+    <value>The are no enough credits in system to play. Please contact the administrator.</value>
+  </data>
+  <data name="PAGE" xml:space="preserve">
+    <value>Page</value>
+  </data>
+</root>

@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ADCREATED" xml:space="preserve">
+    <value>Реклама была успешно создана</value>
+  </data>
+  <data name="AUTOMATICCASHOUTSUCC" xml:space="preserve">
+    <value>Автоматическая выплата была успешно обработана</value>
+  </data>
+  <data name="CASHOUTSUCC" xml:space="preserve">
+    <value>Выплата была успешно обработана</value>
+  </data>
+  <data name="FRIEND" xml:space="preserve">
+    <value>Новый запрос дружбы!</value>
+  </data>
+  <data name="FRIENDINFO" xml:space="preserve">
+    <value>У вас новый запрос на дружбу от %n%.  Если вы знаете его/её и хотите поместить его/её в список друзей, тогда нажмите кнопку "Подтвердить" ниже</value>
+    <comment>Оставить %n% без изменений</comment>
+  </data>
+  <data name="FRIENDOK" xml:space="preserve">
+    <value>Вы добавили нового друга</value>
+  </data>
+  <data name="ISAREADYFRIEND" xml:space="preserve">
+    <value>Этот пользователь уже является вашим другом</value>
+  </data>
+  <data name="LOGOUTOK" xml:space="preserve">
+    <value>Вы вышли из системы</value>
+  </data>
+  <data name="MESSAGESENT" xml:space="preserve">
+    <value>Ваше сообщение было отправлено</value>
+  </data>
+  <data name="PAYMENTOK" xml:space="preserve">
+    <value>Ваш платеж успешно обработан</value>
+  </data>
+  <data name="PHONESUCC" xml:space="preserve">
+    <value>Ваш телефон PIN успешно проверен</value>
+  </data>
+  <data name="PROFILEVIEWER" xml:space="preserve">
+    <value>Просмотреть профиль</value>
+  </data>
+  <data name="PROFILEVIEWERINFO" xml:space="preserve">
+    <value>Здесь вы можете просмотреть страницу профиля любого из зарегистрированных пользователей</value>
+  </data>
+  <data name="REFACTIONSUCC" xml:space="preserve">
+    <value>Ваши рефералы были успешно обновлены</value>
+  </data>
+  <data name="REFACTIONSUCC2" xml:space="preserve">
+    <value>Автооплата была успешно обработана для выбранных рефералов</value>
+  </data>
+  <data name="REFSUCC" xml:space="preserve">
+    <value>Вы успешно приобрели пакет рефералов</value>
+  </data>
+  <data name="REGISTEROK" xml:space="preserve">
+    <value>Ваш аккаунт был зарегистрирован</value>
+  </data>
+  <data name="REG_PASSWORD" xml:space="preserve">
+    <value>Выберите пароль. Он должен быть длиной 4-80 символов и может содержать только буквы, цифры и !@#$%^&amp;*()-=+.,</value>
+  </data>
+  <data name="SENDING" xml:space="preserve">
+    <value>Отправка...</value>
+  </data>
+  <data name="SUPPSENT" xml:space="preserve">
+    <value>Ваш тикет успешно отправлен</value>
+  </data>
+  <data name="TOTALEARNED" xml:space="preserve">
+    <value>Итого заработал</value>
+  </data>
+  <data name="TRANSFEROK" xml:space="preserve">
+    <value>Ваши деньги были успешно переведены</value>
+  </data>
+  <data name="UPGRADEOK" xml:space="preserve">
+    <value>Ваш аккаунт успешно обновлен</value>
+  </data>
+  <data name="VIEWTICKETS" xml:space="preserve">
+    <value>Посмотреть созданные тикеты</value>
+  </data>
+  <data name="VIEWTICKETSINFO" xml:space="preserve">
+    <value>Управлять всеми своими тикетами можно здесь</value>
+  </data>
+  <data name="YOUCANTFRIENDYOURSELF" xml:space="preserve">
+    <value>Вы не можете предложить дружбу сами себе</value>
+  </data>
+  <data name="YOUHAVEBEENCREDITED" xml:space="preserve">
+    <value>Вы были успешно зачислены на эту деятельность </value>
+  </data>
+  <data name="YOUMUSTBEL" xml:space="preserve">
+    <value>Вы должны войти в систему чтобы смотреть профили пользователей</value>
+  </data>
+</root>

@@ -1,0 +1,294 @@
+﻿using Newtonsoft.Json.Linq;
+using Prem.PTC;
+using Prem.PTC.Members;
+using Resources;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Net;
+using System.Web;
+using Prem.PTC.Utils;
+using Prem.PTC.Payments;
+using System.Text;
+using ExtensionMethods;
+
+/// <summary>
+/// Summary description for BlockchainHandler
+/// </summary>
+public class BlockioHandler
+{
+    public static void ProcessRequest(HttpContext context)
+    {
+        var jsonString = string.Empty;
+        var deleteNotificationUrl = string.Empty;
+        try
+        {
+            HttpContext.Current.Request.InputStream.Position = 0;
+            using (StreamReader inputStream = new StreamReader(HttpContext.Current.Request.InputStream))
+            {
+                jsonString = inputStream.ReadToEnd();
+            }
+
+            JObject o = JObject.Parse(jsonString);
+
+            var type = Convert.ToString(o["type"]);
+
+            #region CHECK IP
+            var sender = IP.Current;
+
+            var hostIPs = Dns.GetHostAddresses("n.block.io");
+
+            bool isSecure = false;
+            foreach (var ip in hostIPs)
+            {
+                if (ip.ToString().Contains(sender.Trim()))
+                    isSecure = true;
+            }
+            #endregion
+
+            //first request checks if our Server is responsive
+            if (type == "ping")
+            {
+                context.Response.Write("*ok*");
+                context.Response.StatusCode = 200;
+            }
+            //second+ requests send data
+            else
+            {
+                var status = Convert.ToString(o["status"]);
+                var deliveryAttempt = Convert.ToString(o["delivery_attempt"]);
+                var userAddress = Convert.ToString(o["data"]["address"]);
+                var balanceChange = Convert.ToDecimal(Convert.ToString(o["data"]["balance_change"]));
+                var confirmations = Convert.ToInt32(Convert.ToString(o["data"]["confirmations"]));
+                var amount = Convert.ToDecimal(Convert.ToString(o["data"]["amount_received"]));
+                var notificationId = Convert.ToString(o["notification_id"]);
+                var amountSent = Convert.ToDecimal(Convert.ToString(o["data"]["amount_sent"]));
+                deleteNotificationUrl = string.Format("https://block.io/api/v2/delete_notification/?api_key={0}&notification_id={1}", HttpUtility.UrlEncode(AppSettings.Cryptocurrencies.BlockioApiKey), HttpUtility.UrlEncode(notificationId));
+
+                using (WebClient client = new MyWebClient())
+                {
+                    if (balanceChange < 0)
+                    {
+                        string LogMessage = jsonString + "\r\nINFO: " + context.Request.Params.ToRawString();
+                        ErrorLogger.Log(LogMessage, LogType.Blockio);
+                    }
+                    else
+                    {
+                        if (isSecure)
+                        {
+                            AppSettings.Cryptocurrencies.Reload();
+
+                            Member user = new Member(BitcoinAddress.GetBlockioUserId(userAddress));
+                            string LogMessage = jsonString + "\r\nINFO: " + context.Request.Params.ToRawString();
+                            ErrorLogger.Log(LogMessage, LogType.Blockio);
+
+                            BitcoinIPNManager.AddIPNLog(AppSettings.ServerTime, OperationType.Deposit, confirmations, user.Id, userAddress, amount, null, APIProvider.Blockio);
+
+                            if (confirmations >= AppSettings.Cryptocurrencies.DepositConfirmationsRequired)
+                            {
+                                // Delete notification and credit user
+                                var data = client.DownloadString(deleteNotificationUrl);
+
+                                //BitCoinHandler operates on Satoshi, so multiply amount * 100000000!
+                                BitcoinAPI.DepositBTC(user, Convert.ToInt64(balanceChange * 100000000), confirmations, userAddress);
+                            }
+                            context.Response.Write("*ok*");
+                            context.Response.StatusCode = 200;
+                        }
+                        else
+                        {
+                            string LogMessage = "NOT SECURE FROM " + context.Request.UserHostAddress + " confirmations: " + confirmations + "\r\nINFO: " + context.Request.Params.ToRawString();
+                            ErrorLogger.Log(LogMessage, LogType.Blockio);
+                        }
+                    }
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            ErrorLogger.Log(ex);
+            string LogMessage = "Process request exception: " + ex.Message + "\r\nINFO: " + context.Request.Params.ToRawString();
+            ErrorLogger.Log(LogMessage, LogType.Blockio);
+        }
+    }
+
+    private static string NewAddressUrl()
+    {
+        string apiKey = AppSettings.Cryptocurrencies.BlockioApiKey;
+        string url = string.Format("https://block.io/api/v2/get_new_address/?api_key={0}", apiKey);
+        return url;
+    }
+
+    public static string TryGetAdminAddress()
+    {
+        //TheNewbie does not support WebHooks
+        if (AppSettings.Cryptocurrencies.BlockioPlan == BlockioPlan.TheNewbie)
+            return string.Empty;
+        Member user = Member.Current;
+        using (WebClient client = new WebClient())
+        {
+            string tempurl = string.Empty;
+
+            try
+            {
+                //use existing address if exists
+                string adminAddress = string.Empty;
+                var addresses = TableHelper.SelectRows<BitcoinAddress>(TableHelper.MakeDictionary("UserId", user.Id));
+                if (addresses.Count > 0)
+                {
+                    adminAddress = addresses[0].BlockioAddress;
+                    //check if exists on block.io
+                    string url = string.Format("https://block.io/api/v2/get_address_balance/?api_key={0}&addresses={1}", AppSettings.Cryptocurrencies.BlockioApiKey, adminAddress);
+                    tempurl = url;
+                    var data = client.DownloadJsonString(url);
+                    JObject o = JObject.Parse(data);
+                    var status = Convert.ToString(o["status"]);
+                    if (status == "success")
+                    {
+                        if (AppSettings.Cryptocurrencies.BlockioPlan == BlockioPlan.Higher)
+                            CreateNotification(adminAddress);
+                        //else
+                        //    BlockioSocket.TryOpen(adminAddress);
+                        return adminAddress;
+                    }
+                    else
+                    {
+                        addresses[0].Delete();
+                        adminAddress = CreateNewAddress(user.Id);
+                    }
+                }
+                else
+                {
+                    adminAddress = CreateNewAddress(user.Id);
+
+                    if (!string.IsNullOrWhiteSpace(adminAddress))
+                    {
+                        if (AppSettings.Cryptocurrencies.BlockioPlan == BlockioPlan.Higher)
+                            CreateNotification(adminAddress);
+                        //else
+                        //    BlockioSocket.TryOpen(adminAddress);
+                    }
+                }
+                return adminAddress;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+                return string.Empty;
+            }
+        }
+    }
+
+    private static string CreateNewAddress(int userId)
+    {
+        using (WebClient client = new WebClient())
+        {
+            var data = client.DownloadJsonString(NewAddressUrl());
+            JObject o = JObject.Parse(data);
+            var status = Convert.ToString(o["status"]);
+            var adminAddress = string.Empty;
+            if (status == "success")
+            {
+                adminAddress = Convert.ToString(o["data"]["address"]);
+            }
+
+            if (!string.IsNullOrWhiteSpace(adminAddress))
+            {
+                BitcoinAddress address = new BitcoinAddress();
+                address.UserId = userId;
+                address.BlockioAddress = adminAddress;
+                address.Save();
+            }
+            return adminAddress;
+        }
+    }
+
+    private static void CreateNotification(string address)
+    {
+        string tempurl = string.Empty;
+        try
+        {
+            string secret = HashingManager.SHA256(Member.CurrentName + AppSettings.Offerwalls.UniversalHandlerPassword).Replace("-", "");
+            string callbackUrl = string.Format("{0}Handlers/Bitcoins/Blockio.ashx", AppSettings.Site.Url);
+            string url = string.Format(@"https://block.io/api/v2/create_notification/?api_key={0}&type=address&address={1}&url={2}", AppSettings.Cryptocurrencies.BlockioApiKey, address, HttpUtility.UrlEncode(callbackUrl));
+            tempurl = url;
+
+            using (WebClient client = new WebClient())
+            {
+                var data = client.DownloadJsonString(url);
+
+                JObject o = JObject.Parse(data);
+                var status = Convert.ToString(o["status"]);
+                if (status != "success")
+                {
+                    ErrorLogger.Log(data, LogType.Blockio);
+                    throw new MsgException(U5005.MUSTWAITTODEPOSIT);
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            throw ex;
+        }
+    }
+
+    private static void TryWithDrawBitcoinsFromWallet(decimal amount, string userAddress)
+    {
+        string url = string.Format(@"https://block.io/api/v2/withdraw/?api_key={0}&amounts={1}&to_addresses={2}&pin={3}",
+                    AppSettings.Cryptocurrencies.BlockioApiKey, amount.ToString().Replace(',', '.'), userAddress, AppSettings.Cryptocurrencies.BlockioSecretPIN);
+
+        using (WebClient client = new WebClient())
+        {
+            var data = client.DownloadJsonString(url);
+            JObject o = JObject.Parse(data);
+            var status = Convert.ToString(o["status"]);
+
+            if (status == "fail")
+            {
+                var error = Convert.ToString(o["data"]["error_message"]);
+                throw new MsgException(error);
+            }
+        }
+    }
+
+    public static decimal EstimatedWithdrawalFee(decimal amount, string userAddress)
+    {
+        if (!AppSettings.Cryptocurrencies.IsBitCoinWithdrawalEnabled || AppSettings.Cryptocurrencies.APIProvider != APIProvider.Blockio)
+            throw new MsgException("Bitcoin withdrawal is unavailable at the moment");
+
+        string url = string.Format(@"https://block.io/api/v2/get_network_fee_estimate/?api_key={0}&amounts={1}&to_addresses={2}", AppSettings.Cryptocurrencies.BlockioApiKey, amount.ToString().Replace(',', '.'), userAddress);
+
+        using (WebClient client = new WebClient())
+        {
+            var data = client.DownloadJsonString(url);
+            JObject o = JObject.Parse(data);
+            var status = Convert.ToString(o["status"]);
+
+            if (status == "fail")
+            {
+                var error = Convert.ToString(o["data"]["error_message"]);
+                throw new MsgException(error);
+            }
+            var estimatedFee = Convert.ToDecimal(Convert.ToString(o["data"]["estimated_network_fee"]));
+
+            return estimatedFee;
+        }
+    }
+
+    public static Money EstimatedWithdrawalFee(Money amount, string userAddress)
+    {
+        Money bitcoinValue = AppSettings.Cryptocurrencies.EnlargedAutomaticBitcoinValue;
+        decimal bitcoinAmount = (amount.ToDecimal() / bitcoinValue.ToDecimal()).TruncateDecimals(8);
+        var value = EstimatedWithdrawalFee(bitcoinAmount, userAddress);
+        return (value * bitcoinValue) + AppSettings.Cryptocurrencies.BtcWithdrawalFee;
+    }
+
+    public static bool IsTargetAddressForbidden(string address)
+    {
+        var adminAddresses = TableHelper.SelectRows<BitcoinAddress>(TableHelper.MakeDictionary("BlockioAddress", address));
+        if (adminAddresses.Count > 0)
+            return true;
+        return false;
+    }
+}

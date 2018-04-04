@@ -1,0 +1,15 @@
+﻿<%@ WebHandler Language="C#" Class="Blockio" %>
+
+using Titan;
+using System.Web;
+
+public class Blockio : IHttpHandler
+{
+    public void ProcessRequest(HttpContext context)
+    {
+        BlockioBitcoinAPI BlockioBitcoinAPI = new BlockioBitcoinAPI();
+        BlockioBitcoinAPI.ProcessRequest(context);
+    }
+
+    public bool IsReusable { get { return false; } }
+}

@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="MAXINVESTMENTALLOWEDTOWITHDRAW" xml:space="preserve">
+    <value>Maximum withdrawal of deposited amount</value>
+  </data>
+  <data name="YOUCANWITHDRAWOFINVESTED" xml:space="preserve">
+    <value>You can withdraw {0} of what you invested ({1}), so {2} more.</value>
+  </data>
+  <data name="BILLTO" xml:space="preserve">
+    <value>Bill to</value>
+  </data>
+  <data name="CUSTOMERID" xml:space="preserve">
+    <value>Customer ID</value>
+  </data>
+  <data name="INVOICE" xml:space="preserve">
+    <value>Invoice</value>
+  </data>
+  <data name="QUANTITY" xml:space="preserve">
+    <value>Quantity</value>
+  </data>
+  <data name="RECEIPT" xml:space="preserve">
+    <value>Receipt</value>
+  </data>
+  <data name="TAX" xml:space="preserve">
+    <value>Tax</value>
+  </data>
+  <data name="MAXCOMMISSIONPAYOUTSPERDAY" xml:space="preserve">
+    <value>Maximum daily Commission Balance withdrawals</value>
+  </data>
+  <data name="CONFIRMATIONCODE" xml:space="preserve">
+    <value>M-PESA Confirmation code</value>
+  </data>
+  <data name="TODEPOSITVIAMPESA" xml:space="preserve">
+    <value>To deposit the money:
+&lt;br/&gt;&lt;br/&gt;
+1. Go to the M-PESA Menu&lt;br/&gt;
+2. Select Lipa Na Mpesa&lt;br/&gt;
+3. Select Pay Bill&lt;br/&gt;
+4. Enter business number: &lt;b&gt;{0}&lt;/b&gt;&lt;br/&gt;
+5. Enter account number : &lt;b&gt;{1}&lt;/b&gt;&lt;br/&gt;
+6. Enter amount in KES&lt;br/&gt;
+7. Enter M-PESA Pin&lt;br/&gt;
+8. After you receive the confirmation SMS from MPesa, enter your Mobile Number and click on Continue</value>
+  </data>
+  <data name="MPESAENSURE" xml:space="preserve">
+    <value>Eg: 722123456</value>
+  </data>
+  <data name="YOUCANTUSESHOUTBOX" xml:space="preserve">
+    <value>You can't use shoutbox because you weren't add to whitelist by administrator</value>
+  </data>
+  <data name="PAYWITH" xml:space="preserve">
+    <value>Pay with {0}</value>
+  </data>
+  <data name="WRONGMPESACODE" xml:space="preserve">
+    <value>Whooops something is Wrong. Verify phone number/ M-PESA confirmation code.</value>
+  </data>
+  <data name="CONTINUE" xml:space="preserve">
+    <value>Continue</value>
+  </data>
+  <data name="CONTACTINSTRUCTIONS" xml:space="preserve">
+    <value>If your case is urgent or you can't find any answers, feel free to contact us using the email below. &lt;br /&gt;&lt;br /&gt;Please make sure to provide your USERNAME at the begining of the email.</value>
+  </data>
+  <data name="ADDNEWPRODUCT" xml:space="preserve">
+    <value>Add new product</value>
+  </data>
+  <data name="PAYVIACASHBALANCE" xml:space="preserve">
+    <value>Pay via Cash Balance</value>
+  </data>
+  <data name="PAYVIAPAYMENTPROCESSOR" xml:space="preserve">
+    <value>Pay via Payment Processor</value>
+  </data>
+  <data name="DELIVERYADDRESS" xml:space="preserve">
+    <value>Delivery Address</value>
+  </data>
+  <data name="DELIVERYADDRESSREQUIRED" xml:space="preserve">
+    <value>Delivery Address is required.</value>
+  </data>
+  <data name="CANUSEREFTOOLS" xml:space="preserve">
+    <value>Referral Tools available</value>
+  </data>
+  <data name="UPGRADETOUSEREFTOOLS" xml:space="preserve">
+    <value>Please upgrade your account to use Referral Tools.</value>
+  </data>
+  <data name="LEADERSHIPSYSTEM" xml:space="preserve">
+    <value>Ranks</value>
+  </data>
+  <data name="REQUIREMENTS" xml:space="preserve">
+    <value>Requirements</value>
+  </data>
+  <data name="COUNT" xml:space="preserve">
+    <value>Count</value>
+  </data>
+  <data name="CUSTOMPRIZE" xml:space="preserve">
+    <value>Custom Prize</value>
+  </data>
+  <data name="DIRECTREFERRALSACTIVE" xml:space="preserve">
+    <value>Direct Referrals Active</value>
+  </data>
+  <data name="DIRECTREFERRALSCOUNT" xml:space="preserve">
+    <value>Direct Referrals Count</value>
+  </data>
+  <data name="LEADERSHIPSYSTEMDESCRIPTION" xml:space="preserve">
+    <value>System that picks and awards Website Leaders</value>
+  </data>
+  <data name="RANK" xml:space="preserve">
+    <value>Rank</value>
+  </data>
+  <data name="AFFILIATELINK" xml:space="preserve">
+    <value>Affiliate Link</value>
+  </data>
+  <data name="CASHBALANCEDEPOSIT" xml:space="preserve">
+    <value>Cash Balance Deposit</value>
+  </data>
+</root>

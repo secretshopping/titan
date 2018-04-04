@@ -1,0 +1,1746 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ACCCANCELLED" xml:space="preserve">
+    <value>This account has been cancelled</value>
+  </data>
+  <data name="ACCCHEAT" xml:space="preserve">
+    <value>This account has been suspended due to cheating</value>
+  </data>
+  <data name="ACCINACTIVE" xml:space="preserve">
+    <value>This account has been suspended for inactivity</value>
+  </data>
+  <data name="ACCOUNT" xml:space="preserve">
+    <value>Hesap</value>
+    <comment>In top menu</comment>
+  </data>
+  <data name="ACCSECURED" xml:space="preserve">
+    <value>Bu hesap için Üye Girişi güvenlik nedenleriyle devre dışı bırakıldı.Hesap açmak için yöneticisine başvurun</value>
+  </data>
+  <data name="ACCTOS" xml:space="preserve">
+    <value>Bu hesap TOS ihlali nedeniyle askıya alındı</value>
+  </data>
+  <data name="ADS" xml:space="preserve">
+    <value>Reklamlar</value>
+    <comment>In top menu, in user top menu</comment>
+  </data>
+  <data name="ADVERTISE" xml:space="preserve">
+    <value>Reklam ver</value>
+    <comment>In top menu, in user top menu</comment>
+  </data>
+  <data name="BANNERS" xml:space="preserve">
+    <value>Bannerlar</value>
+    <comment>In user top menu</comment>
+  </data>
+  <data name="CONFIRMPASSWORD" xml:space="preserve">
+    <value>Parolayı onayla</value>
+  </data>
+  <data name="DIRECT" xml:space="preserve">
+    <value>Direk</value>
+    <comment>In user top menu</comment>
+  </data>
+  <data name="EARN" xml:space="preserve">
+    <value>Kazan</value>
+    <comment>In user top menu</comment>
+  </data>
+  <data name="ER_ALLFIELDSREQUIRED" xml:space="preserve">
+    <value>Kullanıcı adı ve Şifre gereklidir</value>
+  </data>
+  <data name="ER_BADPASSWORD" xml:space="preserve">
+    <value>Yanlış şifre (ler). Lütfen tekrar deneyin</value>
+  </data>
+  <data name="ER_BADPWD2" xml:space="preserve">
+    <value>İkinci parolanız geçersiz.</value>
+  </data>
+  <data name="ER_DUPLICATEEMAIL" xml:space="preserve">
+    <value>Maalesef, Bu e-posta kayıtlı. Farklı bir birini seçin</value>
+  </data>
+  <data name="ER_INVALIDPASSWORD" xml:space="preserve">
+    <value>Şifre uzunluğu 6 ile 30 arasında karakter olmalı ve sadece harf ve sayı içerebilir</value>
+  </data>
+  <data name="ER_INVALIDUSERNAME" xml:space="preserve">
+    <value>Yanlış Kullanıcı Adı biçimi</value>
+  </data>
+  <data name="ER_INVALIDPASS" xml:space="preserve">
+    <value>Yanlış Şifre biçimi</value>
+  </data>
+  <data name="ER_INVALIDUSERNAME3" xml:space="preserve">
+    <value>Maalesef, bu kullanıcı adı daha önce alınmış. Farklı bir kullanıcı adı seçin</value>
+  </data>
+  <data name="ER_LOGINUNSUCC" xml:space="preserve">
+    <value>Giriş Başarısız . Lütfen tekrar deneyin</value>
+  </data>
+  <data name="ER_USERLOCKEDOUT" xml:space="preserve">
+    <value>Bu kullanıcı kilitlendi</value>
+  </data>
+  <data name="ER_USER_NOTFOUND" xml:space="preserve">
+    <value>Böyle bir kullanıcı bulunamadı.</value>
+  </data>
+  <data name="FORUM" xml:space="preserve">
+    <value>Forum</value>
+    <comment>In top menu</comment>
+  </data>
+  <data name="GAMES" xml:space="preserve">
+    <value>oyunlar</value>
+    <comment>In user top menu</comment>
+  </data>
+  <data name="HISTORY" xml:space="preserve">
+    <value>Geçmiş</value>
+    <comment>In user top menu</comment>
+  </data>
+  <data name="HOME" xml:space="preserve">
+    <value>Ana Sayfa</value>
+    <comment>In top menu</comment>
+  </data>
+  <data name="LEAVEBLANKIFNOTPWD2" xml:space="preserve">
+    <value>Eğer ikincil bir şifreniz yoksa boş bırakın</value>
+  </data>
+  <data name="LIKES" xml:space="preserve">
+    <value>Beğeniler</value>
+    <comment>In user top menu</comment>
+  </data>
+  <data name="LOGIN" xml:space="preserve">
+    <value>Giriş</value>
+    <comment>In top menu</comment>
+  </data>
+  <data name="LOGOUT" xml:space="preserve">
+    <value>Çıkış</value>
+    <comment>In top menu</comment>
+  </data>
+  <data name="MESSAGES" xml:space="preserve">
+    <value>Mesajlar</value>
+    <comment>In user top menu</comment>
+  </data>
+  <data name="OR" xml:space="preserve">
+    <value>veya</value>
+  </data>
+  <data name="PASSWORD" xml:space="preserve">
+    <value>Parola</value>
+  </data>
+  <data name="REFERRALS" xml:space="preserve">
+    <value>Referans</value>
+    <comment>In user top menu</comment>
+  </data>
+  <data name="REGISTER" xml:space="preserve">
+    <value>Kayıt</value>
+    <comment>In top menu</comment>
+  </data>
+  <data name="REGISTERTEXT" xml:space="preserve">
+    <value>Kayıt olmak tamamen ücretsizdir. Hemen kayıt ol..</value>
+  </data>
+  <data name="REG_EMAIL" xml:space="preserve">
+    <value>Bu, geçerli ve aktif bir e-posta adresi olmalıdır. Sana (destek bilet cevapları dahil) önemli haberleri göndermek, şifrenizi kurtarmak veya ödemeleri onaylamak için kullanılacak.</value>
+  </data>
+  <data name="REG_PASSWORD" xml:space="preserve">
+    <value>Şifrenizi seçin. Bu 4-80 karakter uzunluğunda olmalı ,sadece harf ve sayı içerebilir.</value>
+  </data>
+  <data name="REG_PIN" xml:space="preserve">
+    <value>Bu ek güvenliktir. Para çekme veya parola sıfırlama işlemlerinde  sizden istenecektir. . Sadece (0-9)  4 numara içerebilir</value>
+  </data>
+  <data name="REG_REFERER" xml:space="preserve">
+    <value>Sizi davet eden üyenin adı. Boş bırakılabilir</value>
+  </data>
+  <data name="REG_USERNAME" xml:space="preserve">
+    <value>İstediğiniz ismi seçin. Bu 4-20 karakter uzunluğunda olmalı ve sadece harf ve sayı içerebilir. Bir harf ile başlamalıdır</value>
+  </data>
+  <data name="RENTED" xml:space="preserve">
+    <value>Kiralanan</value>
+    <comment>In user top menu</comment>
+  </data>
+  <data name="RESETPWDSUCC" xml:space="preserve">
+    <value>Yeni parolanız gönderildi.</value>
+  </data>
+  <data name="RESETPWDTEXT" xml:space="preserve">
+    <value>Kullanıcı adınızı ve PIN kodunuzu girin ,biz kişisel e-posta adresinize yeni bir şifre göndereceğiz</value>
+  </data>
+  <data name="SECONDARYPASSWORD" xml:space="preserve">
+    <value>İkinci parola</value>
+  </data>
+  <data name="SECURELOGINSSL" xml:space="preserve">
+    <value>Secure SSL login with secure Trbux</value>
+  </data>
+  <data name="SEEYOU" xml:space="preserve">
+    <value>Tekrar görüşmek üzere</value>
+  </data>
+  <data name="SEND" xml:space="preserve">
+    <value>Gönder</value>
+  </data>
+  <data name="SETTINGS" xml:space="preserve">
+    <value>Ayarlar</value>
+    <comment>In user top menu</comment>
+  </data>
+  <data name="STATS" xml:space="preserve">
+    <value>İstatistik</value>
+    <comment>In user top menu</comment>
+  </data>
+  <data name="SUMMARY" xml:space="preserve">
+    <value>Hesap Özeti</value>
+    <comment>In user top menu</comment>
+  </data>
+  <data name="TRANSFER" xml:space="preserve">
+    <value>Transfer</value>
+    <comment>In user top menu</comment>
+  </data>
+  <data name="TRY_AGAIN" xml:space="preserve">
+    <value>Lütfen tekrar deneyin</value>
+  </data>
+  <data name="USERNAME" xml:space="preserve">
+    <value>Kullanıcı adı</value>
+  </data>
+  <data name="YOUWILLREDIRECT" xml:space="preserve">
+    <value>Birkaç saniye içinde yönlendirileceksiniz ...</value>
+  </data>
+  <data name="ER_BADEMAILFORMAT" xml:space="preserve">
+    <value>Geçerli bir e-posta adresi girin</value>
+  </data>
+  <data name="ER_PASSDIFFER" xml:space="preserve">
+    <value>Şifre ve bu onay uyuşmuyor.</value>
+  </data>
+  <data name="REG_CAPTCHA" xml:space="preserve">
+    <value>Resimde görülen metni girin</value>
+  </data>
+  <data name="REG_REQ_CONFIRM" xml:space="preserve">
+    <value>Parola doğrulama alanı boş bırakılamaz</value>
+  </data>
+  <data name="REG_REQ_EMAIL" xml:space="preserve">
+    <value>E-posta alanı boş bırakılamaz</value>
+  </data>
+  <data name="REG_REQ_PASS" xml:space="preserve">
+    <value>Parola alanı boş bırakılamaz</value>
+  </data>
+  <data name="REG_REQ_USERNAME" xml:space="preserve">
+    <value>Kullanıcı adı alanı boş bırakılamaz</value>
+  </data>
+  <data name="REG_UNDERSTANDTOS" xml:space="preserve">
+    <value>Anladım, okudum ve kabul ediyorum</value>
+  </data>
+  <data name="TERMSOFSERVICE" xml:space="preserve">
+    <value>Hizmet Şartları</value>
+  </data>
+  <data name="IFORGOTPWD" xml:space="preserve">
+    <value>Şifremi unuttum</value>
+  </data>
+  <data name="ER_BADPIN" xml:space="preserve">
+    <value>Geçersiz PIN biçimi</value>
+  </data>
+  <data name="ER_BADREF" xml:space="preserve">
+    <value>Böyle bir referans yok yada maksimimum kapasiteye ulaşmış.</value>
+  </data>
+  <data name="ER_BADYEAR" xml:space="preserve">
+    <value>Geçersiz Doğum Yılı biçimi</value>
+  </data>
+  <data name="REG_REQ_PIN" xml:space="preserve">
+    <value>PIN alanı boş bırakılamaz</value>
+  </data>
+  <data name="REG_REQ_YEAR" xml:space="preserve">
+    <value>Doğum Yılı alanı boş bırakılamaz</value>
+  </data>
+  <data name="ER_BADCAPTCHA" xml:space="preserve">
+    <value>Güvenlik kodu  ve metin eşleşmiyor</value>
+  </data>
+  <data name="REG_REQ_CAPTCHA" xml:space="preserve">
+    <value>Doğrulama Kodu giriniz</value>
+  </data>
+  <data name="REG_REQ_TOS" xml:space="preserve">
+    <value>Hizmet Şartlarını kabul etmelisiniz</value>
+  </data>
+  <data name="BIRTHYEAR" xml:space="preserve">
+    <value>Doğum tarihi</value>
+  </data>
+  <data name="DESIREDPIN" xml:space="preserve">
+    <value>PIN Onay</value>
+  </data>
+  <data name="ENTERPIN" xml:space="preserve">
+    <value>Ek doğrulama için PIN kodunuzu girin</value>
+  </data>
+  <data name="REFERER" xml:space="preserve">
+    <value>Referrer</value>
+  </data>
+  <data name="VERIFICATION" xml:space="preserve">
+    <value>Doğrulama Kodu</value>
+  </data>
+  <data name="ER_EMAILORPINBAD" xml:space="preserve">
+    <value>E-posta / PIN  kullanıcı adı eşleşmiyor</value>
+  </data>
+  <data name="CURRENTTIME" xml:space="preserve">
+    <value>Geçerli sunucu zamanı</value>
+  </data>
+  <data name="RESETTIME" xml:space="preserve">
+    <value>Tıklama sıfırlama zamanı</value>
+  </data>
+  <data name="BYVIEWINGEARN" xml:space="preserve">
+    <value>By viewing this advertisement you will earn</value>
+    <comment>In View Ads hint</comment>
+  </data>
+  <data name="MORE" xml:space="preserve">
+    <value>daha</value>
+  </data>
+  <data name="THISADLASTS" xml:space="preserve">
+    <value>This advertisement lasts </value>
+  </data>
+  <data name="ALLRIGHTS" xml:space="preserve">
+    <value>Her hakkı saklıdır</value>
+  </data>
+  <data name="LANGUAGE" xml:space="preserve">
+    <value>Dil</value>
+  </data>
+  <data name="SMALLADS" xml:space="preserve">
+    <value>Küçük Reklamlar</value>
+  </data>
+  <data name="STDADS" xml:space="preserve">
+    <value>Standard Reklam</value>
+  </data>
+  <data name="WAITFORAD" xml:space="preserve">
+    <value>Reklam yükleniyor lütfen bekleyiniz.</value>
+  </data>
+  <data name="RESETPWD" xml:space="preserve">
+    <value>Parolamı sıfırla</value>
+  </data>
+  <data name="DETECTEDCOUNTRY" xml:space="preserve">
+    <value>Algılanan ülke</value>
+  </data>
+  <data name="ACCLOCKED" xml:space="preserve">
+    <value>This account has been locked by the administrator</value>
+  </data>
+  <data name="ACCNOTACTIVATED" xml:space="preserve">
+    <value>This account has not been activated. Check your mailbox for activation link</value>
+  </data>
+  <data name="ADBALANCE" xml:space="preserve">
+    <value>Reklam Hesabı</value>
+  </data>
+  <data name="ER_ALLFIELDSREQUIRED2" xml:space="preserve">
+    <value>Kullanıcı adı, Şifre ve Doğrulama gereklidir</value>
+  </data>
+  <data name="EXPIRES" xml:space="preserve">
+    <value>Sona erecek</value>
+  </data>
+  <data name="MAINBALANCE" xml:space="preserve">
+    <value>Ana Hesap</value>
+  </data>
+  <data name="MEMBERSHIP" xml:space="preserve">
+    <value>Üyelik</value>
+  </data>
+  <data name="NEVER" xml:space="preserve">
+    <value>bilinmiyor</value>
+  </data>
+  <data name="OP_FAIL" xml:space="preserve">
+    <value>Başarısız işlem</value>
+  </data>
+  <data name="OP_SUCCESS" xml:space="preserve">
+    <value>Başarılı işlem</value>
+  </data>
+  <data name="POINTS" xml:space="preserve">
+    <value>Puanlar</value>
+  </data>
+  <data name="RENTALBALANCE" xml:space="preserve">
+    <value>Kiralama Hesabı</value>
+  </data>
+  <data name="ST_ACTIVATED" xml:space="preserve">
+    <value>Hesabınız aktive edildi. Giriş için bekleme yapma :)</value>
+  </data>
+  <data name="ST_REGISTER1" xml:space="preserve">
+    <value>Hesabınız oluşturuldu ve aktive edildi . Giriş için bekleme yapma :)</value>
+  </data>
+  <data name="ST_REGISTER2" xml:space="preserve">
+    <value>elirtiğiniz eposta adresine aktivasyon linki gönderilmiştir. Hesabınızı aktif ettikten sonra siteye giriş yapabilirsiniz.</value>
+  </data>
+  <data name="ST_RESET" xml:space="preserve">
+    <value>Parolanız sıfırlandı. Size yeni şifre e-posta ile gönderildi.</value>
+  </data>
+  <data name="TRANSFERMONEY" xml:space="preserve">
+    <value>Para transfer </value>
+  </data>
+  <data name="TRANSFERMONEYINFO" xml:space="preserve">
+    <value>Transfer your money into your balances. Just in a couple of clicks</value>
+  </data>
+  <data name="HISTORYINFO" xml:space="preserve">
+    <value>Kolayca geçmişinize göz atın. Tüm eylemler kaydedilir ve burada gösterilir</value>
+  </data>
+  <data name="NOTENOUGHFUNDS" xml:space="preserve">
+    <value>Hesabında yeterli miktar bulunmamaktadır.</value>
+  </data>
+  <data name="INBOX" xml:space="preserve">
+    <value>Gelen Kutusu</value>
+  </data>
+  <data name="NEWMESSAGE" xml:space="preserve">
+    <value>Yeni Mesaj</value>
+  </data>
+  <data name="ER_DISABLEDMESSAGE" xml:space="preserve">
+    <value>Maalesef, bu kullanıcı mesaj sistemi devre dışı</value>
+  </data>
+  <data name="ER_TEXT" xml:space="preserve">
+    <value>Metin alanı yalnızca harf, sayı ve içerebilir, @ $ &amp;.!? () + =% *</value>
+  </data>
+  <data name="ER_TEXT_TOLONG" xml:space="preserve">
+    <value>Metin alanı maksimum 300 karakter uzunlukta olabilir</value>
+  </data>
+  <data name="FROM" xml:space="preserve">
+    <value>Kimden</value>
+    <comment>In send message</comment>
+  </data>
+  <data name="REQ_TEXT" xml:space="preserve">
+    <value>Metin alanı boş bırakılamaz</value>
+  </data>
+  <data name="REQ_TO" xml:space="preserve">
+    <value>Alan boş bırakılamaz</value>
+  </data>
+  <data name="TO" xml:space="preserve">
+    <value>Kime</value>
+    <comment>In send message (To:)</comment>
+  </data>
+  <data name="NOMESSAGES" xml:space="preserve">
+    <value>Yeni herhangi bir mesajın yok.</value>
+  </data>
+  <data name="DATE" xml:space="preserve">
+    <value>Tarih</value>
+  </data>
+  <data name="MESS_ERROR" xml:space="preserve">
+    <value>Kendinize yazamazsınız.</value>
+  </data>
+  <data name="READ" xml:space="preserve">
+    <value>Oku</value>
+    <comment>In messages</comment>
+  </data>
+  <data name="REMOVE" xml:space="preserve">
+    <value>Sil</value>
+  </data>
+  <data name="REPLY" xml:space="preserve">
+    <value>Yanıtla</value>
+    <comment>In messages</comment>
+  </data>
+  <data name="SELECTED" xml:space="preserve">
+    <value>Seçilenleri</value>
+    <comment>selected checkbox actions</comment>
+  </data>
+  <data name="SUB_MESSAGES" xml:space="preserve">
+    <value>Gönder ve diğerleri kullanıcıları mesajları al.</value>
+  </data>
+  <data name="TEXT" xml:space="preserve">
+    <value>Mesaj</value>
+  </data>
+  <data name="AND" xml:space="preserve">
+    <value>ve</value>
+  </data>
+  <data name="FEELFREE" xml:space="preserve">
+    <value>Aşağıdaki web sitesini ziyaret etmekten çekinmeyiniz.</value>
+    <comment>Surf</comment>
+  </data>
+  <data name="FORTHISAD" xml:space="preserve">
+    <value>Bu reklam için </value>
+    <comment>[money] for this ad (Surf)</comment>
+  </data>
+  <data name="YOUVEBEENCREDITED" xml:space="preserve">
+    <value>Şu kadar kazandın</value>
+    <comment>Surf</comment>
+  </data>
+  <data name="NODATA" xml:space="preserve">
+    <value>Görüntülemek için herhangi bir veri bulunmamaktadır</value>
+  </data>
+  <data name="REFLINK" xml:space="preserve">
+    <value>Referans linklerin </value>
+  </data>
+  <data name="ALREADYWATCHED" xml:space="preserve">
+    <value>Bu reklamı daha önce izledin</value>
+  </data>
+  <data name="CAMEFROMURL" xml:space="preserve">
+    <value>Geldi</value>
+  </data>
+  <data name="CHART" xml:space="preserve">
+    <value>Grafik</value>
+  </data>
+  <data name="CLICKS" xml:space="preserve">
+    <value>Tıklamalar</value>
+  </data>
+  <data name="DAYSAGO" xml:space="preserve">
+    <value>gün önce</value>
+    <comment>X days ago</comment>
+  </data>
+  <data name="LASTCLICK" xml:space="preserve">
+    <value>Son tıklama</value>
+  </data>
+  <data name="NODIRECTREFERRALS" xml:space="preserve">
+    <value>Direk referansın bulunmamakta</value>
+  </data>
+  <data name="REFCODE" xml:space="preserve">
+    <value>Referans kodunuz</value>
+  </data>
+  <data name="REFERRALSINCE" xml:space="preserve">
+    <value>Kiralama tarihi</value>
+  </data>
+  <data name="TODAY" xml:space="preserve">
+    <value>bugün</value>
+  </data>
+  <data name="YESTERDAY" xml:space="preserve">
+    <value>dün</value>
+  </data>
+  <data name="DIRECTINFO" xml:space="preserve">
+    <value>Sitemizi başlakarına tanıtarak daha fazla kazanç elde edebilirsiniz.</value>
+  </data>
+  <data name="MANAGE" xml:space="preserve">
+    <value>Yönet</value>
+  </data>
+  <data name="RENTEDINFO" xml:space="preserve">
+    <value>Rent referrals and gain real profits. Choose your renting strategy and start earning</value>
+  </data>
+  <data name="RENTNEW" xml:space="preserve">
+    <value>Referans kirala</value>
+  </data>
+  <data name="CLICKEDINLAST" xml:space="preserve">
+    <value>Son tıklama</value>
+    <comment>Clicked in the last X DAYS</comment>
+  </data>
+  <data name="DAYS" xml:space="preserve">
+    <value>gün</value>
+    <comment>X days</comment>
+  </data>
+  <data name="ER_RENT_CLICKS" xml:space="preserve">
+    <value>Kiralamak için yeterli tıklama oranına erişmemişsin.</value>
+  </data>
+  <data name="ER_RENT_INTERVAL" xml:space="preserve">
+    <value>Henüz kiralık referans bulunmamaktadır.</value>
+  </data>
+  <data name="ER_RENT_LIMIT" xml:space="preserve">
+    <value>You can't exceed your referral limit</value>
+  </data>
+  <data name="ER_RENT_NOREFS" xml:space="preserve">
+    <value>We can't find so much referrals at the moment. Try again later</value>
+  </data>
+  <data name="LASTRENTED" xml:space="preserve">
+    <value>Son kiralama</value>
+  </data>
+  <data name="MINCLICKS" xml:space="preserve">
+    <value>Asgari tıklama</value>
+  </data>
+  <data name="MINRENTINTERVAL" xml:space="preserve">
+    <value>Asgari kiralama aralığı</value>
+  </data>
+  <data name="NONE" xml:space="preserve">
+    <value>yok</value>
+    <comment>"brak"</comment>
+  </data>
+  <data name="NORENTEDREFERRALS" xml:space="preserve">
+    <value>Kiralık referansınız bulunmamakta.</value>
+  </data>
+  <data name="PRICEPERREF" xml:space="preserve">
+    <value>1 Referans fiyatı</value>
+  </data>
+  <data name="RENTALGUARANTEE" xml:space="preserve">
+    <value>Rented referrals guarantee</value>
+  </data>
+  <data name="RENTALTIME" xml:space="preserve">
+    <value>Kiralama süresi</value>
+  </data>
+  <data name="REQUIREMENTS" xml:space="preserve">
+    <value>Gereksinimler</value>
+  </data>
+  <data name="USEPOINTSDISCOUNT" xml:space="preserve">
+    <value>İndirim uygula</value>
+  </data>
+  <data name="UPGRADE" xml:space="preserve">
+    <value>Hesap Yükselt</value>
+  </data>
+  <data name="UPGRADEINFO" xml:space="preserve">
+    <value>Daha fazla kazanmak için hesabınızı yükseltin. Yükseltme planlarını kontrol edin</value>
+  </data>
+  <data name="ADCLICKEARNINGS" xml:space="preserve">
+    <value>Tıklama başı kazanç</value>
+  </data>
+  <data name="ADPOINTSEARNINGS" xml:space="preserve">
+    <value>Reklam puan kazançları</value>
+  </data>
+  <data name="AUTOPAY" xml:space="preserve">
+    <value>Otomatik ödeme</value>
+  </data>
+  <data name="AUTOPAYCOST" xml:space="preserve">
+    <value>AutoPay cost per referral</value>
+  </data>
+  <data name="BASIC" xml:space="preserve">
+    <value>Basic</value>
+    <comment>Reklamy: standardowe (in Upgrade Advertisements section)</comment>
+  </data>
+  <data name="COLOR" xml:space="preserve">
+    <value>Renk</value>
+  </data>
+  <data name="DIRECTREFADCLICKEARNINGS" xml:space="preserve">
+    <value>Direk referans tıklama başı kazanç</value>
+  </data>
+  <data name="DIRECTREFLIMIT" xml:space="preserve">
+    <value>Direk referans limit</value>
+  </data>
+  <data name="PREMIUM" xml:space="preserve">
+    <value>Premium</value>
+    <comment>Reklamy: premium(in Upgrade Advertisements section)</comment>
+  </data>
+  <data name="PRICE" xml:space="preserve">
+    <value>Fiyat</value>
+  </data>
+  <data name="RECYCLECOST" xml:space="preserve">
+    <value>Yenileme maaliyeti</value>
+  </data>
+  <data name="RENEWALDISCOUNT" xml:space="preserve">
+    <value>Referans Uzatma indirimi</value>
+  </data>
+  <data name="RENTEDREFADCLICKEARNINGS" xml:space="preserve">
+    <value>Tıklama başına referans kazancı</value>
+  </data>
+  <data name="RENTEDREFERRALLIMIT" xml:space="preserve">
+    <value>Maksimum Referans kiralama</value>
+  </data>
+  <data name="YES" xml:space="preserve">
+    <value>Evet</value>
+  </data>
+  <data name="EXPIRESIN" xml:space="preserve">
+    <value>Kalan Süre</value>
+  </data>
+  <data name="ID" xml:space="preserve">
+    <value>Id</value>
+    <comment>In rented referrals table (nr)</comment>
+  </data>
+  <data name="ADVADSINFO" xml:space="preserve">
+    <value>Mevcut kampanyaları yönetin veya yeni bir tane oluşturun</value>
+    <comment>Advertise: ads</comment>
+  </data>
+  <data name="DESCRIPTION" xml:space="preserve">
+    <value>Tanım</value>
+    <comment>advertise ads</comment>
+  </data>
+  <data name="ER_BADDESC" xml:space="preserve">
+    <value>Geçersiz açıklama biçimi. Daha fazla bilgi için ipuçlarını kontrol edin</value>
+  </data>
+  <data name="ER_BADURL" xml:space="preserve">
+    <value>Geçersiz URL</value>
+  </data>
+  <data name="ER_INVALIDTITLE" xml:space="preserve">
+    <value>Geçersiz başlık biçimi. Daha fazla bilgi için ipuçlarını kontrol edin</value>
+  </data>
+  <data name="FONTBOLD" xml:space="preserve">
+    <value>Kalın harf</value>
+    <comment>Create ad (pogrubienie)</comment>
+  </data>
+  <data name="GEOLOCATION" xml:space="preserve">
+    <value>Coğrafi Konum</value>
+  </data>
+  <data name="H_DESCRIPTION" xml:space="preserve">
+    <value>Açıklama gerekli değildir. Bu 4-70 karakter uzunluğunda olmalı ve sadece harf, rakam ve içerebilir, @ $ &amp;.!? () + =% *</value>
+  </data>
+  <data name="H_TITLE" xml:space="preserve">
+    <value>Başlık 4-30 karakter uzunluğunda olmalı ve sadece harf, rakam ve içerebilir, @ $ &amp;.!? () + =% *</value>
+  </data>
+  <data name="H_URL" xml:space="preserve">
+    <value>Hedef site URL: Örnek http://www.google.com</value>
+  </data>
+  <data name="NEWCAMPAIGN" xml:space="preserve">
+    <value>Yeni Kampanya</value>
+  </data>
+  <data name="NOADCAMPAIGNS" xml:space="preserve">
+    <value>Herhangi bir reklam kampanyası yok</value>
+  </data>
+  <data name="NOBANNERCAMPS" xml:space="preserve">
+    <value>Herhangi bir banner kampanyası yok</value>
+  </data>
+  <data name="NOFBCAMPS" xml:space="preserve">
+    <value>Herhangi bir facebook kampanyan bulunmamakta</value>
+  </data>
+  <data name="OPTION" xml:space="preserve">
+    <value>Seçenek</value>
+    <comment>Banner option</comment>
+  </data>
+  <data name="PACK" xml:space="preserve">
+    <value>Paket</value>
+    <comment>Create ad</comment>
+  </data>
+  <data name="PREVIEW" xml:space="preserve">
+    <value>Önceki</value>
+    <comment>Create ad</comment>
+  </data>
+  <data name="REQ_TITLE" xml:space="preserve">
+    <value>Reklam başlığı gereklidir</value>
+  </data>
+  <data name="REQ_URL" xml:space="preserve">
+    <value>Reklamınız için  URL gerekli</value>
+  </data>
+  <data name="TITLE" xml:space="preserve">
+    <value>Başlık</value>
+  </data>
+  <data name="REFNOPROFITS" xml:space="preserve">
+    <value>You didn't click at least &lt;b&gt;%n%&lt;/b&gt; advertisements yesterday so you won't get any profits from referrals today</value>
+    <comment>Leave '&lt;b&gt;%n%&lt;/b&gt;' unchanged!</comment>
+  </data>
+  <data name="RECYCLE" xml:space="preserve">
+    <value>Yenile</value>
+  </data>
+  <data name="RENEW" xml:space="preserve">
+    <value>Uzat</value>
+  </data>
+  <data name="OPPREFAPARTIAL" xml:space="preserve">
+    <value>İşlem kısmen tamamlandı. &lt;b&gt;% n% &lt;/ b&gt; tavsiyeleri değiştirilmiş.</value>
+    <comment>Leave '&lt;b&gt;%n%&lt;/b&gt;' unchanged! </comment>
+  </data>
+  <data name="OPPREFPARTIAL" xml:space="preserve">
+    <value>İşlem kısmen tamamlandı. &lt;b&gt;% n% &lt;/ b&gt; referanslar değiştirilmiş. Paranızı kontrol edin</value>
+    <comment>Leave '&lt;b&gt;%n%&lt;/b&gt;' unchanged!</comment>
+  </data>
+  <data name="OPREFAP" xml:space="preserve">
+    <value>Oto ödeme &lt;b&gt;% n2 +% &lt;/ b&gt; gün içinde süresi dolan refler için  açılabilir</value>
+    <comment>Leave '&lt;b&gt;%n2%+&lt;/b&gt;' unchanged!</comment>
+  </data>
+  <data name="FREE" xml:space="preserve">
+    <value>BEDAVA</value>
+    <comment>Next geolocation prices</comment>
+  </data>
+  <data name="GEOHINT" xml:space="preserve">
+    <value>Sadece seçilen ülkelere görüntülenecektir.Hangi ülkeye izin vermek istiyorsanız aşağı kutuya eklemeniz gerekmektedir.</value>
+  </data>
+  <data name="LASTS" xml:space="preserve">
+    <value>sürer</value>
+    <comment>ad </comment>
+  </data>
+  <data name="VIEWS" xml:space="preserve">
+    <value>görüntüleme</value>
+    <comment>Ad views (odslony)</comment>
+  </data>
+  <data name="ACTIVE" xml:space="preserve">
+    <value>Aktif</value>
+    <comment>Ad status</comment>
+  </data>
+  <data name="AFTERSTART" xml:space="preserve">
+    <value>after start</value>
+    <comment>X days after start</comment>
+  </data>
+  <data name="AWAITINGAPPROVAL" xml:space="preserve">
+    <value>Onay bekliyor</value>
+    <comment>Ad status</comment>
+  </data>
+  <data name="BUY" xml:space="preserve">
+    <value>Satınal</value>
+  </data>
+  <data name="BUYCREDITS" xml:space="preserve">
+    <value>Daha fazla kredi al</value>
+  </data>
+  <data name="CREATED" xml:space="preserve">
+    <value>Oluşturma tarihi</value>
+    <comment>Created date</comment>
+  </data>
+  <data name="DESC" xml:space="preserve">
+    <value>Tanım.</value>
+    <comment>Shorten form of description </comment>
+  </data>
+  <data name="ENDSON" xml:space="preserve">
+    <value>Bitiş</value>
+    <comment>Ad ends: &lt;date&gt;</comment>
+  </data>
+  <data name="FINISHED" xml:space="preserve">
+    <value>Tamamlandı</value>
+    <comment>Ad status</comment>
+  </data>
+  <data name="PAUSE" xml:space="preserve">
+    <value>Duraklat</value>
+    <comment>Pause ad</comment>
+  </data>
+  <data name="PAUSED" xml:space="preserve">
+    <value>Duraklatıldı</value>
+    <comment>Ad status</comment>
+  </data>
+  <data name="PROGRESS" xml:space="preserve">
+    <value>İlerleme</value>
+  </data>
+  <data name="REJECTED" xml:space="preserve">
+    <value>Reddedildi</value>
+    <comment>Ad status</comment>
+  </data>
+  <data name="STATUS" xml:space="preserve">
+    <value>Durum</value>
+  </data>
+  <data name="TIME" xml:space="preserve">
+    <value>Süre</value>
+  </data>
+  <data name="VIEWSBIG" xml:space="preserve">
+    <value>Görüntüleme</value>
+  </data>
+  <data name="BURL" xml:space="preserve">
+    <value>Banner resmi</value>
+  </data>
+  <data name="CLICKSSMALL" xml:space="preserve">
+    <value>tıklamalar</value>
+  </data>
+  <data name="H_BANNERURL" xml:space="preserve">
+    <value>Reklam resmi. Görüntü boyutları banner tipi eşleşmelidir. Desteklenen türler: JPG, PNG, GIF</value>
+  </data>
+  <data name="IMAGE" xml:space="preserve">
+    <value>Resim</value>
+  </data>
+  <data name="EXPIREWARNING" xml:space="preserve">
+    <value>Özel üyeliğiniz 3 gün içersinde sona erecektir. Yenilemeyi unutmayın.</value>
+  </data>
+  <data name="NOTENOUGHPOINTS" xml:space="preserve">
+    <value>Yeterince puanın bulunmamaktadır.</value>
+  </data>
+  <data name="WARNINGUPGRADE" xml:space="preserve">
+    <value>You have an active upgrade. Purchasing new upgrade will remove the current one</value>
+  </data>
+  <data name="ACHIEVEMENTS" xml:space="preserve">
+    <value>Başarılar</value>
+  </data>
+  <data name="ACHIEVEMENT_1" xml:space="preserve">
+    <value>For those who had more than %n% banner campaigns</value>
+    <comment>Leave %n% alone !!</comment>
+  </data>
+  <data name="ACHIEVEMENT_2" xml:space="preserve">
+    <value>For those who had more than %n% Facebook campaigns</value>
+    <comment>Leave %n% alone !!</comment>
+  </data>
+  <data name="ACHIEVEMENT_3" xml:space="preserve">
+    <value>For those who had more than %n% advertisement campaigns</value>
+    <comment>Leave %n% alone !!</comment>
+  </data>
+  <data name="ACHIEVEMENT_4" xml:space="preserve">
+    <value>For those who clicked more than %n% ads</value>
+    <comment>Leave %n% alone !!</comment>
+  </data>
+  <data name="ACHIEVEMENT_5" xml:space="preserve">
+    <value>For those who earned more than $%n%</value>
+    <comment>Leave %n% alone !!</comment>
+  </data>
+  <data name="ACHIEVEMENT_6" xml:space="preserve">
+    <value>For those who had more than %n% direct referrals</value>
+    <comment>Leave %n% alone !!</comment>
+  </data>
+  <data name="ACHIEVEMENT_7" xml:space="preserve">
+    <value>For those who had more than %n% rented referrals</value>
+    <comment>Leave %n% alone !!</comment>
+  </data>
+  <data name="ACHIEVEMENT_8" xml:space="preserve">
+    <value>For those who transferred more than $%n% at once</value>
+    <comment>Leave %n% alone !!</comment>
+  </data>
+  <data name="ENTRY" xml:space="preserve">
+    <value>Giriş</value>
+    <comment>HIstory entry</comment>
+  </data>
+  <data name="FORPURCHASED" xml:space="preserve">
+    <value>için</value>
+    <comment>purchased for $10</comment>
+  </data>
+  <data name="HISTORY_1" xml:space="preserve">
+    <value>Cashout of</value>
+    <comment>Cashout of $100</comment>
+  </data>
+  <data name="HISTORY_2" xml:space="preserve">
+    <value>Satın alındı</value>
+    <comment>Purchased 1000 ad clicks</comment>
+  </data>
+  <data name="HISTORY_3" xml:space="preserve">
+    <value>Yeni kullanıcı kaydı. Hoşgeldin</value>
+  </data>
+  <data name="HISTORY_4" xml:space="preserve">
+    <value>Transfer</value>
+  </data>
+  <data name="HISTORY_5" xml:space="preserve">
+    <value>Üyeliğin sona erdi</value>
+  </data>
+  <data name="HISTORY_6" xml:space="preserve">
+    <value>Hesap yükseltildi</value>
+  </data>
+  <data name="ACHIEVEMENTSMENU" xml:space="preserve">
+    <value>Kupalar</value>
+    <comment>shorten form is needed for menu (Achievements is too long)</comment>
+  </data>
+  <data name="ALLHISTORYLOGS" xml:space="preserve">
+    <value>Tüm logları görüntüle</value>
+  </data>
+  <data name="LATESTHISTORY" xml:space="preserve">
+    <value>Son log kayıtları</value>
+  </data>
+  <data name="ACHIEVEMENTSINFO" xml:space="preserve">
+    <value>Get fame and points by collecting our achievements</value>
+  </data>
+  <data name="ALLAVAILABLEACHIVS" xml:space="preserve">
+    <value>Mevcut tüm başarılar</value>
+  </data>
+  <data name="NEWACHIEVEMENTS" xml:space="preserve">
+    <value>Yeni başarılar var!</value>
+  </data>
+  <data name="NOACHIVS" xml:space="preserve">
+    <value>Herhangi bir başarı elde etmemişsiniz , zoru başarın.</value>
+  </data>
+  <data name="POINTSREWARD" xml:space="preserve">
+    <value>Puan:</value>
+    <comment>in achievements</comment>
+  </data>
+  <data name="CASHOUT" xml:space="preserve">
+    <value>Paraçek</value>
+  </data>
+  <data name="CASHOUTINFO" xml:space="preserve">
+    <value>Withdraw your funds easily anytime you want to</value>
+  </data>
+  <data name="LIMIT" xml:space="preserve">
+    <value>Minimum</value>
+    <comment>Cashout limit</comment>
+  </data>
+  <data name="CASHOUTLIMITINFO" xml:space="preserve">
+    <value>You can cashout as soon as you reach the cashout minimum. Minimum depends on the cashout number and current membership</value>
+  </data>
+  <data name="ER_BADPIN2" xml:space="preserve">
+    <value>Hatalı PIN</value>
+  </data>
+  <data name="HAVENTREACHLIMIT" xml:space="preserve">
+    <value>Henüz para çekme limitine ulaşmış değilsiniz.</value>
+  </data>
+  <data name="REST" xml:space="preserve">
+    <value>Rest</value>
+    <comment>1,2,3 cashout limit Rest: $2.00</comment>
+  </data>
+  <data name="AVATARURL" xml:space="preserve">
+    <value>Avatar URL</value>
+  </data>
+  <data name="MESSAGEOFFINFO" xml:space="preserve">
+    <value>Mesaj sistemin kapalı. İletileri almak / yönetmek / göndermek mümkün değildir.</value>
+  </data>
+  <data name="MESSAGESSYSTEM" xml:space="preserve">
+    <value>Mesaj Sistemi</value>
+  </data>
+  <data name="OFF" xml:space="preserve">
+    <value>kapalı</value>
+    <comment>turned off</comment>
+  </data>
+  <data name="ON" xml:space="preserve">
+    <value>açık</value>
+    <comment>turned on</comment>
+  </data>
+  <data name="REQ_AVATARURL" xml:space="preserve">
+    <value>Avatar URL gerekli</value>
+  </data>
+  <data name="SAVE" xml:space="preserve">
+    <value>Kaydet</value>
+    <comment>Like Save settings</comment>
+  </data>
+  <data name="SETTINGSINFO" xml:space="preserve">
+    <value>Hesabınızı yönetin. Burada tüm ayarlarınızı değiştirebilirsiniz.</value>
+  </data>
+  <data name="ER_MUSTPNGJPG" xml:space="preserve">
+    <value>Avatar .JPG veya PNG biçiminde olmalı</value>
+  </data>
+  <data name="H_LEAVEBLANK" xml:space="preserve">
+    <value>Bunu değiştirmek için istemiyorsanız boş bırakın</value>
+  </data>
+  <data name="JPGPNG" xml:space="preserve">
+    <value>JPG / PNG ve olmalı</value>
+  </data>
+  <data name="MESSAGEONOFF" xml:space="preserve">
+    <value>Mesaj sistemini devre dışı bıraktıktan sonra başkalarından herhangi bir mesaj  almak / yönetmek / göndermek mümkün olmayacaktır</value>
+  </data>
+  <data name="NEWPASS" xml:space="preserve">
+    <value>Yeni Parola</value>
+  </data>
+  <data name="NEWPASS2" xml:space="preserve">
+    <value>Yeni parolayı doğrula</value>
+  </data>
+  <data name="NEWPIN" xml:space="preserve">
+    <value>Yeni PIN</value>
+  </data>
+  <data name="NEWSECPASS" xml:space="preserve">
+    <value>Yeni ikinci parola</value>
+  </data>
+  <data name="SETTINGSSUCC" xml:space="preserve">
+    <value>Ayarlar başarıyla değiştirildi.</value>
+  </data>
+  <data name="CONTACT" xml:space="preserve">
+    <value>İletişim</value>
+  </data>
+  <data name="FAQ" xml:space="preserve">
+    <value>Sıkça Sorulan Sorular</value>
+  </data>
+  <data name="HELP" xml:space="preserve">
+    <value>Yardım</value>
+  </data>
+  <data name="PAYMENTPROOFS" xml:space="preserve">
+    <value>Ödeme kanıtları</value>
+  </data>
+  <data name="PRIVACYPOLICY" xml:space="preserve">
+    <value>Gizlilik Politikası</value>
+  </data>
+  <data name="CONTACTFORM" xml:space="preserve">
+    <value>İletişim formu</value>
+  </data>
+  <data name="CONTACTINFO" xml:space="preserve">
+    <value>Aşağıdaki formu doldurarak bizimle iletişime geçebilirsiniz. 24 saat içerisinde geri dönüş yapılacaktır.</value>
+  </data>
+  <data name="DIRECTCONTACT" xml:space="preserve">
+    <value>Direk iletişim</value>
+  </data>
+  <data name="HELP1" xml:space="preserve">
+    <value>İlk önce Sıkça Sorulan Sorular bölümünü kontrol edin. Belki senin sorunundaha önce yanıtlanmıştır  ve burada çözüm bulabilirsiniz</value>
+  </data>
+  <data name="HELP2" xml:space="preserve">
+    <value>Belki diğer kullanıcılarında  bu sorunu var? Cevabınız için forumları kontrol edin veya yeni bir konu gönderin.</value>
+  </data>
+  <data name="HELP3" xml:space="preserve">
+    <value>Durumun  acil veya herhangi bir cevap bulamadıysan Son olarak, bize yazmaktan çekinmeyin</value>
+  </data>
+  <data name="HELPINFO" xml:space="preserve">
+    <value>Yardımamı ihtiyacın var mı? Doğru yerdesiniz..</value>
+  </data>
+  <data name="PROOFSINFO" xml:space="preserve">
+    <value>View our latest payments below. User screenshots are posted on the forums</value>
+  </data>
+  <data name="AMOUNT" xml:space="preserve">
+    <value>Miktar</value>
+  </data>
+  <data name="COUNTRY" xml:space="preserve">
+    <value>Ülke</value>
+  </data>
+  <data name="INSTANT" xml:space="preserve">
+    <value>Anlık</value>
+  </data>
+  <data name="MANUAL" xml:space="preserve">
+    <value>Manuel</value>
+  </data>
+  <data name="NOPROOFS" xml:space="preserve">
+    <value>We just launched and we don't have any payment proofs yet</value>
+  </data>
+  <data name="TYPE" xml:space="preserve">
+    <value>Tür</value>
+  </data>
+  <data name="VIA" xml:space="preserve">
+    <value>Via</value>
+    <comment>Via PayPal</comment>
+  </data>
+  <data name="LATESTNEWS" xml:space="preserve">
+    <value>Son Haberler</value>
+  </data>
+  <data name="SENDSUPPORTTICKET" xml:space="preserve">
+    <value>Bildirim gönder</value>
+  </data>
+  <data name="CONSTANTBANNER" xml:space="preserve">
+    <value>Sabit banner</value>
+  </data>
+  <data name="CONSTANTBANNERINFO" xml:space="preserve">
+    <value>Shown on &lt;b&gt;all&lt;/b&gt; pages</value>
+  </data>
+  <data name="ER_BANNERISNOTVALID" xml:space="preserve">
+    <value>Banner (biçim ve / veya boyutları) geçersiz</value>
+  </data>
+  <data name="ER_BANNERNOTSELECTED" xml:space="preserve">
+    <value>Banner gönderilemedi.</value>
+  </data>
+  <data name="NORMALBANNER" xml:space="preserve">
+    <value>Normal banner</value>
+  </data>
+  <data name="NORMALBANNERINFO" xml:space="preserve">
+    <value>Shown with every watched ad</value>
+  </data>
+  <data name="BANNERDURT" xml:space="preserve">
+    <value>It may take up to %n% minutes to make the changes visible (banners are cached)</value>
+    <comment>Leave %n% unchanged</comment>
+  </data>
+  <data name="NORECORDS" xml:space="preserve">
+    <value>Herhangi bir kayıt bulunmamakta</value>
+  </data>
+  <data name="COMPLETED" xml:space="preserve">
+    <value>Tamamlandı</value>
+  </data>
+  <data name="CONNECTWITHFACEBOOK" xml:space="preserve">
+    <value>Connect to your Facebook account so we can check if you liked the fanpage and should get paid</value>
+  </data>
+  <data name="FRIENDS" xml:space="preserve">
+    <value>Arkadaşlar</value>
+  </data>
+  <data name="HAVENTLIKED" xml:space="preserve">
+    <value>You didn't liked the fanpage. Because it may take a while to update likes on Facebook API, refresh this site after 1 minute and try again</value>
+  </data>
+  <data name="MYFRIENDSNMBERLOW" xml:space="preserve">
+    <value>Arkadaşlarımın sayısı çok düşük. Neden?</value>
+  </data>
+  <data name="MYFRIENDSNMBERLOWANSW" xml:space="preserve">
+    <value>Because some of them used the Facebook feature "turn off all platform apps" and are inaccessible to all applications</value>
+  </data>
+  <data name="NOTCONNECTEDTOFB" xml:space="preserve">
+    <value>Facebook'a bağlı değilsiniz.</value>
+  </data>
+  <data name="NOTMEETREQUIREMENTS" xml:space="preserve">
+    <value>Gereksinimleri karşılamıyorsun.</value>
+  </data>
+  <data name="PICTURE" xml:space="preserve">
+    <value>Resim</value>
+  </data>
+  <data name="WHATSREWARD" xml:space="preserve">
+    <value>What is the reward for each like?</value>
+  </data>
+  <data name="YOUCONNECTEDWITHFACEBOOK" xml:space="preserve">
+    <value>Başarıyla Facebook a bağladığınız.</value>
+  </data>
+  <data name="NEEDED" xml:space="preserve">
+    <value>Gereklidir</value>
+    <comment>in Earn Facebook</comment>
+  </data>
+  <data name="YOUEARNPOINTS" xml:space="preserve">
+    <value>bu sayfayı beğendiğin için  %n% puan kazandın.</value>
+    <comment>Leavce %n% unchanged</comment>
+  </data>
+  <data name="SHORTURL" xml:space="preserve">
+    <value>Kısa URL</value>
+  </data>
+  <data name="ER_BADFBURL" xml:space="preserve">
+    <value>Geçersiz Fansayfa URL</value>
+  </data>
+  <data name="H_FBURL" xml:space="preserve">
+    <value>Facebook Fanpage URL. Tüm GET argümanları çıkarın ve sadece ismini yazın. Örn: http://www.facebook.com/asp.net VEYA https://www.facebook.com/asp.net</value>
+  </data>
+  <data name="NUMBEROFREQFRENDS" xml:space="preserve">
+    <value>Gerekli arkadaş sayısı</value>
+  </data>
+  <data name="PROFILEPICREQ" xml:space="preserve">
+    <value>Profil resmi Gerekli</value>
+  </data>
+  <data name="OUTADSINFO" xml:space="preserve">
+    <value>Yeni bir kampanya oluşturun ve PayPal ile ödeme yapın. Ödeme alındıktan sonra kampanya Onay Bekliyor olacak. Onaylandıktan sonra, anında devreye girecektir.</value>
+  </data>
+  <data name="OUTEMAILINFO" xml:space="preserve">
+    <value>Kampanya durum değişikliği haberdar edilecektir (= Aktif Onaylı veya Reddedildi)</value>
+  </data>
+  <data name="PAYVIA" xml:space="preserve">
+    <value>PayPal / Payza ile ödeme</value>
+  </data>
+  <data name="OUT1" xml:space="preserve">
+    <value>İhtiyaçlarınıza bağlı olarak, çeşitli şekillerde reklam verebilirsiniz. Aşağıda size en uygun seçeneği seçin</value>
+  </data>
+  <data name="OUT10" xml:space="preserve">
+    <value>Kayıt olmadan Reklam verin</value>
+  </data>
+  <data name="OUT11" xml:space="preserve">
+    <value>Kayıt olmak istemiyorsanız</value>
+  </data>
+  <data name="OUT12" xml:space="preserve">
+    <value>Onay sonrası Anında aktivasyon</value>
+  </data>
+  <data name="OUT13" xml:space="preserve">
+    <value>Kampanya durumu hakkında Bildirimler (e-posta)</value>
+  </data>
+  <data name="OUT2" xml:space="preserve">
+    <value>Kayıt ve reklam</value>
+  </data>
+  <data name="OUT3" xml:space="preserve">
+    <value>Tam reklam potansiyelini kullanmak istiyorsanız</value>
+  </data>
+  <data name="OUT4" xml:space="preserve">
+    <value>Yeni PTC / Banner / Facebook / TrafficGrid kampanya oluştur</value>
+  </data>
+  <data name="OUT5" xml:space="preserve">
+    <value>Demografik filtre</value>
+  </data>
+  <data name="OUT6" xml:space="preserve">
+    <value>Güçlü anti-hile koruması</value>
+  </data>
+  <data name="OUT7" xml:space="preserve">
+    <value>Kampanyanızı istediğiniz zaman başlatabilir yada duraklatabilirsiniz.</value>
+  </data>
+  <data name="OUT8" xml:space="preserve">
+    <value>Ek tıklama Satınalma</value>
+  </data>
+  <data name="OUT9" xml:space="preserve">
+    <value>İlerleme çizelgeleri</value>
+  </data>
+  <data name="STATISTICS" xml:space="preserve">
+    <value>İstatistikler</value>
+  </data>
+  <data name="LIKESSMALL" xml:space="preserve">
+    <value>beğeniler</value>
+    <comment>Non-capitalized version of Facebook likes</comment>
+  </data>
+  <data name="CURRENTPIN" xml:space="preserve">
+    <value>Geçerli PIN</value>
+  </data>
+  <data name="SECONDS" xml:space="preserve">
+    <value>saniye</value>
+    <comment>Ad lasts X seconds</comment>
+  </data>
+  <data name="DEMOCHECK" xml:space="preserve">
+    <value>This operation has been disabled in demo version</value>
+  </data>
+  <data name="ALLCLICKSMADE" xml:space="preserve">
+    <value>Hesabınızda yapılan tüm tıklamalar</value>
+  </data>
+  <data name="ALLCREDITEDMONEY" xml:space="preserve">
+    <value>Kazançlarınız</value>
+  </data>
+  <data name="CLICKSTOCHART" xml:space="preserve">
+    <value>Tıklamalar</value>
+    <comment>'Clicks' displayed on the charts NO SPECIAL CHARACTERS</comment>
+  </data>
+  <data name="DAYSTOCHART" xml:space="preserve">
+    <value>Gün</value>
+    <comment>'Days' displayed on the charts NO SPECIAL CHARACTERS</comment>
+  </data>
+  <data name="STATSINFO" xml:space="preserve">
+    <value>Those are the statistics connected to your account. To see statistics for particular referral go to referral list and click 'See chart' image</value>
+  </data>
+  <data name="USERCLICKSMADE" xml:space="preserve">
+    <value>Tıklamalarınız</value>
+  </data>
+  <data name="YOUHAVE" xml:space="preserve">
+    <value>you have</value>
+  </data>
+  <data name="ONOFF" xml:space="preserve">
+    <value>Açık/Kapalı</value>
+  </data>
+  <data name="ACCBLACK" xml:space="preserve">
+    <value>This account has been banned because its aspect has been blacklisted</value>
+  </data>
+  <data name="COUNTRYFORBID" xml:space="preserve">
+    <value>Your country has been blacklisted. You can't register</value>
+  </data>
+  <data name="IPFORBID" xml:space="preserve">
+    <value>IP adresiniz kara listeye alınmıştır . Kayıt olmanıza izin verilmez.</value>
+  </data>
+  <data name="UNAMEFORBID" xml:space="preserve">
+    <value>Bu kullanıcı adı yasak</value>
+  </data>
+  <data name="MANUALPP" xml:space="preserve">
+    <value>Yönetici tarafından onaylanması gerekiyor</value>
+  </data>
+  <data name="PAYOUTTYPE" xml:space="preserve">
+    <value>Ödeme türü</value>
+  </data>
+  <data name="PRNOTPAID" xml:space="preserve">
+    <value>You have %var1% unpaid payout request(s) worth %var2% . First from %var3%</value>
+    <comment>Dont change %var%</comment>
+  </data>
+  <data name="CLICKSSTRAIGHT" xml:space="preserve">
+    <value>Tıklamalar</value>
+  </data>
+  <data name="ERROR" xml:space="preserve">
+    <value>Hata :(</value>
+  </data>
+  <data name="ERROR_INFO" xml:space="preserve">
+    <value>5 dakika sonra tekrar yenileniyor / yeniden-günlüğü / sahipsiniz. Durum devam ederse, yöneticisine başvurun</value>
+  </data>
+  <data name="COMPLETEDTASKS" xml:space="preserve">
+    <value>Tamamlanan görevler</value>
+  </data>
+  <data name="FEATUREDISABLED" xml:space="preserve">
+    <value>Özellik yönetici tarafından devre dışı bırakılmıştır</value>
+  </data>
+  <data name="HISTORY_7" xml:space="preserve">
+    <value>Credited for the offerwall with </value>
+  </data>
+  <data name="OFFERCLICKINFO" xml:space="preserve">
+    <value>Offerwall etkinleştirmek için aşağıdaki resmin üzerine tıklayınız.  AdBlock'u kapatın</value>
+  </data>
+  <data name="OFFERSHORTINFO" xml:space="preserve">
+    <value>After you complete the task you will be rewarded in points automatically (after your task is verified)</value>
+  </data>
+  <data name="ADDNEW" xml:space="preserve">
+    <value>Yeni Ekle</value>
+  </data>
+  <data name="FRIENDSINFO" xml:space="preserve">
+    <value>Yeni arkadaşlar davet et ve tek bir tıklama ile onlarla kolayca  iletişim kur.</value>
+  </data>
+  <data name="NOFRIENDS" xml:space="preserve">
+    <value>Hiç bir arkadaşın yok!</value>
+  </data>
+  <data name="NOREFBACKDATA" xml:space="preserve">
+    <value>Henüz bir web sitesi bulunmamaktadır.</value>
+  </data>
+  <data name="PEOPLE" xml:space="preserve">
+    <value>Sosyal</value>
+  </data>
+  <data name="REFBACK1" xml:space="preserve">
+    <value>Aşağıdaki RefBack Sistemi sitelerinin listesini bulabilirsiniz.</value>
+  </data>
+  <data name="REFBACK2" xml:space="preserve">
+    <value>Register on the website using the referral link and become an active clicker (referral). After you click the button below, the administrator will be able to monitor your progress. If you are an active clicker, you will get paid manually by the administrator (as soon as he decides).</value>
+  </data>
+  <data name="REFBACK3" xml:space="preserve">
+    <value>Payments are made manually, ofter after every administrator cashout. Good luck!</value>
+  </data>
+  <data name="REFBACK4" xml:space="preserve">
+    <value>Register as: %username1% or if it is occupied, use: %username2%</value>
+  </data>
+  <data name="REFBACK5" xml:space="preserve">
+    <value>Don't click the button if you don't understand the rules, didn't register or don't plan to be active. You might get banned</value>
+  </data>
+  <data name="REFDECLARATION" xml:space="preserve">
+    <value>I've registered on this site and will become an active referral</value>
+  </data>
+  <data name="REFDECLARED" xml:space="preserve">
+    <value>You have declared to be an active referral here</value>
+  </data>
+  <data name="REQUESTSUCCESS" xml:space="preserve">
+    <value>Arkadaşlık isteği başarıyla gönderildi. </value>
+  </data>
+  <data name="GAMESWAR" xml:space="preserve">
+    <value>Reklam veya oyunları göremiyor musunuz? AdBlock'u devre dışı bırakınız</value>
+  </data>
+  <data name="ACHIEVEMENT_10" xml:space="preserve">
+    <value>For those who won more than %n% times in TrafficGrid</value>
+  </data>
+  <data name="ACHIEVEMENT_9" xml:space="preserve">
+    <value>For those who had more than %n% TrafficGrid advertising campaigns</value>
+  </data>
+  <data name="HISTORY_8" xml:space="preserve">
+    <value>Trgrid te kazandın</value>
+  </data>
+  <data name="TGCHANCES" xml:space="preserve">
+    <value>TrafficGrid chances to win any kind of reward</value>
+  </data>
+  <data name="TGHITS" xml:space="preserve">
+    <value>Günlük tıklama sınırı</value>
+  </data>
+  <data name="TGSHORTED" xml:space="preserve">
+    <value>TrbuxGrid reklam süresi</value>
+  </data>
+  <data name="TRAFFICGRIDADINFO1" xml:space="preserve">
+    <value>Hızlı ve ucuz çok fazla trafik almak istiyorsanız, TrafficGrid reklam sizin için en iyi seçenektir.</value>
+  </data>
+  <data name="WONERROR" xml:space="preserve">
+    <value>You won rented referral but we can't add it because you reached your limit</value>
+  </data>
+  <data name="WONNOTHING" xml:space="preserve">
+    <value>Üzgünüm kazanamadın :( bir dahaki sefere inşaallah.</value>
+  </data>
+  <data name="DRRLIMITPLUS" xml:space="preserve">
+    <value>Direk ref limit</value>
+  </data>
+  <data name="FROMDR" xml:space="preserve">
+    <value>1 direkt ref tıklama</value>
+    <comment>KEEP IT SHORT</comment>
+  </data>
+  <data name="FROMRR" xml:space="preserve">
+    <value>from 1 rented ref click</value>
+    <comment>KEEP IT SHORT</comment>
+  </data>
+  <data name="LATESTWINNERS" xml:space="preserve">
+    <value>Son 10 Kazananlar</value>
+  </data>
+  <data name="PRIZES" xml:space="preserve">
+    <value>Ödüller</value>
+  </data>
+  <data name="REACHEDHITS" xml:space="preserve">
+    <value>Zaten günlük hit sınırı ulaştınız. Hesap yükseltin veya yarın yeniden ziyaret edin.</value>
+  </data>
+  <data name="TGINFO" xml:space="preserve">
+    <value>Aşağıdaki ızgaralardan birine tıklayın ve açılan reklamı izleyin inanılmaz ödüller kazanın!</value>
+  </data>
+  <data name="TOPWINNERS" xml:space="preserve">
+    <value>Top 10 kazananlar</value>
+  </data>
+  <data name="YOURACCOUNT" xml:space="preserve">
+    <value>Hesabınız</value>
+  </data>
+  <data name="YOURCHANCES" xml:space="preserve">
+    <value>Şans oranınız</value>
+  </data>
+  <data name="YOUWON" xml:space="preserve">
+    <value>Kazandın.</value>
+  </data>
+  <data name="PRIZE" xml:space="preserve">
+    <value>Ödül</value>
+  </data>
+  <data name="YOUMUSTBELOGGED" xml:space="preserve">
+    <value>Reklamları izlemek ve para kazanmak istiyorsanız giriş yapmalısınız</value>
+  </data>
+  <data name="ALREADYSENT" xml:space="preserve">
+    <value>We have already sent you SMS with the code</value>
+  </data>
+  <data name="CONFIRM" xml:space="preserve">
+    <value>Onayla</value>
+  </data>
+  <data name="IPAPROXY" xml:space="preserve">
+    <value>IP adresi vekil olarak kabul edilmiştir</value>
+  </data>
+  <data name="RECPIN" xml:space="preserve">
+    <value>Alınan kod</value>
+  </data>
+  <data name="SENDSMSBUTTON" xml:space="preserve">
+    <value>Send SMS with the code</value>
+  </data>
+  <data name="SMSINFO" xml:space="preserve">
+    <value>Provide us with your phone number and enter the received code in the field below</value>
+  </data>
+  <data name="SMSVERIFICATION" xml:space="preserve">
+    <value>SMS Doğrulama</value>
+  </data>
+  <data name="WRONGCODE" xml:space="preserve">
+    <value>Girdiğiniz kod yanlış</value>
+  </data>
+  <data name="ACCOUNTDAYS" xml:space="preserve">
+    <value>Hesap gün sayısı</value>
+  </data>
+  <data name="CONTEST1" xml:space="preserve">
+    <value>Direct R. Yarışmaları</value>
+  </data>
+  <data name="CONTEST2" xml:space="preserve">
+    <value>Kiralık R. Yarışmaları</value>
+  </data>
+  <data name="CONTEST3" xml:space="preserve">
+    <value>Tıklama Yarışmaları</value>
+  </data>
+  <data name="CONTEST4" xml:space="preserve">
+    <value>Transfer Yarışmaları</value>
+  </data>
+  <data name="CONTEST5" xml:space="preserve">
+    <value>Offerwalls Yarışmaları</value>
+  </data>
+  <data name="CONTEST6" xml:space="preserve">
+    <value>CrowdFlower </value>
+  </data>
+  <data name="CONTESTINFO" xml:space="preserve">
+    <value>In order to participate in the contest, you must meet all requirements and click the button 'Participate'</value>
+  </data>
+  <data name="CONTESTS" xml:space="preserve">
+    <value>Yarışmalar</value>
+  </data>
+  <data name="DURATION" xml:space="preserve">
+    <value>Süre</value>
+  </data>
+  <data name="LATESTKINDWINNERS" xml:space="preserve">
+    <value>Son kazananlar</value>
+  </data>
+  <data name="NAME" xml:space="preserve">
+    <value>İsim</value>
+  </data>
+  <data name="PARTICIPATE" xml:space="preserve">
+    <value>Katıl</value>
+  </data>
+  <data name="HISTORY_9" xml:space="preserve">
+    <value>Yarışma kazandın</value>
+  </data>
+  <data name="NOCONTESTS" xml:space="preserve">
+    <value>Şu anda bu tip herhangi bir  yarışma yok</value>
+  </data>
+  <data name="YOUCANTMULTIPLE" xml:space="preserve">
+    <value>Bir seferde birden çok reklam görüntüleyemezsiniz.</value>
+  </data>
+  <data name="CATEGORIES" xml:space="preserve">
+    <value>Kategoriler</value>
+  </data>
+  <data name="DENIED" xml:space="preserve">
+    <value>Reddedildi</value>
+  </data>
+  <data name="IGNORED" xml:space="preserve">
+    <value>Görmezden gelindi</value>
+  </data>
+  <data name="NEW" xml:space="preserve">
+    <value>Yeni</value>
+  </data>
+  <data name="PENDING" xml:space="preserve">
+    <value>Beklemede</value>
+  </data>
+  <data name="REPORTED" xml:space="preserve">
+    <value>Raporlandı</value>
+  </data>
+  <data name="SEARCH" xml:space="preserve">
+    <value>Ara</value>
+  </data>
+  <data name="UNDERREVIEW" xml:space="preserve">
+    <value>İnceleniyor</value>
+  </data>
+  <data name="ADVERTISER" xml:space="preserve">
+    <value>Reklamveren</value>
+  </data>
+  <data name="CATEGORY" xml:space="preserve">
+    <value>Kategori</value>
+  </data>
+  <data name="COMPLETEDTIMES" xml:space="preserve">
+    <value>Completed %n% times</value>
+    <comment>Leave %n%</comment>
+  </data>
+  <data name="CREDITINGTIME" xml:space="preserve">
+    <value>Oluşturulma tarihi</value>
+  </data>
+  <data name="DATEADDED" xml:space="preserve">
+    <value>Tarih eklendi</value>
+  </data>
+  <data name="IGNORE" xml:space="preserve">
+    <value>Görmezden gel</value>
+  </data>
+  <data name="LASTCREDITED" xml:space="preserve">
+    <value>Son yatırım</value>
+  </data>
+  <data name="LOGINIDHINT" xml:space="preserve">
+    <value>Bu genellikle bir kullanıcı adı, e-posta veya bir giriş kimlik numarasıdır</value>
+  </data>
+  <data name="OFFEMAILHINT" xml:space="preserve">
+    <value>Bu teklif için kaydolurken kullandığınız  e-posta adresiniz buraya giriniz.</value>
+  </data>
+  <data name="OFFERRATING" xml:space="preserve">
+    <value>Teklif değerlendirmesi</value>
+  </data>
+  <data name="REPORT" xml:space="preserve">
+    <value>Raporla</value>
+  </data>
+  <data name="SUBMIT" xml:space="preserve">
+    <value>Gönder</value>
+  </data>
+  <data name="IMPRESSIONS" xml:space="preserve">
+    <value>Gösterimler</value>
+  </data>
+  <data name="IMPRESSIONSSMALL" xml:space="preserve">
+    <value>gösterimler</value>
+  </data>
+  <data name="REQ_PP" xml:space="preserve">
+    <value>Ödeme işlemci seçmelisiniz</value>
+  </data>
+  <data name="CASHOUTLIMIT" xml:space="preserve">
+    <value>İlk para çekme limiti</value>
+  </data>
+  <data name="CASHOUTLIMITNEXT" xml:space="preserve">
+    <value>Each next cashout minimum increased by</value>
+  </data>
+  <data name="OFFERWALLSPROFIT" xml:space="preserve">
+    <value>Teklif kazançları</value>
+  </data>
+  <data name="CASHOUTINFO2" xml:space="preserve">
+    <value>values depend on your current membership (see Upgrade section for full table)</value>
+  </data>
+  <data name="MAXCASHOUTLIMIT" xml:space="preserve">
+    <value>Maximal cashout minimum</value>
+  </data>
+  <data name="TOOMANYCASHOUTS" xml:space="preserve">
+    <value>Maalesef, ödeme almada bugün maksimum  sınıra ulaşıldı. Yarın Lütfen tekrar deneyin. Günde Güncel Para çekme limiti:</value>
+  </data>
+  <data name="ACHIEVEMENT_11" xml:space="preserve">
+    <value>For those who completed more than %n% CPA/GPT offers</value>
+  </data>
+  <data name="ACHIEVEMENT_12" xml:space="preserve">
+    <value>For those who gained more than %n% Points in one day</value>
+  </data>
+  <data name="ADDRESS" xml:space="preserve">
+    <value>Adres</value>
+  </data>
+  <data name="CITY" xml:space="preserve">
+    <value>Şehir</value>
+  </data>
+  <data name="DETAILEDALLREQ" xml:space="preserve">
+    <value>Bu alan gereklidir</value>
+  </data>
+  <data name="DETAILEDNOSPECIAL" xml:space="preserve">
+    <value>Bu alan geçersiz karakterler içeriyor - alanı:</value>
+  </data>
+  <data name="FEMALE" xml:space="preserve">
+    <value>Bayan</value>
+  </data>
+  <data name="FIRSTNAME" xml:space="preserve">
+    <value>İsim</value>
+  </data>
+  <data name="GENDER" xml:space="preserve">
+    <value>Cinsiyet</value>
+  </data>
+  <data name="MALE" xml:space="preserve">
+    <value>Bay</value>
+  </data>
+  <data name="SECONDNAME" xml:space="preserve">
+    <value>Soy İsim</value>
+  </data>
+  <data name="STATEPROVINCE" xml:space="preserve">
+    <value>il/İlçe</value>
+  </data>
+  <data name="ZIPCODE" xml:space="preserve">
+    <value>Zip/Posta Kodu</value>
+  </data>
+  <data name="ASC" xml:space="preserve">
+    <value>ASC</value>
+  </data>
+  <data name="COMPLETEDXTIMES" xml:space="preserve">
+    <value>Completed %n% times</value>
+    <comment>Leavce %n% unchanged</comment>
+  </data>
+  <data name="CPAPROFIT" xml:space="preserve">
+    <value>CPA/GPT offers earnings</value>
+  </data>
+  <data name="DESCR" xml:space="preserve">
+    <value>TANIM</value>
+  </data>
+  <data name="MOVEBACK" xml:space="preserve">
+    <value>Gerial</value>
+    <comment>Return button in CPAoffers</comment>
+  </data>
+  <data name="SORTBY" xml:space="preserve">
+    <value>Sırala</value>
+  </data>
+  <data name="WHATISPROBLEM" xml:space="preserve">
+    <value>Sorun nedir?</value>
+  </data>
+  <data name="BADERRREP" xml:space="preserve">
+    <value>Raporun geçersiz karakterler içeriyor</value>
+  </data>
+  <data name="ONEFIELDSABAD" xml:space="preserve">
+    <value>Alanlarından biri geçersiz karakterler içeriyor</value>
+  </data>
+  <data name="ADVCOSTS" xml:space="preserve">
+    <value>reklam maliyetleri</value>
+  </data>
+  <data name="AMOUNTPERONEACTION" xml:space="preserve">
+    <value>Eylem Başına Fiyat</value>
+  </data>
+  <data name="DAILY1" xml:space="preserve">
+    <value>Teklif Her gün yenilenir , aynı kullanıcılar yeniden tamamlayabilir.</value>
+  </data>
+  <data name="EBR" xml:space="preserve">
+    <value>Email kutusu</value>
+  </data>
+  <data name="EBR1" xml:space="preserve">
+    <value>Kullanıcı Teklife yapıştırılan e-posta sağlamak zorunda mı ? Bu &lt;b&gt; MAX 400 &lt;/ b&gt; karakter uzunluğunda olmalıdır</value>
+  </data>
+  <data name="HOWMANY" xml:space="preserve">
+    <value>Ne kadar</value>
+  </data>
+  <data name="LBR" xml:space="preserve">
+    <value>Kullanıcı ID Kutusu</value>
+  </data>
+  <data name="LBR1" xml:space="preserve">
+    <value>Kullanıcı Teklife Kullanıcı ID girmek zorunda mı? Bu &lt;b&gt; MAX 80 &lt;/ b&gt; karakter uzunluğunda olmalıdır</value>
+  </data>
+  <data name="OUT44" xml:space="preserve">
+    <value>Yeni PTC / Banner / Facebook / TrafficGrid / GPT / CPA / PTSU vb kampanya oluştur</value>
+  </data>
+  <data name="REFDAILY" xml:space="preserve">
+    <value>Günlük yenilenir</value>
+  </data>
+  <data name="REQ_DESC" xml:space="preserve">
+    <value>Açıklama gereklidir</value>
+  </data>
+  <data name="CAMPAIGN" xml:space="preserve">
+    <value>Kampanya</value>
+  </data>
+  <data name="DAILY" xml:space="preserve">
+    <value>Günlük</value>
+  </data>
+  <data name="STOPPED" xml:space="preserve">
+    <value>Durduruldu</value>
+  </data>
+  <data name="SUBMITED" xml:space="preserve">
+    <value>Gönderildi</value>
+  </data>
+  <data name="HISTORY_10" xml:space="preserve">
+    <value>CPA gönderimin onaylandı</value>
+  </data>
+  <data name="HISTORY_11" xml:space="preserve">
+    <value>CPA gönderimin inceleme altına / reddedildi</value>
+  </data>
+  <data name="ERCPA" xml:space="preserve">
+    <value>Eylem biçimi Başına Geçersiz fiyat ve {X} (o 0'dan büyük olmalıdır) .xxx</value>
+  </data>
+  <data name="TRAFFICEXCHANGE" xml:space="preserve">
+    <value>Traffic Değiş</value>
+  </data>
+  <data name="REFPROFIT" xml:space="preserve">
+    <value>Offerwalls / CrowdFlower gelen referans kazancı</value>
+  </data>
+</root>

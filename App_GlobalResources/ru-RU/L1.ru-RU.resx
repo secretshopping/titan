@@ -1,0 +1,1746 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ACCCANCELLED" xml:space="preserve">
+    <value>Эта учетная запись была отменена</value>
+  </data>
+  <data name="ACCCHEAT" xml:space="preserve">
+    <value>Эта учетная запись была приостановлена ​​в связи с обманом</value>
+  </data>
+  <data name="ACCINACTIVE" xml:space="preserve">
+    <value>Эта учетная запись была приостановлена в связи с бездействием</value>
+  </data>
+  <data name="ACCOUNT" xml:space="preserve">
+    <value>Аккаунт</value>
+    <comment>In top menu</comment>
+  </data>
+  <data name="ACCSECURED" xml:space="preserve">
+    <value>Вход для этой учетной записи отключен по соображениям безопасности. Обратитесь к администратору, чтобы разблокировать учетную запись</value>
+  </data>
+  <data name="ACCTOS" xml:space="preserve">
+    <value>Эта учетная запись была приостановлена ​​в связи с нарушением правил</value>
+  </data>
+  <data name="ADS" xml:space="preserve">
+    <value>Реклама</value>
+    <comment>In top menu, in user top menu</comment>
+  </data>
+  <data name="ADVERTISE" xml:space="preserve">
+    <value>Рекламировать</value>
+    <comment>In top menu, in user top menu</comment>
+  </data>
+  <data name="BANNERS" xml:space="preserve">
+    <value>Баннеры</value>
+    <comment>In user top menu</comment>
+  </data>
+  <data name="CONFIRMPASSWORD" xml:space="preserve">
+    <value>Подтвердите пароль</value>
+  </data>
+  <data name="DIRECT" xml:space="preserve">
+    <value>Прямой</value>
+    <comment>In user top menu</comment>
+  </data>
+  <data name="EARN" xml:space="preserve">
+    <value>Зарабатывать</value>
+    <comment>In user top menu</comment>
+  </data>
+  <data name="ER_ALLFIELDSREQUIRED" xml:space="preserve">
+    <value>Имя пользователя и пароль требуются для входа в систему</value>
+  </data>
+  <data name="ER_BADPASSWORD" xml:space="preserve">
+    <value>Неверный пароль (s). Пожалуйста, попробуйте ещё раз</value>
+  </data>
+  <data name="ER_BADPWD2" xml:space="preserve">
+    <value>Ваш вторичный Пароль недействителен</value>
+  </data>
+  <data name="ER_DUPLICATEEMAIL" xml:space="preserve">
+    <value>К сожалению, эта эл. почта уже зарегистрирована. Выберите другую</value>
+  </data>
+  <data name="ER_INVALIDPASSWORD" xml:space="preserve">
+    <value>Длина пароля должна быть от 6 до 30 символов и может содержать только буквы и цифры</value>
+  </data>
+  <data name="ER_INVALIDUSERNAME" xml:space="preserve">
+    <value>Неверный формат имя пользователя</value>
+  </data>
+  <data name="ER_INVALIDPASS" xml:space="preserve">
+    <value>Неверный формат пароля</value>
+  </data>
+  <data name="ER_INVALIDUSERNAME3" xml:space="preserve">
+    <value>К сожалению, это имя пользователя занято. Выберите другое</value>
+  </data>
+  <data name="ER_LOGINUNSUCC" xml:space="preserve">
+    <value>Вход безуспешный. Пожалуйста, попробуйте ещё раз</value>
+  </data>
+  <data name="ER_USERLOCKEDOUT" xml:space="preserve">
+    <value>Пользователь заблокирован</value>
+  </data>
+  <data name="ER_USER_NOTFOUND" xml:space="preserve">
+    <value>Мы не можем найти такого пользователя</value>
+  </data>
+  <data name="FORUM" xml:space="preserve">
+    <value>Форум</value>
+    <comment>In top menu</comment>
+  </data>
+  <data name="GAMES" xml:space="preserve">
+    <value>Игры</value>
+    <comment>In user top menu</comment>
+  </data>
+  <data name="HISTORY" xml:space="preserve">
+    <value>История</value>
+    <comment>In user top menu</comment>
+  </data>
+  <data name="HOME" xml:space="preserve">
+    <value>Главная</value>
+    <comment>In top menu</comment>
+  </data>
+  <data name="LEAVEBLANKIFNOTPWD2" xml:space="preserve">
+    <value>Оставьте пустым, если у вас нет второго пароля</value>
+  </data>
+  <data name="LIKES" xml:space="preserve">
+    <value>Лайк</value>
+    <comment>In user top menu</comment>
+  </data>
+  <data name="LOGIN" xml:space="preserve">
+    <value>Войти</value>
+    <comment>In top menu</comment>
+  </data>
+  <data name="LOGOUT" xml:space="preserve">
+    <value>Выход</value>
+    <comment>In top menu</comment>
+  </data>
+  <data name="MESSAGES" xml:space="preserve">
+    <value>Сообщения.</value>
+    <comment>In user top menu</comment>
+  </data>
+  <data name="OR" xml:space="preserve">
+    <value>ИЛИ</value>
+  </data>
+  <data name="PASSWORD" xml:space="preserve">
+    <value>Пароль</value>
+  </data>
+  <data name="REFERRALS" xml:space="preserve">
+    <value>Рефералы</value>
+    <comment>In user top menu</comment>
+  </data>
+  <data name="REGISTER" xml:space="preserve">
+    <value>Регистрация</value>
+    <comment>In top menu</comment>
+  </data>
+  <data name="REGISTERTEXT" xml:space="preserve">
+    <value>Измените ваши финансы навсегда. Регистрация для бесплатного аккаунта.</value>
+  </data>
+  <data name="REG_EMAIL" xml:space="preserve">
+    <value>Адрес электронной почты должен быть действительным и активным. Он будет использоваться только для отправки вам важных новостей (включая ответы техподдержки), для восстановления паролей и подтверждения платежей</value>
+  </data>
+  <data name="REG_PASSWORD" xml:space="preserve">
+    <value>Выберите пароль. Он должен быть от 4 до 80 символов и может содержать только буквы и цифры.</value>
+  </data>
+  <data name="REG_PIN" xml:space="preserve">
+    <value>Это ваша дополнительная безопасность. Мы будем просить его перед выводом средств или сброса пароля. Он может содержать только 4 цифры (0-9)</value>
+  </data>
+  <data name="REG_REFERER" xml:space="preserve">
+    <value>Имя пользователя, нашего пользователя, который установит вам здесь. Может быть пустым</value>
+  </data>
+  <data name="REG_USERNAME" xml:space="preserve">
+    <value>Выберите желаемое имя пользователя. Оно должно быть от 4 до 20 символов и может содержать только буквы и цифры. Оно должно начинаться с буквы</value>
+  </data>
+  <data name="RENTED" xml:space="preserve">
+    <value>Арендованные</value>
+    <comment>In user top menu</comment>
+  </data>
+  <data name="RESETPWDSUCC" xml:space="preserve">
+    <value>Ваш новый пароль был отправлен вам</value>
+  </data>
+  <data name="RESETPWDTEXT" xml:space="preserve">
+    <value>Введите имя пользователя и PIN, мы вышлем вам новый пароль на ваш личный адрес электронной почты</value>
+  </data>
+  <data name="SECONDARYPASSWORD" xml:space="preserve">
+    <value>Вторичный пароль</value>
+  </data>
+  <data name="SECURELOGINSSL" xml:space="preserve">
+    <value>Безопасные SSL Войти с безопасного Титана</value>
+  </data>
+  <data name="SEEYOU" xml:space="preserve">
+    <value>Увидимся</value>
+  </data>
+  <data name="SEND" xml:space="preserve">
+    <value>Отправить</value>
+  </data>
+  <data name="SETTINGS" xml:space="preserve">
+    <value>Настройки</value>
+    <comment>In user top menu</comment>
+  </data>
+  <data name="STATS" xml:space="preserve">
+    <value>Штат</value>
+    <comment>In user top menu</comment>
+  </data>
+  <data name="SUMMARY" xml:space="preserve">
+    <value>Резюме</value>
+    <comment>In user top menu</comment>
+  </data>
+  <data name="TRANSFER" xml:space="preserve">
+    <value>Перевод</value>
+    <comment>In user top menu</comment>
+  </data>
+  <data name="TRY_AGAIN" xml:space="preserve">
+    <value>Пожалуйста, попробуйте ещё раз</value>
+  </data>
+  <data name="USERNAME" xml:space="preserve">
+    <value>Имя пользователя</value>
+  </data>
+  <data name="YOUWILLREDIRECT" xml:space="preserve">
+    <value>Вы будете перенаправлены через секунду...</value>
+  </data>
+  <data name="ER_BADEMAILFORMAT" xml:space="preserve">
+    <value>Введите действительный адрес электронной почты</value>
+  </data>
+  <data name="ER_PASSDIFFER" xml:space="preserve">
+    <value>Пароль и его информация не соответствует</value>
+  </data>
+  <data name="REG_CAPTCHA" xml:space="preserve">
+    <value>Введите текст с картинки</value>
+  </data>
+  <data name="REG_REQ_CONFIRM" xml:space="preserve">
+    <value>Поле Подтвердите пароль не может быть пустым</value>
+  </data>
+  <data name="REG_REQ_EMAIL" xml:space="preserve">
+    <value>E-mail поле не может быть пустым</value>
+  </data>
+  <data name="REG_REQ_PASS" xml:space="preserve">
+    <value>Поле Пароль не может быть пустым</value>
+  </data>
+  <data name="REG_REQ_USERNAME" xml:space="preserve">
+    <value>Поле Имя пользователя не может быть пустым</value>
+  </data>
+  <data name="REG_UNDERSTANDTOS" xml:space="preserve">
+    <value>Я прочитал, понял и принял</value>
+  </data>
+  <data name="TERMSOFSERVICE" xml:space="preserve">
+    <value>Условия предоставления услуг</value>
+  </data>
+  <data name="IFORGOTPWD" xml:space="preserve">
+    <value>Я забыл свой пароль</value>
+  </data>
+  <data name="ER_BADPIN" xml:space="preserve">
+    <value>Неверный формат PIN</value>
+  </data>
+  <data name="ER_BADREF" xml:space="preserve">
+    <value>Такой реферер не существует или вы достигли своего предела рефералов.</value>
+  </data>
+  <data name="ER_BADYEAR" xml:space="preserve">
+    <value>Неверный формат Года рождения</value>
+  </data>
+  <data name="REG_REQ_PIN" xml:space="preserve">
+    <value>PIN-поле не может быть пустым</value>
+  </data>
+  <data name="REG_REQ_YEAR" xml:space="preserve">
+    <value>Поле Год рождения не может быть пустым</value>
+  </data>
+  <data name="ER_BADCAPTCHA" xml:space="preserve">
+    <value>Проверка изображения и текст проверки не совпадают</value>
+  </data>
+  <data name="REG_REQ_CAPTCHA" xml:space="preserve">
+    <value>Пожалуйста, введите проверочный код</value>
+  </data>
+  <data name="REG_REQ_TOS" xml:space="preserve">
+    <value>Вы должны принять Условия предоставления услуг</value>
+  </data>
+  <data name="BIRTHYEAR" xml:space="preserve">
+    <value>Год рождения</value>
+  </data>
+  <data name="DESIREDPIN" xml:space="preserve">
+    <value>Желаемый PIN</value>
+  </data>
+  <data name="ENTERPIN" xml:space="preserve">
+    <value>Введите ПИН для дополнительной проверки</value>
+  </data>
+  <data name="REFERER" xml:space="preserve">
+    <value>Пригласивший</value>
+  </data>
+  <data name="VERIFICATION" xml:space="preserve">
+    <value>Проверка</value>
+  </data>
+  <data name="ER_EMAILORPINBAD" xml:space="preserve">
+    <value>E-mail/PIN не соответствует этому имени пользователя</value>
+  </data>
+  <data name="CURRENTTIME" xml:space="preserve">
+    <value>Текущее время сервера</value>
+  </data>
+  <data name="RESETTIME" xml:space="preserve">
+    <value>Ваша реклама нажмите сбрасывается в</value>
+  </data>
+  <data name="BYVIEWINGEARN" xml:space="preserve">
+    <value>Просматривая эту рекламу вы будете зарабатывать</value>
+    <comment>In View Ads hint</comment>
+  </data>
+  <data name="MORE" xml:space="preserve">
+    <value>Больше</value>
+  </data>
+  <data name="THISADLASTS" xml:space="preserve">
+    <value>Это объявление длится</value>
+  </data>
+  <data name="ALLRIGHTS" xml:space="preserve">
+    <value>Все права защищены</value>
+  </data>
+  <data name="LANGUAGE" xml:space="preserve">
+    <value>Язык</value>
+  </data>
+  <data name="SMALLADS" xml:space="preserve">
+    <value>Небольшие Объявления</value>
+  </data>
+  <data name="STDADS" xml:space="preserve">
+    <value>Стандартные Объявления</value>
+  </data>
+  <data name="WAITFORAD" xml:space="preserve">
+    <value>Реклама ожидает загрузки</value>
+  </data>
+  <data name="RESETPWD" xml:space="preserve">
+    <value>Сброс пароля</value>
+  </data>
+  <data name="DETECTEDCOUNTRY" xml:space="preserve">
+    <value>Определение страны</value>
+  </data>
+  <data name="ACCLOCKED" xml:space="preserve">
+    <value>Эта учетная запись была заблокирована администратором</value>
+  </data>
+  <data name="ACCNOTACTIVATED" xml:space="preserve">
+    <value>Эта учетная запись не была активирована. Проверьте ваш почтовый ящик, пришла ли вам ссылка для активации</value>
+  </data>
+  <data name="ADBALANCE" xml:space="preserve">
+    <value>Баланс рекламы</value>
+  </data>
+  <data name="ER_ALLFIELDSREQUIRED2" xml:space="preserve">
+    <value>Имя пользователя, пароль и проверка не требуется</value>
+  </data>
+  <data name="EXPIRES" xml:space="preserve">
+    <value>Истекает</value>
+  </data>
+  <data name="MAINBALANCE" xml:space="preserve">
+    <value>Основной Баланс</value>
+  </data>
+  <data name="MEMBERSHIP" xml:space="preserve">
+    <value>Членство</value>
+  </data>
+  <data name="NEVER" xml:space="preserve">
+    <value>Никогда</value>
+  </data>
+  <data name="OP_FAIL" xml:space="preserve">
+    <value>Операция прошла неуспешно</value>
+  </data>
+  <data name="OP_SUCCESS" xml:space="preserve">
+    <value>Операция прошла успешно</value>
+  </data>
+  <data name="POINTS" xml:space="preserve">
+    <value>Поинты</value>
+  </data>
+  <data name="RENTALBALANCE" xml:space="preserve">
+    <value>Аренда Баланс</value>
+  </data>
+  <data name="ST_ACTIVATED" xml:space="preserve">
+    <value>Ваша учетная запись была активирована. Не стесняйтесь войти</value>
+  </data>
+  <data name="ST_REGISTER1" xml:space="preserve">
+    <value>Ваша учетная запись была создана и активирована. Не стесняйтесь войти</value>
+  </data>
+  <data name="ST_REGISTER2" xml:space="preserve">
+    <value>Мы вышлем вам ссылку активации на адрес, указанный вами. Вы сможете войти после активации аккаунта</value>
+  </data>
+  <data name="ST_RESET" xml:space="preserve">
+    <value>Ваш пароль был сброшен. Мы вышлем Вам письмо с новым паролем</value>
+  </data>
+  <data name="TRANSFERMONEY" xml:space="preserve">
+    <value>Перевести деньги</value>
+  </data>
+  <data name="TRANSFERMONEYINFO" xml:space="preserve">
+    <value>Перевести деньги на ваш баланс. В пару кликов</value>
+  </data>
+  <data name="HISTORYINFO" xml:space="preserve">
+    <value>Просматривать историю легко. Все ваши основные действия регистрируются и показаны здесь</value>
+  </data>
+  <data name="NOTENOUGHFUNDS" xml:space="preserve">
+    <value>У вас недостаточно средств на балансе</value>
+  </data>
+  <data name="INBOX" xml:space="preserve">
+    <value>Входящие</value>
+  </data>
+  <data name="NEWMESSAGE" xml:space="preserve">
+    <value>Новое сообщение</value>
+  </data>
+  <data name="ER_DISABLEDMESSAGE" xml:space="preserve">
+    <value>К сожалению, этот пользователь отключил систему обмена сообщениями</value>
+  </data>
+  <data name="ER_TEXT" xml:space="preserve">
+    <value>Текстовое поле может содержать только буквы, цифры и, @ $ &amp;:.!? () + =% *</value>
+  </data>
+  <data name="ER_TEXT_TOLONG" xml:space="preserve">
+    <value>Максимальная длина текстового поля 300 символов</value>
+  </data>
+  <data name="FROM" xml:space="preserve">
+    <value>От</value>
+    <comment>In send message</comment>
+  </data>
+  <data name="REQ_TEXT" xml:space="preserve">
+    <value>Текстовое поле не может быть пустым</value>
+  </data>
+  <data name="REQ_TO" xml:space="preserve">
+    <value>Это поле не может быть пустым</value>
+  </data>
+  <data name="TO" xml:space="preserve">
+    <value>Для</value>
+    <comment>In send message (To:)</comment>
+  </data>
+  <data name="NOMESSAGES" xml:space="preserve">
+    <value>У вас нет сообщений</value>
+  </data>
+  <data name="DATE" xml:space="preserve">
+    <value>Дата</value>
+  </data>
+  <data name="MESS_ERROR" xml:space="preserve">
+    <value>Вы не можете написать сами себе</value>
+  </data>
+  <data name="READ" xml:space="preserve">
+    <value>Читать</value>
+    <comment>In messages</comment>
+  </data>
+  <data name="REMOVE" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="REPLY" xml:space="preserve">
+    <value>Ответ</value>
+    <comment>In messages</comment>
+  </data>
+  <data name="SELECTED" xml:space="preserve">
+    <value>Выбранное</value>
+    <comment>selected checkbox actions</comment>
+  </data>
+  <data name="SUB_MESSAGES" xml:space="preserve">
+    <value>Отправка и получение сообщений от других пользователей.</value>
+  </data>
+  <data name="TEXT" xml:space="preserve">
+    <value>Текст</value>
+  </data>
+  <data name="AND" xml:space="preserve">
+    <value>и</value>
+  </data>
+  <data name="FEELFREE" xml:space="preserve">
+    <value>Вы можете посетить веб-сайт ниже</value>
+    <comment>Surf</comment>
+  </data>
+  <data name="FORTHISAD" xml:space="preserve">
+    <value>для этого объявления</value>
+    <comment>[money] for this ad (Surf)</comment>
+  </data>
+  <data name="YOUVEBEENCREDITED" xml:space="preserve">
+    <value>Вы было зачислено</value>
+    <comment>Surf</comment>
+  </data>
+  <data name="NODATA" xml:space="preserve">
+    <value>Тут нет данных для отображения</value>
+  </data>
+  <data name="REFLINK" xml:space="preserve">
+    <value>Ваша реферальная ссылка для приглашений</value>
+  </data>
+  <data name="ALREADYWATCHED" xml:space="preserve">
+    <value>Вы уже смотрели эту рекламу</value>
+  </data>
+  <data name="CAMEFROMURL" xml:space="preserve">
+    <value>Пришел из</value>
+  </data>
+  <data name="CHART" xml:space="preserve">
+    <value>График</value>
+  </data>
+  <data name="CLICKS" xml:space="preserve">
+    <value>Кликов</value>
+  </data>
+  <data name="DAYSAGO" xml:space="preserve">
+    <value>Дней назад</value>
+    <comment>X days ago</comment>
+  </data>
+  <data name="LASTCLICK" xml:space="preserve">
+    <value>За клик</value>
+  </data>
+  <data name="NODIRECTREFERRALS" xml:space="preserve">
+    <value>У вас нет прямых рефералов</value>
+  </data>
+  <data name="REFCODE" xml:space="preserve">
+    <value>Ваш код для привлечения рефералов</value>
+  </data>
+  <data name="REFERRALSINCE" xml:space="preserve">
+    <value>Реферал с</value>
+  </data>
+  <data name="TODAY" xml:space="preserve">
+    <value>Сегодня</value>
+  </data>
+  <data name="YESTERDAY" xml:space="preserve">
+    <value>Вчера</value>
+  </data>
+  <data name="DIRECTINFO" xml:space="preserve">
+    <value>Расскажи другим о нашем сервисе и заработай ещё больше</value>
+  </data>
+  <data name="MANAGE" xml:space="preserve">
+    <value>Управлять</value>
+  </data>
+  <data name="RENTEDINFO" xml:space="preserve">
+    <value>Арендуйте рефералов и получите реальную прибыль. Выберите свою стратегию аренды и начните зарабатывать</value>
+  </data>
+  <data name="RENTNEW" xml:space="preserve">
+    <value>Аренда нового</value>
+  </data>
+  <data name="CLICKEDINLAST" xml:space="preserve">
+    <value>Нажал в последний</value>
+    <comment>Clicked in the last X DAYS</comment>
+  </data>
+  <data name="DAYS" xml:space="preserve">
+    <value>Дней</value>
+    <comment>X days</comment>
+  </data>
+  <data name="ER_RENT_CLICKS" xml:space="preserve">
+    <value>Вам не хватает кликов в аренду</value>
+  </data>
+  <data name="ER_RENT_INTERVAL" xml:space="preserve">
+    <value>Вы ещё не может арендовать</value>
+  </data>
+  <data name="ER_RENT_LIMIT" xml:space="preserve">
+    <value>Вы не может превышать лимит приглашений</value>
+  </data>
+  <data name="ER_RENT_NOREFS" xml:space="preserve">
+    <value>Мы не можем найти столько рефералов на данный момент. Повторите попытку позже</value>
+  </data>
+  <data name="LASTRENTED" xml:space="preserve">
+    <value>Последнее в аренду.</value>
+  </data>
+  <data name="MINCLICKS" xml:space="preserve">
+    <value>Минимальные количество кликов</value>
+  </data>
+  <data name="MINRENTINTERVAL" xml:space="preserve">
+    <value>Минимальный интервал операции</value>
+  </data>
+  <data name="NONE" xml:space="preserve">
+    <value>ни кто</value>
+    <comment>"brak"</comment>
+  </data>
+  <data name="NORENTEDREFERRALS" xml:space="preserve">
+    <value>У вас нет никаких арендованных рефералов</value>
+  </data>
+  <data name="PRICEPERREF" xml:space="preserve">
+    <value>Цена за одного реферала</value>
+  </data>
+  <data name="RENTALGUARANTEE" xml:space="preserve">
+    <value>Гарантия арендованых рефералов</value>
+  </data>
+  <data name="RENTALTIME" xml:space="preserve">
+    <value>Прокат на время</value>
+  </data>
+  <data name="REQUIREMENTS" xml:space="preserve">
+    <value>Требования</value>
+  </data>
+  <data name="USEPOINTSDISCOUNT" xml:space="preserve">
+    <value>Применить скидку</value>
+  </data>
+  <data name="UPGRADE" xml:space="preserve">
+    <value>Абгрейд</value>
+  </data>
+  <data name="UPGRADEINFO" xml:space="preserve">
+    <value>Обновить учетную запись для ещё большей выгоды. Выберите свои планы обновления</value>
+  </data>
+  <data name="ADCLICKEARNINGS" xml:space="preserve">
+    <value>Реклама, нажмите, чтобы заработать</value>
+  </data>
+  <data name="ADPOINTSEARNINGS" xml:space="preserve">
+    <value>Реклама, указать прибыль</value>
+  </data>
+  <data name="AUTOPAY" xml:space="preserve">
+    <value>Автовыплата</value>
+  </data>
+  <data name="AUTOPAYCOST" xml:space="preserve">
+    <value>Цена автовыплаты за реферала</value>
+  </data>
+  <data name="BASIC" xml:space="preserve">
+    <value>Основной</value>
+    <comment>Reklamy: standardowe (in Upgrade Advertisements section)</comment>
+  </data>
+  <data name="COLOR" xml:space="preserve">
+    <value>Цвет</value>
+  </data>
+  <data name="DIRECTREFADCLICKEARNINGS" xml:space="preserve">
+    <value>Прямые доходы направления объявление щелчком мыши</value>
+  </data>
+  <data name="DIRECTREFLIMIT" xml:space="preserve">
+    <value>Предел прямых рефералов</value>
+  </data>
+  <data name="PREMIUM" xml:space="preserve">
+    <value>Премиум</value>
+    <comment>Reklamy: premium(in Upgrade Advertisements section)</comment>
+  </data>
+  <data name="PRICE" xml:space="preserve">
+    <value>Цена</value>
+  </data>
+  <data name="RECYCLECOST" xml:space="preserve">
+    <value>Корзины для приглашений, стоимость</value>
+  </data>
+  <data name="RENEWALDISCOUNT" xml:space="preserve">
+    <value>Обновление скидки.</value>
+  </data>
+  <data name="RENTEDREFADCLICKEARNINGS" xml:space="preserve">
+    <value>Арендованные рефералы, заработок от кликов по объявлениям.</value>
+  </data>
+  <data name="RENTEDREFERRALLIMIT" xml:space="preserve">
+    <value>Предел арендованных рефералов</value>
+  </data>
+  <data name="YES" xml:space="preserve">
+    <value>Да</value>
+  </data>
+  <data name="EXPIRESIN" xml:space="preserve">
+    <value>Срок действия в</value>
+  </data>
+  <data name="ID" xml:space="preserve">
+    <value>Id</value>
+    <comment>In rented referrals table (nr)</comment>
+  </data>
+  <data name="ADVADSINFO" xml:space="preserve">
+    <value>Управление позицией в текущих кампаниях или создать новую</value>
+    <comment>Advertise: ads</comment>
+  </data>
+  <data name="DESCRIPTION" xml:space="preserve">
+    <value>Описание</value>
+    <comment>advertise ads</comment>
+  </data>
+  <data name="ER_BADDESC" xml:space="preserve">
+    <value>Неверный формат описания. Проверьте ещё раз</value>
+  </data>
+  <data name="ER_BADURL" xml:space="preserve">
+    <value>Ваш URL недействителен</value>
+  </data>
+  <data name="ER_INVALIDTITLE" xml:space="preserve">
+    <value>Неверный формат заголовка. Проверьте ещё раз</value>
+  </data>
+  <data name="FONTBOLD" xml:space="preserve">
+    <value>Жирный Шрифт</value>
+    <comment>Create ad (pogrubienie)</comment>
+  </data>
+  <data name="GEOLOCATION" xml:space="preserve">
+    <value>Географическое положение</value>
+  </data>
+  <data name="H_DESCRIPTION" xml:space="preserve">
+    <value>Описание не требуется. Оно должно быть 4-70 символов и может содержать только буквы, цифры и, @ $ &amp;:.!? () + =% *</value>
+  </data>
+  <data name="H_TITLE" xml:space="preserve">
+    <value>Название должно быть 4-30 символов и может содержать только буквы, цифры и, @ $ &amp;:.!? () + =% *</value>
+  </data>
+  <data name="H_URL" xml:space="preserve">
+    <value>URL вашего целевого сайта: Например http://www.google.com</value>
+  </data>
+  <data name="NEWCAMPAIGN" xml:space="preserve">
+    <value>Новая кампания</value>
+  </data>
+  <data name="NOADCAMPAIGNS" xml:space="preserve">
+    <value>У вас нет рекламных кампаний</value>
+  </data>
+  <data name="NOBANNERCAMPS" xml:space="preserve">
+    <value>У вас нет никаких баннеров кампании</value>
+  </data>
+  <data name="NOFBCAMPS" xml:space="preserve">
+    <value>У вас нет кампаний Facebook</value>
+  </data>
+  <data name="OPTION" xml:space="preserve">
+    <value>Опция</value>
+    <comment>Опция баннера</comment>
+  </data>
+  <data name="PACK" xml:space="preserve">
+    <value>Пакет</value>
+    <comment>Создать новый</comment>
+  </data>
+  <data name="PREVIEW" xml:space="preserve">
+    <value>Предпросмотр</value>
+    <comment>Создать новый</comment>
+  </data>
+  <data name="REQ_TITLE" xml:space="preserve">
+    <value>Заголовок объявления не требуется</value>
+  </data>
+  <data name="REQ_URL" xml:space="preserve">
+    <value>Требуется URL вашего объявления</value>
+  </data>
+  <data name="TITLE" xml:space="preserve">
+    <value>Название</value>
+  </data>
+  <data name="REFNOPROFITS" xml:space="preserve">
+    <value>Вы не щелкнули по крайней мере, &lt;b&gt;%n%&lt;/b&gt; объявлений Вчера так что вы не будете получать прибыль от рефералов сегодня</value>
+    <comment>Оставить '&lt;b&gt;%n%&lt;/b&gt;' без изменений!</comment>
+  </data>
+  <data name="RECYCLE" xml:space="preserve">
+    <value>Переработка.</value>
+  </data>
+  <data name="RENEW" xml:space="preserve">
+    <value>Возобновить</value>
+  </data>
+  <data name="OPPREFAPARTIAL" xml:space="preserve">
+    <value>Операция выполнена частично. &lt;b&gt;%n%&lt;/b&gt; рефералы изменены.</value>
+    <comment>Оставить '&lt;b&gt;%n%&lt;/b&gt;' без изменений! </comment>
+  </data>
+  <data name="OPPREFPARTIAL" xml:space="preserve">
+    <value>Operation completed partially. &lt;b&gt;%n%&lt;/b&gt; referrals modified. Check your funds</value>
+    <comment>Оставить '&lt;b&gt;%n%&lt;/b&gt;' без изменений!</comment>
+  </data>
+  <data name="OPREFAP" xml:space="preserve">
+    <value>AutoPay can be turned on only on referrals expiring in &lt;b&gt;%n2%+&lt;/b&gt; days</value>
+    <comment>Оставить '&lt;b&gt;%n2%+&lt;/b&gt;' без изменений!</comment>
+  </data>
+  <data name="FREE" xml:space="preserve">
+    <value>БЕСПЛАТНО</value>
+    <comment>Следующие цены геолокации</comment>
+  </data>
+  <data name="GEOHINT" xml:space="preserve">
+    <value>Будет разрешена аудитория только из следующих стран. Коробка на вершине - это окно со всеми странами. Коробка на дне - это коробка геолокации разрешенных стран</value>
+  </data>
+  <data name="LASTS" xml:space="preserve">
+    <value>длится</value>
+    <comment>ad </comment>
+  </data>
+  <data name="VIEWS" xml:space="preserve">
+    <value>просмотров</value>
+    <comment>Ad views (odslony)</comment>
+  </data>
+  <data name="ACTIVE" xml:space="preserve">
+    <value>Активный</value>
+    <comment>Добавить статус</comment>
+  </data>
+  <data name="AFTERSTART" xml:space="preserve">
+    <value>после запуска</value>
+    <comment>X дней после старта</comment>
+  </data>
+  <data name="AWAITINGAPPROVAL" xml:space="preserve">
+    <value>Ожидает одобрения</value>
+    <comment>Добавить статус</comment>
+  </data>
+  <data name="BUY" xml:space="preserve">
+    <value>Купить</value>
+  </data>
+  <data name="BUYCREDITS" xml:space="preserve">
+    <value>Купить кредиты</value>
+  </data>
+  <data name="CREATED" xml:space="preserve">
+    <value>Дата создания</value>
+    <comment>Дата создания</comment>
+  </data>
+  <data name="DESC" xml:space="preserve">
+    <value>Описание изделия</value>
+    <comment>Краткая форма описания</comment>
+  </data>
+  <data name="ENDSON" xml:space="preserve">
+    <value>Конец</value>
+    <comment>Закончено: &lt;date&gt;</comment>
+  </data>
+  <data name="FINISHED" xml:space="preserve">
+    <value>Готовые</value>
+    <comment>Добавить статус</comment>
+  </data>
+  <data name="PAUSE" xml:space="preserve">
+    <value>Приостановить</value>
+    <comment>Поставить на паузу</comment>
+  </data>
+  <data name="PAUSED" xml:space="preserve">
+    <value>Приостановлено</value>
+    <comment>Добавить статус</comment>
+  </data>
+  <data name="PROGRESS" xml:space="preserve">
+    <value>Прогресс</value>
+  </data>
+  <data name="REJECTED" xml:space="preserve">
+    <value>Отклонен</value>
+    <comment>Добавить статус</comment>
+  </data>
+  <data name="STATUS" xml:space="preserve">
+    <value>Статус</value>
+  </data>
+  <data name="TIME" xml:space="preserve">
+    <value>Время</value>
+  </data>
+  <data name="VIEWSBIG" xml:space="preserve">
+    <value>Просмотров</value>
+  </data>
+  <data name="BURL" xml:space="preserve">
+    <value>Картинка баннера</value>
+  </data>
+  <data name="CLICKSSMALL" xml:space="preserve">
+    <value>кликов</value>
+  </data>
+  <data name="H_BANNERURL" xml:space="preserve">
+    <value>Ваше изображение баннера. Форматы изображения должны соответствовать вашему типу баннера. Поддерживаемые типы: JPG, PNG, GIF</value>
+  </data>
+  <data name="IMAGE" xml:space="preserve">
+    <value>Изображение</value>
+  </data>
+  <data name="EXPIREWARNING" xml:space="preserve">
+    <value>Ваше обновление истекает через 3 дня. Не забудьте купить новое, для того, чтобы сохранить все ваши переходы и другие бонусы</value>
+  </data>
+  <data name="NOTENOUGHPOINTS" xml:space="preserve">
+    <value>Вы не набрали достаточно очков</value>
+  </data>
+  <data name="WARNINGUPGRADE" xml:space="preserve">
+    <value>У вас есть активный абгрейд. Покупка нового абгрейда удалит текущий</value>
+  </data>
+  <data name="ACHIEVEMENTS" xml:space="preserve">
+    <value>Достижения</value>
+  </data>
+  <data name="ACHIEVEMENT_1" xml:space="preserve">
+    <value>Для тех, кто имел больше %n% баннерных кампаний</value>
+    <comment>Оставить %n% в покое!</comment>
+  </data>
+  <data name="ACHIEVEMENT_2" xml:space="preserve">
+    <value>Для тех, кто имел больше %n% Facebook кампаний</value>
+    <comment>Оставить %n% в покое!</comment>
+  </data>
+  <data name="ACHIEVEMENT_3" xml:space="preserve">
+    <value>Для тех, кто имел больше %n% рекламных кампаний</value>
+    <comment>Оставить %n% в покое!</comment>
+  </data>
+  <data name="ACHIEVEMENT_4" xml:space="preserve">
+    <value>Для тех, кто нажал больше %n% реклам</value>
+    <comment>Оставить %n% в покое!</comment>
+  </data>
+  <data name="ACHIEVEMENT_5" xml:space="preserve">
+    <value>Для тех, кто заработал больше $%n%</value>
+    <comment>Оставить %n% в покое!</comment>
+  </data>
+  <data name="ACHIEVEMENT_6" xml:space="preserve">
+    <value>Для тех, кто имел больше %n% прямых рефералов</value>
+    <comment>Оставить %n% в покое!</comment>
+  </data>
+  <data name="ACHIEVEMENT_7" xml:space="preserve">
+    <value>Для тех, кто имел больше %n% арендованных рефералов</value>
+    <comment>Оставить %n% в покое!</comment>
+  </data>
+  <data name="ACHIEVEMENT_8" xml:space="preserve">
+    <value>Для тех, кто переведел более чем $%n% сразу</value>
+    <comment>Оставить %n% в покое!</comment>
+  </data>
+  <data name="ENTRY" xml:space="preserve">
+    <value>Вход</value>
+    <comment>История входов</comment>
+  </data>
+  <data name="FORPURCHASED" xml:space="preserve">
+    <value>Для</value>
+    <comment>Купить за $10</comment>
+  </data>
+  <data name="HISTORY_1" xml:space="preserve">
+    <value>Вывод средств из</value>
+    <comment>Вывод от $100</comment>
+  </data>
+  <data name="HISTORY_2" xml:space="preserve">
+    <value>Приобретенные</value>
+    <comment>Купить 1000 рекламных переходов</comment>
+  </data>
+  <data name="HISTORY_3" xml:space="preserve">
+    <value>Создать новый аккаунт. Добро пожаловать.</value>
+  </data>
+  <data name="HISTORY_4" xml:space="preserve">
+    <value>Переданы</value>
+  </data>
+  <data name="HISTORY_5" xml:space="preserve">
+    <value>Ваш абгрейд истёк</value>
+  </data>
+  <data name="HISTORY_6" xml:space="preserve">
+    <value>Купил новый абгрейд</value>
+  </data>
+  <data name="ACHIEVEMENTSMENU" xml:space="preserve">
+    <value>Трофеи</value>
+    <comment>краткая форма необходима для меню (Достижение слишком длинное)</comment>
+  </data>
+  <data name="ALLHISTORYLOGS" xml:space="preserve">
+    <value>Журнал истории</value>
+  </data>
+  <data name="LATESTHISTORY" xml:space="preserve">
+    <value>Последние записи в журнале</value>
+  </data>
+  <data name="ACHIEVEMENTSINFO" xml:space="preserve">
+    <value>Получить известность и очки, собирая наши достижения</value>
+  </data>
+  <data name="ALLAVAILABLEACHIVS" xml:space="preserve">
+    <value>Все имеющиеся достижения</value>
+  </data>
+  <data name="NEWACHIEVEMENTS" xml:space="preserve">
+    <value>У вас есть новые достижения(s)!</value>
+  </data>
+  <data name="NOACHIVS" xml:space="preserve">
+    <value>Вы не имеете никаких достижений. Попробуйте работать больше.</value>
+  </data>
+  <data name="POINTSREWARD" xml:space="preserve">
+    <value>Бонусные баллы</value>
+    <comment>в достижениях</comment>
+  </data>
+  <data name="CASHOUT" xml:space="preserve">
+    <value>Вывод средств</value>
+  </data>
+  <data name="CASHOUTINFO" xml:space="preserve">
+    <value>Вывод средств легко и в любое время</value>
+  </data>
+  <data name="LIMIT" xml:space="preserve">
+    <value>Минимум</value>
+    <comment>Минимум для вывода средств</comment>
+  </data>
+  <data name="CASHOUTLIMITINFO" xml:space="preserve">
+    <value>Вы можете обналичить, как только вы достигнете минимум для вывода средств. Минимальная сумма зависит от количества выплат и ваших достижений.</value>
+  </data>
+  <data name="ER_BADPIN2" xml:space="preserve">
+    <value>Неверный PIN</value>
+  </data>
+  <data name="HAVENTREACHLIMIT" xml:space="preserve">
+    <value>Вы ещё не достигли своего минимума для вывода средств.</value>
+  </data>
+  <data name="REST" xml:space="preserve">
+    <value>Остальные</value>
+    <comment>1,2,3 предел для обналичивания: $2.00</comment>
+  </data>
+  <data name="AVATARURL" xml:space="preserve">
+    <value>Аватар URL</value>
+  </data>
+  <data name="MESSAGEOFFINFO" xml:space="preserve">
+    <value>Вы отключили систему обмена сообщениями. Вы не можете отправить/управлять/получать сообщения</value>
+  </data>
+  <data name="MESSAGESSYSTEM" xml:space="preserve">
+    <value>Система сообщений</value>
+  </data>
+  <data name="OFF" xml:space="preserve">
+    <value>Выкл</value>
+    <comment>выключить</comment>
+  </data>
+  <data name="ON" xml:space="preserve">
+    <value>Вкл</value>
+    <comment>включить</comment>
+  </data>
+  <data name="REQ_AVATARURL" xml:space="preserve">
+    <value>Требуется URL аватара</value>
+  </data>
+  <data name="SAVE" xml:space="preserve">
+    <value>Сохранить</value>
+    <comment>сохранить настройки</comment>
+  </data>
+  <data name="SETTINGSINFO" xml:space="preserve">
+    <value>Для клиентов. Изменить все свои настройки здесь</value>
+  </data>
+  <data name="ER_MUSTPNGJPG" xml:space="preserve">
+    <value>Аватар должен быть .JPG или .PNG формата</value>
+  </data>
+  <data name="H_LEAVEBLANK" xml:space="preserve">
+    <value>Оставьте пустым, если не хотите изменять его.</value>
+  </data>
+  <data name="JPGPNG" xml:space="preserve">
+    <value>Должен быть JPG/PNG формат для принятия</value>
+  </data>
+  <data name="MESSAGEONOFF" xml:space="preserve">
+    <value>После того, как вы отключите систему обмена сообщениями, вы не сможете отправлять/управлять и получать сообщения от других</value>
+  </data>
+  <data name="NEWPASS" xml:space="preserve">
+    <value>Новый пароль</value>
+  </data>
+  <data name="NEWPASS2" xml:space="preserve">
+    <value>Подтвердите новый пароль</value>
+  </data>
+  <data name="NEWPIN" xml:space="preserve">
+    <value>Новый PIN</value>
+  </data>
+  <data name="NEWSECPASS" xml:space="preserve">
+    <value>Новый вторичный пароль</value>
+  </data>
+  <data name="SETTINGSSUCC" xml:space="preserve">
+    <value>Настройки успешно изменены</value>
+  </data>
+  <data name="CONTACT" xml:space="preserve">
+    <value>Контакты</value>
+  </data>
+  <data name="FAQ" xml:space="preserve">
+    <value>Часто задаваемые вопросы</value>
+  </data>
+  <data name="HELP" xml:space="preserve">
+    <value>Помощь</value>
+  </data>
+  <data name="PAYMENTPROOFS" xml:space="preserve">
+    <value>Платежные доказательства</value>
+  </data>
+  <data name="PRIVACYPOLICY" xml:space="preserve">
+    <value>Политика конфиденциальности</value>
+  </data>
+  <data name="CONTACTFORM" xml:space="preserve">
+    <value>Контактная форма</value>
+  </data>
+  <data name="CONTACTINFO" xml:space="preserve">
+    <value>Желаете связаться с нами? Заполните форму ниже или свяжитесь с нами напрямую по электронной почте</value>
+  </data>
+  <data name="DIRECTCONTACT" xml:space="preserve">
+    <value>Прямой контакт</value>
+  </data>
+  <data name="HELP1" xml:space="preserve">
+    <value>Проверьте Часто задаваемые вопросы в первую очередь. Может быть, ваша проблема является общей и вы найдете решение здесь</value>
+  </data>
+  <data name="HELP2" xml:space="preserve">
+    <value>Может быть, у других уже была такая же проблема? Поищите на форумах ответ или создайте новую тему</value>
+  </data>
+  <data name="HELP3" xml:space="preserve">
+    <value>Ну а если ваш случай не терпит ожидания и вы нигде не можете найти ответ на ваш вопрос, не стесняйтесь обращаться к нам.</value>
+  </data>
+  <data name="HELPINFO" xml:space="preserve">
+    <value>Вам нужна помощь? Вы находитесь в правильном месте.</value>
+  </data>
+  <data name="PROOFSINFO" xml:space="preserve">
+    <value>Посмотрите наши последние платежи ниже. Скриншоты размещены на форумах</value>
+  </data>
+  <data name="AMOUNT" xml:space="preserve">
+    <value>Сумма</value>
+  </data>
+  <data name="COUNTRY" xml:space="preserve">
+    <value>Страна</value>
+  </data>
+  <data name="INSTANT" xml:space="preserve">
+    <value>Момент</value>
+  </data>
+  <data name="MANUAL" xml:space="preserve">
+    <value>Руководство.</value>
+  </data>
+  <data name="NOPROOFS" xml:space="preserve">
+    <value>Наш проект только стартовал и доказательств выплат пока что нет!</value>
+  </data>
+  <data name="TYPE" xml:space="preserve">
+    <value>Тип</value>
+  </data>
+  <data name="VIA" xml:space="preserve">
+    <value>через</value>
+    <comment>С помощью PayPal</comment>
+  </data>
+  <data name="LATESTNEWS" xml:space="preserve">
+    <value>Последние новости.</value>
+  </data>
+  <data name="SENDSUPPORTTICKET" xml:space="preserve">
+    <value>Отправить в службу поддержки</value>
+  </data>
+  <data name="CONSTANTBANNER" xml:space="preserve">
+    <value>Постоянный баннер</value>
+  </data>
+  <data name="CONSTANTBANNERINFO" xml:space="preserve">
+    <value>Показано на &lt;b&gt;всех&lt;/b&gt; страницах</value>
+  </data>
+  <data name="ER_BANNERISNOTVALID" xml:space="preserve">
+    <value>Баннер является недействительным (формат или размеры)</value>
+  </data>
+  <data name="ER_BANNERNOTSELECTED" xml:space="preserve">
+    <value>Баннер не был представлен</value>
+  </data>
+  <data name="NORMALBANNER" xml:space="preserve">
+    <value>Нормальный баннер</value>
+  </data>
+  <data name="NORMALBANNERINFO" xml:space="preserve">
+    <value>Показано с каждым зрителем рекламы</value>
+  </data>
+  <data name="BANNERDURT" xml:space="preserve">
+    <value>Это может занять до %n% минут, чтобы сделанные изменения стали видны (баннеры кэшируются)</value>
+    <comment>Оставить %n% без изменений</comment>
+  </data>
+  <data name="NORECORDS" xml:space="preserve">
+    <value>Нет доступных записей</value>
+  </data>
+  <data name="COMPLETED" xml:space="preserve">
+    <value>Завершено</value>
+  </data>
+  <data name="CONNECTWITHFACEBOOK" xml:space="preserve">
+    <value>Подключитесь к вашей учетной записи Facebook, чтобы мы могли проверять, если вам лайкниули фан-страницу, то будут получать оплату</value>
+  </data>
+  <data name="FRIENDS" xml:space="preserve">
+    <value>Друзья</value>
+  </data>
+  <data name="HAVENTLIKED" xml:space="preserve">
+    <value>Вы не лайкнули фан-страницу. Видимо это может занять некоторое время, чтобы обновить лайки на Facebook API, обновите эту страницу через 1 минуту и попробуйте ещё раз</value>
+  </data>
+  <data name="MYFRIENDSNMBERLOW" xml:space="preserve">
+    <value>Мой номер друзей слишком низкий. Почему?</value>
+  </data>
+  <data name="MYFRIENDSNMBERLOWANSW" xml:space="preserve">
+    <value>Потому что некоторые из них использовали функцию Facebook "отключить все приложения платформы" и доступны для всех приложений</value>
+  </data>
+  <data name="NOTCONNECTEDTOFB" xml:space="preserve">
+    <value>Не подключен к Facebook</value>
+  </data>
+  <data name="NOTMEETREQUIREMENTS" xml:space="preserve">
+    <value>Вы не отвечаете требованиям</value>
+  </data>
+  <data name="PICTURE" xml:space="preserve">
+    <value>Картинка</value>
+  </data>
+  <data name="WHATSREWARD" xml:space="preserve">
+    <value>Что является наградой  для каждого нравится.</value>
+  </data>
+  <data name="YOUCONNECTEDWITHFACEBOOK" xml:space="preserve">
+    <value>Вы успешно подключены к Facebook. Лайк фан-страницу, нажмите кнопку платить</value>
+  </data>
+  <data name="NEEDED" xml:space="preserve">
+    <value>Необходимый</value>
+    <comment>в оплату Фейсбук</comment>
+  </data>
+  <data name="YOUEARNPOINTS" xml:space="preserve">
+    <value>Вы зарабатываете %n% баллов за каждый лайк фан-страницы</value>
+    <comment>Оставить %n% для изменений</comment>
+  </data>
+  <data name="SHORTURL" xml:space="preserve">
+    <value>Короткий URL</value>
+  </data>
+  <data name="ER_BADFBURL" xml:space="preserve">
+    <value>Невеный URL фан-страницы</value>
+  </data>
+  <data name="H_FBURL" xml:space="preserve">
+    <value>URL вашей фан-страницы на Фейсбук. Удалите все аргументы GET и оставьте только имя. Например: http://www.facebook.com/asp.net ИЛИ https://www.facebook.com/asp.net</value>
+  </data>
+  <data name="NUMBEROFREQFRENDS" xml:space="preserve">
+    <value>Количество необходимых друзей</value>
+  </data>
+  <data name="PROFILEPICREQ" xml:space="preserve">
+    <value>Требуется фото профиля</value>
+  </data>
+  <data name="OUTADSINFO" xml:space="preserve">
+    <value>Создайте новую кампанию и оплатите через PayPal/Payza. После того как вы пошлёте компенсацию ваша кампания будет ожидании подтверждения. После того, как будет одобрена, она будет мгновенно активирована.</value>
+  </data>
+  <data name="OUTEMAILINFO" xml:space="preserve">
+    <value>Вы будете уведомлены о вашем изменения статуса кампании (Утвержден = Активный или отклонен)</value>
+  </data>
+  <data name="PAYVIA" xml:space="preserve">
+    <value>Оплата через PayPal/Payza</value>
+  </data>
+  <data name="OUT1" xml:space="preserve">
+    <value>Вы можете рекламироваться по-разному, в зависимости от ваших потребностей. Выберите наиболее подходящий вариант ниже</value>
+  </data>
+  <data name="OUT10" xml:space="preserve">
+    <value>Реклама без регистрации</value>
+  </data>
+  <data name="OUT11" xml:space="preserve">
+    <value>Если вы не хотите зарегистрировать учетную запись</value>
+  </data>
+  <data name="OUT12" xml:space="preserve">
+    <value>Мгновенная активация после утверждения</value>
+  </data>
+  <data name="OUT13" xml:space="preserve">
+    <value>Уведомления о состоянии кампании (по электронной почте)</value>
+  </data>
+  <data name="OUT2" xml:space="preserve">
+    <value>Зарегистрироваться и начать рекламировать</value>
+  </data>
+  <data name="OUT3" xml:space="preserve">
+    <value>Если вы хотите в полной мере использовать наш рекламный потенциал</value>
+  </data>
+  <data name="OUT4" xml:space="preserve">
+    <value>Создать новую кампанию PTC/Баннер/Фейсбук/TrafficGrid</value>
+  </data>
+  <data name="OUT5" xml:space="preserve">
+    <value>Демографический фильтр</value>
+  </data>
+  <data name="OUT6" xml:space="preserve">
+    <value>Надежная защита анти-чит</value>
+  </data>
+  <data name="OUT7" xml:space="preserve">
+    <value>Запуск и остановка кампании в любое время</value>
+  </data>
+  <data name="OUT8" xml:space="preserve">
+    <value>Приобретите дополнительные клики</value>
+  </data>
+  <data name="OUT9" xml:space="preserve">
+    <value>График прогресса</value>
+  </data>
+  <data name="STATISTICS" xml:space="preserve">
+    <value>Статистика</value>
+  </data>
+  <data name="LIKESSMALL" xml:space="preserve">
+    <value>Лайк</value>
+    <comment>Некапитализиуемая версия для Фейсбук лайков</comment>
+  </data>
+  <data name="CURRENTPIN" xml:space="preserve">
+    <value>Текущий PIN</value>
+  </data>
+  <data name="SECONDS" xml:space="preserve">
+    <value>секунды</value>
+    <comment>Объявление длится Х секунд</comment>
+  </data>
+  <data name="DEMOCHECK" xml:space="preserve">
+    <value>Эта операция была отключена в демо-версии</value>
+  </data>
+  <data name="ALLCLICKSMADE" xml:space="preserve">
+    <value>Все клики, сделанные на ваш счёт</value>
+  </data>
+  <data name="ALLCREDITEDMONEY" xml:space="preserve">
+    <value>Деньги зачисляются на ваш счёт</value>
+  </data>
+  <data name="CLICKSTOCHART" xml:space="preserve">
+    <value>Кликов</value>
+    <comment>'Кликов' отображаются на графиках НИКАКИХ СПЕЦСИМВОЛОВ</comment>
+  </data>
+  <data name="DAYSTOCHART" xml:space="preserve">
+    <value>Дни</value>
+    <comment>'Дней' отображаются на графиках НИКАКИХ СПЕЦСИМВОЛОВ</comment>
+  </data>
+  <data name="STATSINFO" xml:space="preserve">
+    <value>Таковы статистические данные, связанные с вашей учетной записи. Чтобы увидеть статистику для конкретного направления идите к списку рефералов и нажмите "см. диаграмму« образ</value>
+  </data>
+  <data name="USERCLICKSMADE" xml:space="preserve">
+    <value>Ваших кликов</value>
+  </data>
+  <data name="YOUHAVE" xml:space="preserve">
+    <value>у вас есть</value>
+  </data>
+  <data name="ONOFF" xml:space="preserve">
+    <value>Вкл/Выкл</value>
+  </data>
+  <data name="ACCBLACK" xml:space="preserve">
+    <value>Эта учетная запись была запрещена, потому что ее аспект был занесен в черный список</value>
+  </data>
+  <data name="COUNTRYFORBID" xml:space="preserve">
+    <value>Ваша страна занесена в черный список. Вы не можете зарегистрироваться</value>
+  </data>
+  <data name="IPFORBID" xml:space="preserve">
+    <value>Ваш IP-адрес был занесен в черный список. Вы не можете зарегистрироваться</value>
+  </data>
+  <data name="UNAMEFORBID" xml:space="preserve">
+    <value>Это имя пользователя запрещено</value>
+  </data>
+  <data name="MANUALPP" xml:space="preserve">
+    <value>Должен быть утвержден администратором</value>
+  </data>
+  <data name="PAYOUTTYPE" xml:space="preserve">
+    <value>Тип выплат</value>
+  </data>
+  <data name="PRNOTPAID" xml:space="preserve">
+    <value>У вас есть %var1% неоплаченных запросов выплаты(s) стоит %var2% . Первый из %var3%</value>
+    <comment>Не изменяйте %var%</comment>
+  </data>
+  <data name="CLICKSSTRAIGHT" xml:space="preserve">
+    <value>Кликов</value>
+  </data>
+  <data name="ERROR" xml:space="preserve">
+    <value>Ошибка :(</value>
+  </data>
+  <data name="ERROR_INFO" xml:space="preserve">
+    <value>Попробуйте повторный вход через 5 минут. Если ситуация повторится, обратитесь к администратору</value>
+  </data>
+  <data name="COMPLETEDTASKS" xml:space="preserve">
+    <value>Завершенные задачи</value>
+  </data>
+  <data name="FEATUREDISABLED" xml:space="preserve">
+    <value>Функция отключена администратором</value>
+  </data>
+  <data name="HISTORY_7" xml:space="preserve">
+    <value>Кредит на offerwall с</value>
+  </data>
+  <data name="OFFERCLICKINFO" xml:space="preserve">
+    <value>Нажмите на картинку ниже, чтобы активировать offerwall. После выполнения этой задачи вы будете вознаграждены в пунктах автоматически (после проверки вашей задачи). Ничего не происходит при нажатии на изображение? Выключите AdBlock</value>
+  </data>
+  <data name="OFFERSHORTINFO" xml:space="preserve">
+    <value>После выполнения этой задачи вы будете вознаграждены в пунктах автоматически (после проверки вашей задачи)</value>
+  </data>
+  <data name="ADDNEW" xml:space="preserve">
+    <value>Добавить</value>
+  </data>
+  <data name="FRIENDSINFO" xml:space="preserve">
+    <value>Пригласить новых друзей одним щелчком мыши и общаться с ними легко</value>
+  </data>
+  <data name="NOFRIENDS" xml:space="preserve">
+    <value>У вас нет друзей :( Вы одинок?</value>
+  </data>
+  <data name="NOREFBACKDATA" xml:space="preserve">
+    <value>Нет RefBack сайтов</value>
+  </data>
+  <data name="PEOPLE" xml:space="preserve">
+    <value>Люди</value>
+  </data>
+  <data name="REFBACK1" xml:space="preserve">
+    <value>Вы можете найти список сайтов RefBack Системные ниже.</value>
+  </data>
+  <data name="REFBACK2" xml:space="preserve">
+    <value>Зарегистрироваться на сайте с помощью реферальной ссылки и стать активным кликер (рефералом). После нажатия на кнопку ниже, администратор сможет следить за вашими успехами. Если вы являетесь активным кликером, вы будете получать деньги вручную администратором (как только он решит).</value>
+  </data>
+  <data name="REFBACK3" xml:space="preserve">
+    <value>Выплаты производятся вручную, часто после каждого вывода средств администратора. Удачи!</value>
+  </data>
+  <data name="REFBACK4" xml:space="preserve">
+    <value>Зарегистрироваться как: %username1% или если он занят, используйте: %username2%</value>
+  </data>
+  <data name="REFBACK5" xml:space="preserve">
+    <value>Не нажимайте кнопку, если вы не понимаете правила, не зарегистрируйтесь или не планируете работать. Вы можете получить бан</value>
+  </data>
+  <data name="REFDECLARATION" xml:space="preserve">
+    <value>Я зарегистрировался на этом сайте и стал активным рефералом</value>
+  </data>
+  <data name="REFDECLARED" xml:space="preserve">
+    <value>Вы заявили быть активным здесь</value>
+  </data>
+  <data name="REQUESTSUCCESS" xml:space="preserve">
+    <value>Запрос другу был успешно отправлен. Ваш друг должен подтвердить ваши отношения, прежде чем он будет добавлен в список друзей</value>
+  </data>
+  <data name="GAMESWAR" xml:space="preserve">
+    <value>Если вы не видите в списке лидеров для игры? Отключите AdBlock</value>
+  </data>
+  <data name="ACHIEVEMENT_10" xml:space="preserve">
+    <value>Для тех, кто выиграл больше %n% раз в TrafficGrid</value>
+  </data>
+  <data name="ACHIEVEMENT_9" xml:space="preserve">
+    <value>Для тех, кто имел больше %n% TrafficGrid рекламных кампаний</value>
+  </data>
+  <data name="HISTORY_8" xml:space="preserve">
+    <value>Вы выиграли на TrafficGrid</value>
+  </data>
+  <data name="TGCHANCES" xml:space="preserve">
+    <value>TrafficGrid шансы на победу любой вид награды</value>
+  </data>
+  <data name="TGHITS" xml:space="preserve">
+    <value>TrafficGrid ежедневные хиты</value>
+  </data>
+  <data name="TGSHORTED" xml:space="preserve">
+    <value>Продолжительность TrafficGrid рекламы</value>
+  </data>
+  <data name="TRAFFICGRIDADINFO1" xml:space="preserve">
+    <value>Если вы хотите получить много быстрого и дешевого трафика, реклама Трафик Сетка является лучшим вариантом для вас. Дешево, массовые движения от членов, которые хотят, выиграть призы на рекламной сетке. Попробуйте этот инновационный вариант рекламы!</value>
+  </data>
+  <data name="WONERROR" xml:space="preserve">
+    <value>Вы выиграли арендованного реферала, но мы не можем добавить его, потому что вы достигли своего предела.</value>
+  </data>
+  <data name="WONNOTHING" xml:space="preserve">
+    <value>Вы ничего не выиграли: (возможно вам повезет в следующий раз!</value>
+  </data>
+  <data name="DRRLIMITPLUS" xml:space="preserve">
+    <value>Предел прямых рефералов</value>
+  </data>
+  <data name="FROMDR" xml:space="preserve">
+    <value>с 1 прямого реф. клика</value>
+    <comment>КРАТКО</comment>
+  </data>
+  <data name="FROMRR" xml:space="preserve">
+    <value>с 1 арендованного реферала клик</value>
+    <comment>КРАТКО</comment>
+  </data>
+  <data name="LATESTWINNERS" xml:space="preserve">
+    <value>Последние 10 победителей</value>
+  </data>
+  <data name="PRIZES" xml:space="preserve">
+    <value>Призы</value>
+  </data>
+  <data name="REACHEDHITS" xml:space="preserve">
+    <value>Вы уже достигли ограничение ваших ежедневных хитов. Обновите или приходите завтра</value>
+  </data>
+  <data name="TGINFO" xml:space="preserve">
+    <value>Кликните на TrafficGrid, смотрите рекламу и выигрывайте замечательные призы!</value>
+  </data>
+  <data name="TOPWINNERS" xml:space="preserve">
+    <value>Топ 10 победителей</value>
+  </data>
+  <data name="YOURACCOUNT" xml:space="preserve">
+    <value>Ваша учетная запись</value>
+  </data>
+  <data name="YOURCHANCES" xml:space="preserve">
+    <value>Ваши шансы</value>
+  </data>
+  <data name="YOUWON" xml:space="preserve">
+    <value>Вы выиграли</value>
+  </data>
+  <data name="PRIZE" xml:space="preserve">
+    <value>Приз</value>
+  </data>
+  <data name="YOUMUSTBELOGGED" xml:space="preserve">
+    <value>Вы должны войти в систему, если хотите заработать деньги на просмотре объявлений</value>
+  </data>
+  <data name="ALREADYSENT" xml:space="preserve">
+    <value>Мы уже отправили вам SMS с кодом</value>
+  </data>
+  <data name="CONFIRM" xml:space="preserve">
+    <value>Подтвердить</value>
+  </data>
+  <data name="IPAPROXY" xml:space="preserve">
+    <value>Ваш IP-адрес использует прокси</value>
+  </data>
+  <data name="RECPIN" xml:space="preserve">
+    <value>Поступил код</value>
+  </data>
+  <data name="SENDSMSBUTTON" xml:space="preserve">
+    <value>Отправить SMS с кодом</value>
+  </data>
+  <data name="SMSINFO" xml:space="preserve">
+    <value>Предоставьте нам свой ​​номер телефона и введите полученный код в поле ниже</value>
+  </data>
+  <data name="SMSVERIFICATION" xml:space="preserve">
+    <value>SMS Верификация</value>
+  </data>
+  <data name="WRONGCODE" xml:space="preserve">
+    <value>Введенный код не верный</value>
+  </data>
+  <data name="ACCOUNTDAYS" xml:space="preserve">
+    <value>Дней аккаунту</value>
+  </data>
+  <data name="CONTEST1" xml:space="preserve">
+    <value>Прямые Р. Конкурсы</value>
+  </data>
+  <data name="CONTEST2" xml:space="preserve">
+    <value>Арендованные Р. Конкурсы</value>
+  </data>
+  <data name="CONTEST3" xml:space="preserve">
+    <value>Клики Конкурсы</value>
+  </data>
+  <data name="CONTEST4" xml:space="preserve">
+    <value>Передача Конкурсы</value>
+  </data>
+  <data name="CONTEST5" xml:space="preserve">
+    <value>Offerwalls Конкурсы</value>
+  </data>
+  <data name="CONTEST6" xml:space="preserve">
+    <value>CrowdFlower </value>
+  </data>
+  <data name="CONTESTINFO" xml:space="preserve">
+    <value>Для участия в конкурсе, вы должны соответствовать всем требованиям и нажать кнопку "Принять участие"</value>
+  </data>
+  <data name="CONTESTS" xml:space="preserve">
+    <value>Конкурсы</value>
+  </data>
+  <data name="DURATION" xml:space="preserve">
+    <value>Продолжительность</value>
+  </data>
+  <data name="LATESTKINDWINNERS" xml:space="preserve">
+    <value>Последние победители этого вида конкурсов</value>
+  </data>
+  <data name="NAME" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="PARTICIPATE" xml:space="preserve">
+    <value>Участвовать</value>
+  </data>
+  <data name="HISTORY_9" xml:space="preserve">
+    <value>Вы выиграли конкурс</value>
+  </data>
+  <data name="NOCONTESTS" xml:space="preserve">
+    <value>Мы в настоящее время не имеем каких-либо конкурсы такого типа</value>
+  </data>
+  <data name="YOUCANTMULTIPLE" xml:space="preserve">
+    <value>Вы не можете просматривать несколько Реклам одновременно</value>
+  </data>
+  <data name="CATEGORIES" xml:space="preserve">
+    <value>Категории</value>
+  </data>
+  <data name="DENIED" xml:space="preserve">
+    <value>Отказано</value>
+  </data>
+  <data name="IGNORED" xml:space="preserve">
+    <value>Игнорируется</value>
+  </data>
+  <data name="NEW" xml:space="preserve">
+    <value>Новый</value>
+  </data>
+  <data name="PENDING" xml:space="preserve">
+    <value>В ожидании.</value>
+  </data>
+  <data name="REPORTED" xml:space="preserve">
+    <value>Сообщается</value>
+  </data>
+  <data name="SEARCH" xml:space="preserve">
+    <value>Поиск</value>
+  </data>
+  <data name="UNDERREVIEW" xml:space="preserve">
+    <value>На рассмотрении</value>
+  </data>
+  <data name="ADVERTISER" xml:space="preserve">
+    <value>Рекламодатель</value>
+  </data>
+  <data name="CATEGORY" xml:space="preserve">
+    <value>Категория</value>
+  </data>
+  <data name="COMPLETEDTIMES" xml:space="preserve">
+    <value>Завершено %n% раз</value>
+    <comment>Оставить %n%</comment>
+  </data>
+  <data name="CREDITINGTIME" xml:space="preserve">
+    <value>Кредитование время</value>
+  </data>
+  <data name="DATEADDED" xml:space="preserve">
+    <value>Добавлен</value>
+  </data>
+  <data name="IGNORE" xml:space="preserve">
+    <value>Игнорировать</value>
+  </data>
+  <data name="LASTCREDITED" xml:space="preserve">
+    <value>Последний кредит</value>
+  </data>
+  <data name="LOGINIDHINT" xml:space="preserve">
+    <value>Как правило, это имя пользователя, адрес электронной почты или идентификационный номер Входа</value>
+  </data>
+  <data name="OFFEMAILHINT" xml:space="preserve">
+    <value>Пожалуйста, вставьте письмо вы получили при регистрации на это предложение</value>
+  </data>
+  <data name="OFFERRATING" xml:space="preserve">
+    <value>Рейтинг предложение</value>
+  </data>
+  <data name="REPORT" xml:space="preserve">
+    <value>Отчет</value>
+  </data>
+  <data name="SUBMIT" xml:space="preserve">
+    <value>Представьте</value>
+  </data>
+  <data name="IMPRESSIONS" xml:space="preserve">
+    <value>Впечатления</value>
+  </data>
+  <data name="IMPRESSIONSSMALL" xml:space="preserve">
+    <value>впечатления</value>
+  </data>
+  <data name="REQ_PP" xml:space="preserve">
+    <value>Вы должны выбрать свой способ выплат</value>
+  </data>
+  <data name="CASHOUTLIMIT" xml:space="preserve">
+    <value>Первая минимальная выплата</value>
+  </data>
+  <data name="CASHOUTLIMITNEXT" xml:space="preserve">
+    <value>Каждый следующий выплата минимум увеличился на</value>
+  </data>
+  <data name="OFFERWALLSPROFIT" xml:space="preserve">
+    <value>Offerwalls прибыль</value>
+  </data>
+  <data name="CASHOUTINFO2" xml:space="preserve">
+    <value>значения зависят от вашего текущего членства (см. раздел Обновление для полной таблицы)</value>
+  </data>
+  <data name="MAXCASHOUTLIMIT" xml:space="preserve">
+    <value>Максимальная Минимальная выплата</value>
+  </data>
+  <data name="TOOMANYCASHOUTS" xml:space="preserve">
+    <value>К сожалению, сегодня был достигнут предел для выплаты. Повторите попытку завтра. Ограничение выплата за день:</value>
+  </data>
+  <data name="ACHIEVEMENT_11" xml:space="preserve">
+    <value>Для тех, кто совершил более %n% CPA/GPT предложений</value>
+  </data>
+  <data name="ACHIEVEMENT_12" xml:space="preserve">
+    <value>Для тех, кто вырос больше чем на %n% Очков за один день</value>
+  </data>
+  <data name="ADDRESS" xml:space="preserve">
+    <value>Адрес</value>
+  </data>
+  <data name="CITY" xml:space="preserve">
+    <value>Город</value>
+  </data>
+  <data name="DETAILEDALLREQ" xml:space="preserve">
+    <value>Это поле обязательно</value>
+  </data>
+  <data name="DETAILEDNOSPECIAL" xml:space="preserve">
+    <value>Это поле содержит недопустимые символы - в поле:</value>
+  </data>
+  <data name="FEMALE" xml:space="preserve">
+    <value>Женский</value>
+  </data>
+  <data name="FIRSTNAME" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="GENDER" xml:space="preserve">
+    <value>Пол</value>
+  </data>
+  <data name="MALE" xml:space="preserve">
+    <value>Мужской</value>
+  </data>
+  <data name="SECONDNAME" xml:space="preserve">
+    <value>Фамилия</value>
+  </data>
+  <data name="STATEPROVINCE" xml:space="preserve">
+    <value>Штат/Провинция</value>
+  </data>
+  <data name="ZIPCODE" xml:space="preserve">
+    <value>Zip/Почтовый индекс</value>
+  </data>
+  <data name="ASC" xml:space="preserve">
+    <value>ASC</value>
+  </data>
+  <data name="COMPLETEDXTIMES" xml:space="preserve">
+    <value>Завершено %n% раз</value>
+    <comment>Оставить %n% без изменений</comment>
+  </data>
+  <data name="CPAPROFIT" xml:space="preserve">
+    <value>CPA/GPT предложения заработка</value>
+  </data>
+  <data name="DESCR" xml:space="preserve">
+    <value>По убыванию</value>
+  </data>
+  <data name="MOVEBACK" xml:space="preserve">
+    <value>Аннулировать</value>
+    <comment>Кнопка для возврата к CPA офферам</comment>
+  </data>
+  <data name="SORTBY" xml:space="preserve">
+    <value>Сортировать по</value>
+  </data>
+  <data name="WHATISPROBLEM" xml:space="preserve">
+    <value>В чем проблема?</value>
+  </data>
+  <data name="BADERRREP" xml:space="preserve">
+    <value>Ваш отчет содержит недопустимые символы</value>
+  </data>
+  <data name="ONEFIELDSABAD" xml:space="preserve">
+    <value>Один из ваших полей содержит недопустимые символы</value>
+  </data>
+  <data name="ADVCOSTS" xml:space="preserve">
+    <value>расходы на рекламу</value>
+  </data>
+  <data name="AMOUNTPERONEACTION" xml:space="preserve">
+    <value>Цена за действие</value>
+  </data>
+  <data name="DAILY1" xml:space="preserve">
+    <value>Проверьте, чтобы предложение будет сделано несколько раз тем же пользователем ежедневно</value>
+  </data>
+  <data name="EBR" xml:space="preserve">
+    <value>Email ID окно</value>
+  </data>
+  <data name="EBR1" xml:space="preserve">
+    <value>Должен ли пользователь предоставить письмо подверждения от предложения? Оно должно быть&lt;b&gt;MAX 400&lt;/b&gt; символов</value>
+  </data>
+  <data name="HOWMANY" xml:space="preserve">
+    <value>Сколько</value>
+  </data>
+  <data name="LBR" xml:space="preserve">
+    <value>Login ID окно</value>
+  </data>
+  <data name="LBR1" xml:space="preserve">
+    <value>Пользователь должен предоставить Login ID от предложения? Она должна быть &lt;b&gt;MAX 80&lt;/b&gt; символов</value>
+  </data>
+  <data name="OUT44" xml:space="preserve">
+    <value>Создать новую PTC/Баннерную/Фейсбук/TrafficGrid/GPT/CPA/PTSU т.д. кампанию</value>
+  </data>
+  <data name="REFDAILY" xml:space="preserve">
+    <value>Ежедневное обновление</value>
+  </data>
+  <data name="REQ_DESC" xml:space="preserve">
+    <value>Требуется описание</value>
+  </data>
+  <data name="CAMPAIGN" xml:space="preserve">
+    <value>Компания</value>
+  </data>
+  <data name="DAILY" xml:space="preserve">
+    <value>Ежедневно</value>
+  </data>
+  <data name="STOPPED" xml:space="preserve">
+    <value>Остановился</value>
+  </data>
+  <data name="SUBMITED" xml:space="preserve">
+    <value>Представленные</value>
+  </data>
+  <data name="HISTORY_10" xml:space="preserve">
+    <value>Ваш ресурс CPA был одобрен</value>
+  </data>
+  <data name="HISTORY_11" xml:space="preserve">
+    <value>Ваш ресурс CPA было отклонен или в стадии рассмотрения.</value>
+  </data>
+  <data name="ERCPA" xml:space="preserve">
+    <value>Неверная Цена за формат действий (он должен быть больше 0) и {X}. XXX</value>
+  </data>
+  <data name="TRAFFICEXCHANGE" xml:space="preserve">
+    <value>Обмена трафиком</value>
+  </data>
+  <data name="REFPROFIT" xml:space="preserve">
+    <value>Доходы от Offerwalls/CrowdFlower</value>
+  </data>
+</root>

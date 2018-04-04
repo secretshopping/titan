@@ -1,0 +1,17 @@
+.logo {
+    border: 14px solid transparent;
+    border-color: #4DCACA #31A3A3 #1D8888;
+    width: 28px;
+    height: 28px;
+    position: relative;
+    font-size: 0;
+    margin-right: 10px;
+    top: -9px;
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+    .registration-type-icon p {
+        font-size: 10px;
+    }
+}

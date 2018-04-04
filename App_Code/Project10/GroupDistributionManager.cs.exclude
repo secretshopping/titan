@@ -1,0 +1,419 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using Prem.PTC.Members;
+using Prem.PTC;
+using Titan;
+using Titan.Shares;
+
+
+public class GroupDistributionManager
+{
+    public static readonly string ZeroDistributionSqlCondition =
+                @"INNER JOIN RevenueShareAdverts ON Users.UserId = RevenueShareAdverts.CreatorUserId 
+                WHERE Users.AccountStatus = 'Active' AND Users.RSAAdsViewed LIKE '%#%#%#%#%#%#%#%#%#%#%' 
+                AND (((RevenueShareAdverts.Packages * " + RSASettings.PackPirce.ToClearString() + @" * " + RSASettings.PackReturnValue + @") 
+                - RevenueShareAdverts.MoneyReturned)/ (" + RSASettings.PackPirce.ToClearString() + " * " + RSASettings.PackReturnValue + @")) < 1";
+
+    public static void CRON()
+    {
+        if (RSASettings.IsCRONOn)
+        {
+            DailyWork();
+
+            if (DateTime.Now.DayOfWeek == DayOfWeek.Sunday)
+                WeeklyWork();
+        }
+    }
+
+    private static void DailyWork()
+    {
+        //1. Standard distribution
+        Money MinLevel = Distribute();
+
+        //2. ZERO distribution
+        Report report = new Report();
+        report.DateDay = DateTime.Now.Date;
+        report.Add("<br/><br/>ZERO Distribution report<br/>");
+
+        DailyPool ThePool = DailyPool.Get(DailyPoolType.AllUsers, DateTime.Now.Date);
+        Money PerEach = GetMoney(ThePool.SumAmount, GetZeroDistribution());
+
+        report.Add("Per each person/total in the pool: " + PerEach.ToString() + "/" + ThePool.SumAmount.ToString());
+        report.Add("<br/>");
+
+        if (PerEach * 3 > MinLevel)
+        {
+            report.Add("Group ZERO cannot earn more than Standard Distribution. Distribution for today is postponed for tomorrow. Money has been moved.");
+            DailyPool NextPool = DailyPool.Get(DailyPoolType.AllUsers, DateTime.Now.Date.AddDays(1));
+            NextPool.SumAmount += ThePool.SumAmount;
+            NextPool.Save();
+            ThePool.SumAmount -= ThePool.SumAmount;
+
+            NextPool.Save();
+            ThePool.Save();
+        }
+        else
+        {
+            if (!PerEach.IsZero)
+            {
+                UpdateAll(PerEach, ZeroDistributionSqlCondition);
+            }
+            else
+            {
+                report.Add("Too little money (or no members) in the pool. Distribution for today is postponed for tomorrow. Money has been moved.");
+
+                DailyPool NextPool = DailyPool.Get(DailyPoolType.AllUsers, DateTime.Now.Date.AddDays(1));
+                NextPool.SumAmount += ThePool.SumAmount;
+                NextPool.Save();
+                ThePool.SumAmount -= ThePool.SumAmount;
+
+                NextPool.Save();
+                ThePool.Save();
+            }
+        }
+
+        report.SaveString();
+        report.Save();
+    }
+
+    public static void WeeklyWork()
+    {
+        //Share market distribution
+        var pool = GlobalPool.Get(GlobalPoolType.ShareMarket);
+        var products = TableHelper.SelectRows<PortfolioProduct>(TableHelper.MakeDictionary("Name", RSASettings.PortfolioSharesName));
+
+        if (products.Count > 0)
+        {
+            var product = products[0];
+            int totalShares = product.TotalShares;
+
+            Decimal PerEachShare = pool.SumAmount.ToDecimal() / totalShares;
+            Money PerEachShareMoney = new Money(PerEachShare);
+
+           // PortfolioStatistics weeklyStats = new PortfolioStatistics();
+            //weeklyStats.WeeklyPool = pool.SumAmount;
+            //weeklyStats.PricePerUnit = PerEachShareMoney;
+            //weeklyStats.DateStatistics = DateTime.Now;
+            //weeklyStats.Save();
+
+
+
+            //if (PerEachShareMoney > new Money(0))
+            //{
+            var shares = TableHelper.SelectRows<PortfolioShare>(TableHelper.MakeDictionary("PortfolioProductId", product.Id));
+            foreach (var share in shares)
+            {
+                Member User = new Member(share.OwnerUsername);
+                if (!User.IsInactive || User.Status == MemberStatus.VacationMode)
+                {
+                    User.AddToMainBalance(PerEachShareMoney * share.Shares, "Shares");
+                    User.SaveBalances();
+                }
+                //MemberPortfolioStatistics actualPorfolioStats = new MemberPortfolioStatistics();
+                //actualPorfolioStats.Username = User.Name;
+                //actualPorfolioStats.Units = share.Shares;
+                //actualPorfolioStats.DateStatistics = DateTime.Now;
+                //actualPorfolioStats.Save();
+            }
+
+            //Flush the pool
+            pool.SumAmount = Money.Zero;
+            pool.Save();
+            //}
+        }
+    }
+
+    public static int GetUserGroup(Member user)
+    {
+        return GetMemberGroup(GetUserActivePackages(user));
+    }
+
+    public static int GetUserActivePackages(Member user)
+    {
+        var where = TableHelper.MakeDictionary("CreatorUserId", (int)user.Id);
+        var ads = TableHelper.SelectRows<RevenueShareAdvert>(where);
+
+        int packages = 0;
+
+        foreach (var ad in ads)
+        {
+            //Check if member is ACTIVE
+            //if (user.RSAPTCAdsViewedCount >= 10 && user.Status == MemberStatus.Active)
+            packages += ad.ActivePackages;
+        }
+
+        return packages;
+    }
+
+    private static Money Distribute()
+    {
+        Money Group1Earnings = new Money(0);
+
+        DailyPool Pool = DailyPool.Get(DailyPoolType.StandardDistribution, DateTime.Now.Date);
+
+        int totalGroups = 0; //Number of not-empty groups in current distribution
+        int totalMembers = 0; //Number of members to be distributed
+
+        var ads = TableHelper.SelectAllRows<RevenueShareAdvert>();
+        var memberPakcages = new Dictionary<int, int>(); // <userId, packages>
+        var groups = new Dictionary<int, List<int>>(); // <group, userIds>
+
+        foreach (var ad in ads)
+        {
+            //Check if member is ACTIVE
+            Member Owner = new Member(ad.CreatorUserId);
+            if (Owner.RSAPTCAdsViewedCount >= 10 && Owner.Status == MemberStatus.Active)
+                memberPakcages[ad.CreatorUserId] += ad.ActivePackages;
+        }
+
+        foreach (var memberId in memberPakcages.Keys)
+        {
+            int memberGroup = GetMemberGroup(memberPakcages[memberId]);
+            var group = groups[memberGroup];
+            if (group == null)
+            {
+                group = new List<int>();
+            }
+            group.Add(memberId);
+
+            if (memberGroup > 0)
+                totalMembers++;
+        }
+
+        for (int i = 1; i <= 14; i++)
+        {
+            if (groups.ContainsKey(i))
+                totalGroups++;
+        }
+
+        Report report = new Report();
+        report.DateDay = DateTime.Now.Date;
+
+        //Status report start
+        var pool1 = GlobalPool.Get(GlobalPoolType.ShareMarket);
+        var pool2 = GlobalPool.Get(GlobalPoolType.CashoutFunds);
+        var pool3 = GlobalPool.Get(GlobalPoolType.SystemPool);
+
+        report.Add("<center>Global pool status</center><br/><br/>");
+        report.Add("SystemPool: " + pool3.SumAmount.ToString() + "<br/>");
+        report.Add("CashoutFunds: " + pool2.SumAmount.ToString() + "<br/>");
+        report.Add("ShareMarket: " + pool1.SumAmount.ToString() + "<br/>");
+        report.Add("<br/><br/>");
+        //Status report end
+
+        report.Add("<center>Group distribution report</center><br/><br/>");
+        report.Add("Money in pool (to be distributed): ");
+        report.Add(Pool.SumAmount.ToString());
+        report.Add("<br/>Groups:<br/>");
+        for (int i = 1; i <= 14; i++)
+        {
+            report.Add(i.ToString());
+            report.Add(": ");
+            if (groups.ContainsKey(i))
+            {
+                report.Add(groups[i].Count.ToString());
+                report.Add(" member(s)<br/>");
+            }
+            else
+            {
+                report.Add("0<br/>");
+            }
+        }
+        report.Add("<br/>Calculated money per each group per each person:<br/>");
+
+        //Calculate money per each group
+        var moneyPerGroupPerEachPerson = new Dictionary<int, Money>();
+
+        bool IsOK = false;
+        Decimal[] powers = { new Decimal(2.0), new Decimal(1.7), new Decimal(1.5), new Decimal(1.3), new Decimal(1.1), new Decimal(1.05), new Decimal(1.01) };
+        Decimal power;
+        Decimal currentPower = new Decimal(1.0);
+        Decimal totalParts = 0;
+        Money PerEachShareMoney = new Money(0);
+        int j = 0;
+
+        while (!IsOK && j < 7)
+        {
+            power = powers[j];
+            //Count shares
+            for (int i = 1; i <= 14; i++)
+            {
+                if (groups.ContainsKey(i))
+                {
+                    totalParts += groups[i].Count * currentPower;
+                    currentPower *= power;
+                }
+            }
+
+            if (totalParts > 0)
+            {
+                Decimal PerEachShare = Pool.SumAmount.ToDecimal() / totalParts;
+                PerEachShareMoney = new Money(PerEachShare);
+                if (!PerEachShareMoney.IsZero)
+                    IsOK = true;
+                else
+                {
+                    //Lower the power and go on
+                    currentPower = new Decimal(1.0);
+                    totalParts = 0;
+                    j++;
+                }
+            }
+            else
+            {
+                //Lower the power and go on
+                currentPower = new Decimal(1.0);
+                totalParts = 0;
+                j++;
+            }
+        }
+
+        if (!IsOK)
+        {
+            report.Add("Too little money (or no members) in the pool. Distribution for today is postponed for tomorrow. Money has been moved.");
+            DailyPool NextPool = DailyPool.Get(DailyPoolType.StandardDistribution, DateTime.Now.Date.AddDays(1));
+            NextPool.SumAmount += Pool.SumAmount;
+            NextPool.Save();
+            Pool.SumAmount -= Pool.SumAmount;
+
+            NextPool.Save();
+            Pool.Save();
+        }
+        else
+        {
+            //All OK
+            currentPower = new Decimal(1.0);
+
+            for (int i = 1; i <= 14; i++)
+            {
+                if (groups.ContainsKey(i))
+                {
+                    Decimal up = groups[i].Count * currentPower;
+                    Decimal down = groups[i].Count;
+
+                    moneyPerGroupPerEachPerson[i] = PerEachShareMoney * new Money(up / down);
+                    report.Add(i.ToString());
+                    report.Add(": ");
+                    report.Add(moneyPerGroupPerEachPerson[i].ToString());
+                    report.Add("<br/>");
+                    currentPower *= powers[j];
+
+                    //Update first present group earnings if any
+                    if (!Group1Earnings.IsZero)
+                        Group1Earnings = moneyPerGroupPerEachPerson[i];
+                }
+            }
+
+            //Distribute
+            Money SumDistributed = new Money(0);
+            for (int i = 1; i <= 14; i++)
+            {
+                if (groups.ContainsKey(i))
+                {
+                    foreach (var userId in groups[i])
+                    {
+                        Member User = new Member(userId);
+                        User.AddToMainBalance(moneyPerGroupPerEachPerson[i], "RSA Std dist.");
+                        User.SaveBalances();
+
+                        //Referer earnings (if any) here
+
+                        SumDistributed += moneyPerGroupPerEachPerson[i];
+                    }
+                }
+            }
+            report.Add("<br/>Total distributed: ");
+            report.Add(SumDistributed.ToString());
+            report.Add("<br/>");
+
+            report.Add("The rest (moved to tomorrow pool): ");
+            report.Add((Pool.SumAmount - SumDistributed).ToString());
+            report.Add("<br/>");
+
+            DailyPool NextPool = DailyPool.Get(DailyPoolType.StandardDistribution, DateTime.Now.Date.AddDays(1));
+            NextPool.SumAmount += (Pool.SumAmount - SumDistributed);
+            NextPool.Save();
+
+            //Flush the pool
+            Pool.SumAmount = new Money(0);
+            Pool.Save();
+
+        }
+
+        report.SaveString();
+        report.Save();
+
+        return Group1Earnings;
+    }
+
+    private static int GetZeroDistribution()
+    {
+        using (var bridge = ParserPool.Acquire(Database.Client))
+        {
+            object count1 = bridge.Instance.ExecuteRawCommandScalar("SELECT COUNT(Username) FROM Users " + ZeroDistributionSqlCondition);
+
+            return Convert.ToInt32(count1);
+        }
+    }
+
+    private static void UpdateAll(Money amountPerEach, string condition)
+    {
+        using (var bridge = ParserPool.Acquire(Database.Client))
+        {
+            // string UpdateCommand = "UPDATE Users SET Balance1 = Balance1 + " + amountPerEach + " ";
+            string SelectCommand = "SELECT * FROM Users ";
+
+            //Add logs FAST
+            var InactivityUsersDataTable = bridge.Instance.ExecuteRawCommandToDataTable(SelectCommand + condition);
+            var InactivityUsers = TableHelper.GetListFromDataTable<Member>(InactivityUsersDataTable, 100, true);
+            var List = new List<KeyValuePair<int, Money>>();
+            var ListActuaiBalance = new List<KeyValuePair<int, Money>>();
+
+            foreach (var member in InactivityUsers)
+            {
+                List.Add(new KeyValuePair<int, Money>(member.Id, amountPerEach));
+                ListActuaiBalance.Add(new KeyValuePair<int, Money>(member.Id, member.MainBalance));
+            }
+
+            BalanceLogManager.FastAddLogs(List, BalanceType.MainBalance, "Zero distribution", ListActuaiBalance);
+
+            //Update all
+            bridge.Instance.ExecuteRawCommandNonQuery(@"
+                UPDATE U SET U.Balance1 = U.Balance1 + " + amountPerEach.ToClearString() + @" FROM Users AS U INNER JOIN RevenueShareAdverts ON Users.UserId = RevenueShareAdverts.CreatorUserId 
+                WHERE Users.AccountStatus = 'Active' AND Users.RSAAdsViewed LIKE '%#%#%#%#%#%#%#%#%#%#%'
+                AND(((RevenueShareAdverts.Packages * " + RSASettings.PackPirce.ToClearString() + @" * " + RSASettings.PackReturnValue + @")
+                - RevenueShareAdverts.MoneyReturned) / (" + RSASettings.PackPirce.ToClearString() + " * " + RSASettings.PackReturnValue + @")) < 1");
+        }
+    }
+
+
+    private static Money GetMoney(Money pool, int n)
+    {
+        if (n == 0)
+            return new Money(0);
+
+        return new Money(pool.ToDecimal() / (Decimal)n);
+    }
+
+    /// <summary>
+    /// Gets current member group based on INT input
+    /// </summary>
+    /// <param name="activeAds"></param>
+    /// <returns></returns>
+    public static int GetMemberGroup(int input)
+    {
+        int group = 0;
+        int minimum = 0;
+        for (int i = 0; i < 15; i++)
+        {
+            if (input < minimum)
+                break;
+
+            group = i;
+            minimum = RSASettings.StandardDistributionGroups[i] + 1;
+        }
+        return group;
+    }
+}

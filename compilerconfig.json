@@ -1,0 +1,66 @@
+﻿[
+    {
+        "outputFile": "Themes/darcula/css/style.css",
+        "inputFile": "Themes/darcula/sass/style.scss",
+        "minify": {
+            "enabled": true
+        },
+        "options": {
+            "sourceMap": false
+        }
+    },
+    {
+        "outputFile": "Themes/material/css/style.css",
+        "inputFile": "Themes/material/sass/style.scss",
+        "minify": {
+            "enabled": true
+        },
+        "options": {
+            "sourceMap": false
+        }
+    },
+    {
+        "outputFile": "Themes/theme1/css/style.css",
+        "inputFile": "Themes/theme1/sass/style.scss",
+        "minify": {
+            "enabled": true
+        },
+        "options": {
+            "sourceMap": false
+        }
+    },
+        {
+        "outputFile": "Themes/adsmile/css/style.css",
+        "inputFile": "Themes/adsmile/sass/style.scss",
+        "minify": {
+            "enabled": true
+        },
+        "options": {
+            "sourceMap": false
+        }
+    },
+    {
+        "outputFile": "Scripts/default/assets/css/update/U6004.css",
+        "inputFile": "Scripts/default/assets/css/update/U6004.scss",
+        "minify": {
+            "enabled": true
+        },
+        "options": {
+            "sourceMap": false
+        }
+    },
+    {
+        "outputFile": "Scripts/default/assets/css/update/U6005.css",
+        "inputFile": "Scripts/default/assets/css/update/U6005.scss",
+        "minify": {
+            "enabled": true
+        },
+        "options": {
+            "sourceMap": false
+        }
+    },
+    {
+        "outputFile": "Scripts/assets/js/client.es5.js",
+        "inputFile": "Scripts/assets/js/client.js"
+    }
+]

@@ -1,0 +1,224 @@
+﻿
+.video-link {
+    display: inline-block;
+    width: 218px;
+    height: 21%; /*Change to customize 2 */
+    padding: 0.3em;
+    text-align: left;
+}
+
+.video-link-related {
+    display: inline-block;
+    text-align: left;
+}
+
+    .video-link-related:hover {
+        /*background-color: #f9fff9;*/
+        -moz-border-radius: 2px;
+        -webkit-border-radius: 2px;
+        border-radius: 2px;
+    }
+
+    .video-link a, .video-link a:visited, .video-link-related a, .video-link-related a:visited {
+        color: #808080;
+    }
+
+.video-link img {
+    width: 218px;
+    height: 139px;
+}
+
+    .video-link img:hover {
+    }
+
+.video-link-related img {
+    width: 100%;
+}
+
+.player-playlist-videos {
+    margin-top: 40px;
+    width: 98%;
+    display: inline-block;
+}
+
+.darken {
+    background: black;
+}
+
+.playlist-link-hover {
+    width: 120px;
+    position: absolute;
+    display: none;
+    margin-left: 52px;
+    margin-top: 50px;
+}
+
+    .playlist-link-hover img {
+        width: 120px;
+        height: 40px;
+        vertical-align: middle;
+    }
+
+.video-link-hover {
+    width: 60px;
+    position: absolute;
+    display: none;
+    margin-left: 85px;
+    margin-top: 50px;
+}
+
+    .video-link-hover img {
+        width: 60px;
+        height: 40px;
+        vertical-align: middle;
+    }
+
+.video-link-hover-related {
+    width: 60px;
+    position: absolute;
+    display: none;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+    .video-link-hover-related img {
+        width: 60px;
+        height: 40px;
+        vertical-align: middle;
+    }
+
+.darken img {
+    display: block;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.darken:hover img {
+    opacity: 0.6;
+}
+
+.video-link-title {
+    width: 84%;
+    font-size: larger;
+    overflow: hidden;
+    display: inline-block;
+    white-space: nowrap;
+    font-style: oblique;
+}
+
+.video-link-time {
+    float: right;
+    font-size: 0.7em;
+}
+
+.video-link-views {
+    float: left;
+    font-size: 0.7em;
+    margin-top: -0.9em;
+}
+
+.page-navigation {
+    margin-top: 2em;
+    font-size: 0.8em;
+}
+
+.video-player {
+    display: inline-block;
+    width: 75%;
+    vertical-align: top;
+    padding-top: 0.3em;
+    height: 100%;
+    overflow: hidden;
+}
+
+.related-container {
+    padding-left: 1%;
+    width: 23%;
+    display: inline-block;
+    height: 100%;
+}
+
+.player-video-title {
+    width: 100%;
+    font-size: 1.5em;
+    padding-top: 0.5em;
+    text-align: left;
+    font-style: oblique;
+}
+
+.player-video-description {
+    display: inline-block;
+    width: 100%;
+    padding: 0.3em;
+    line-height: 1em;
+    text-align: left;
+    font-style: oblique;
+}
+
+.player-video-views {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 1em;
+    margin-left: 0.3em;
+    font-style: oblique;
+    margin-bottom:20px;
+}
+
+iframe#player {
+    width: 100% !important;
+    height: 50vh !important;
+}
+
+.player-video-plbutton, .player-video-grey {
+    display: inline-block;
+    padding: 5px;
+    background-color: #317eff;
+    color: #fff;
+    /*font-size: smaller;
+    width: 75px;*/
+    margin-left: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+    .player-video-plbutton:hover {
+        background-color: #5392fc;
+    }
+
+.player-video-grey {
+    background-color: #818181;
+    cursor: default;
+}
+
+
+.playlist-label, .playlist-nowplaying-label {
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 5px;
+    display: block;
+    background-color: #317eff;
+    padding: 6px;
+    font-size: smaller;
+    /* border: 1px solid #CECECE; */
+    color: #fff;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 0px;
+}
+
+    .playlist-label:hover {
+        /*background-color: #4e4e4e;*/
+    }
+
+.video-tooltip {
+    line-height: 23px;
+}
+
+.searchbox-textbox {
+    background-color: white !important;
+}

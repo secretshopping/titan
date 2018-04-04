@@ -1,0 +1,500 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ACCEPFRIENDREQUEST" xml:space="preserve">
+    <value>Freundschaftsanfrage annehmen</value>
+  </data>
+  <data name="ACCEPT" xml:space="preserve">
+    <value>Annehmen</value>
+  </data>
+  <data name="ADDANDMANAGEWEBSITES" xml:space="preserve">
+    <value>Hinzufügen und Bearbeiten Ihrer Webseiten</value>
+  </data>
+  <data name="ADDBTCADDRESSFIRST" xml:space="preserve">
+    <value>Bitte fügen Sie in den Einstellungen eine BTC Adresse hinzu, um eine Auszahlung zu ermöglichen.</value>
+  </data>
+  <data name="ADDFRIEND" xml:space="preserve">
+    <value>Freund hinzufügen</value>
+  </data>
+  <data name="ADPACKROIANDREPURCHASE" xml:space="preserve">
+    <value>{0} ROI und Rückkauf</value>
+  </data>
+  <data name="ADPACKTYPE" xml:space="preserve">
+    <value>{0} Art</value>
+  </data>
+  <data name="WITHDRAWALVERIFICATIONEMAILTITLE" xml:space="preserve">
+    <value>{0} Überprüfung der Auszahlung</value>
+  </data>
+  <data name="CAMPAIGNSWITHOUTADPACKS" xml:space="preserve">
+    <value>Einige {0} sind nicht einer Kampagne zu geordnet. Für diese {0} erhalten Sie keine Banner Schaltungen. Gehen Sie auf &lt;i&gt;Bearbeiten&lt;/i&gt;Schaltfläche um diese {0} an die entsprechende Kampagne zu binden. </value>
+  </data>
+  <data name="CANNOTBUYADPACKS" xml:space="preserve">
+    <value>Sie können keine Adpacks ohne die Auswahl einer Kampagne kaufen.</value>
+  </data>
+  <data name="CANTWATCHMOREPTC" xml:space="preserve">
+    <value>Sie haben heute bereits {0} Anzeigen gesehen. Führen Sie ein Konto Upgrade durch oder kommen Sie morgen wieder.</value>
+  </data>
+  <data name="CANTWITHDRAWBTCUNTIL" xml:space="preserve">
+    <value>Sie werden eine BTC Auszahlung zu diesem Wallet machen können in {0}.</value>
+  </data>
+  <data name="CHPICTURE" xml:space="preserve">
+    <value>Bild ändern</value>
+  </data>
+  <data name="CONVERSATIONS" xml:space="preserve">
+    <value>Konversationen</value>
+  </data>
+  <data name="DAYS" xml:space="preserve">
+    <value>Tag(e)</value>
+  </data>
+  <data name="DELETE" xml:space="preserve">
+    <value>Gelöscht</value>
+  </data>
+  <data name="DIMENSIONS" xml:space="preserve">
+    <value>Format</value>
+  </data>
+  <data name="EARNER" xml:space="preserve">
+    <value>Verdiener</value>
+  </data>
+  <data name="ENTERYOURMESSAGEHERE" xml:space="preserve">
+    <value>Bitte geben Sie hier Ihre Nachricht ein.</value>
+  </data>
+  <data name="FAILEDSENDINGEMAIL" xml:space="preserve">
+    <value>Fehler beim Senden der Verifikationsemail.</value>
+  </data>
+  <data name="FANPAGEURL" xml:space="preserve">
+    <value>Fanpage URL</value>
+  </data>
+  <data name="FRIENDREQUESTSENT" xml:space="preserve">
+    <value>Freundschaftsanfrage gesendet</value>
+  </data>
+  <data name="GLOBALPOSTBACK" xml:space="preserve">
+    <value>Global Postback???</value>
+  </data>
+  <data name="INVALIDBANNERIMAGEORDIMENSIONS" xml:space="preserve">
+    <value>Ungültiges Bild oder falsches Format</value>
+  </data>
+  <data name="HOURS" xml:space="preserve">
+    <value>Stunde(n)</value>
+  </data>
+  <data name="MILISECONDS" xml:space="preserve">
+    <value>Millisekunde(n)</value>
+  </data>
+  <data name="MINUTES" xml:space="preserve">
+    <value>Minute(n)</value>
+  </data>
+  <data name="INVALIDBITCOINADDRESSINFO" xml:space="preserve">
+    <value>Bitte geben Sie eine gültige BitCoin Adresse ein, z. B.: 1DxxTvmdBATx8W13dcg4p9mRejAR3zwHyp
+Emailadressen sind keine gültige BitCoin Adresse.</value>
+  </data>
+  <data name="INVALIDSECURITYCODE" xml:space="preserve">
+    <value>Sicherheitscode ist ungültig</value>
+  </data>
+  <data name="INVITATIONS" xml:space="preserve">
+    <value>Einladungen</value>
+  </data>
+  <data name="LEADERBOARD" xml:space="preserve">
+    <value>Führungsebene</value>
+  </data>
+  <data name="LIST" xml:space="preserve">
+    <value>Liste</value>
+  </data>
+  <data name="MAXPTCCLICKSPERDAY" xml:space="preserve">
+    <value>Maximale PTC Anzeigenklicks pro Tag</value>
+  </data>
+  <data name="MYWEBSITES" xml:space="preserve">
+    <value>Meine Webseiten</value>
+  </data>
+  <data name="NEWBANNERSUNAVAILABLEHEADER" xml:space="preserve">
+    <value>Banneranzeigen sind momentan leider nicht verfügbar</value>
+  </data>
+  <data name="NEWBANNERSUNAVAILABLEREASON" xml:space="preserve">
+    <value>Webseiten Kategorien oder Banner Packs sind vom Administrator noch nicht konfiguriert worden.</value>
+  </data>
+  <data name="NEWADVERTUNAVAILABLEHEADER" xml:space="preserve">
+    <value>Anzeigen schalten ist momentan leider nicht möglich.</value>
+  </data>
+  <data name="NEWADVERTUNAVAILABLEREASON" xml:space="preserve">
+    <value>Adpacks wurden noch nicht vom Administrator konfiguriert.</value>
+  </data>
+  <data name="NEWWEBSITEUNAVAILABLEHEADER" xml:space="preserve">
+    <value>Momentan können leider keine Webseiten hinzugefügt werden.</value>
+  </data>
+  <data name="NEWWEBSITEUNAVAILABLEREASON" xml:space="preserve">
+    <value>Webseiten Kategorieren sind vom Administrator noch nicht konfiguriert worden.</value>
+  </data>
+  <data name="NOWEBSITES" xml:space="preserve">
+    <value>Sie müssen erst eine Webseite hinzufügen.</value>
+  </data>
+  <data name="PINCANTSTARTWITHZERO" xml:space="preserve">
+    <value>Die PIN darf nicht mit 0 starten.</value>
+  </data>
+  <data name="PLEASEUPLOADIMAGE" xml:space="preserve">
+    <value>Bitte laden Sie ein Bild hoch.</value>
+  </data>
+  <data name="POST" xml:space="preserve">
+    <value>Eintragen</value>
+  </data>
+  <data name="POSTBACK" xml:space="preserve">
+    <value>Postback???</value>
+  </data>
+  <data name="PREFERENCES" xml:space="preserve">
+    <value>Voreinstellungen</value>
+  </data>
+  <data name="PUBLISH" xml:space="preserve">
+    <value>Veröffentlichen</value>
+  </data>
+  <data name="PUBLISHER" xml:space="preserve">
+    <value>Herausgeber</value>
+  </data>
+  <data name="PUBLISHERBANNERINFO" xml:space="preserve">
+    <value>Platzieren Sie Ihre Banner auf einer oder mehreren von Ihnen akzeptierten Webseiten und verdienen Sie pro Klick.</value>
+  </data>
+  <data name="REGISTERAS" xml:space="preserve">
+    <value>Registrieren als</value>
+  </data>
+  <data name="REJECTFRIENDREQUEST" xml:space="preserve">
+    <value>Freundschaftsanfrage ablehnen</value>
+  </data>
+  <data name="REPURCHASE" xml:space="preserve">
+    <value>Rückkauf</value>
+  </data>
+  <data name="REQCAPTCHA" xml:space="preserve">
+    <value>Bitte wählen Sie eine Option.</value>
+  </data>
+  <data name="REQUESTSENTPLEASEWAIT" xml:space="preserve">
+    <value>Ihre Anfrage wurde gesendet. Bitte warten Sie auf eine Bestätigung durch den Support.</value>
+  </data>
+  <data name="SECURITY" xml:space="preserve">
+    <value>Sicherheit</value>
+  </data>
+  <data name="RESETTIME" xml:space="preserve">
+    <value>Ihre Anzeigenklicks werden zurückgesetzt in</value>
+  </data>
+  <data name="SECONDS" xml:space="preserve">
+    <value>Sekunde(n)</value>
+  </data>
+  <data name="SECURITYCODE" xml:space="preserve">
+    <value>Sicherheitscode</value>
+  </data>
+  <data name="SECURITYCODEEMAIL" xml:space="preserve">
+    <value>Ihr Sicherheitscode lautet: {0}</value>
+  </data>
+  <data name="SELECTACCOUNTTYPE" xml:space="preserve">
+    <value>Wählen Sie mindestens einen Kontotyp aus:</value>
+  </data>
+  <data name="TOOMANYWITHDRAWSTODAY" xml:space="preserve">
+    <value>Sie haben bereits heute {0} mal Geld ausgezahlt. Bitte versuchen Sie es morgen wieder.</value>
+  </data>
+  <data name="TOPCOMMISSIONEARNERS" xml:space="preserve">
+    <value>Top {0} Verdiener Provision</value>
+  </data>
+  <data name="TOPCOUNTRIES" xml:space="preserve">
+    <value>Top {0} Länder</value>
+  </data>
+  <data name="TOPEARNERS" xml:space="preserve">
+    <value>Top {0} Verdiener</value>
+  </data>
+  <data name="TOPREFERERS" xml:space="preserve">
+    <value>Top {0} Empfehlungsgeber</value>
+  </data>
+  <data name="USERS" xml:space="preserve">
+    <value>Kunden</value>
+  </data>
+  <data name="VERIFICATIONEMAILSENT" xml:space="preserve">
+    <value>Der Verifizierungscode wurde an Ihre Emailadresse gesendet. Dieser ist für {0} Minute(n) gültig. Bitte geben Sie den Code ein um fortzufahren.</value>
+  </data>
+  <data name="WAITUNTILRESOLVED" xml:space="preserve">
+    <value>Bitte warten Sie bis Ihre vorherige Anfrage beantwortet wurde.</value>
+  </data>
+  <data name="WALLETCHANGEWARNING" xml:space="preserve">
+    <value>Das Ändern Ihrer Wallet Adresse wird alle Auszahlungen für die Dauer von {0} Tagen aus Sicherheitsgründen blockieren.</value>
+  </data>
+  <data name="WEBSITES" xml:space="preserve">
+    <value>Webseiten</value>
+  </data>
+  <data name="WEBSITEURLMUSTBEUNIQUE" xml:space="preserve">
+    <value>Webseiten URL muss eindeutig sein.</value>
+  </data>
+  <data name="WITHDRAWALSPERDAY" xml:space="preserve">
+    <value>Auszahlungen pro Tag</value>
+  </data>
+  <data name="RETURNTOADVERTISE" xml:space="preserve">
+    <value>Zurück zu den Anzeigen</value>
+  </data>
+  <data name="ALREADYAMEMBER" xml:space="preserve">
+    <value>Sind Sie bereits Kunde? Klicken Sie {0}hier{1} um sich anzumelden.</value>
+  </data>
+  <data name="NOTAMEMBERYET" xml:space="preserve">
+    <value>Sind Sie noch kein Kunde? Klicken Sie {0}hier{1} um sich zu registrieren.</value>
+  </data>
+  <data name="VERIFICATIONSMSSENT" xml:space="preserve">
+    <value>Der Verifizierungscode wurde innen per SMS zugesendet. Dieser ist für {0} Minute(n) gültig. Bitte geben Sie den Code ein, um fortzufahren.</value>
+  </data>
+  <data name="ENTERTAINMENT" xml:space="preserve">
+    <value>Entertainment</value>
+  </data>
+  <data name="MYPROFILE" xml:space="preserve">
+    <value>Mein Profil</value>
+  </data>
+  <data name="PROFILE" xml:space="preserve">
+    <value>Profil</value>
+  </data>
+  <data name="RECENTPAYMENTS" xml:space="preserve">
+    <value>Letzte Auszahlungen</value>
+  </data>
+  <data name="REVSHARE" xml:space="preserve">
+    <value>Umsatzbeteiligung</value>
+  </data>
+  <data name="SURF" xml:space="preserve">
+    <value>Anzeigen betrachten</value>
+    <comment>Surf ads (in Menu)</comment>
+  </data>
+  <data name="VIEWDETAIL" xml:space="preserve">
+    <value>Details betrachten</value>
+  </data>
+  <data name="COPIED" xml:space="preserve">
+    <value>Kopiert</value>
+  </data>
+  <data name="COPY" xml:space="preserve">
+    <value>Kopiere</value>
+  </data>
+  <data name="ADDBANNERBYURL" xml:space="preserve">
+    <value>Banner hinzufügen per URL</value>
+  </data>
+  <data name="ADDFILE" xml:space="preserve">
+    <value>Datei hinzufügen</value>
+  </data>
+  <data name="CHOOSEFILE" xml:space="preserve">
+    <value>Bitte wählen Sie die Datei aus.</value>
+  </data>
+  <data name="GETCODE" xml:space="preserve">
+    <value>Code abfragen</value>
+  </data>
+  <data name="PUBLISHERREPLACEUSERNAME" xml:space="preserve">
+    <value>Tauschen Sie &lt;b&gt;{username}&lt;/b&gt; aus mit dem Kundennamen welcher Ihr Angebot von Ihrer Webseite angenommen hat.</value>
+  </data>
+  <data name="PUBLISHOFFERWALLSONYOURWEBSITES" xml:space="preserve">
+    <value>Veröffentlichen Sie Großangebote auf Ihrer Webseite</value>
+  </data>
+  <data name="EXTERNALSUBMISSIONS" xml:space="preserve">
+    <value>External submissions?6000</value>
+  </data>
+  <data name="SUBMISSIONS" xml:space="preserve">
+    <value>Submissions?6000</value>
+  </data>
+  <data name="CONFIGURE" xml:space="preserve">
+    <value>Konfigurieren</value>
+  </data>
+  <data name="DOCUMENTATION" xml:space="preserve">
+    <value>Dokumentation</value>
+  </data>
+  <data name="GLOBALPOSTBACKDESC" xml:space="preserve">
+    <value>Anschauen der Dokumentation und Konfiguration der allgemeinen Parameter zur Sendungsverfolgung?6000</value>
+  </data>
+  <data name="PBCAMPAIGNID" xml:space="preserve">
+    <value>ID der Kampagne</value>
+  </data>
+  <data name="PBCAMPAIGNNAME" xml:space="preserve">
+    <value>Name der Kampagne</value>
+  </data>
+  <data name="PBCOUNTRYCODE" xml:space="preserve">
+    <value>Ländercode des Kunden welcher das Angebot akzeptiert hat (z.B. US, UK, DE)</value>
+  </data>
+  <data name="PBCURRENCYCODE" xml:space="preserve">
+    <value>Währungscode, z.B. USD, EUR,...</value>
+  </data>
+  <data name="PBIPADDRESS" xml:space="preserve">
+    <value>Registrierte IP Adresse des Kunden</value>
+  </data>
+  <data name="PBPAYOUT" xml:space="preserve">
+    <value>Ausgezahlte Empfehlungsprovision. Rückbuchungen werden als Negativwerte verbucht.</value>
+  </data>
+  <data name="PBSUBID" xml:space="preserve">
+    <value>Name oder ID des Kunden, welcher das Angebot angenommen hat, muss in Ihre Tracking-URL eingefügt werden.</value>
+  </data>
+  <data name="PBSUBID2" xml:space="preserve">
+    <value>Zusätzliche Parameter, welche zu Ihrer Tracking-URL hinzugefügt werden können.</value>
+  </data>
+  <data name="WHITELISTIPINFO" xml:space="preserve">
+    <value>Stellen Sie bitte sicher, dass Sie unsere Server IP Adresse in Ihrer Software zulassen. So können Sie sicherstellen, dass Emailbenachrichtigungen die von &lt;b&gt;{0}&lt;/b&gt; kommen auch zugestellt werden. &lt;br /&gt; Unsere Benachrichtigungen kommen immer von einer IPAdresse &lt;b&gt;{1}&lt;/b&gt;</value>
+  </data>
+  <data name="POSTBACKURL" xml:space="preserve">
+    <value>URL der EMailbenachrichtigung?6000</value>
+  </data>
+  <data name="ADDORREPLACE" xml:space="preserve">
+    <value>Ergänzen oder ersetzen</value>
+  </data>
+  <data name="EXPECTEDOK" xml:space="preserve">
+    <value>Die erwartete Antwort ist "ok".</value>
+  </data>
+  <data name="PARAMETER" xml:space="preserve">
+    <value>Parameter</value>
+  </data>
+  <data name="POSTBACKIMPLEMENTEDCORRECTLY" xml:space="preserve">
+    <value>Sie haben Ihre Benachrichtigungen erfolgreich konfiguriert.</value>
+  </data>
+  <data name="POSTBACKPARAMS" xml:space="preserve">
+    <value>Benachrichtungsparameter</value>
+  </data>
+  <data name="REQUIRED" xml:space="preserve">
+    <value>Benötigt</value>
+  </data>
+  <data name="SUCCESSADDINGPOSTBACKURL" xml:space="preserve">
+    <value>Die Benachrichtigungs-URL wurde erfolgreich hinzugefügt.</value>
+  </data>
+  <data name="SUCCESSFULRESPONSE" xml:space="preserve">
+    <value>Erfolgreiche Antwort?6000</value>
+  </data>
+  <data name="SUCCESSFULRESPONSEDESC" xml:space="preserve">
+    <value>Wir benötigen von Ihnen eine Antwort. &lt;b&gt;{0}&lt;/b&gt; Sobald Sie eine Benachrichtigung von uns erhalten haben.?6000</value>
+  </data>
+  <data name="TESTPOSTBACK" xml:space="preserve">
+    <value>Test Benachrichtigung</value>
+  </data>
+  <data name="TESTPOSTBACKUNAVAILABLEHEADER" xml:space="preserve">
+    <value>Test Benachrichtigung ist derzeit nicht verfügbar.</value>
+  </data>
+  <data name="TESTPOSTBACKUNAVAILABLEREASON" xml:space="preserve">
+    <value>Sie müssen mindestens eine Benachrichtigungs-URL konfigurieren.</value>
+  </data>
+  <data name="THERESPONSEWAS" xml:space="preserve">
+    <value>Die Antwort lautet {0}.</value>
+  </data>
+  <data name="WEBSITE" xml:space="preserve">
+    <value>Webseite</value>
+  </data>
+  <data name="WEBSITEMUSTBEACCEPTED" xml:space="preserve">
+    <value>Wir bitten um etwas Geduld, bis der Support Ihre Webseite akzeptiert hat.</value>
+  </data>
+  <data name="WHITELISTIP" xml:space="preserve">
+    <value>Whitelist IP</value>
+  </data>
+  <data name="TRAFFICEXCHANGESURFCREDITS" xml:space="preserve">
+    <value>Stand des Datenaustausches</value>
+  </data>
+  <data name="YOUHAVENOCONVERSATIONS" xml:space="preserve">
+    <value>Sie haben keine Gespräche</value>
+  </data>
+  <data name="SELECTANIMAGEFIRST" xml:space="preserve">
+    <value>Bitte wählen Sie zunächst ein Bild aus</value>
+  </data>
+  <data name="CANNOTPOSTONSOMEONEELSEWALL" xml:space="preserve">
+    <value>Sie können nicht an einer fremden Pinnwand posten.?6000</value>
+  </data>
+</root>

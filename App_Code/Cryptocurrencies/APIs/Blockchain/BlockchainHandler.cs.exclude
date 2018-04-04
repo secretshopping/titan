@@ -1,0 +1,84 @@
+﻿using ExtensionMethods;
+using Newtonsoft.Json.Linq;
+using Prem.PTC;
+using Prem.PTC.Members;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net;
+using System.Web;
+
+/// <summary>
+/// Summary description for BlockchainHandler
+/// </summary>
+public class BlockchainHandler
+{
+    public static void ProcessRequest(HttpContext context)
+    {
+        try
+        {
+            string LogMessage = "BLOCKCHAIN HANDLER: \r\n" + context.Request.Params.ToRawString();
+            ErrorLogger.Log(LogMessage, LogType.Blockchain);
+
+            var userAddress = context.Request.Params["address"];
+            var transactionHash = context.Request.Params["transaction_hash"];
+            var confirmations = Convert.ToInt32(context.Request.Params["confirmations"]);
+            var amount = Convert.ToInt64(context.Request.Params["value"]);
+            var user = new Member(Convert.ToInt32(context.Request.Params["u"]));
+            var secret = context.Request.Params["s"];
+
+            if (secret == HashingManager.GenerateSHA256(user.Name + AppSettings.Offerwalls.UniversalHandlerPassword).Replace("-", ""))
+            {
+                LogMessage = "BLOCKCHAIN HANDLER: confirmations: " + confirmations + "\r\n" + context.Request.Params.ToRawString();
+                ErrorLogger.Log(LogMessage, LogType.Blockchain);
+
+                if (confirmations >= AppSettings.Cryptocurrencies.DepositConfirmationsRequired && amount > 0)
+                {
+                    BitcoinAPI.DepositBTC(user, amount);
+                    context.Response.Write("*ok*");
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            ErrorLogger.Log(ex.Message);
+        }
+    }
+
+    private static string GetBlockchainUrl()
+    {
+        string secret = HashingManager.GenerateSHA256(Member.CurrentName + AppSettings.Offerwalls.UniversalHandlerPassword).Replace("-", "");
+        string callbackUrl = string.Format("{0}Handlers/Bitcoins/Blockchain.ashx?u={1}&s={2}", AppSettings.Site.Url, Member.CurrentId, secret);
+        string xPub = AppSettings.Cryptocurrencies.XPub;
+        string apiCode = AppSettings.Cryptocurrencies.ApiKey;
+        string url = string.Format("https://api.blockchain.info/v2/receive?xpub={0}&key={1}&callback={2}", xPub, apiCode, BitcoinAPI.UpperCaseUrlEncode(callbackUrl));
+        return url;
+    }
+
+    public static string TryGetAdminAddress()
+    {
+        try
+        {
+            using (WebClient client = new WebClient())
+            {
+
+                var data = client.DownloadJsonString(GetBlockchainUrl());
+                JObject o = JObject.Parse(data);
+
+                string adminAddress = Convert.ToString(o["address"]);
+
+                if (!string.IsNullOrWhiteSpace(adminAddress))
+                    return adminAddress;
+                else
+                    throw new Exception("BitCoinHandler: Invalid administrator address");
+            }
+        }
+        catch (Exception ex)
+        {
+            ErrorLogger.Log(ex.Message);
+            return string.Empty;
+        }
+
+    }
+
+}

@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin-ext');
+
+        .container {
+            font-family: 'Open Sans', 'Helvetica', sans-serif;
+            padding: 50px;
+        }
+
+        .row {
+            clear: both;
+        }
+
+        table {
+            border-spacing: 0;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+
+        .text-left {
+            text-align: left;
+        }
+
+        .pull-left {
+            float: left;
+        }
+
+        .pull-right {
+            float: right;
+        }
+
+        .width-50 {
+            width: 50%;
+        }
+
+        .width-100 {
+            width: 100%;
+        }
+
+        .footer {
+            padding-top: 150px;
+        }
+
+        .width-50 {
+            padding-bottom: 70px;
+        }
+
+        .meta tr th, .meta tr td {
+            padding: 5px 10px;
+        }
+
+        .item-list tr th, .item-list tr td {
+            padding: 20px 20px;
+        }
+
+        .item-list tr th {
+            border-bottom: 2px solid #ccc;
+            background: #f5f5f5;
+        }
+
+        .item-list tr td {
+            border-bottom: 1px solid #e9e9e9;
+            padding: 20px 20px;
+        }
+
+        .item-list tr:last-child td {
+            border: none;
+        }
+
+        h1 {
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 15px;
+        }
+
+        .total {
+            background: #f5f5f5;
+            margin-top: 20px;
+        }
+
+            .total tr td {
+                padding: 20px;
+            }
+    </style>
+    <div class="container">
+        <div class="row">
+            <h1>
+                <span><img src="[SITE_LOGO]" class="" style="height: 30px;" /></span>
+                <span style="display:[SHOW_SITE_NAME]">[SITE_NAME]</span>
+            </h1>
+            <div class="pull-left text-left width-50">
+                <p>
+                    [NAME_ADDRESS]<br />
+                    <a href='[SITE_URL]'>[SITE_URL]</a>
+                </p>
+            </div>
+            <div class="pull-right text-right width-50">
+                <table class="meta pull-right">
+                    <tr>
+                        <th class="text-left">[RESX_DATE]</th>
+                        <td>[ITEM_DATE]</td>
+                    </tr>
+                    <tr>
+                        <th class="text-left">[RESX_INVOICE] #</th>
+                        <td>[ITEM_ID]</td>
+                    </tr>
+                    <tr>
+                        <th class="text-left">[RESX_CUSTOMERID]</th>
+                        <td>[USER_ID]</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="width-50 pull-left">
+                <table class="bill text-left pull-left">
+                    <thead>
+                        <tr>
+                            <th style="border-bottom: 1px solid #ccc">[RESX_BILLTO]</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><strong>[USER_FULLNAME]</strong></td></tr>
+                        <tr><td>[USER_EMAIL]</td></tr>
+                        <tr><td>[USER_MEMBERSHIP]</td></tr>
+                        <tr><td>[USER_COUNTRY]</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <table class="item-list width-100">
+                <thead>
+                    <tr>
+                        <th class="text-left">[RESX_INVOICE] #</th>
+                        <th class="text-left">[RESX_DESCRIPTION]</th>
+                        <th class="text-center">[RESX_QUANTITY]</th>
+                        <th class="text-center">[RESX_UNITPRICE]</th>
+                        <th class="text-center">[RESX_TAX]</th>
+                        <th class="text-right">[RESX_TOTAL]</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-left">[ITEM_ID]</td>
+                        <td class="text-left">[ITEM_DESCRIPTION]</td>
+                        <td class="text-center">[ITEM_QUANTITY]</td>
+                        <td class="text-center">[ITEM_UNITPRICE]</td>
+                        <td class="text-center">[ITEM_TAX]%</td>
+                        <td class="text-right">[ITEM_TOTALVALUE]</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="row footer">
+            If you have any questions about this invoice, please contact
+            <br />
+            [SITE_NAME] - [ADMIN_EMAIL]
+            <br />
+            <strong>Thank you for your purchase!</strong>
+        </div>
+    </div>
+
+</body>
+
+</html>

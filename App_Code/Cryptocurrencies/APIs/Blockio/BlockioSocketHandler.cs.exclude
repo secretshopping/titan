@@ -1,0 +1,44 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using WebSocket4Net;
+using Prem.PTC;
+using Newtonsoft.Json.Linq;
+using Prem.PTC.Members;
+
+public class BlockioSocketHandler
+{
+    public static void SocketMessageReceived(object sender, MessageReceivedEventArgs e)
+    {
+        try
+        {
+            //
+            var jsonString = e.Message;
+            JObject o = JObject.Parse(jsonString);
+            var confirmations = Convert.ToInt32(Convert.ToString(o["data"]["confirmations"]));
+            var amount = Convert.ToDecimal(Convert.ToString(o["data"]["amount_received"]));
+            var userAddress = Convert.ToString(o["data"]["address"]);
+            string adminAddress = string.Empty;
+            var addresses = TableHelper.SelectRows<BitcoinAddress>(TableHelper.MakeDictionary("BlockioAddress", userAddress));
+            Member user = null;
+            if (addresses.Count > 0)
+            {
+                user = new Member(addresses[0].UserId);
+            }
+
+            if (user != null && confirmations >= AppSettings.Cryptocurrencies.DepositConfirmationsRequired)
+            {
+                //BitCoinHandler operates on Satoshi, so multiply amount * 100000000!
+                BitcoinAPI.DepositBTC(user, Convert.ToInt64(amount * 100000000));
+            }
+        }
+        catch (Exception ex)
+        {
+            ErrorLogger.Log(ex);
+            //Cannot throw any exceptions here!!
+        }
+    }
+
+    
+}

@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ALLTICKETS" xml:space="preserve">
+    <value>Todos Ingressos</value>
+  </data>
+  <data name="ACTIVE" xml:space="preserve">
+    <value>Ativo</value>
+    <comment>Grupos personalizados</comment>
+  </data>
+  <data name="BTCWITHDRAWSUCCESS" xml:space="preserve">
+    <value>Você retirou com êxito %n%</value>
+    <comment>Deixar %n% inalterado</comment>
+  </data>
+  <data name="BUYTICKETS" xml:space="preserve">
+    <value>Comprar Ingressos</value>
+  </data>
+  <data name="ENTERVALIDADDRESS" xml:space="preserve">
+    <value>Introduza um endereço válido.</value>
+  </data>
+  <data name="INVALIDNUMBEROFTICKETS" xml:space="preserve">
+    <value>O número de ingressos deve ser maior que 0</value>
+  </data>
+  <data name="JACKPOT" xml:space="preserve">
+    <value>Jackpot</value>
+  </data>
+  <data name="JACKPOTDESCRIPTION" xml:space="preserve">
+    <value>Sentindo-se sortudo? Compra de ingressos para aumentar sua renda!</value>
+  </data>
+  <data name="JACKPOTS" xml:space="preserve">
+    <value>Jackpots</value>
+  </data>
+  <data name="PARTICIPANTS" xml:space="preserve">
+    <value>Participantes</value>
+  </data>
+  <data name="SINGLETICKET" xml:space="preserve">
+    <value>Bilhete unico</value>
+  </data>
+  <data name="EXPIRED" xml:space="preserve">
+    <value>Expirado</value>
+    <comment>Grupos personalizados</comment>
+  </data>
+  <data name="INPROGRESS" xml:space="preserve">
+    <value>Em progresso</value>
+    <comment>Grupos personalizados</comment>
+  </data>
+  <data name="STARTPAGEINFO" xml:space="preserve">
+    <value>Seu anúncio será mostrado primeiro em um dia selecionado</value>
+  </data>
+  <data name="TICKETPURCHASESUCCESS" xml:space="preserve">
+    <value>Você comprou com êxito %n% Tickets.</value>
+    <comment>Deixar %n% inalterado</comment>
+  </data>
+  <data name="WINNER" xml:space="preserve">
+    <value>Vencedor</value>
+  </data>
+  <data name="WINNINGTICKET" xml:space="preserve">
+    <value>Bilhete premiado</value>
+  </data>
+  <data name="WITHDRAWALMUSTBEHIGHER" xml:space="preserve">
+    <value>Você não pode retirar menos do que o mostrado abaixo.</value>
+  </data>
+  <data name="YOURTICKETS" xml:space="preserve">
+    <value>Seus ingressos</value>
+  </data>
+  <data name="YOUWILL1" xml:space="preserve">
+    <value>Você receberá %p% de receita hoje, porque você assistiu %n%/%l% %p% anúncios ontem.</value>
+  </data>
+  <data name="YOUWILL2" xml:space="preserve">
+    <value>Você receberá %p% de receita hoje, porque sua conta está no modo de férias.</value>
+  </data>
+  <data name="YOUWILL3" xml:space="preserve">
+    <value>Você receberá %p% de receita hoje, porque você se registrou hoje. Você precisa assistir pelo menos %l% %p% anúncios hoje para receber sua %p% de receita amanhã.</value>
+  </data>
+  <data name="YOUWILLNOT1" xml:space="preserve">
+    <value>Você não receberá %p% de receita hoje, porque você assistiu %n%/%l% %p% anúncios ontem.</value>
+  </data>
+  <data name="YOUWONJACKPOT" xml:space="preserve">
+    <value>Você ganhou Jackpot com Ticket</value>
+  </data>
+  <data name="ESTIMATEDBTCVALUE" xml:space="preserve">
+    <value>Valor BTC estimado</value>
+  </data>
+  <data name="BETS" xml:space="preserve">
+    <value>Apostas</value>
+  </data>
+  <data name="LOSSES" xml:space="preserve">
+    <value>Perdas</value>
+  </data>
+  <data name="WAGERED" xml:space="preserve">
+    <value>Apostado</value>
+  </data>
+  <data name="WINS" xml:space="preserve">
+    <value>Vitórias</value>
+  </data>
+</root>

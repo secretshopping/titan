@@ -1,0 +1,254 @@
+﻿
+.gamesDiv {
+    position: relative;
+    display: inline-block;
+    margin: 7px;
+}
+
+    .gamesDiv span {
+        position: absolute;
+        font-size: 10px;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        text-align: center;
+        color: white;
+        background: rgb(0,0,0);
+    }
+
+.blackRefresh {
+    display: block;
+    position: absolute;
+    left: -20px;
+    width: 100%;
+    margin-left: 20px;
+    height: 100%;
+    background-color: black;
+    border-radius: 10px;
+    z-index: 1001;
+    -moz-opacity: 0.2;
+    opacity: .20;
+    filter: alpha(opacity=20);
+}
+
+.refreshBlack {
+    position: absolute;
+    top: 35%;
+    left: 48%;
+}
+
+.TitanViewPage > h3 {
+    display: none;
+}
+
+.smallButton {
+    min-width: 24px;
+    width: 24px;
+}
+
+.diceTextBox {
+    margin-bottom: 30px;
+}
+
+.rbutton-disabled {
+    padding: 5px;
+    border-radius: 3px;
+    text-align: center;
+    min-width: 100px;
+    font: 11px 'Trebuchet MS', sans-serif;
+    border: 1px solid #c2c2c2;
+    color: #666;
+    background: #e1e1df url(../Images/Misc/grad5.png);
+}
+
+.traffic-grid {
+    width: 600px;
+    font-size: 0px;
+    position: relative;
+    z-index: 2;
+    background-position: center center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+
+    .traffic-grid .traffic-cell {
+        width: 20px;
+        height: 20px;
+        position: relative;
+        z-index: 4;
+        display: inline-block;
+        vertical-align: middle;
+        outline: 1px solid #ebebeb;
+        background-color: transparent;
+    }
+
+.upload-button {
+    font-size: 10px;
+}
+
+.upload-text {
+    width: 240px;
+    font-size: 11px;
+}
+
+.dot-loading:after {
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: bottom;
+    -webkit-animation: ellipsis steps(4,end) 900ms infinite;
+    animation: ellipsis steps(4,end) 900ms infinite;
+    content: "\2026"; /* ascii code for the ellipsis character */
+    width: 0px;
+}
+
+@keyframes ellipsis {
+    to {
+        width: 1.25em;
+    }
+}
+
+@-webkit-keyframes ellipsis {
+    to {
+        width: 1.25em;
+    }
+}
+
+#frameDivMain {
+    background-color: #fff;
+}
+
+.groupVideoImage {
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.groupDescription {
+    display: inline-block;
+    width: 60%;
+}
+
+.groupContact {
+    display: inline-block;
+    width: 30%;
+    margin-left: 30px;
+    vertical-align: top;
+}
+
+.groupHeaderSpan {
+    font-weight: bold;
+}
+
+.groupContactDetail {
+}
+
+.surfThumbnails {
+    margin-top: 3px;
+    border-top: 1px solid #dadada;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-top: 5px;
+}
+
+.surfThumbnail {
+    display: inline-block;
+    height: 26px;
+    border: 1px solid #dadada;
+    border-radius: 4px;
+    padding: 2px;
+    font-size: 11px;
+    width: 120px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    background: #F3F3F3;
+}
+
+.surfThumbnailArrow {
+    display: inline-block;
+    height: 26px;
+    vertical-align: top;
+    padding-top: 7px;
+}
+
+.calendar-nextprev {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.whitebox {
+    text-align: center;
+}
+
+.yourTickets {
+    height: 10em;
+    overflow: hidden;
+}
+
+.styledTable {
+    width: 100%;
+    text-align: center;
+}
+
+    .styledTable th, tr {
+        padding: 5px;
+    }
+
+    .styledTable tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+.rbutton-loading {
+    padding: 5px;
+    border-radius: 3px;
+    text-align: center;
+    min-width: 100px;
+    border: 1px solid #c2c2c2;
+    background: url('../Images/Controls/Shoutbox/loading.gif') no-repeat center;
+}
+
+.captchaImage {
+    padding: 3px;
+}
+
+    .captchaImage:hover {
+        padding: 2px;
+        border: 1px solid #B8B8B8 !important;
+    }
+
+.favoriteImage {
+    vertical-align: middle;
+    margin-top: -4px;
+}
+
+.optionBox {
+    border: 1px solid #dedfde;
+    padding: 10px;
+    background: white;
+}
+
+.scaledIframe {
+    zoom: 0.4;
+    -moz-transform: scale(0.4);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.4);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.4);
+    -webkit-transform-origin: 0 0;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+ .scaledIframe  { zoom: 1;  }
+}
+
+
+.grayCenteredBox{
+    border: 1px solid #e6e6e6; width: 300px; margin: auto; padding:30px; text-align: center; background-color: whitesmoke;
+}
+
+.testimonial{
+    border: 1px solid #e6e6e6; margin: auto; padding:30px; background-color: whitesmoke;
+}
+.testimonial h3{
+    font-style:italic;
+}

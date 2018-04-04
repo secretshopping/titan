@@ -1,0 +1,15 @@
+﻿<%@ WebHandler Language="C#" Class="Blockchain" %>
+
+using Titan;
+using System.Web;
+
+public class Blockchain : IHttpHandler
+{
+    public void ProcessRequest(HttpContext context)
+    {
+        BlockchainBitcoinAPI BlockchainBitcoinAPI = new BlockchainBitcoinAPI();
+        BlockchainBitcoinAPI.ProcessRequest(context);
+    }
+
+    public bool IsReusable { get { return false; } }
+}
