@@ -1,0 +1,57 @@
+﻿using Prem.PTC;
+using Prem.PTC.Members;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+
+/// <summary>
+/// Summary description for BlockioSocket
+/// </summary>
+public static class BlockioSocket
+{
+    public static WebSocket4Net.WebSocket websocket;
+
+    public static void TryOpen(string adminAddressForUser)
+    {
+        try
+        {
+            if (Prem.PTC.AppSettings.Cryptocurrencies.IsBitCoinDepositEnabled &&
+                Prem.PTC.AppSettings.Cryptocurrencies.APIProvider == APIProvider.Blockio &&
+                Prem.PTC.AppSettings.Cryptocurrencies.BlockioPlan == BlockioPlan.TheNewbie)
+            {
+                websocket = new WebSocket4Net.WebSocket("wss://n.block.io:443/");
+                websocket.Opened += new EventHandler(websocket_Opened);
+
+               
+
+            }
+        }
+        catch (Exception ex)
+        {
+            ErrorLogger.Log(ex);
+        }
+    }
+
+    private static void websocket_Opened(object sender, EventArgs e)
+    {
+        //if (!string.IsNullOrWhiteSpace(adminAddressForUser))
+        //{
+        //    websocket.Send(string.Format("{\"network\": \"BTC\",  \"type\": \"address\",  \"address\": \"{0}\"}", adminAddressForUser));
+        //    websocket.MessageReceived += new EventHandler<WebSocket4Net.MessageReceivedEventArgs>(BlockioSocketHandler.SocketMessageReceived);
+        //    websocket.Open();
+        //}
+    }
+
+    public static void TryClose()
+    {
+        try
+        {
+            websocket.Close();
+        }
+        catch (Exception ex)
+        {
+            ErrorLogger.Log(ex);
+        }
+    }
+}

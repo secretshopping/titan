@@ -1,0 +1,103 @@
+﻿<html>
+	<head>
+		<style>
+			@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+			
+			html,
+			body {
+				margin: 0;
+				padding: 0;
+				border: 0;
+				font-size: 100%;
+				font: inherit;
+				vertical-align: baseline;
+			}
+
+			.back {
+				position: relative;
+				height: 100%;
+				padding: 15pt;
+				text-align: center;
+				border: 1px solid [THIRD_COLOR];
+				border-radius: 15px;
+				background: [FIRST_COLOR];
+				background: linear-gradient(top,  [SECOND_COLOR],  [FIRST_COLOR]);
+				background: -webkit-gradient(linear, left bottom, left top, from([SECOND_COLOR]), to([FIRST_COLOR]));
+				text-shadow: 1px 1px 0px #000000;
+				box-shadow: inset 0px 0px 0px 15px [THIRD_COLOR];
+			}
+
+			body {
+				line-height: 1;
+				width:300pt;
+				height:469pt;
+			}
+	  
+			footer {
+				position: absolute;
+				left: 0;
+				width: 300pt;
+				bottom: 0pt;
+			}
+			
+			p.foot{
+				width: 100%;
+				line-height: 40px;
+				text-align: center;
+			}
+			
+			h1, h2, p {
+				font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+				z-index: 999;
+				position: relative;
+				color: #fff;
+			}
+
+			h1 {
+				font-size: 36pt;
+			}
+
+			p {
+				color: #D6D6D6;
+			}
+
+			div.back::after {
+				content: "";
+				background-image: url("[IMAGE_PATH]");
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: contain;
+				opacity: 0.1;
+				top: 15pt;
+				left: 30pt;
+				bottom: 15pt;
+				right: 30pt;
+				position: absolute;
+				z-index: 99;   
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="back">
+			<br />
+			<h1>[TICKET_NAME]</h1>
+			<p>[DATE_TIME] </p>
+			<br/>
+			<p>[TICKET_NO_TEXT]</p>
+			<h2>[TICKET_NO]</h2>
+			<br/>
+			<h2 style="color: #D6D6D6;">[INVESTMENT_TEXT]</h2>
+			<p  style="color: #f9f9f9;">[DEPOSITED_AND_FEE]</p>
+			<p  style="color: #f9f9f9;">[RECEIVE]</p>
+			<br/>
+			<br/>
+			<p style="color: #f9f9f9;">[NOTE]</p>
+			<footer>
+				<p class="foot">
+					<i>[SITE_URL]</i>
+				</p>
+			</footer>
+		</div>
+	</body>
+</html>

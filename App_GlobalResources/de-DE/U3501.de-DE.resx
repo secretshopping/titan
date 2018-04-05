@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ADCREATED" xml:space="preserve">
+    <value>Die Anzeige ist erfolgreich erstellt worden</value>
+  </data>
+  <data name="AUTOMATICCASHOUTSUCC" xml:space="preserve">
+    <value>Die automatische Auszahlung wurde erfolgreich durchgeführt</value>
+  </data>
+  <data name="CASHOUTSUCC" xml:space="preserve">
+    <value>Die Auszahlung wurde erfolgreich durchgeführt</value>
+  </data>
+  <data name="FRIEND" xml:space="preserve">
+    <value>Neue Freundschaftsanfrage!</value>
+  </data>
+  <data name="FRIENDINFO" xml:space="preserve">
+    <value>Sie haben eine neue Freundschaftsanfrage von %n%.  Wenn Sie diese Person kennen und zu Ihrer Freundschaftsliste hinzufügen möchten, klicken Sie einfach auf "Bestätigen"</value>
+    <comment>Leave %n% unchanged</comment>
+  </data>
+  <data name="FRIENDOK" xml:space="preserve">
+    <value>Sie haben einen neuen Freund hinzugefügt</value>
+  </data>
+  <data name="ISAREADYFRIEND" xml:space="preserve">
+    <value>Dieser Kunde ist bereits Ihr Freund</value>
+  </data>
+  <data name="LOGOUTOK" xml:space="preserve">
+    <value>Sie sind nun ausgeloggt.</value>
+  </data>
+  <data name="MESSAGESENT" xml:space="preserve">
+    <value>Ihre Nachricht wurde versendet</value>
+  </data>
+  <data name="PAYMENTOK" xml:space="preserve">
+    <value>Ihre Zahlung wurde erfolgreich durchgeführt</value>
+  </data>
+  <data name="PHONESUCC" xml:space="preserve">
+    <value>Ihre Mobilelefon SMS PIN wurde erfolgreich verifiziert</value>
+  </data>
+  <data name="PROFILEVIEWER" xml:space="preserve">
+    <value>Profil anschauen</value>
+  </data>
+  <data name="PROFILEVIEWERINFO" xml:space="preserve">
+    <value>Hier können Sie die Profile aller registrierter Kunden einsehen</value>
+  </data>
+  <data name="REFACTIONSUCC" xml:space="preserve">
+    <value>Ihre Downline wurde erfolgreich erneuert</value>
+  </data>
+  <data name="REFACTIONSUCC2" xml:space="preserve">
+    <value>Die automatische Zahlung wurde an die ausgewählten Empfehlungsnehmer durchgeführt</value>
+  </data>
+  <data name="REFSUCC" xml:space="preserve">
+    <value>Ihr Downline Pack wurde erfolgreich erworben</value>
+  </data>
+  <data name="REGISTEROK" xml:space="preserve">
+    <value>Ihr Konto wurde erfolgreich registriert</value>
+  </data>
+  <data name="REG_PASSWORD" xml:space="preserve">
+    <value>Wählen Sie Ihr Passwort. Es muss zwischen 4 und 80 Zeichen lang sein und darf nur Buchstaben, Zahlen und folgende Zeichen enthalten: !@#$%^&amp;*()-=+.,</value>
+  </data>
+  <data name="SENDING" xml:space="preserve">
+    <value>Senden...</value>
+  </data>
+  <data name="SUPPSENT" xml:space="preserve">
+    <value>Ihre Support Anfrage wurde gesendet</value>
+  </data>
+  <data name="TOTALEARNED" xml:space="preserve">
+    <value>Gesamtverdienst</value>
+  </data>
+  <data name="TRANSFEROK" xml:space="preserve">
+    <value>Ihr Geld wurde erfolgreich transferiert</value>
+  </data>
+  <data name="UPGRADEOK" xml:space="preserve">
+    <value>Ihr Konto wurde erfolgreich upgegradet</value>
+  </data>
+  <data name="VIEWTICKETS" xml:space="preserve">
+    <value>Bestehende Support Tickets ansehen</value>
+  </data>
+  <data name="VIEWTICKETSINFO" xml:space="preserve">
+    <value>Alle Ihre Support Tickets können hier bearbeitet werden</value>
+  </data>
+  <data name="YOUCANTFRIENDYOURSELF" xml:space="preserve">
+    <value>Sie können nicht sich selbst eine Freundschaftsanfrage senden</value>
+  </data>
+  <data name="YOUHAVEBEENCREDITED" xml:space="preserve">
+    <value>Sie wurde erfolgreich für Ihre Aktivität bezahlt.</value>
+  </data>
+  <data name="YOUMUSTBEL" xml:space="preserve">
+    <value>Sie müssen eingeloggt sein um Ihr Kunden Profil zu sehen</value>
+  </data>
+</root>

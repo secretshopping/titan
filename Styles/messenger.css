@@ -1,0 +1,42 @@
+﻿.messenger {
+    width: 100%;
+    overflow: hidden;
+}
+
+.conversations {
+    display: inline-block;
+    width: 15%;
+    border: 1px solid;
+    margin: 0;
+    height:100%;
+}
+
+    .conversations div {
+        padding: 3px;
+        margin-bottom: 3px;
+    }
+
+    .conversations .selected{
+        background-color:red;
+    }
+
+.message {
+    display: inline-block;
+    color: #8e8f98;
+    vertical-align: top;
+    width: 70%;
+    padding: 10px;
+    margin: 0;
+}
+
+.message>div{
+    
+}
+.myMessage{
+    text-align:right;
+    border: 1px solid black;
+}
+
+.hisMessage{
+    text-align:left;
+}

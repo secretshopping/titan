@@ -1,0 +1,516 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ADDCOMMENT" xml:space="preserve">
+    <value>Add comment</value>
+  </data>
+  <data name="AMOUNTLEFT" xml:space="preserve">
+    <value>Amount left</value>
+  </data>
+  <data name="AMOUNTTOBUY" xml:space="preserve">
+    <value>Amount to buy</value>
+  </data>
+  <data name="AMOUNTTOSELL" xml:space="preserve">
+    <value>Amount to sell</value>
+  </data>
+  <data name="AWAITINGPAYMENTCONFIRM" xml:space="preserve">
+    <value>Awaiting Payment Confirmation</value>
+  </data>
+  <data name="AWAITINGPAYMENTRECEIVEDCONFIRM" xml:space="preserve">
+    <value>Awaiting Payment Received Confirmation</value>
+  </data>
+  <data name="BOUGHTFROM" xml:space="preserve">
+    <value>Bought from</value>
+  </data>
+  <data name="CANBUYMAX" xml:space="preserve">
+    <value>You can buy maximum</value>
+  </data>
+  <data name="CANTBEHIGHER" xml:space="preserve">
+    <value>can't be higher than</value>
+  </data>
+  <data name="CASHBACK" xml:space="preserve">
+    <value>Cashback</value>
+  </data>
+  <data name="CASHBACKINFO" xml:space="preserve">
+    <value>Cash back will be instantly credited to your Traffic Exchange Balance and can be used to Purchase extra visitors.</value>
+  </data>
+  <data name="CCCURRENCYTOBUY" xml:space="preserve">
+    <value>Amount of currency availabe to buy</value>
+  </data>
+  <data name="CCMAXOFFERVALUE" xml:space="preserve">
+    <value>Maximal transaction value</value>
+  </data>
+  <data name="CCMINOFFERVALUE" xml:space="preserve">
+    <value>Minimal transaction value</value>
+  </data>
+  <data name="CCPLATFORMDESC" xml:space="preserve">
+    <value>Want to buy or sell cryptocurrency? You are in the right place.</value>
+  </data>
+  <data name="COMMENT_CLIENT" xml:space="preserve">
+    <value>Client comment</value>
+  </data>
+  <data name="COMMENT_YOUR" xml:space="preserve">
+    <value>Your comment</value>
+  </data>
+  <data name="COMMISSIONBALANCETRANSFERINFO" xml:space="preserve">
+    <value>You need to view at least {0} ads and have at least 1 active {1} to be able to transfer Commission Balance to Main Balance and be able to withdraw.</value>
+  </data>
+  <data name="COMMISSIONBALANCETRANSFERNOACTIVEADPACKINFO" xml:space="preserve">
+    <value>You need to have at least 1 active {0} to be able to transfer Commission Balance to Main Balance and be able to withdraw.</value>
+  </data>
+  <data name="COMPLETETASK" xml:space="preserve">
+    <value>Complete task</value>
+  </data>
+  <data name="CONFIRMPAYMENT" xml:space="preserve">
+    <value>Confirm Payment</value>
+  </data>
+  <data name="CRYPTOCURRENCY" xml:space="preserve">
+    <value>Cryptocurrency</value>
+  </data>
+  <data name="DAILYTASK" xml:space="preserve">
+    <value>QUICK DAILY TASK</value>
+  </data>
+  <data name="DAILYTASKCOMPLETED" xml:space="preserve">
+    <value>Quick Daily task is Complete! Thank you and Happy Earnings!</value>
+  </data>
+  <data name="DAILYTASKINFO" xml:space="preserve">
+    <value>You already did {0}/{1} of views needed today.</value>
+  </data>
+  <data name="EXECUTIONTIME" xml:space="preserve">
+    <value>Execution Time</value>
+  </data>
+  <data name="FORVALUEOF" xml:space="preserve">
+    <value>For value of</value>
+  </data>
+  <data name="HAVETOBUYMIN" xml:space="preserve">
+    <value>You have to buy minimum</value>
+  </data>
+  <data name="MATCHEDBUYOFFERS" xml:space="preserve">
+    <value>Matched Buy Offesr</value>
+  </data>
+  <data name="MATCHEDSELLOFFERS" xml:space="preserve">
+    <value>Matched Sell Offers</value>
+  </data>
+  <data name="MAXPRICE" xml:space="preserve">
+    <value>Maximal price per</value>
+  </data>
+  <data name="MINPRICE" xml:space="preserve">
+    <value>Minimal price per</value>
+  </data>
+  <data name="NOCASHBACK" xml:space="preserve">
+    <value>No cashback for this pack.</value>
+  </data>
+  <data name="NOCREDITS_CRYPTOCURRENCYBALANCE" xml:space="preserve">
+    <value>You don't have enaugh credits on Cryptocurrency Balance to create this offer (actual: {0})</value>
+  </data>
+  <data name="NOZERO" xml:space="preserve">
+    <value> can't be zero</value>
+  </data>
+  <data name="POINTSFORADWATCH" xml:space="preserve">
+    <value>for this ad (Surf).</value>
+  </data>
+  <data name="PRICEPER" xml:space="preserve">
+    <value>Price per</value>
+  </data>
+  <data name="PTCCASHBACK" xml:space="preserve">
+    <value>PTC Pack CashBack</value>
+  </data>
+  <data name="RATING" xml:space="preserve">
+    <value>Rating</value>
+  </data>
+  <data name="SOLDTO" xml:space="preserve">
+    <value>Sold to</value>
+  </data>
+  <data name="TRANSACTIONSINPROGRESS" xml:space="preserve">
+    <value>Transactions in progress</value>
+  </data>
+  <data name="WARNINGNODAILYTASK" xml:space="preserve">
+    <value>Daily task not completed!</value>
+  </data>
+  <data name="WARNINGNODAILYTASKINFO" xml:space="preserve">
+    <value>To gain access to ''Earn'' tab you must complete daily task. Complete it </value>
+  </data>
+  <data name="STATSDESCRIPTION3" xml:space="preserve">
+    <value>View your recent and total clicks/earnings</value>
+  </data>
+  <data name="YOUCOMPLETED" xml:space="preserve">
+    <value>You completed {0} out of {1} todays ad views needed.</value>
+  </data>
+  <data name="YOURREFFERER" xml:space="preserve">
+    <value>Your refferer (upline)</value>
+  </data>
+  <data name="REMOVED" xml:space="preserve">
+    <value>Removed</value>
+  </data>
+  <data name="ACCOUNTIDREQUIRED" xml:space="preserve">
+    <value>You need to set up your Account ID first</value>
+  </data>
+  <data name="NOCREATORBALANCETOBUYOFFER" xml:space="preserve">
+    <value>Creator of offer don't have enaugh balance now.</value>
+  </data>
+  <data name="ACTIVEOFFERS" xml:space="preserve">
+    <value>Active offers</value>
+  </data>
+  <data name="NOOFFERS" xml:space="preserve">
+    <value>You don't have any offers right now. Click "Add new" to create one.</value>
+  </data>
+  <data name="TRANSACTIONVALUE" xml:space="preserve">
+    <value>Transaction value</value>
+  </data>
+  <data name="COINBASEEMAIL" xml:space="preserve">
+    <value>Coinbase email</value>
+  </data>
+  <data name="COINBASEEMAILORBTCWALLET" xml:space="preserve">
+    <value>Coinbase email or wallet</value>
+  </data>
+  <data name="PLEASETYPECORRECTCOINBASEEMAIL" xml:space="preserve">
+    <value>Please type correct Coinbase account email</value>
+  </data>
+  <data name="ADDNEWBTCWALLET" xml:space="preserve">
+    <value>Add new wallet</value>
+  </data>
+  <data name="YOUMUSTSETWALLETOREMAIL" xml:space="preserve">
+    <value>You must set at least valid BTC wallet, or coinbase email</value>
+  </data>
+  <data name="CONFIRMPAYMENTRECEIVED" xml:space="preserve">
+    <value>Confirm payment received</value>
+  </data>
+  <data name="BACK" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="ERRORTRYBUYLESS" xml:space="preserve">
+    <value>You can't buy less cryptocurrency than allowed in offer</value>
+  </data>
+  <data name="ERRORTRYBUYMORE" xml:space="preserve">
+    <value>You can't buy more cryptocurrency than allowed</value>
+  </data>
+  <data name="ERRORTRYSELLLESS" xml:space="preserve">
+    <value>You can't sell less cryptocurrency than allowed in offer</value>
+  </data>
+  <data name="ERRORTRYSELLMORE" xml:space="preserve">
+    <value>You can't sell more cryptocurrency than allowed</value>
+  </data>
+  <data name="ESCROWINFORMATOR" xml:space="preserve">
+    <value>Escrow is a time that starts counting when buyer or seller creates transaction. In that time buyer must do and confirm payment,  seller have to confirm received payment as well.  If that will not happen, there will start dispute to clarify. Escrow must be minimum 30 min</value>
+  </data>
+  <data name="ESCROWTIME" xml:space="preserve">
+    <value>Escrow time</value>
+  </data>
+  <data name="OFFERDESCRIPTION" xml:space="preserve">
+    <value>OFFER DESCRIPTION</value>
+  </data>
+  <data name="BUYERDIDNTPAID" xml:space="preserve">
+    <value>Buyer didn't confirm payment - wait for admin contact</value>
+  </data>
+  <data name="ORDER_CREATORNOBALANCE" xml:space="preserve">
+    <value>Creator of offer don't have enaugh balance right now</value>
+  </data>
+  <data name="ORDER_UNEXPECTED" xml:space="preserve">
+    <value>Unexpected error while placing order.</value>
+  </data>
+  <data name="ORDER_YOUNOBALANCE" xml:space="preserve">
+    <value>You don't have enaugh balance right now</value>
+  </data>
+  <data name="SELLERDIDNTRECEIVEPAYMENT" xml:space="preserve">
+    <value>Seller didn't confirm received payment - wait for admin contact</value>
+  </data>
+  <data name="NOCOMMENTYET" xml:space="preserve">
+    <value>You didn't comment that transaction yet.</value>
+  </data>
+  <data name="BADESCROWRANGE" xml:space="preserve">
+    <value>Escrow must be minimum 30 minutes</value>
+  </data>
+  <data name="BADRANGEORFORMAT" xml:space="preserve">
+    <value>Bad number range or format</value>
+  </data>
+  <data name="CLIENTNOCOMMENT" xml:space="preserve">
+    <value>Client didn't comment that transaction yet.</value>
+  </data>
+  <data name="DAILYPAY" xml:space="preserve">
+    <value>Daily pay</value>
+  </data>
+  <data name="MONTHLYPAY" xml:space="preserve">
+    <value>Monthly pay</value>
+  </data>
+  <data name="REFERRALEARNING" xml:space="preserve">
+    <value>Referral earning</value>
+  </data>
+  <data name="ENTERYOURCOINBASEEMAIL" xml:space="preserve">
+    <value>Enter your Coinbase Email address</value>
+  </data>
+  <data name="DEPOSITVIAREPRESENTATIVE" xml:space="preserve">
+    <value>Deposit via Representative</value>
+  </data>
+  <data name="WITHDRAWVIAREPRESENTATIVE" xml:space="preserve">
+    <value>Withdraw via Representative</value>
+  </data>
+  <data name="DISPUTE" xml:space="preserve">
+    <value>Dispute</value>
+  </data>
+  <data name="ERRORREMOVECRYPTOCURRENCYBALANCE" xml:space="preserve">
+    <value>Can't remove {0} from user cryptocurrency balance. User {1} have only {2} balance. </value>
+  </data>
+  <data name="SENDTRANSFERMESSAGE" xml:space="preserve">
+    <value>Send message</value>
+  </data>
+  <data name="REJECT" xml:space="preserve">
+    <value>Reject</value>
+  </data>
+  <data name="DEPOSITINFO" xml:space="preserve">
+    <value>Deposit info</value>
+  </data>
+  <data name="NOREPRESENTATIVES" xml:space="preserve">
+    <value>Sorry, but there is currently no representative from your country</value>
+  </data>
+  <data name="SEEALL" xml:space="preserve">
+    <value>See all</value>
+  </data>
+  <data name="WITHDRAWALFEE" xml:space="preserve">
+    <value>Withdrawal fee</value>
+  </data>
+  <data name="WITHDRAWALINFO" xml:space="preserve">
+    <value>Withdrawal info</value>
+  </data>
+  <data name="INPLANNOTBONUS" xml:space="preserve">
+    <value>You will be excluded from getting the end-plan bonus.</value>
+  </data>
+  <data name="INVPLANTRANSFERCONFIRMATION" xml:space="preserve">
+    <value>Are you sure you want to transfer money to {0}?</value>
+  </data>
+  <data name="INVPLATFORMCANTTRANSFER" xml:space="preserve">
+    <value>You can't transfer money. Please contact administrator.</value>
+  </data>
+  <data name="INVPLATFORMMASSTRANSFERSUCCESS" xml:space="preserve">
+    <value>Money successfully transferred</value>
+  </data>
+  <data name="INVPLATFORMNOTHINGTOTRANSFER" xml:space="preserve">
+    <value>There is nothing in system to transfer</value>
+  </data>
+  <data name="DEPOSITCANCELEDINFO" xml:space="preserve">
+    <value>Deposit canceled.</value>
+  </data>
+  <data name="DEPOSITDISPUTEINFO" xml:space="preserve">
+    <value>Dispute created. Cash is freezed until admin's decision.</value>
+  </data>
+  <data name="DEPOSITSUCCESSFULLINFO" xml:space="preserve">
+    <value>Successfully credited {0} to {1} from your balance.</value>
+  </data>
+  <data name="DEPOSITSUCCESSFULLMESSAGE" xml:space="preserve">
+    <value>Successfully credited {0} to {1}.</value>
+  </data>
+  <data name="REPRESENTATIVENOFUNDS" xml:space="preserve">
+    <value>Representative don't have enaugh funds on balance.</value>
+  </data>
+  <data name="WITHDRAWALCONFIRMED" xml:space="preserve">
+    <value>Money withdrawal confirmed.</value>
+  </data>
+  <data name="YOUHAVEPENDINGACTION" xml:space="preserve">
+    <value>You already have pending deposit or withdrawal.</value>
+  </data>
+  <data name="LOGO" xml:space="preserve">
+    <value>Logo</value>
+  </data>
+  <data name="ENDBONUS" xml:space="preserve">
+    <value>End bonus</value>
+  </data>
+  <data name="WEEKSFROMLASTWITHDRAWAL" xml:space="preserve">
+    <value>Weeks from last withdrawal</value>
+  </data>
+  <data name="YOUAREREPRESENTATIVE" xml:space="preserve">
+    <value>You are one of {0}({1}) representatives!</value>
+  </data>
+  <data name="AGGREGATE" xml:space="preserve">
+    <value>Aggregate</value>
+  </data>
+  <data name="CONCEPT" xml:space="preserve">
+    <value>Concept</value>
+  </data>
+  <data name="EDITPAYMENTMETHODS" xml:space="preserve">
+    <value>Edit payment methods</value>
+  </data>
+  <data name="NOPAYMENTMETHODSADDED" xml:space="preserve">
+    <value>No payment methods added</value>
+  </data>
+  <data name="ADD" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="PAYMENTMETHODADDED" xml:space="preserve">
+    <value>Payment method added successfully</value>
+  </data>
+  <data name="PAYMENTMETHODSAVED" xml:space="preserve">
+    <value>Payment method saved successfully</value>
+  </data>
+  <data name="PAYMENTMETHODEMPTYERROR" xml:space="preserve">
+    <value>You must specify at least one of the options (withdrawal or deposit)</value>
+  </data>
+  <data name="PROVIDEPROCESSORNAME" xml:space="preserve">
+    <value>Please provide your processor name</value>
+  </data>
+  <data name="BONUSFORTENURE" xml:space="preserve">
+    <value>Bonus for tenure</value>
+  </data>
+  <data name="BONUSFORFINISHEDPLAN" xml:space="preserve">
+    <value>Bonus for finished plan: {0}</value>
+  </data>
+  <data name="ROLLDICELOTTERY" xml:space="preserve">
+    <value>Roll Dice Lottery</value>
+  </data>
+  <data name="ROLLDICELOTTERYDESCRIPTION" xml:space="preserve">
+    <value>Enter the game and try to collect as many as possible points in established time! Winner will be rewarded at the end of the day.</value>
+  </data>
+  <data name="ROLLDICE" xml:space="preserve">
+    <value>Roll Dice</value>
+  </data>
+  <data name="ROLLDICEPARTICIPATE" xml:space="preserve">
+    <value>Participate in Roll Dice Lottery</value>
+  </data>
+  <data name="ENTERTHEGAME" xml:space="preserve">
+    <value>Enter The Game</value>
+  </data>
+  <data name="SCORE" xml:space="preserve">
+    <value>Score</value>
+  </data>
+  <data name="ROLLSNUMBER" xml:space="preserve">
+    <value>Number of Rolls</value>
+  </data>
+  <data name="RESULTRECORDER" xml:space="preserve">
+    <value>Result recorded</value>
+  </data>
+  <data name="ROLLDICELOTTERYWINNER" xml:space="preserve">
+    <value>Roll Dice Lottery Winner</value>
+  </data>
+  <data name="ROLLDICEWARNING" xml:space="preserve">
+    <value>Be careful! Time will start running after confirmation.</value>
+  </data>
+  <data name="RESULTNOTRECORDER" xml:space="preserve">
+    <value>Nothing to record, you have 0 points!</value>
+  </data>
+  <data name="CURRENTRESULTS" xml:space="preserve">
+    <value>Current results</value>
+  </data>
+  <data name="CCPLATFORM" xml:space="preserve">
+    <value>Trade Cryptocurrency</value>
+  </data>
+  <data name="NOBALANCETOCREATEOFFER" xml:space="preserve">
+    <value>No enaugh Cryptocurrency Balance to create this offer</value>
+  </data>
+  <data name="ESCROWINFORMATORFORREPS" xml:space="preserve">
+    <value>Escrow is a time that starts counting when client creates transaction. In that time client and representative have to finalize transaction. If that will not happen, there will start dispute to clarify. Escrow must be minimum 30 min</value>
+  </data>
+</root>

@@ -1,0 +1,4 @@
+﻿<asp:GridView Width="100%"
+GridLines="None" CssClass="table table-striped table-hover" ShowHeaderWhenEmpty="false" RowStyle-CssClass="" PagerStyle-CssClass="pgr" AlternatingRowStyle-CssClass=""
+HeaderStyle-CssClass="gridHeader" AutoGenerateColumns="false" FooterStyle-CssClass="ftr" 
+runat="server" />

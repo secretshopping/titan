@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="FREEZEDVALUE" xml:space="preserve">
+    <value>Freezed Value</value>
+  </data>
+  <data name="NEWSPORTALINTRO" xml:space="preserve">
+    <value>Where every voice matters.</value>
+  </data>
+  <data name="NEWSPORTALSUBINFO" xml:space="preserve">
+    <value>{0} is the leading social news platform. Created by you. Curated by professionals.</value>
+  </data>
+  <data name="SEARCHON" xml:space="preserve">
+    <value>Search on {0}...</value>
+  </data>
+  <data name="SUGGESTEDFORYOU" xml:space="preserve">
+    <value>Suggested for you</value>
+  </data>
+  <data name="MINSTOCKOFFER" xml:space="preserve">
+    <value>Minimum stock per offer is</value>
+  </data>
+  <data name="SIZE" xml:space="preserve">
+    <value>Size</value>
+  </data>
+  <data name="STOCKBUYERROR" xml:space="preserve">
+    <value>The amount must be greater or equal to the minimum limit.</value>
+  </data>
+  <data name="STOCKSELLERROR" xml:space="preserve">
+    <value>The amount must be between min and sales limit.</value>
+  </data>
+  <data name="STOCKSELLLIMIT" xml:space="preserve">
+    <value>Your sales limit is currently</value>
+  </data>
+  <data name="STOCKSELLLIMITREACHED" xml:space="preserve">
+    <value>You have reached your 24-hour sales limit.</value>
+  </data>
+  <data name="VOLUME" xml:space="preserve">
+    <value>Volume</value>
+  </data>
+  <data name="WORLDNEWS" xml:space="preserve">
+    <value>World News</value>
+  </data>
+  <data name="VALUE" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="SENDFORAPPROVAL" xml:space="preserve">
+    <value>Send for approval</value>
+  </data>
+  <data name="THISFIELDMUSTCOINTAIN" xml:space="preserve">
+    <value>This field must contain between {0} and {1} characters.</value>
+  </data>
+  <data name="HIGH" xml:space="preserve">
+    <value>High</value>
+  </data>
+  <data name="LOW" xml:space="preserve">
+    <value>Low</value>
+  </data>
+  <data name="MINIMUMTIMEBETWEENPAYOUT" xml:space="preserve">
+    <value>Minimum wait time between each withdrawal</value>
+  </data>
+  <data name="TIMEBETWEENPAYOUTERROR" xml:space="preserve">
+    <value>You can't withdraw money. Minimum time between each withdrawal equals {0} day(s).</value>
+  </data>
+  <data name="WATCHVIDEOSANDHAVEFUN" xml:space="preserve">
+    <value>Watch your favourite videos and have fun.</value>
+  </data>
+  <data name="TRANSACTION" xml:space="preserve">
+    <value>Transaction</value>
+  </data>
+  <data name="ARTICLESAVEDANDSENT" xml:space="preserve">
+    <value>Article has been saved and sent for reapproval.</value>
+  </data>
+  <data name="ESTIMATEDFEE" xml:space="preserve">
+    <value>Estimated fee</value>
+  </data>
+  <data name="SUM" xml:space="preserve">
+    <value>Sum</value>
+  </data>
+  <data name="TOTALVALUE" xml:space="preserve">
+    <value>Total value</value>
+  </data>
+  <data name="FEATURED" xml:space="preserve">
+    <value>Featured</value>
+  </data>
+  <data name="FOLLOWUS" xml:space="preserve">
+    <value>Follow Us</value>
+  </data>
+  <data name="POSTEDBY" xml:space="preserve">
+    <value>Posted by</value>
+  </data>
+  <data name="READMORE" xml:space="preserve">
+    <value>Read More</value>
+  </data>
+  <data name="YOUCANTPROCEED" xml:space="preserve">
+    <value>You can't proceed with this action. At least one of your balances is negative.</value>
+  </data>
+  <data name="YESNOCAPTCHAQUESTION" xml:space="preserve">
+    <value>Yes/No Captcha Question</value>
+  </data>
+  <data name="CAPTCHACLAIMFAILURE" xml:space="preserve">
+    <value>Claim faild. :(</value>
+  </data>
+  <data name="CAPTCHACLAIMSUCCESS" xml:space="preserve">
+    <value>Claim success. You got {0}</value>
+    <comment> E.g. You got 100 points; You got $100</comment>
+  </data>
+  <data name="CAPTCHACLAINDESCRIPTION" xml:space="preserve">
+    <value>Verify captcha to claim {0}. You can do it as many times as you want.</value>
+    <comment>{0} is prize from captcha claim settings.</comment>
+  </data>
+  <data name="NEVERSHOWAGAIN" xml:space="preserve">
+    <value>Never show again</value>
+  </data>
+  <data name="IMAGETOOSMALL" xml:space="preserve">
+    <value>The image is to small (must be at least {0}x{1}).</value>
+  </data>
+  <data name="CPAGPTOFFERS" xml:space="preserve">
+    <value>CPA/GPT Offers</value>
+  </data>
+  <data name="LEVELNOTAVAILABLEYET" xml:space="preserve">
+    <value>Level will be available from {0}</value>
+  </data>
+  <data name="AVAILABLEFROM" xml:space="preserve">
+    <value>Available from</value>
+  </data>
+  <data name="AVAILABLEWITHPP" xml:space="preserve">
+    <value>Available with</value>
+  </data>
+  <data name="NOPAYMENTPROCESSORSCONNECTEDWITHLEVEL" xml:space="preserve">
+    <value>There is no payment processor connected with this level right now. Please contact the administrator.</value>
+  </data>
+</root>

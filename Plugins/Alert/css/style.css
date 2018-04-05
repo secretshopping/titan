@@ -1,0 +1,74 @@
+@font-face {
+    font-family: Glyph;
+    src: url('../glyph/close.eot?97638464');
+    src: url('../glyph/close.eot?97638464#iefix') format('embedded-opentype'), url('../glyph/close.woff?97638464') format('woff'), url('../glyph/close.ttf?97638464') format('truetype'), url('../glyph/close.svg?97638464#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.lite-alert-box {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+}
+
+.lite-alert-boxcenter {
+    position: fixed;
+    top: 100px;
+    left: 40%;
+    z-index: 1000;
+}
+
+.lite-alert-item, .lite-alert-itemcenter {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 0 10px;
+    border-radius: 5px;
+    width: 300px;
+    color: #ffffff;
+    box-shadow: 0 0 4px 4px rgb(165, 165, 165);
+    margin-top: 20px;
+    position: relative;
+}
+
+.lite-alert-item-close {
+    font-size: 10px;
+    height: 8px;
+    width: 8px;
+    padding: 4px 5px 6px 5px;
+    margin: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    color: #fff;
+}
+
+.lite-alert-itemcenter {
+    width: 500px;
+    /*height: 300px;*/
+    text-align: center;
+}
+
+.lite-alert-item-close:before {
+    font-family: Glyph;
+    content: '\e802';
+}
+
+.lite-alert-item-close:hover {
+    color: white;
+}
+
+.lite-alert-item-header, .lite-alert-item-headerbig {
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.lite-alert-item-headerbig {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.lite-alert-item-footer {
+    padding: 5px 0;
+}

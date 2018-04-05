@@ -1,0 +1,1 @@
+FileCount = Count of files in wwwroot directory without forum folder

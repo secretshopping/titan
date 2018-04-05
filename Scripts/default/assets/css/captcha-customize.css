@@ -1,0 +1,66 @@
+﻿.accessibility-description, 
+.status.valid, 
+.visualCaptcha-explanation {
+    margin: 0;
+    text-align: left;
+    background: #fff;
+    color: #00acac;
+}
+
+.visualCaptcha {
+    margin-bottom: 0;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.visualCaptcha-possibilities .visualCaptcha-selected {
+    border-radius: 50%;
+    background: #A9EDED;
+    border-color: #4AC1C1;
+    border-style: solid;
+}
+
+.visualCaptcha-button-group {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.visualCaptcha-possibilities {
+    margin-right: 30px;
+}
+
+.captcha-status {
+    margin: 0;
+}
+
+
+/* Custom Media Queries */
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .visualCaptcha-possibilities {
+        margin-right: 10px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    .visualCaptcha-possibilities {
+        margin-right: 0px;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+    .visualCaptcha-possibilities {
+        margin-right: 0px;
+    }
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {     
+}

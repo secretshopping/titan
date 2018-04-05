@@ -1,0 +1,436 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ACTEMAILSENT" xml:space="preserve">
+    <value>Como você alterou seu endereço de e-mail, enviamos um link de ativação para seu novo endereço de e-mail. Uma vez confirmado, o endereço será alterado.</value>
+  </data>
+  <data name="ADVERTISEMENT" xml:space="preserve">
+    <value>Propaganda</value>
+  </data>
+  <data name="BADFORMAT" xml:space="preserve">
+    <value>Formato de número incorrecto</value>
+  </data>
+  <data name="CAPTCHAINFO" xml:space="preserve">
+    <value>Insira o código de verificação para continuar</value>
+  </data>
+  <data name="DAYS" xml:space="preserve">
+    <value>Dias</value>
+  </data>
+  <data name="ENTERVAC" xml:space="preserve">
+    <value>Entre no modo</value>
+  </data>
+  <data name="EXITVAC" xml:space="preserve">
+    <value>Sair do modo</value>
+  </data>
+  <data name="EXITVACSURE" xml:space="preserve">
+    <value>Tem certeza de que deseja sair do Modo de férias?</value>
+  </data>
+  <data name="GENERAL" xml:space="preserve">
+    <value>Geral</value>
+  </data>
+  <data name="PAYMENT" xml:space="preserve">
+    <value>Pagamento</value>
+  </data>
+  <data name="PERDAY" xml:space="preserve">
+    <value>por dia</value>
+    <comment>Cost: $10 per day</comment>
+  </data>
+  <data name="AUCTIONS" xml:space="preserve">
+    <value>Leilões</value>
+  </data>
+  <data name="SERVERTIME" xml:space="preserve">
+    <value>Hora do servidor</value>
+  </data>
+  <data name="SUPPORT" xml:space="preserve">
+    <value>Apoio</value>
+  </data>
+  <data name="VACATIONMODE" xml:space="preserve">
+    <value>Modo de férias</value>
+  </data>
+  <data name="VACATIONMODEINFO" xml:space="preserve">
+    <value>Quando sua conta está no modo de férias: &lt;br/&gt;&lt;br/&gt; 1. Você não pode retirar seu dinheiro &lt;br/&gt; 2. Você não perderá dinheiro por causa de sua inatividade (taxa de inatividade, partes de receita, etc.)</value>
+  </data>
+  <data name="YOUAREINVAC" xml:space="preserve">
+    <value>Você está no modo de férias até</value>
+    <comment>Você está em modo de férias até 11-11-2015</comment>
+  </data>
+  <data name="YOUAREINVACATIONMODE" xml:space="preserve">
+    <value>Sua conta está no modo de férias. Para obter mais informações, acesse a página &lt;i&gt; Configurações - Modo de férias &lt;/i&gt;</value>
+  </data>
+  <data name="ADDEDCAMPAIGNS" xml:space="preserve">
+    <value>Suas campanhas</value>
+  </data>
+  <data name="APPROVED" xml:space="preserve">
+    <value>Aprovado</value>
+  </data>
+  <data name="AUCTIONCLOSES" xml:space="preserve">
+    <value>Fecha em</value>
+    <comment>O leilão fecha-se em</comment>
+  </data>
+  <data name="DISPLAYTIME" xml:space="preserve">
+    <value>Tempo de exibição</value>
+  </data>
+  <data name="HIGHESTBID" xml:space="preserve">
+    <value>Maior lance</value>
+  </data>
+  <data name="PAYOUT" xml:space="preserve">
+    <value>Pagamento</value>
+  </data>
+  <data name="INSTANTPAYOUT" xml:space="preserve">
+    <value>Pagamento instantâneo</value>
+  </data>
+  <data name="BANNERONDISPLAY" xml:space="preserve">
+    <value>Na tela!</value>
+    <comment>Estado dos leilões: banner em exposição</comment>
+  </data>
+  <data name="CLOSED" xml:space="preserve">
+    <value>Fechadas!</value>
+    <comment>Leilão encerrado</comment>
+  </data>
+  <data name="NEXT" xml:space="preserve">
+    <value>Próximo</value>
+    <comment>Tempo de exibição da faixa</comment>
+  </data>
+  <data name="NOBIDSYET" xml:space="preserve">
+    <value>Não há lances</value>
+  </data>
+  <data name="NOW" xml:space="preserve">
+    <value>Agora</value>
+    <comment>Banner display time</comment>
+  </data>
+  <data name="ADVERTISEHERE" xml:space="preserve">
+    <value>Anuncie aqui</value>
+  </data>
+  <data name="AUCTION" xml:space="preserve">
+    <value>Leilão</value>
+  </data>
+  <data name="AUCTIONCLOSED" xml:space="preserve">
+    <value>Desculpe, este leilão está fechado</value>
+  </data>
+  <data name="AUCTIONFOR" xml:space="preserve">
+    <value>Leilão para</value>
+  </data>
+  <data name="BIDPLACED" xml:space="preserve">
+    <value>O lance foi colocado com êxito</value>
+  </data>
+  <data name="EARNINGS" xml:space="preserve">
+    <value>Ganhos</value>
+  </data>
+  <data name="HOURLYAUCTIONS" xml:space="preserve">
+    <value>Leilões por hora</value>
+  </data>
+  <data name="MARKET" xml:space="preserve">
+    <value>Mercado</value>
+  </data>
+  <data name="MARKETINFO" xml:space="preserve">
+    <value>Compre e venda seus investimentos de/para outros membros</value>
+  </data>
+  <data name="MYUNITS" xml:space="preserve">
+    <value>Minhas Unidades</value>
+  </data>
+  <data name="NOSHARES" xml:space="preserve">
+    <value>Você não tem ações</value>
+  </data>
+  <data name="NOTENOUGHUNITS" xml:space="preserve">
+    <value>Você não tem que muitas unidades para vender (talvez alguns deles estão atualmente no mercado)</value>
+  </data>
+  <data name="PAID" xml:space="preserve">
+    <value>PAGO</value>
+    <comment>In banner bid</comment>
+  </data>
+  <data name="PLACEBID" xml:space="preserve">
+    <value>Colocar oferta</value>
+  </data>
+  <data name="PORTFOLIOPRODUCTS" xml:space="preserve">
+    <value>Produtos da Carteira</value>
+  </data>
+  <data name="PORTFOLIOUNITS" xml:space="preserve">
+    <value>Unidades de portfólio</value>
+  </data>
+  <data name="PRODUCT" xml:space="preserve">
+    <value>Produto</value>
+  </data>
+  <data name="SELLUNITS" xml:space="preserve">
+    <value>Venda Unidades</value>
+  </data>
+  <data name="SHARES" xml:space="preserve">
+    <value>Ações</value>
+  </data>
+  <data name="SHARESSUCC" xml:space="preserve">
+    <value>Ações compradas com sucesso</value>
+  </data>
+  <data name="UNITS" xml:space="preserve">
+    <value>Unidades</value>
+  </data>
+  <data name="YOUWONAUCTION" xml:space="preserve">
+    <value>Você ganhou o leilão da bandeira que será exibido em</value>
+  </data>
+  <data name="YOUDONTHAVEANYSHARES" xml:space="preserve">
+    <value>Você não tem nenhuma ação. Ir ao mercado e comprar alguns</value>
+  </data>
+  <data name="GIFTCARDS" xml:space="preserve">
+    <value>Gift Cards</value>
+  </data>
+  <data name="GIFTCARDSINFO" xml:space="preserve">
+    <value>Troque seu %p% por cartões e bônus varius!</value>
+    <comment>Deixar %p%</comment>
+  </data>
+  <data name="NOGIFTCARDS" xml:space="preserve">
+    <value>Não existem Cartões de Oferta disponíveis para você neste momento. Volte logo</value>
+  </data>
+  <data name="CANCEL" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="CLOSE" xml:space="preserve">
+    <value>Fechar</value>
+    <comment>Fechar pop-up/window</comment>
+  </data>
+  <data name="EXCHANGENPFOR" xml:space="preserve">
+    <value>Troca %n% %p% para %w%</value>
+    <comment>Troque 10 pontos por 100 choques de jogos</comment>
+  </data>
+  <data name="EXCHANGEPOINTS" xml:space="preserve">
+    <value>Troca %p%</value>
+    <comment>Pontos de troca - seção do cartão do reedem gif, licença %p%</comment>
+  </data>
+  <data name="REQUESTSENTINFO" xml:space="preserve">
+    <value>Sua solicitação de código de presente foi enviada. Será verificado pelo administrador dentro de 24 horas. &lt;br/&gt; Você receberá seu código em seu endereço de e-mail</value>
+  </data>
+  <data name="THEREARENOCODES" xml:space="preserve">
+    <value>Actualmente, não existem códigos para o seu país</value>
+  </data>
+  <data name="REWARD" xml:space="preserve">
+    <value>Recompensa</value>
+    <comment>Recompensa por cada pesquisa</comment>
+  </data>
+  <data name="SEARCH" xml:space="preserve">
+    <value>Pesquisa</value>
+  </data>
+  <data name="SEARCHINFO" xml:space="preserve">
+    <value>Ganhe %p% usando nossa plataforma de pesquisa powered by Yahoo</value>
+  </data>
+  <data name="NEXTPAGE" xml:space="preserve">
+    <value>Próxima página</value>
+  </data>
+  <data name="PREVIOUSPAGE" xml:space="preserve">
+    <value>Página anterior</value>
+  </data>
+  <data name="LATESTHISTORYLOGS" xml:space="preserve">
+    <value>O log abaixo mostra o último histórico dos últimos %n% dias</value>
+  </data>
+  <data name="MORELOGS" xml:space="preserve">
+    <value>Mais registros</value>
+  </data>
+  <data name="GEONOTAVAILABLE" xml:space="preserve">
+    <value>Infelizmente, não conseguimos gerar %p% para o seu país no momento</value>
+  </data>
+  <data name="LOGINTEXT" xml:space="preserve">
+    <value>Entrar</value>
+  </data>
+  <data name="SORRYCOUNTRY" xml:space="preserve">
+    <value>Desculpe, no momento não estamos disponíveis no seu país</value>
+  </data>
+  <data name="PRICEPERUNIT" xml:space="preserve">
+    <value>Preço por unidade</value>
+  </data>
+  <data name="YOUMUSTBELOGGED" xml:space="preserve">
+    <value>Você deve estar logado para ganhar %p%</value>
+  </data>
+  <data name="FRAUDINFO" xml:space="preserve">
+    <value>Desculpe, sua conta foi suspensa, identificamos algo incomum. %a% Contacte-nos %b% para obter mais informações.</value>
+  </data>
+  <data name="ERRORAPI" xml:space="preserve">
+    <value>ERRO: Não foi possível conectar-se a</value>
+  </data>
+  <data name="EMAILNOTINDATABASE" xml:space="preserve">
+    <value>Não temos esse endereço de e-mail no banco de dados</value>
+  </data>
+  <data name="PASSWORDLINKSENT" xml:space="preserve">
+    <value>Enviamos um e-mail com mais instruções sobre o endereço de e-mail fornecido. Verifique sua caixa postal</value>
+  </data>
+  <data name="REQUESTEXPIRED" xml:space="preserve">
+    <value>Esta solicitação de senha expirou. Por favor, emita um novo</value>
+  </data>
+  <data name="ST_RESET" xml:space="preserve">
+    <value>Sua senha foi redefinida</value>
+  </data>
+  <data name="PLAYLIST" xml:space="preserve">
+    <value>Lista de reprodução</value>
+  </data>
+  <data name="VIDEOS" xml:space="preserve">
+    <value>vídeos</value>
+  </data>
+  <data name="NEXTVIDEO" xml:space="preserve">
+    <value>Próximo vídeo</value>
+  </data>
+  <data name="PREVIOUSVIDEO" xml:space="preserve">
+    <value>Vídeo anterior</value>
+  </data>
+  <data name="TRYAGAIN" xml:space="preserve">
+    <value>Por favor, tente novamente em alguns minutos</value>
+  </data>
+  <data name="CHAT" xml:space="preserve">
+    <value>Chat</value>
+  </data>
+  <data name="CLICKTOCOMPLETE" xml:space="preserve">
+    <value>Clique para ver a oferta</value>
+  </data>
+  <data name="EVENTS" xml:space="preserve">
+    <value>Eventos</value>
+  </data>
+  <data name="OFFERNOTAVAIL" xml:space="preserve">
+    <value>Desculpe, esta oferta não está disponível para você</value>
+  </data>
+  <data name="LOGS" xml:space="preserve">
+    <value>Logs</value>
+  </data>
+  <data name="MONEY" xml:space="preserve">
+    <value>Dinheiro</value>
+  </data>
+  <data name="TE" xml:space="preserve">
+    <value>Intercâmbio de tráfego</value>
+  </data>
+  <data name="BALANCELOG" xml:space="preserve">
+    <value>Logs de balanceamento</value>
+  </data>
+  <data name="HISTORYLOG" xml:space="preserve">
+    <value>Históricos</value>
+  </data>
+  <data name="LATEST" xml:space="preserve">
+    <value>Mais recentes</value>
+  </data>
+  <data name="TESHORT" xml:space="preserve">
+    <value>Tráfego X</value>
+  </data>
+  <data name="MONEYSENT" xml:space="preserve">
+    <value>O dinheiro foi enviado para sua conta de %p%.</value>
+  </data>
+  <data name="THISWEBSITE" xml:space="preserve">
+    <value>Esse site</value>
+  </data>
+  <data name="ANONDIRECT" xml:space="preserve">
+    <value>Anônimo / Direto</value>
+  </data>
+  <data name="NOWPLAYING" xml:space="preserve">
+    <value>Agora jogando</value>
+  </data>
+  <data name="VIDEOINFO" xml:space="preserve">
+    <value>Receba o pagamento por assistir seus vídeos favoritos.</value>
+  </data>
+</root>

@@ -1,0 +1,167 @@
+﻿.shoutbox {
+}
+
+.shoutbox_button {
+    background: url(../Images/Controls/Shoutbox/shoutbox.png) no-repeat;
+    min-width: 18px;
+    min-height: 8px;
+    float: left;
+    display: inline-block;
+    margin-left: 2px;
+}
+
+.smalltextlabel {
+    font-size: 9px;
+    color: #cbcbcb;
+}
+
+.shoutbox_textbox {
+    float: left;
+    width: 138px;
+    display: inline-block;
+    min-height: 13px;
+    font-size: 9px;
+}
+
+.shoutbox_avatar {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.shoutbox_flag {
+    display: inline-block;
+    vertical-align: middle;
+    width: 12px;
+    height: 9px;
+}
+
+.shoutbox_username {
+    display: inline-block;
+    font-size: 11px;
+}
+
+.shoutbox_cart, .shoutbox_cartClicked {
+    width: 47%;
+    height: 17px;
+    display: inline-block;
+    font-size: 11px;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 3px;
+    border-bottom: 1px solid;
+    margin-bottom: 5px;
+}
+
+    .shoutbox_cart:hover, .shoutbox_cartClicked {
+        color:#000;
+    }
+
+.shoutbox_date {
+    float: right;
+    display: inline-block;
+    font-size: 7px;
+}
+
+.shoutbox_message {
+    font-size: 10px;
+    display: block;
+    margin-top: 3px;
+    color: #444;
+}
+
+.shoutbox_message_event {
+    font-size: 9px;
+    display: block;
+    margin-top: 3px;
+}
+
+.shoutbox_empty {
+    margin: 0 auto;
+    font-size: 9px;
+}
+
+.sbentry, .sbentryEvent {
+    margin-bottom: 5px;
+    border-bottom: 1px solid #cbcbcb;
+    display: block;
+}
+
+.shoutbox_error {
+    font-size: 9px;
+    margin-bottom: 8px;
+    color: red;
+}
+
+.shoutbox_success {
+    font-size: 9px;
+    margin-bottom: 8px;
+    color: #87a131;
+}
+
+.shoutbox_loading {
+    margin: 0 auto;
+    padding-bottom: 5px;
+    width: 16px;
+}
+
+
+/*Member logged-in*/
+
+.sbc {
+    position: relative;
+    overflow: hidden;
+}
+
+.sbc, .sbc_inner2 {
+    width: 162px;
+    height: 245px;
+}
+
+
+.sbc_inner {
+    position: absolute;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+    .sbc_inner::-webkit-scrollbar {
+        display: none;
+    }
+
+
+
+
+/*Member NOT logged-in*/
+
+.sbc_nl {
+    position: relative;
+    overflow: hidden;
+}
+
+.sbc_nl, .sbc_inner2_nl {
+    width: 162px;
+    height: 275px; /* Only this value differs*/
+}
+
+
+.sbc_inner_nl {
+    position: absolute;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+    .sbc_inner_nl::-webkit-scrollbar {
+        display: none;
+    }
+
+.smalltext {
+    font-size: 9px;
+    margin-left: 6px;
+}
+
+.greenbutton {
+    padding: 2px;
+    color: #fff;
+}

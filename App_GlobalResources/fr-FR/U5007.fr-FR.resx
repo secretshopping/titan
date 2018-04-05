@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ADCREDITSPERADVIEW" xml:space="preserve">
+    <value>Crédits d'annonce par clic sur annonce</value>
+  </data>
+  <data name="AUTOSURFLEFTDESC" xml:space="preserve">
+    <value>Vous pouvez regarder &lt;b&gt;{0}&lt;/b&gt; annonces en utilisant autosurf ce mois-ci.</value>
+  </data>
+  <data name="BORROW" xml:space="preserve">
+    <value>Emprunter</value>
+  </data>
+  <data name="BUYDIRECTSUCCESS" xml:space="preserve">
+    <value>You have successfully bought {0} direct referral(s). They will expire in {1} days.</value>
+  </data>
+  <data name="CANONLYSENDONEREQUEST" xml:space="preserve">
+    <value>Vous avez déjà envoyé une demande. Veuillez attendre l'approbation de l'administrateur.</value>
+  </data>
+  <data name="CANTBORROWUNTIL" xml:space="preserve">
+    <value>Vous ne pouvez pas emprunter d'argent tant que vous n'avez pas remboursé les {0} restant.</value>
+  </data>
+  <data name="CHANCETOWINLEVELADCREDITS" xml:space="preserve">
+    <value>Chance de gagner des crédits publicitaires à un niveau supérieur</value>
+  </data>
+  <data name="CHANCETOWINLEVELAWARD" xml:space="preserve">
+    <value>Chance de gagner un prix à un niveau supérieur</value>
+  </data>
+  <data name="CHANCETOWINLEVELDR" xml:space="preserve">
+    <value>Chance de gagner une limite de filleule direct plus élevée</value>
+  </data>
+  <data name="CHANCETOWINLEVELPOINTS" xml:space="preserve">
+    <value>Chance de gagner {0} au niveau superieur</value>
+  </data>
+  <data name="CLICKSTOKEEPTHISLEVEL" xml:space="preserve">
+    <value>Vous avez regardé {0}/{1} annonces requises pour garder votre niveau ce mois-ci.</value>
+  </data>
+  <data name="CONTACTME" xml:space="preserve">
+    <value>Contactez moi</value>
+  </data>
+  <data name="CREDITLINEDESC2" xml:space="preserve">
+    <value>Prendre un prêt ou rembourser votre dette. L'argent emprunté sera crédité à votre solde d'annonce.</value>
+  </data>
+  <data name="CURRENTREFS" xml:space="preserve">
+    <value>Vous disposez actuellement de &lt;b&gt;{0}&lt;/b&gt;/{1} filleules direct.</value>
+  </data>
+  <data name="CUSTOMLINK" xml:space="preserve">
+    <value>Votre lien Splash Page personnalisé</value>
+  </data>
+  <data name="CUSTOMSPLASH" xml:space="preserve">
+    <value>Page personnalisée Splash</value>
+  </data>
+  <data name="DEADLINE" xml:space="preserve">
+    <value>Date limite</value>
+  </data>
+  <data name="EARNED" xml:space="preserve">
+    <value>{0} Gagné</value>
+  </data>
+  <data name="EDIT" xml:space="preserve">
+    <value>Edité</value>
+  </data>
+  <data name="LEVELS" xml:space="preserve">
+    <value>Niveaux</value>
+  </data>
+  <data name="LEVELSINFO" xml:space="preserve">
+    <value>Earn {0} and get higher levels.</value>
+  </data>
+  <data name="LINKOPENS" xml:space="preserve">
+    <value>Vos liens ouverts</value>
+  </data>
+  <data name="LINKS" xml:space="preserve">
+    <value>Liens</value>
+  </data>
+  <data name="MAXACTIVEADCAMPAINS" xml:space="preserve">
+    <value>Nombre max de campagnes publicitaires actives</value>
+  </data>
+  <data name="MAXADPACKSECSFORCLICKS" xml:space="preserve">
+    <value>Maximum AdPack ad increased display time</value>
+  </data>
+  <data name="MAXBORROW" xml:space="preserve">
+    <value>Le montant maximal d'argent que vous pouvez emprunter est {0}.</value>
+  </data>
+  <data name="MAXGLOBALPAYOUT" xml:space="preserve">
+    <value>Paiement global maximal</value>
+  </data>
+  <data name="MAXLEVELADCREDITSAWARD" xml:space="preserve">
+    <value>Maximum Ad Credits new level award</value>
+  </data>
+  <data name="MAXLEVELDRAWARD" xml:space="preserve">
+    <value>Maximum extra Direct Ref limit new level award</value>
+  </data>
+  <data name="MAXLEVELPOINTSAWARD" xml:space="preserve">
+    <value>Maximum {0} new level award</value>
+  </data>
+  <data name="MEMBERSINPOOL" xml:space="preserve">
+    <value>Members in the pool</value>
+  </data>
+  <data name="MINADSWATCHEDMONTHLY" xml:space="preserve">
+    <value>Minimum ad clicks to keep level</value>
+  </data>
+  <data name="MINLEVELADCREDITSAWARD" xml:space="preserve">
+    <value>Minimum Ad Credits new level award</value>
+  </data>
+  <data name="MINLEVELDRAWARD" xml:space="preserve">
+    <value>Minimum extra Direct Ref limit new level award</value>
+  </data>
+  <data name="MINLEVELPOINTSAWARD" xml:space="preserve">
+    <value>Minimum {0} new level award</value>
+  </data>
+  <data name="MONEYAFTERAPPROVAL" xml:space="preserve">
+    <value>Votre demande a été envoyée à l'administrateur. L'argent sera crédité à votre {0} dès que la demande sera approuvée.</value>
+  </data>
+  <data name="NEEDCREATE" xml:space="preserve">
+    <value>Vous devez d'abord créer une page Splash personnalisée.</value>
+  </data>
+  <data name="NOAUTOSURFLEFT" xml:space="preserve">
+    <value>Vous avez atteint la limite d'annonces que vous pourriez regarder ce mois-ci en utilisant autosurf.</value>
+  </data>
+  <data name="NOLINK" xml:space="preserve">
+    <value>Vous ne participez pas au pool Rotator Link.</value>
+  </data>
+  <data name="NOTENOUGHREFSAVAILABLE" xml:space="preserve">
+    <value>Il n'y a pas assez d'utilisateurs sans parains disponibles pour le moment</value>
+  </data>
+  <data name="PAYBACK" xml:space="preserve">
+    <value>Rembourser</value>
+  </data>
+  <data name="POINTSPER1000VIEWSROTATOR" xml:space="preserve">
+    <value>{0} per 1000 views delivered to Pool Rotator</value>
+  </data>
+  <data name="POINTSPERNEWREF" xml:space="preserve">
+    <value>{0} par nouveau filleule</value>
+  </data>
+  <data name="POINTSPERYOURADVIEW" xml:space="preserve">
+    <value>{0} par clic sur l'annonce créé par vous</value>
+  </data>
+  <data name="PTCMONTHLYAUTOSURFLIMIT" xml:space="preserve">
+    <value>Limite mensuelle des annonces affichées en autosurf</value>
+  </data>
+  <data name="PTCPURCHASECOMISSION" xml:space="preserve">
+    <value>Commission d'achat d'annonces</value>
+  </data>
+  <data name="REFPACKDDL" xml:space="preserve">
+    <value>{0} referral(s) active until {1} - {2}</value>
+  </data>
+  <data name="REFPACKSUNAVAILABLE" xml:space="preserve">
+    <value>Il n'y a pas de pack de filleule direct disponible pour le moment.</value>
+  </data>
+  <data name="ROTATORLINK" xml:space="preserve">
+    <value>Rotator Link</value>
+  </data>
+  <data name="ROTATORLINKINFO" xml:space="preserve">
+    <value>Partagez un lien de parrainage avec d'autres membres et annoncez-le. Obtenez plus de références.</value>
+  </data>
+  <data name="SUCCESSFULLYREPAID" xml:space="preserve">
+    <value>Vous avez remboursé {0}.</value>
+  </data>
+  <data name="SUCCREPAID" xml:space="preserve">
+    <value>Vous avez remboursé {0}.</value>
+  </data>
+  <data name="TOOLS" xml:space="preserve">
+    <value>Outils</value>
+  </data>
+  <data name="TOOLSINFO" xml:space="preserve">
+    <value>Les outils de parainnage vous aiderons à obtenir de nouveaux renvois.</value>
+  </data>
+</root>

@@ -1,0 +1,208 @@
+﻿using System;
+using System.IO;
+using System.Data;
+using System.Collections.Generic;
+using System.Data;
+using System.Text;
+using System.Linq;
+using System.ComponentModel;
+using Prem.PTC.Members;
+using Prem.PTC.Memberships;
+using Prem.PTC.Utils;
+using Prem.PTC;
+using System.Text;
+using ExtensionMethods;
+using System.Web.UI;
+using System.Web;
+
+namespace Titan.Shares
+{
+    public class PromotionSite : BaseTableObject
+    {
+        #region Columns
+
+        public override Database Database { get { return Database.Client; } }
+
+        public static new string TableName { get { return "PromotionSites"; } }
+        protected override string dbTable { get { return TableName; } }
+
+        [Column("Id", IsPrimaryKey = true)]
+        public override int Id { get { return _id; } protected set { _id = value; SetUpToDateAsFalse(); } }
+
+        [Column("WebsiteType")]
+        protected int WebsiteTypeInt { get { return _Status; } set { _Status = value; SetUpToDateAsFalse(); } }
+
+        [Column("TargetUrl")]
+        public string TargetUrl { get { return UrlCreator.ParseUrl(_TargetUrl); } set { _TargetUrl = value; SetUpToDateAsFalse(); } }
+
+        [Column("DateAdded")]
+        public DateTime DateAdded { get { return _DateAdded; } set { _DateAdded = value; SetUpToDateAsFalse(); } }
+
+        [Column("IsTop")]
+        public bool IsTop { get { return _IsTop; } set { _IsTop = value; SetUpToDateAsFalse(); } }
+
+        [Column("CreatorUserId")]
+        public int CreatorUserId { get { return _CreatorUsername; } set { _CreatorUsername = value; SetUpToDateAsFalse(); } }
+
+        [Column("Title")]
+        public string Title { get { return _Title; } set { _Title = value; SetUpToDateAsFalse(); } }
+
+        [Column("Description")]
+        public string Description { get { return _Description; } set { _Description = value; SetUpToDateAsFalse(); } }
+
+        [Column("WebsiteCategory")]
+        public int WebsiteCategory { get { return _PTCAdTime; } set { _PTCAdTime = value; SetUpToDateAsFalse(); } }
+
+        [Column("ConstantImagePath")]
+        public string ConstantImagePath { get { return _ConstantImagePath; } set { _ConstantImagePath = value; SetUpToDateAsFalse(); } }
+
+        [Column("PremiumUntil")]
+        public DateTime PremiumUntil { get { return _PremiumUntil; } set { _PremiumUntil = value; SetUpToDateAsFalse(); } }
+
+        private int _id, _Status, _CreatorUsername, _PTCAdTime;
+        private string _imagePath, _imagePath2, _TargetUrl, _Title, _Description, _ConstantImagePath;
+        private bool _IsTop;
+        private DateTime _DateAdded, _PremiumUntil;
+
+        public PromotionWebsiteType Type
+        {
+            get
+            {
+                return (PromotionWebsiteType)WebsiteTypeInt;
+            }
+            set
+            {
+                WebsiteTypeInt = (int)value;
+            }
+        }
+
+        public string Category
+        {
+            get
+            {
+                if (Type == PromotionWebsiteType.Public)
+                    return RSASettings.PromotionPublicCategories[WebsiteCategory];
+                else
+                    return RSASettings.PromotionPrivateCategories[WebsiteCategory];
+            }
+        }
+
+        public void Save(bool forceSave = false, string baseurl = "")
+        {
+            bannerImage_PreSave(baseurl);
+            base.Save(forceSave);
+        }
+
+        private Banner _bannerImage1;
+        public Banner ConstantBannerImage
+        {
+            get { return _bannerImage1; }
+            set
+            {
+                _bannerImage1 = value;
+                SetUpToDateAsFalse();
+            }
+        }
+
+        private void bannerImage_PreSave(string baseurl)
+        {
+            if (_bannerImage1 != null)
+            {
+                if (!_bannerImage1.IsSaved)
+                    _bannerImage1.Save(AppSettings.FolderPaths.BannerAdvertImages);
+
+                ConstantImagePath = _bannerImage1.Path;
+            }
+        }
+
+        #endregion
+
+        #region Constructors
+
+        /// <summary>
+        /// Creates blank instance of BannerAdvert class
+        /// </summary>
+        public PromotionSite()
+            : base()
+        { }
+
+        public PromotionSite(int id)
+            : base(id)
+        {
+        }
+
+        public PromotionSite(DataRow row, bool isUpToDate = true)
+            : base(row, isUpToDate)
+        {
+        }
+
+        #endregion Constructors
+
+        public string ToHTML()
+        {
+            StringBuilder sb = new StringBuilder();
+            //<div style="border: 1px solid #d0d0d0; padding: 5px; margin-top:5px;">
+            //                <a href="asd">asdasdasd</a><br />
+            //                asdsdfjisdf jiosdf isdjoifsdf
+            //</div>
+            string css = "PromotionSite";
+            if (this.IsTop)
+                css = "PromotionSitePremium";
+
+            sb.Append("<div style=\"width: 300px; display: inline-block; padding:10px\"><a href=\"");
+            sb.Append(this.TargetUrl);
+            sb.Append("\" target=\"_blank\"><div class=\"");
+            sb.Append(css);
+            sb.Append("\"><div style=\"float:left; width:30%\"><img style=\"display:inline-block; margin-right:5px; width:80px; height:80px\" src=\"" + (String.IsNullOrWhiteSpace(ConstantImagePath) ? "" : (HttpContext.Current.Handler as Page).ResolveUrl(ConstantImagePath)) + "\" /></div><div style=\"float:left; width:70%\">");
+            sb.Append("<b>" + this.Title + "</b>");
+            sb.Append("<br/>");
+            sb.Append(this.Description);
+            sb.Append("</div></div></a></div>");
+            return sb.ToString();
+        }
+
+
+
+        public static List<PromotionSite> GetAllActiveWebsites(PromotionWebsiteType type, int category)
+        {
+            using (var bridge = ParserPool.Acquire(Database.Client))
+            {
+                //var premium = bridge.Instance.ExecuteRawCommandToDataTable(GetSQL(type, category, true));
+                //var premiumList = TableHelper.GetListFromDataTable<PromotionSite>(premium, 100, false);
+
+                var normal = bridge.Instance.ExecuteRawCommandToDataTable(GetSQL(type, category));
+                var allList = TableHelper.GetListFromDataTable<PromotionSite>(normal, 100, false);
+
+                //premiumList.AddRange(normalList);
+
+                return allList;
+            }
+        }
+
+        private static string GetSQL(PromotionWebsiteType type, int category, bool isPremium = false)
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append("SELECT * FROM PromotionSites WHERE DateAdded >= '");
+            sb.Append(DateTime.Now.Add(-RSASettings.PromotionTime).ToString("yyyy-MM-dd HH:mm:ss"));
+            sb.Append("' AND WebsiteType = ");
+            sb.Append((int)type);
+            //sb.Append(" AND WebsiteCategory = ");
+            //sb.Append(category);
+            if (isPremium)
+            {
+                sb.Append(" AND PremiumUntil >= '");
+                sb.Append(DateTime.Now.ToDBString());
+                sb.Append("'");
+            }
+            sb.Append(" ORDER BY DateAdded ASC");
+            return sb.ToString();
+        }
+
+    }
+
+    public enum PromotionWebsiteType
+    {
+        Public = 0,
+        Personal = 1
+    }
+}

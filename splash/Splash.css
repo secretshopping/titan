@@ -1,0 +1,22 @@
+﻿html, body {
+    display: table;
+    height: 100%;
+    line-height: 100%;
+    width: 100%;
+    text-align: center;
+    background-image: url("SplashPageBackground.jpg");
+}
+
+.RegisterContainer {
+     display: table-cell;
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.RegisterBlock {
+    display: inline-block;
+    padding: 28px 14px;
+    text-align: left; 
+    background-color: white;
+}

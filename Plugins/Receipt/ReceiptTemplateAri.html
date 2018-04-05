@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+
+    <style>
+        .container {
+            font-family: 'Arial', 'Helvetica', sans-serif;
+            position: relative;
+        }
+
+        body {
+            padding: 50;
+        }
+
+        h2 {
+            font-weight: 700;
+            font-size: 48px;
+            color: #7b8ec5;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        table {
+            border-spacing: 0;
+        }
+
+        .item-list th, .item-list td,
+        .bill th {
+            padding: 5px;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+
+        .item-list td {
+            border: 1px solid #000;
+        }
+
+        .pull-left {
+            float: left;
+        }
+
+        .pull-right {
+            float: right;
+        }
+
+        .width-50 {
+            width: 50%;
+        }
+
+        .width-100 {
+            width: 100%;
+        }
+
+        .footer {
+            padding-top: 50px;
+        }
+
+        .width-50 {
+            padding-bottom: 50px;
+        }
+
+        table.meta td, table.meta th {
+            padding: 5px 20px;
+        }
+
+        table.meta td {
+            border: 1px solid #ccc;
+        }
+    </style>
+    <div class='container'>
+        <div class='row'>
+            <div class='pull-left text-left width-50'>
+                <h1>[SITE_NAME]</h1>
+                <p>
+                    [NAME_ADDRESS]
+                    <br>
+                    <a href='[SITE_URL]'>[SITE_URL]</a>
+                </p>
+            </div>
+            <div class='pull-right text-right width-50'>
+                <h2>[RESX_INVOICE]</h2>
+                <table class='meta pull-right'>
+                    <tr>
+                        <th class='text-right'>[RESX_DATE]</th>
+                        <td class='text-center'>[ITEM_DATE]</td>
+                    </tr>
+                    <tr>
+                        <th class='text-right'>[RESX_INVOICE] #</th>
+                        <td class='text-center'>[ITEM_ID]</td>
+                    </tr>
+                    <tr>
+                        <th class='text-right'>[RESX_CUSTOMERID]</th>
+                        <td class='text-center'>[USER_ID]</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+        <div class='row'>
+            <div class='width-50 pull-left'>
+                <table class='bill'>
+                    <thead style='background: #3b4e87; color: #fff; border: 1px solid #3b4e87;'>
+                        <tr>
+                            <th>[RESX_BILLTO]</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>[USER_FULLNAME]</td></tr>
+                        <tr><td>[USER_EMAIL]</td></tr>
+                        <tr><td>[USER_MEMBERSHIP]</td></tr>
+                        <tr><td>[USER_COUNTRY]</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class='row'>
+            <table class='item-list width-100'>
+                <thead style='background: #3b4e87; color: #fff; border: 1px solid #3b4e87;'>
+                    <tr>
+                        <th class='text-center'>[RESX_INVOICE] #</th>
+                        <th class='text-center'>[RESX_DESCRIPTION]</th>
+                        <th class='text-center'>[RESX_QUANTITY]</th>
+                        <th class='text-center'>[RESX_UNITPRICE]</th>
+                        <th class='text-center'>[RESX_TAX]</th>
+                        <th class='text-center'>[RESX_TOTAL]</th>
+                    </tr>
+                </thead>
+                <tbody style='border: 1px solid #000; font-weight: 700;'>
+                    <tr>
+                        <td>[ITEM_ID]</td>
+                        <td>[ITEM_DESCRIPTION]</td>
+                        <td class='text-center'>[ITEM_QUANTITY]</td>
+                        <td class='text-right'>[ITEM_UNITPRICE]</td>
+                        <td class='text-center'>[ITEM_TAX]%</td>
+                        <td class='text-right'>[ITEM_TOTALVALUE]</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class='row footer'>
+            <p class='text-center'>
+                If you have any questions about this invoice, please contact
+                <br />
+                [SITE_NAME] - [ADMIN_EMAIL]
+                <br />
+                <strong>Thank you for your purchase!</strong>
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>

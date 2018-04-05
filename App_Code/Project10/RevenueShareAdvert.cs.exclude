@@ -1,0 +1,251 @@
+﻿using System;
+using System.IO;
+using System.Data;
+using System.Collections.Generic;
+using System.Data;
+using System.Text;
+using System.Linq;
+using System.ComponentModel;
+using Prem.PTC.Members;
+using Prem.PTC.Memberships;
+using Prem.PTC.Utils;
+using Prem.PTC;
+
+
+namespace Titan.Shares
+{
+    public class RevenueShareAdvert : BaseTableObject
+    {
+        #region Columns
+
+        public override Database Database { get { return Database.Client; } }
+
+        public static new string TableName { get { return "RevenueShareAdverts"; } }
+        protected override string dbTable { get { return TableName; } }
+
+        [Column("Id", IsPrimaryKey = true)]
+        public override int Id { get { return _id; } protected set { _id = value; SetUpToDateAsFalse(); } }
+
+        [Column("Status")]
+        protected int Status { get { return _Status; } set { _Status = value; SetUpToDateAsFalse(); } }
+
+        [Column("TargetUrl")]
+        public string TargetUrl { get { return UrlCreator.ParseUrl(_TargetUrl); } set { _TargetUrl = value; SetUpToDateAsFalse(); } }
+
+        [Column("ConstantImagePath")]
+        public string ConstantImagePath { get { return _imagePath; } set { _imagePath = value; SetUpToDateAsFalse(); } }
+
+        [Column("NormalImagePath")]
+        public string NormalImagePath { get { return _imagePath2; } set { _imagePath2 = value; SetUpToDateAsFalse(); } }
+
+        [Column("CreatorUserId")]
+        public int CreatorUserId { get { return _CreatorUsername; } set { _CreatorUsername = value; SetUpToDateAsFalse(); } }
+
+        [Column("Title")]
+        public string Title { get { return _Title; } set { _Title = value; SetUpToDateAsFalse(); } }
+
+        [Column("Description")]
+        public string Description { get { return _Description; } set { _Description = value; SetUpToDateAsFalse(); } }
+
+        [Column("PTCAdTime")]
+        public int PTCAdTime { get { return _PTCAdTime; } set { _PTCAdTime = value; SetUpToDateAsFalse(); } }
+
+
+        //INTS
+
+        [Column("TotalClicks")]
+        public int TotalClicks { get { return a1; } set { a1 = value; SetUpToDateAsFalse(); } }
+
+        [Column("TotalNormalBannerImpressions")]
+        public int TotalNormalBannerImpressions { get { return a2; } set { a2 = value; SetUpToDateAsFalse(); } }
+
+        [Column("TotalConstantBannerImpressions")]
+        public int TotalConstantBannerImpressions { get { return a3; } set { a3 = value; SetUpToDateAsFalse(); } }
+
+        [Column("ClicksLeft")]
+        public int ClicksLeft { get { return a4; } set { a4 = value; SetUpToDateAsFalse(); } }
+
+        [Column("NormalBannerImpressionsLeft")]
+        public int NormalBannerImpressionsLeft { get { return a5; } set { a5 = value; SetUpToDateAsFalse(); } }
+
+        [Column("ConstantBannerImpressionsLeft")]
+        public int ConstantBannerImpressionsLeft { get { return a6; } set { a6 = value; SetUpToDateAsFalse(); } }
+
+        [Column("ClicksPurchased")]
+        public int ClicksPurchased { get { return a8; } set { a8 = value; SetUpToDateAsFalse(); } }
+
+        [Column("NormalBannerImpressionsPurchased")]
+        public int NormalBannerImpressionsPurchased { get { return a9; } set { a9 = value; SetUpToDateAsFalse(); } }
+
+        [Column("ConstantBannerImpressionsPurchased")]
+        public int ConstantBannerImpressionsPurchased { get { return a10; } set { a10 = value; SetUpToDateAsFalse(); } }
+
+
+
+        //OTHER
+
+        [Column("Packages")]
+        public int Packages { get { return a7; } set { a7 = value; SetUpToDateAsFalse(); } }
+
+        [Column("MoneyReturned")]
+        public Money MoneyReturned { get { return _money; } set { _money = value; SetUpToDateAsFalse(); } }
+
+
+        private int _id, _Status, a1, a2, a3, a4, a5, a6, a7, _CreatorUsername, _PTCAdTime, a8, a9, a10;
+        private string _imagePath, _imagePath2, _TargetUrl, _Title, _Description;
+        private bool _isGeolocated;
+        private Money _money;
+
+        private Banner _bannerImage1;
+        public Banner ConstantBannerImage
+        {
+            get { return _bannerImage1; }
+            set
+            {
+                _bannerImage1 = value;
+                SetUpToDateAsFalse();
+            }
+        }
+
+        private Banner _bannerImage2;
+        public Banner NormalBannerImage
+        {
+            get { return _bannerImage2; }
+            set
+            {
+                _bannerImage2 = value;
+                SetUpToDateAsFalse();
+            }
+        }
+
+        #endregion
+
+        #region Constructors
+
+        /// <summary>
+        /// Creates blank instance of BannerAdvert class
+        /// </summary>
+        public RevenueShareAdvert()
+            : base()
+        {}
+
+        public RevenueShareAdvert(int id)
+            : base(id)
+        {
+        }
+
+        public RevenueShareAdvert(DataRow row, bool isUpToDate = true)
+            : base(row, isUpToDate)
+        {
+        }
+
+        #endregion Constructors
+
+
+        /// <exception cref="DbException" />
+        public void Save(bool forceSave = false, string baseurl = "")
+        {
+            bannerImage_PreSave(baseurl);
+            base.Save(forceSave);
+        }
+
+
+        private void bannerImage_PreSave(string baseurl)
+        {
+            if (_bannerImage1 != null)
+            {
+                if (!_bannerImage1.IsSaved)
+                    _bannerImage1.Save(AppSettings.FolderPaths.BannerAdvertImages);
+
+                ConstantImagePath = _bannerImage1.Path;
+            }
+
+            if (_bannerImage2 != null)
+            {
+                if (!_bannerImage2.IsSaved)
+                    _bannerImage2.Save(AppSettings.FolderPaths.BannerAdvertImages);
+
+                NormalImagePath = _bannerImage2.Path;
+            }
+        }
+
+        /// <exception cref="DbException"/>
+        public static void Delete(int id)
+        {
+            TableHelper.DeleteRows<RevenueShareAdvert>("Id", id);
+        }
+
+        public void AddAndSaveConstantImpression()
+        {
+            bool isUpToDate = IsUpToDate;
+
+            //Work
+            TotalConstantBannerImpressions++;
+            ConstantBannerImpressionsLeft--;
+
+            SavePartially(isUpToDate, new PropertyBuilder<RevenueShareAdvert>()
+                .Append(x => x.TotalConstantBannerImpressions)
+                .Append(x => x.ConstantBannerImpressionsLeft)
+                .Build());
+        }
+
+        public void AddAndSaveNormalImpression()
+        {
+            bool isUpToDate = IsUpToDate;
+
+            //Work
+            TotalNormalBannerImpressions++;
+            NormalBannerImpressionsLeft--;
+
+            SavePartially(isUpToDate, new PropertyBuilder<RevenueShareAdvert>()
+                .Append(x => x.TotalNormalBannerImpressions)
+                .Append(x => x.NormalBannerImpressionsLeft)
+                .Build());
+        }
+
+        public void AddAndSaveClick()
+        {
+            bool isUpToDate = IsUpToDate;
+
+            //Work
+            TotalClicks++;
+            ClicksLeft--;
+
+            SavePartially(isUpToDate, new PropertyBuilder<RevenueShareAdvert>()
+                .Append(x => x.TotalClicks)
+                .Append(x => x.ClicksLeft)
+                .Build());
+        }
+
+        public int ActivePackages
+        {
+            get
+            {
+                //1.Value
+                Decimal difference1 = MoneyThatMustBeReturned - MoneyReturned.ToDecimal();
+                Decimal left1 = difference1 / (RSASettings.PackPirce.ToDecimal() * RSASettings.PackReturnValue);
+                int res1 = Convert.ToInt32(Decimal.Ceiling(left1));
+
+                //2.Normal banner
+                //NO WAY TO BEAT IT?
+
+                //3.Constant banner
+                //NO WAY TO BEAT IT?
+
+                //4. PTC
+                //NO WAY TO BEAT IT?
+
+                //Return MAX
+                return res1;
+            }
+        }
+
+        public Decimal MoneyThatMustBeReturned
+        {
+            get
+            {
+                return Packages * RSASettings.PackPirce.ToDecimal() * RSASettings.PackReturnValue;
+            }
+        }
+    }
+}

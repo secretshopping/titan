@@ -1,0 +1,520 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CASHBALANCEDISABLED" xml:space="preserve">
+    <value>Cash Balance is disabled. Please contact the administrator</value>
+  </data>
+  <data name="NONEWS" xml:space="preserve">
+    <value>No news added</value>
+  </data>
+  <data name="PURCHASE" xml:space="preserve">
+    <value>Purchase</value>
+  </data>
+  <data name="PURCHASEBALANCE" xml:space="preserve">
+    <value>Purchase Balance</value>
+  </data>
+  <data name="RECEIVEPURCHASEBALANCEFROMOTHERSFEE" xml:space="preserve">
+    <value>Fee for receiving transfers to Purchase Balance from other users</value>
+  </data>
+  <data name="ROICREDITEDTOPURCHASEBALANCE" xml:space="preserve">
+    <value>ROI credited to Purchase Balance (Repurchase)</value>
+  </data>
+  <data name="PAYVIAPURCHASEBALANCE" xml:space="preserve">
+    <value>Pay via Purchase Balance</value>
+  </data>
+  <data name="PURCHASEBALANCEBONUSFROMUPGRADE" xml:space="preserve">
+    <value>Purchase Balance bonus from upgrade</value>
+  </data>
+  <data name="CREDITLINEDESC" xml:space="preserve">
+    <value>Take a loan or repay your debt. Borrowed money will be credited to your Purchase Balance after Administrator's approval. {0} % will be deducted as fee.</value>
+  </data>
+  <data name="WALLET" xml:space="preserve">
+    <value>{0} Wallet</value>
+    <comment>E.g. BTC Wallet</comment>
+  </data>
+  <data name="AVAILIABLETOKENS" xml:space="preserve">
+    <value>Available coins</value>
+  </data>
+  <data name="ICO" xml:space="preserve">
+    <value>ICO</value>
+  </data>
+  <data name="INFORMATIONS" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="NEXTSTAGEINFO" xml:space="preserve">
+    <value>Next stage starts on {0}</value>
+  </data>
+  <data name="NOSTAGEINFO" xml:space="preserve">
+    <value>There is no ICO stage currently available</value>
+  </data>
+  <data name="ISLIVE" xml:space="preserve">
+    <value>ICO stage {0} is Live </value>
+  </data>
+  <data name="PURCHASEHISTORY" xml:space="preserve">
+    <value>View your history of {0} purchases</value>
+  </data>
+  <data name="ENTERAMOUNT" xml:space="preserve">
+    <value>Enter the amount of {0} you want to buy and press Pay button.</value>
+  </data>
+  <data name="MAXPER14MIN" xml:space="preserve">
+    <value>Max: {0} {1} per 15 minutes.</value>
+  </data>
+  <data name="PAYVIAWALLET" xml:space="preserve">
+    <value>Pay via {0} Wallet</value>
+  </data>
+  <data name="SUCCTOKENSPURCHASE" xml:space="preserve">
+    <value>You have successfully purchased {0} {1}.</value>
+  </data>
+  <data name="COINSEXCEED15MIN" xml:space="preserve">
+    <value>Number of coins you want to purchase exceed the 15 minutes purchase limit. You already purchased {0} {1} in the last 15 minutes.</value>
+  </data>
+  <data name="NOTOKENSLEFT" xml:space="preserve">
+    <value>There is not enough coins left in the stage.</value>
+  </data>
+  <data name="TOKENSLEFT" xml:space="preserve">
+    <value>Coins left</value>
+  </data>
+  <data name="ICOPURCHASECOMMISSION" xml:space="preserve">
+    <value>ICO Purchase bonus for referrer</value>
+  </data>
+  <data name="STAGES" xml:space="preserve">
+    <value>Stages</value>
+  </data>
+  <data name="ICOSTAGESDESCRIPTION" xml:space="preserve">
+    <value>Check old, current and upcoming ICO Stages.</value>
+  </data>
+  <data name="ENDSIN" xml:space="preserve">
+    <value>Ends in</value>
+  </data>
+  <data name="STARTSIN" xml:space="preserve">
+    <value>Starts in</value>
+  </data>
+  <data name="INFORMATIONOF" xml:space="preserve">
+    <value>{0} Information</value>
+  </data>
+  <data name="WARNINGMINBTCDEPOSIT" xml:space="preserve">
+    <value>Attention! Minimal BTC deposit value = &lt;b&gt;{0}&lt;/b&gt;. If you send less your Bitcoins will be lost. </value>
+  </data>
+  <data name="BTCDEPOSITLIMITINFO" xml:space="preserve">
+    <value>This limit applies only to &lt;u&gt;Bitcoin&lt;/u&gt; deposits.</value>
+  </data>
+  <data name="NOFUNDSINWALLET" xml:space="preserve">
+    <value>You don't have enough funds in {0} Wallet</value>
+    <comment>E.g. BTC / ETH</comment>
+  </data>
+  <data name="NEXTRANK" xml:space="preserve">
+    <value>Next rank</value>
+  </data>
+  <data name="ER_USER_EMAIL_NOTFOUND" xml:space="preserve">
+    <value>User with such email not exists</value>
+  </data>
+  <data name="AHMEDRIPPLEINFO" xml:space="preserve">
+    <value>For Ripple (XRP) wallet you can register and get one with &lt;a href="{0}" target="_blank"&gt;CoinPayments&lt;/a&gt;</value>
+  </data>
+  <data name="DEPOSITCOINS" xml:space="preserve">
+    <value>Deposit Coins</value>
+  </data>
+  <data name="INPUTTOOLONG" xml:space="preserve">
+    <value>{0} is too long. Can be max {1} chars length.</value>
+  </data>
+  <data name="PAYOUTREQUESTBALANCEERROR" xml:space="preserve">
+    <value>You cannot withdraw more than {0}</value>
+  </data>
+  <data name="WITHDRAWALSOURCE" xml:space="preserve">
+    <value>Withdrawal source: {0}</value>
+  </data>
+  <data name="INVALIDMONEYFORMAT2ZEROS" xml:space="preserve">
+    <value>Invalid money format. Use {X}.XX</value>
+  </data>
+  <data name="DEPOSITMONEYINFO" xml:space="preserve">
+    <value>Deposit money into your balances. Just in a couple of clicks</value>
+  </data>
+  <data name="INVESTEDMONEYINTOPLANS" xml:space="preserve">
+    <value>Invested Money into Plans</value>
+  </data>
+  <data name="INVESTEDMONEYINTOPLANSSTRUCTURE" xml:space="preserve">
+    <value>Turnover from Investment Plans</value>
+  </data>
+  <data name="NEGATIVEBALANCEWITHDRAWAL" xml:space="preserve">
+    <value>At least one of your balance is negative. Withdrawal forbidden.</value>
+  </data>
+  <data name="ADPACKEARNINGSFROMLASTDAYS" xml:space="preserve">
+    <value>{0} earnings from last days</value>
+  </data>
+  <data name="CREDITLINEPURCHASEBALANCEERROR" xml:space="preserve">
+    <value>You can't pay back amount higher than your Purchase Balance</value>
+  </data>
+  <data name="TODAYEARNINGS" xml:space="preserve">
+    <value>Today earnings</value>
+  </data>
+  <data name="COST" xml:space="preserve">
+    <value>Cost</value>
+  </data>
+  <data name="UNDERSTANDANDAGREE" xml:space="preserve">
+    <value>I understand and agree</value>
+  </data>
+  <data name="PAYVIACOMMISSIONBALANCE" xml:space="preserve">
+    <value>Pay via Commission Balance</value>
+  </data>
+  <data name="FEEFOREACHDEPOSIT" xml:space="preserve">
+    <value>FEE for each deposit</value>
+  </data>
+  <data name="MAXIMUMTIMESADAY" xml:space="preserve">
+    <value>Maximum times a DAY</value>
+  </data>
+  <data name="CUSTOMLIKESINFO" xml:space="preserve">
+    <value>Take reward only if you really liked fanpage. Otherwise you will be banned from that features, and all points will be taken away!</value>
+  </data>
+  <data name="LEVELSDESCRIPTION" xml:space="preserve">
+    <value>Deposit on different Levels and get double amount!</value>
+  </data>
+  <data name="QUEUESYSTEM" xml:space="preserve">
+    <value>Queue System</value>
+  </data>
+  <data name="REWARDFORLIKES" xml:space="preserve">
+    <value>Take reward for Likes</value>
+  </data>
+  <data name="DEPOSITONLEVEL" xml:space="preserve">
+    <value>Deposit on {0}</value>
+    <comment>Level name</comment>
+  </data>
+  <data name="DEPOSITONLEVELMESSAGE" xml:space="preserve">
+    <value>Successfully deposited on {0}.&lt;br /&gt;You will receive double amount soon</value>
+    <comment>Level name</comment>
+  </data>
+  <data name="TICKETDEPOSITEDFEE" xml:space="preserve">
+    <value>Deposited + Fee</value>
+  </data>
+  <data name="TICKETNO" xml:space="preserve">
+    <value>Ticket number</value>
+  </data>
+  <data name="TICKETRECEIVE" xml:space="preserve">
+    <value>You receive</value>
+  </data>
+  <data name="DEPOSITING" xml:space="preserve">
+    <value>Depositing</value>
+  </data>
+  <data name="FEE" xml:space="preserve">
+    <value>Fee</value>
+  </data>
+  <data name="MAXDAILYDEPOSITED" xml:space="preserve">
+    <value>You can't deposit on this level more than {0} at day</value>
+  </data>
+  <data name="MINIMUMTIMEBETWEENDEPOSITS" xml:space="preserve">
+    <value>You can't deposit right now. Minimum time between each deposit is {0} minute(s)</value>
+  </data>
+  <data name="PLAN" xml:space="preserve">
+    <value>Plan</value>
+  </data>
+  <data name="RECEIVED" xml:space="preserve">
+    <value>Received</value>
+  </data>
+  <data name="WAITING" xml:space="preserve">
+    <value>Waiting</value>
+  </data>
+  <data name="ADUPDATED" xml:space="preserve">
+    <value>The advertisement has been successfully updated.</value>
+  </data>
+  <data name="EDITEDADAWAITSAPPROVAL" xml:space="preserve">
+    <value>The advertisement has been successfully updated. It will be available once it's approved by the administrator.</value>
+  </data>
+  <data name="TECREDITS" xml:space="preserve">
+    <value>Traffic Exchange credits</value>
+  </data>
+  <data name="LEFT_POINTS" xml:space="preserve">
+    <value>Left {0}</value>
+    <comment>Points name</comment>
+  </data>
+  <data name="RIGHT_POINTS" xml:space="preserve">
+    <value>Right {0}</value>
+    <comment>Points name</comment>
+  </data>
+  <data name="SPONSOR" xml:space="preserve">
+    <value>Sponsor</value>
+  </data>
+  <data name="PAYOUTREQUESTTOOHIGH" xml:space="preserve">
+    <value>Your payout request is too high.</value>
+  </data>
+  <data name="ASK" xml:space="preserve">
+    <value>Ask</value>
+  </data>
+  <data name="AVAILABLEFUNDS" xml:space="preserve">
+    <value>Available funds</value>
+  </data>
+  <data name="AVAILABLETSTOCK" xml:space="preserve">
+    <value>Available stock</value>
+  </data>
+  <data name="BID" xml:space="preserve">
+    <value>Bid</value>
+  </data>
+  <data name="LAST" xml:space="preserve">
+    <value>Last</value>
+  </data>
+  <data name="PLACEORDER" xml:space="preserve">
+    <value>Place order</value>
+  </data>
+  <data name="TOTALVALUEWITHFEES" xml:space="preserve">
+    <value>Total value including fee</value>
+  </data>
+  <data name="CONFIRMORDER" xml:space="preserve">
+    <value>Confirm order</value>
+  </data>
+  <data name="DOYOUWANTORDER" xml:space="preserve">
+    <value>Do you want to place order</value>
+  </data>
+  <data name="TOTALPRICEWITHFEE" xml:space="preserve">
+    <value>Total price (including fee)</value>
+  </data>
+  <data name="YOURACTIVEOFFERS" xml:space="preserve">
+    <value>Your active offers</value>
+  </data>
+  <data name="TOPLIST" xml:space="preserve">
+    <value>Top List</value>
+  </data>
+  <data name="FINISH" xml:space="preserve">
+    <value>Finish</value>
+  </data>
+  <data name="STOCKEXCHANGE" xml:space="preserve">
+    <value>Stock Exchange</value>
+  </data>
+  <data name="OPEN" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="INTERNALEXCHANGE" xml:space="preserve">
+    <value>Internal Exchange</value>
+  </data>
+  <data name="INTERNALEXCHANGEDESCRIPTION" xml:space="preserve">
+    <value>Welcome in {0} Stock Exchange! Here you can exchange {1} and {2}</value>
+    <comment>0 -&gt; site name, 1,2 -&gt;currency signs</comment>
+  </data>
+  <data name="TRANSACTIONS" xml:space="preserve">
+    <value>Transactions</value>
+  </data>
+  <data name="ARTICLECREATORCPM" xml:space="preserve">
+    <value>Article creator earnings (per 1000 reads)</value>
+  </data>
+  <data name="ARTICLEINFLUENCERCPM" xml:space="preserve">
+    <value>Article sharing earnings (per 1000 reads)</value>
+  </data>
+  <data name="HOMEPAGE" xml:space="preserve">
+    <value>Homepage</value>
+  </data>
+  <data name="SHARINGARTICLES" xml:space="preserve">
+    <value>Share articles</value>
+  </data>
+  <data name="WRITINGARTICLES" xml:space="preserve">
+    <value>Write articles</value>
+  </data>
+  <data name="ARTICLECREATED" xml:space="preserve">
+    <value>Article successfully created.</value>
+  </data>
+  <data name="KEYWORDS" xml:space="preserve">
+    <value>Keywords</value>
+  </data>
+  <data name="MUSTUPLOADIMAGEORVIDEO" xml:space="preserve">
+    <value>You must upload an image.</value>
+  </data>
+  <data name="NOARTICLES" xml:space="preserve">
+    <value>There are no articles yet.</value>
+  </data>
+  <data name="SUBTITLE" xml:space="preserve">
+    <value>Subtitle</value>
+  </data>
+  <data name="WRITINGARTICLESINFO" xml:space="preserve">
+    <value>Write interesting articles and get paid for reads.</value>
+  </data>
+  <data name="ARTICLES" xml:space="preserve">
+    <value>Articles</value>
+  </data>
+  <data name="SHARINGARTICLESINFO" xml:space="preserve">
+    <value>Share articles via your unique link and get paid for reads.</value>
+  </data>
+  <data name="GETSHARELINK" xml:space="preserve">
+    <value>Get Share Link</value>
+  </data>
+  <data name="THISISSHARELINK" xml:space="preserve">
+    <value>This is your link to this article. Start sharing now!</value>
+  </data>
+  <data name="WHATSTRENDING" xml:space="preserve">
+    <value>What's trending?</value>
+  </data>
+  <data name="KEYWORDSINFO" xml:space="preserve">
+    <value>Write up to {0} keywords separated by a comma</value>
+  </data>
+  <data name="READS" xml:space="preserve">
+    <value>Reads</value>
+  </data>
+  <data name="RETURNEDTOYOURBALANCE" xml:space="preserve">
+    <value>Returned to your balance</value>
+  </data>
+  <data name="BOUGHTSTOCKS" xml:space="preserve">
+    <value>Bought {0} for {1}</value>
+    <comment>E.g. Bought 1฿ for 200$</comment>
+  </data>
+  <data name="NEWEXCHANGEOFFER" xml:space="preserve">
+    <value>Placed new offer on {0} for {1} each</value>
+    <comment>E.g. Placed new offer on 2฿ for 100$ each.</comment>
+  </data>
+  <data name="SOLDSTOCKS" xml:space="preserve">
+    <value>Sold {0} for {1}</value>
+    <comment>E.g. Sold 1฿ for 200$</comment>
+  </data>
+  <data name="CHECKCURRENTORDERS" xml:space="preserve">
+    <value>Check you current orders </value>
+  </data>
+  <data name="CREDITS" xml:space="preserve">
+    <value>Credits</value>
+  </data>
+  <data name="ESTIMATEDMONEY" xml:space="preserve">
+    <value>Estimated money</value>
+  </data>
+  <data name="EXCHANGE" xml:space="preserve">
+    <value>Exchange</value>
+  </data>
+  <data name="INTERNALEXCHANGEHISTORYDESCRIPTION" xml:space="preserve">
+    <value>Here you can check your orders history</value>
+  </data>
+  <data name="MONEYCREDITED" xml:space="preserve">
+    <value>Credited money</value>
+  </data>
+  <data name="MYCURRENTORDERS" xml:space="preserve">
+    <value>My Current Orders</value>
+  </data>
+  <data name="MYTRADINGHISTORY" xml:space="preserve">
+    <value>My Trading History</value>
+  </data>
+  <data name="AVATARVALIDATOR" xml:space="preserve">
+    <value>Avatar dimensions must be equal or lower than {0}x{1}px</value>
+  </data>
+  <data name="CANTUPGRADERANGEPLAN" xml:space="preserve">
+    <value>You can't upgrade plans with range price.</value>
+  </data>
+  <data name="PRICERANGE" xml:space="preserve">
+    <value>Price range</value>
+  </data>
+  <data name="TYPECORRECTPRICE" xml:space="preserve">
+    <value>Please type a correct price.</value>
+  </data>
+  <data name="TYPEPRICE" xml:space="preserve">
+    <value>Type price</value>
+  </data>
+  <data name="VALUEOFSTOCK" xml:space="preserve">
+    <value>Value of stock</value>
+  </data>
+</root>

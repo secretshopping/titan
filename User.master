@@ -1,0 +1,206 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="~/User.master.cs" Inherits="Page" %>
+
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="<%=System.Threading.Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName %>" class="ie8"> <![endif]-->
+<!--[if !IE]> <!-->
+<html lang="<%=System.Threading.Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName %>">
+<!--<![endif]-->
+<head id="YafHead" runat="server">
+    <base href="<%=BaseUrl %>" />
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+    <meta name="description" <%="content='" + AppSettings.Site.Description +"'" %>>
+    <script src="Plugins/AdblockDetector/blockadblock.js"> </script>
+    <script src="Scripts/default/assets/plugins/jquery/jquery-1.9.1.min.js"> </script>
+    <script src="Scripts/default/assets/plugins/jquery/jquery-migrate-1.1.0.min.js"> </script>
+    <script src="Scripts/default/assets/plugins/jquery-ui/ui/minified/jquery-ui.min.js"> </script>
+    <script src="Scripts/default/assets/plugins/bootstrap/js/bootstrap.min.js"> </script>
+    <script src="Scripts/default/assets/plugins/decimal/decimal.min.js"> </script>
+    <script src="Scripts/default/assets/plugins/DataTables/media/js/jquery.dataTables.min.js"> </script>
+    <script src="Scripts/default/assets/plugins/DataTables/extensions/Responsive/js/dataTables.responsive.min.js"> </script>
+    <script src="Scripts/assets/js/custom.js"> </script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+    <link href="Scripts/default/assets/plugins/jquery-ui/themes/base/minified/jquery-ui.min.css" rel="stylesheet" />
+    <link href="Scripts/default/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="Scripts/default/assets/plugins/DataTables/media/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="Scripts/default/assets/plugins/DataTables/extensions/Responsive/css/responsive.dataTables.min.css" rel="stylesheet" />
+    <link href="Scripts/default/assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="Scripts/default/assets/css/animate.min.css" rel="stylesheet" />
+    <link href="Scripts/assets/css/jquery.fileupload.css" rel="stylesheet" />
+    <link href="Scripts/assets/css/jquery.fileupload-ui.css" rel="stylesheet" />
+    <script data-pace-options='{"ajax": false}' src="Scripts/assets/js/pace.min.js"> </script>
+    <link rel="shortcut icon" type="image/ico" <%="href='" + AppSettings.Site.FaviconImageURL + "'"%>>
+    <!-- Facebook wall link handlers-->
+    <titan:FacebookOGraphInfo runat="server" />
+    <title><%=AppSettings.Site.Name + " | " + AppSettings.Site.Slogan %> </title>
+    <link href="Scripts/assets/css/theme/default.css" id="theme" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="PageHeadContent" runat="server"></asp:ContentPlaceHolder>
+    <link href="Scripts/default/assets/css/style-panel.min.css" rel="stylesheet" />
+    <link href="Scripts/assets/css/style-responsive.min.css" rel="stylesheet" />
+    <link href="Scripts/default/assets/css/custom.css" rel="stylesheet" />
+    <link rel="stylesheet" <%="href='Themes/" + AppSettings.Site.Theme + "/css/style.css'"%> /> 
+    <titan:CustomHeader runat="server" />
+</head>
+<body class="page <%=CssHelper.GetBodyCssClass() %>">
+    <!-- begin #page-loader -->
+    <div id="page-loader" class="fade in"><span class="spinner"></span></div>
+    <!-- end #page-loader -->
+    <form id="form1" runat="server" enctype="multipart/form-data">
+        <!-- begin #page-container -->
+        <div id="page-container" class="fade page-sidebar-fixed page-header-fixed page-content-full-height">
+            <titan:UseTitanDemoHeader runat="server" />
+            <!-- begin #header -->
+            <div class="container-fluid">
+                <!-- This is main content container -->
+                <asp:ScriptManager ID="NotificationScriptManager" runat="server" AsyncPostBackTimeout="360000" ScriptMode="Release"></asp:ScriptManager>
+                <asp:ContentPlaceHolder ID="PageMenuContent" runat="server"></asp:ContentPlaceHolder>
+                <titan:UserMenu runat="server" />
+                <div class="width-full">
+                    <!-- DO NOT remove this section -->
+                    <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                        <ContentTemplate>
+                            <asp:Literal ID="NotificationLiteral" runat="server"> </asp:Literal>
+                        </ContentTemplate>
+                    </asp:UpdatePanel>
+                    <!-- You can edit below -->
+                    <!-- [START] Panel to the left -->
+                    <style runat="server" id="style1" visible="false">
+                        .content {
+                            margin: 0 auto !important;
+                            /*width: 80%;*/
+                            margin-top: -54px;
+                        }
+
+                        #page-loader, .pace {
+                            display: none !important;
+                        }
+                    </style>
+                    <div class="sidebar" id="sidebar" runat="server">
+                        <titan:SidebarMenu ID="SidebarMenu1" runat="server" />
+                    </div>
+                    <div class="sidebar-bg" id="sidebarbg" runat="server"></div>
+                    <!-- [END] Panel to the left -->
+                    <!-- [START] Panel to the right - with main page content -->
+                    <div class="content content-full-width" id="content">
+                        <titan:UserWarning runat="server" />
+                        <div class="page-loader trans"><span class="spinner"></span></div>
+                        <div class="vertical-box">
+                            <div class="vertical-box-column">
+                                <div class="vertical-box">
+                                    <div class="vertical-box-row">
+                                        <div class="vertical-box-cell">
+                                            <div class="vertical-box-inner-cell">
+                                                <div data-scrollbar="true" data-height="100%" class="wrapper">
+                                                    <div class="a1" style="position: relative; min-height: 100%;">
+                                                        <div class="b1" style="padding-bottom: 130px;">
+                                                            <div id="backbutton" class="row m-b-20" runat="server" visible="false">
+                                                                <div class="col-md-2"><a class="btn btn-link btn-default" href="/sites/advertise.aspx"><%=U6000.RETURNTOADVERTISE %> </a></div>
+                                                            </div>
+                                                            <asp:ContentPlaceHolder ID="PageMainContent" runat="server"></asp:ContentPlaceHolder>
+                                                        </div>
+                                                        <div class="b2">
+                                                            <div class="footer-wrapper" style="position: absolute; bottom: -15px; left: 0; right: 0;">
+                                                                <p class="m-t-20 m-b-0">
+                                                                    <small>
+                                                                        <titan:ServerTime runat="server" />
+                                                                    </small>
+                                                                </p>
+                                                                <div id="footer" class="footer m-0 m-t-5">
+                                                                    <p class="text-center">
+                                                                        <a class="m-5" href="sites/tos.aspx"><%=L1.TERMSOFSERVICE %> </a><a class="m-5" href="sites/privacy.aspx"><%=L1.PRIVACYPOLICY %> </a>
+                                                                        <a class="m-5" id="PaymentProofsLink" href="sites/proofs.aspx" runat="server"><%=L1.PAYMENTPROOFS %></a>
+                                                                    </p>
+                                                                    <p class="text-center">&copy; Copyright <%=DateTime.Now.Year %> <%=AppSettings.Site.Name %> </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="text-center">
+                                        <titan:TitanFooter runat="server" />
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="vertical-box-column width-250" id="sidebar2" runat="server">
+                                <div class="vertical-box">
+                                    <div class="wrapper bg-silver text-white"></div>
+                                    <div class="vertical-box-row bg-silver text-white">
+                                        <div class="vertical-box-cell">
+                                            <div class="vertical-box-inner-cell">
+                                                <div data-scrollbar="true" data-height="100%" class="wrapper right-banner-section">
+                                                    <titan:ConstantBanner runat="server" BannerBidPosition="1" />
+                                                    <titan:ConstantBanner runat="server" BannerBidPosition="2" />
+                                                    <titan:ConstantBanner runat="server" BannerBidPosition="3" />
+                                                    <titan:ConstantBanner runat="server" BannerBidPosition="4" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper bg-silver text-white"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- [END] Panel to the right - with main page content -->
+                </div>
+            </div>
+            <!-- begin scroll to top btn -->
+            <a href="javascript:;" class="btn btn-icon btn-circle btn-success btn-scroll-to-top fade" data-click="scroll-top"><i class="fa fa-angle-up"></i></a>
+            <!-- end scroll to top btn -->
+        </div>
+
+        <!-- Confirmation Modal -->
+        <div class="modal fade" id="confirmationModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header" style="border: none;">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><%=U4000.CLOSE %></button>
+                        <button id="confirmButton" type="button" class="btn btn-success"><%=L1.CONFIRM %></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Welcome Modal -->
+        <div class="modal fade" id="welcomeModal" tabindex="-1" role="dialog" aria-labelledby="welcomeModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="welcomeModalLabel"><%=AppSettings.Site.SetAfterLoginPopupTitle %></h4>
+                    </div>
+                    <div class="modal-body">
+                        <%=AppSettings.Site.SetAfterLoginPopupContent %>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><%=U4000.CLOSE %></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <titan:WelcomeTourWizard runat="server" />
+
+        <script src="Scripts/default/assets/plugins/jquery-cookie/jquery.cookie.js"> </script>
+        <!-- ================== END BASE JS ================== -->
+        <script> $(document).ready(function () { App.init(); }); </script>
+        <asp:PlaceHolder ID="TawkChatPlaceHolder" Visible="false" runat="server">
+            <!--Start of Tawk.to Script-->
+            <script type="text/javascript"> var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date(); (function () { var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0]; s1.async = true; s1.src = 'https://embed.tawk.to/<%=TawkSourceID%>/default'; s1.charset = 'UTF-8'; s1.setAttribute('crossorigin', '*'); s0.parentNode.insertBefore(s1, s0); })(); </script>
+            <!--End of Tawk.to Script-->
+        </asp:PlaceHolder>
+    </form>
+    <script src="Scripts/assets/js/apps.min.js"> </script>
+    <script src="Scripts/default/assets/plugins/slimscroll/jquery.slimscroll.min.js"> </script>
+    <script <%="src='Themes/" + AppSettings.Site.Theme + "/js/script.js'"%>> </script>
+    <titan:CustomFooter runat="server" />
+</body>
+</html>

@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BOXSIZE" xml:space="preserve">
+    <value>Box Size</value>
+  </data>
+  <data name="CATEGORY" xml:space="preserve">
+    <value>Catégorie</value>
+  </data>
+  <data name="NOTEGLIBLEFOREXTRAVIEWS" xml:space="preserve">
+    <value>La taille de la boîte sélectionnée n'est pas admissible aux crédits pubs.</value>
+  </data>
+  <data name="ATLEASTONETRAFFICGRID" xml:space="preserve">
+    <value>Il doit y avoir au moins une campagne active pour afficher la grille.</value>
+  </data>
+  <data name="PAYOUTUNAVAILABLE" xml:space="preserve">
+    <value>Le retrait n'est pas disponible pour le moment.</value>
+  </data>
+  <data name="ADCREDITS" xml:space="preserve">
+    <value>Crédits Pub</value>
+  </data>
+  <data name="ADCREDITSAVAILABLE" xml:space="preserve">
+    <value>Crédits pub disponibles</value>
+  </data>
+  <data name="USEADCREDITSONLY" xml:space="preserve">
+    <value>Use Ad Credits only</value>
+  </data>
+  <data name="BACKGROUNDCOLOR" xml:space="preserve">
+    <value>Couleur de fond</value>
+  </data>
+  <data name="CAPTCHAQUESTION" xml:space="preserve">
+    <value>Captcha Question</value>
+  </data>
+  <data name="CAPTCHAQUESTIONDESC" xml:space="preserve">
+    <value>"Oui/Non" question qui apparaîtra au lieu du captcha dans la zone de surf.</value>
+  </data>
+  <data name="INVALIDINTEGER" xml:space="preserve">
+    <value>Veuillez entrer un numéro.</value>
+  </data>
+  <data name="USEEXTRAVIEWS" xml:space="preserve">
+    <value>Utiliser vues supplémentaires</value>
+  </data>
+  <data name="VIEW" xml:space="preserve">
+    <value>Voir</value>
+  </data>
+  <data name="NOTENOUGHADCREDITS" xml:space="preserve">
+    <value>Vous n'avez pas assez de crédits pubs.</value>
+  </data>
+  <data name="SELECTUSEXTRAVIEWS" xml:space="preserve">
+    <value>Sélectionnez "Utiliser des vues supplémentaires".</value>
+  </data>
+  <data name="NOTRANSFEROPTIONS" xml:space="preserve">
+    <value>Aucune option de transfert disponible pour le moment.</value>
+  </data>
+  <data name="CPAGPT1" xml:space="preserve">
+    <value>Le titre peut avoir au maximum 50 caractères.</value>
+  </data>
+  <data name="CPAGPT2" xml:space="preserve">
+    <value>Faites-le aussi détaillé et clair que possible.</value>
+  </data>
+  <data name="CPAGPT4" xml:space="preserve">
+    <value>Combien voulez-vous payer le membre pour 1 coupon terminée? Si ce montant est trop bas, les membres ne peuvent pas obtenire votre offre.</value>
+  </data>
+  <data name="CANNOTEXCEED" xml:space="preserve">
+    <value>Vous ne pouvez pas dépasser la limite des campagnes actives (%n%).</value>
+  </data>
+  <data name="LEVEL" xml:space="preserve">
+    <value>Niveau</value>
+  </data>
+  <data name="STARREDAD" xml:space="preserve">
+    <value>Ann classée</value>
+  </data>
+  <data name="STARREDADINFO" xml:space="preserve">
+    <value>Votre annonce apparaîtra avant d'autres annonces.</value>
+  </data>
+  <data name="ADDEDTOF" xml:space="preserve">
+    <value>Ajouté aux favoris.</value>
+  </data>
+  <data name="GRATZ" xml:space="preserve">
+    <value>Félicitations, vous avez atteint un nouveau niveau!</value>
+  </data>
+  <data name="REACHED" xml:space="preserve">
+    <value>Vous avez atteint</value>
+  </data>
+  <data name="REMOVEDFROMF" xml:space="preserve">
+    <value>Supprimé des favoris.</value>
+  </data>
+  <data name="SORTBY1" xml:space="preserve">
+    <value>Starred first</value>
+  </data>
+  <data name="SORTBY2" xml:space="preserve">
+    <value>Favorite first</value>
+  </data>
+  <data name="FAVORITE" xml:space="preserve">
+    <value>Favori</value>
+  </data>
+  <data name="ADDTOFRIENDALREADY" xml:space="preserve">
+    <value>L'utilisateur {0} est déjà votre ami.</value>
+  </data>
+  <data name="ADDTOFRIENDMESSAGE" xml:space="preserve">
+    <value>L'utilisateur  {0} voudrais vous ajouter en ami!</value>
+  </data>
+  <data name="AMOUNTEQUALZERO" xml:space="preserve">
+    <value>Le prix ne peut être égal à zéro.</value>
+  </data>
+  <data name="BUYFROMYOURSELF" xml:space="preserve">
+    <value>You cannot buy from yourself.</value>
+  </data>
+  <data name="CATEGORY1" xml:space="preserve">
+    <value>Catégorie</value>
+  </data>
+  <data name="MARKETPLACEADDED" xml:space="preserve">
+    <value>Produit ajouté avec succès sur le marketplace.</value>
+  </data>
+  <data name="MARKETPLACEEMAILTOBUYER" xml:space="preserve">
+    <value>Dear customer,&lt;br&gt;&lt;br&gt; You have successfully bought {0}. Once you've received your product, please visit {1} and click &lt;i&gt;Confirm&lt;/i&gt;. &lt;br&gt;&lt;br&gt;Regards, {2} team.</value>
+  </data>
+  <data name="SELLERDOESNTHAVEENOUGHT" xml:space="preserve">
+    <value>Seller doesn't have enough units</value>
+  </data>
+  <data name="PURCHASEDPRODUCTS" xml:space="preserve">
+    <value>Produits achetés</value>
+  </data>
+  <data name="MARKETPLACE" xml:space="preserve">
+    <value>Marketplace</value>
+  </data>
+  <data name="TOALLUSERS" xml:space="preserve">
+    <value>To all users</value>
+  </data>
+  <data name="UNITPRICE" xml:space="preserve">
+    <value>Unit price</value>
+  </data>
+  <data name="YOUARENOTADMIN" xml:space="preserve">
+    <value>Seuls les administrateurs peuvent envoyer des messages à tous les utilisateurs.</value>
+  </data>
+  <data name="YOUSUCCBOUGHTONMARKETPLACE" xml:space="preserve">
+    <value>Vous avez acheté le produit avec succès.</value>
+  </data>
+  <data name="YOUCANNOTCASHOUTGLOBALLIMIT" xml:space="preserve">
+    <value>Vous avez atteint votre limite.</value>
+  </data>
+  <data name="YOUNEEDMEMBERSHIP" xml:space="preserve">
+    <value>Seuls les utilisateurs ayant un abonement {0} peuvent acheter ces coupons</value>
+  </data>
+  <data name="ACCOUNTNOTVERIFIED" xml:space="preserve">
+    <value>Vous devez effectuer la vérification des documents avant de pouvoir demander un retrait d'argent.</value>
+  </data>
+  <data name="NOTVERIFIED" xml:space="preserve">
+    <value>Non vérifié</value>
+  </data>
+  <data name="VERIFIED" xml:space="preserve">
+    <value>Vérifié</value>
+  </data>
+  <data name="VERIFYINFO" xml:space="preserve">
+    <value>Account verification is required for money withdrawal. Send your document/passport/ID to complete the verification process.</value>
+  </data>
+  <data name="REQUIREDMEMBERSHIP" xml:space="preserve">
+    <value>Membership requis</value>
+  </data>
+  <data name="ADDDISPLAYTIME" xml:space="preserve">
+    <value>Ajouter du temps</value>
+  </data>
+  <data name="CANNOTADDMORESECONDS" xml:space="preserve">
+    <value>Le nombre maximum de secondes que vous pouvez ajouter à cette annonce est de {0}. Mettez à niveau votre compte pour en ajouter plus.</value>
+  </data>
+  <data name="NOTENOUGHCLICKSFOREXCHANGE" xml:space="preserve">
+    <value>Vous n'avez pas assez de clics ({0} requis)</value>
+  </data>
+  <data name="SELECTSINGLECHECKBOX" xml:space="preserve">
+    <value>Veuillez cocher une seule case.</value>
+  </data>
+  <data name="TIMEFORCLICKSEXCHANGEDESC" xml:space="preserve">
+    <value>You can extend the display time of your advertisement by exchanging the number of clicks. See &lt;i&gt;Types&lt;/i&gt; for details.</value>
+  </data>
+  <data name="VALUEOF1SECINCLICKS" xml:space="preserve">
+    <value>1 seconde =</value>
+  </data>
+  <data name="AVAILABLEFORCUSTOMGROUPS" xml:space="preserve">
+    <value>Disponible pour les groupes personnalisés</value>
+  </data>
+  <data name="LEADERSHIP" xml:space="preserve">
+    <value>Leadership</value>
+  </data>
+  <data name="FRESHFUNDS" xml:space="preserve">
+    <value>Nouveaux fonds</value>
+  </data>
+  <data name="LEADERSHIPLEVELS" xml:space="preserve">
+    <value>Leadership Niveaux</value>
+  </data>
+  <data name="TEAMPARTNERS" xml:space="preserve">
+    <value>Partenaires d'équipe</value>
+  </data>
+  <data name="YOURLEVEL" xml:space="preserve">
+    <value>Votre niveau</value>
+  </data>
+  <data name="AVAILABLEFORGROUPS" xml:space="preserve">
+    <value>Disponible pour les groupes</value>
+  </data>
+  <data name="MUSTUPLOADIMAGE" xml:space="preserve">
+    <value>Please upload an image.</value>
+  </data>
+  <data name="ADVERTISED" xml:space="preserve">
+    <value>Annoncé</value>
+  </data>
+  <data name="CONFIRMED" xml:space="preserve">
+    <value>Confirmé</value>
+  </data>
+  <data name="MYPRODUCTS" xml:space="preserve">
+    <value>My Products</value>
+  </data>
+  <data name="NOPRODUCTSADVERTISED" xml:space="preserve">
+    <value>Vous n'avez pas encore publié de produits.</value>
+  </data>
+  <data name="NOPURCHASEHISTORY" xml:space="preserve">
+    <value>Aucun historique d'achat.</value>
+  </data>
+  <data name="PRODUCTCONFIRMED" xml:space="preserve">
+    <value>Ce produit a été confirmé.</value>
+  </data>
+  <data name="SELLER" xml:space="preserve">
+    <value>Vendeur</value>
+  </data>
+  <data name="SOLD" xml:space="preserve">
+    <value>Sold</value>
+  </data>
+  <data name="MARKETPLACEDESC" xml:space="preserve">
+    <value>Vous voulez acheter ou vendre de vrais produits? Vous êtes au bon endroit!</value>
+  </data>
+  <data name="NOPRODUCTSTOBUY" xml:space="preserve">
+    <value>Unfortunately there are no products to buy.</value>
+  </data>
+  <data name="CREDITLINE" xml:space="preserve">
+    <value>Credit Line</value>
+  </data>
+  <data name="CREDITLINEDESC" xml:space="preserve">
+    <value>Out of funds? Borrow money from Administrator!</value>
+  </data>
+  <data name="CREDITLINEREMINDER" xml:space="preserve">
+    <value>{0} Credit Line reminder</value>
+  </data>
+  <data name="CREDITLINEREMINDEREMAIL" xml:space="preserve">
+    <value>Dear {0},
+
+Please remember to pay your Credit Line debt ({1}) before {2}.
+
+Best regards,
+{3} Team.</value>
+  </data>
+</root>

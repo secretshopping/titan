@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="SELECTMEMBERSHIPUPGRADE" xml:space="preserve">
+    <value>Select membership you want to upgrade to</value>
+  </data>
+  <data name="SLOTMACHINE" xml:space="preserve">
+    <value>Slot machine</value>
+  </data>
+  <data name="SLOTMACHINEERROR" xml:space="preserve">
+    <value>You don't have any slot chances. Please complete a CPA/GPT offer, or watch a PTC ad.</value>
+  </data>
+  <data name="VALIDPAYEER" xml:space="preserve">
+    <value>Enter a valid Payeer username (NOT email). E.g. P1234******</value>
+  </data>
+  <data name="SLOTMACHINEREGISTER" xml:space="preserve">
+    <value>Register now to get your points!</value>
+  </data>
+  <data name="YOURSTATISTIC" xml:space="preserve">
+    <value>Your statistics</value>
+  </data>
+  <data name="REMAINING" xml:space="preserve">
+    <value>Remaining</value>
+  </data>
+  <data name="INVESTMENTPLATFORM" xml:space="preserve">
+    <value>Investment Platform</value>
+  </data>
+  <data name="PLANS" xml:space="preserve">
+    <value>Plans</value>
+  </data>
+  <data name="MINIMUM" xml:space="preserve">
+    <value>Minimum</value>
+  </data>
+  <data name="PLANSDESCRIPTION" xml:space="preserve">
+    <value>Buy or upgrade plans for Investment Platform</value>
+  </data>
+  <data name="REPURCHASETIME" xml:space="preserve">
+    <value>Repurchase time</value>
+  </data>
+  <data name="BINARYEARNING" xml:space="preserve">
+    <value>Binary earning</value>
+  </data>
+  <data name="DAILYLIMIT" xml:space="preserve">
+    <value>Daily limit</value>
+  </data>
+  <data name="MONTHLYLIMIT" xml:space="preserve">
+    <value>Monthly limit</value>
+  </data>
+  <data name="EARNING" xml:space="preserve">
+    <value>Earning</value>
+  </data>
+  <data name="EARNINGHISTORY" xml:space="preserve">
+    <value>Earning history</value>
+  </data>
+  <data name="POSITION" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="SURETOUPGRADE" xml:space="preserve">
+    <value>Are you sure you want to upgrade to</value>
+  </data>
+  <data name="SURETOWITHDRAW" xml:space="preserve">
+    <value>Are you sure you want to withdraw</value>
+  </data>
+  <data name="SUCCESBOUGHTPLAN" xml:space="preserve">
+    <value>You have succesfully bought {0} plan</value>
+  </data>
+  <data name="PROCESSORLIMIT" xml:space="preserve">
+    <value>Try again TOMORROW or use a different payment processor to complete this withdrawal. This payment processor has reached its maximum daily limit allowed by the Service provider.</value>
+  </data>
+  <data name="YOUDONTHAVEANYPLAN" xml:space="preserve">
+    <value>You don't have any investment plans bought</value>
+  </data>
+  <data name="YOURPLAN" xml:space="preserve">
+    <value>Your current plan</value>
+  </data>
+  <data name="DIRECTREFERRALSTOTALPAIDIN" xml:space="preserve">
+    <value>Direct Referrals Total Paid In</value>
+  </data>
+  <data name="INVESTMENTHISTORYDESCRIPTION" xml:space="preserve">
+    <value>Here you can see all your purchased plans</value>
+  </data>
+  <data name="MONEYTORETURN" xml:space="preserve">
+    <value>Money To Return</value>
+  </data>
+  <data name="INVESTMENT" xml:space="preserve">
+    <value>Investment</value>
+  </data>
+  <data name="INVESTMENTBALANCE" xml:space="preserve">
+    <value>Investment balance</value>
+  </data>
+  <data name="MONEYINSYSTEM" xml:space="preserve">
+    <value>Money In System</value>
+  </data>
+  <data name="PROGRESSIVEUPDATES" xml:space="preserve">
+    <value>If you upgrade to higher membership, you pay the difference between prices (you can see calculated prices below).</value>
+  </data>
+  <data name="WINNERS" xml:space="preserve">
+    <value>Winner(s)</value>
+  </data>
+  <data name="WINNINGTICKETS" xml:space="preserve">
+    <value>Winning ticket(s)</value>
+  </data>
+  <data name="MEMBERSHIPEXPIREDREFERRALSWILLBERESOLVED" xml:space="preserve">
+    <value>Your membership has expired. Due to different referral limits in memberships, you can lose some or all of your referrals. In order to keep them all, you must re-upgrade your membership within {0} days.</value>
+  </data>
+  <data name="WARNING" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="MINAMOUNTTOPAYOUT" xml:space="preserve">
+    <value>Minimum amount to pay out (due of membership)</value>
+  </data>
+  <data name="RESENDACTIVATIONLINK" xml:space="preserve">
+    <value>Resend Activation Link</value>
+  </data>
+  <data name="CLICKBUTTONBELOW" xml:space="preserve">
+    <value>Click button below to resend activation email.</value>
+  </data>
+</root>

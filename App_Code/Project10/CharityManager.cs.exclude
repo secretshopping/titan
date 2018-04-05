@@ -1,0 +1,60 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using Prem.PTC;
+
+
+public class CharityManager
+{
+    public static void AddCharity(CharityDontation donation)
+    {
+        donation.Save();
+
+        //Earnings stats
+        EarningsStatsManager.Add(EarningsStatsType.Charity, donation.Amount);
+    }
+
+    public static Money GetLast30DaysEarnings()
+    {
+        var list = GetLast30DaysDonations();
+        Money sum = new Money(0);
+        foreach (var elem in list)
+            sum += elem.Amount;
+
+        return sum;
+    }
+
+    public static Money GetTotalEarnings()
+    {
+        var list = GetAllDonations();
+        Money sum = new Money(0);
+        foreach (var elem in list)
+            sum += elem.Amount;
+
+        return sum;
+    }
+
+    public static List<CharityDontation> GetLast30DaysDonations()
+    {
+        using (var bridge = ParserPool.Acquire(Database.Client))
+        {
+            var currentSql = bridge.Instance.ExecuteRawCommandToDataTable("SELECT * FROM CharityDontations WHERE DateWhen >= '"
+                + DateTime.Now.AddDays(-30).ToString("yyyy-MM-dd HH:mm:ss") + "' ORDER BY DateWhen DESC");
+
+            var currentList = TableHelper.GetListFromDataTable<CharityDontation>(currentSql, 100, true);
+            return currentList;
+        }
+    }
+
+    public static List<CharityDontation> GetAllDonations()
+    {
+        using (var bridge = ParserPool.Acquire(Database.Client))
+        {
+            var currentSql = bridge.Instance.ExecuteRawCommandToDataTable("SELECT * FROM CharityDontations ORDER BY DateWhen DESC");
+
+            var currentList = TableHelper.GetListFromDataTable<CharityDontation>(currentSql, 100, true);
+            return currentList;
+        }
+    }
+}

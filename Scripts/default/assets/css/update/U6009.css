@@ -1,0 +1,19 @@
+﻿.contest-item .table td {
+  padding: 0; }
+
+.bootstrap-select li a {
+  color: #707478 !important;
+  font-size: 14px !important; }
+
+.bootstrap-select li.disabled.selected {
+  display: none; }
+
+.no-caret span.bs-caret {
+  display: none !important; }
+
+.no-dropdown + .dropdown-menu {
+  display: none !important; }
+
+.currencyDropDown {
+  width: auto !important; }
+

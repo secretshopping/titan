@@ -1,0 +1,137 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Sites.master.cs" Inherits="Sites" %>
+
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="<%=System.Threading.Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName %>" class="ie8"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="<%=System.Threading.Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName %>">
+<!--<![endif]-->
+<head id="YafHead" runat="server">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+    <asp:Literal runat="server" ID="HeaderLiteral"></asp:Literal>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+    <link href="Scripts/default/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="Plugins/AdblockDetector/blockadblock.js"></script>
+    <link href="Scripts/default/assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="Scripts/default/assets/plugins/bootstrap-social/bootstrap-social.css" rel="stylesheet" />
+    <link href="Scripts/home/assets/css/animate.min.css" rel="stylesheet" />
+    <link href="Scripts/home/assets/css/style.min.css" rel="stylesheet" />
+    <link href="Scripts/home/assets/css/style-responsive.min.css" rel="stylesheet" />
+    <link href="Scripts/home/assets/css/theme/default.css" id="theme" rel="stylesheet" />
+    <link href="Scripts/home/assets/css/custom.css" rel="stylesheet" />
+    <script src="Scripts/default/assets/plugins/jquery/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/default/assets/plugins/jquery/jquery-migrate-1.1.0.min.js"></script>
+    <link href="Scripts/default/assets/css/custom.css" rel="stylesheet" />
+    <link href="Scripts/assets/css/jquery.fileupload.css" rel="stylesheet" />
+    <link href="Scripts/assets/css/jquery.fileupload-ui.css" rel="stylesheet" />
+    <!-- Facebook wall link handlers-->
+    <titan:FacebookOGraphInfo runat="server" />
+
+    <asp:ContentPlaceHolder ID="ContentHeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <asp:Literal ID="ThemeLiteral" runat="server"></asp:Literal>
+    <titan:CustomHeader runat="server" />
+</head>
+<body class="page-navbar-fixed-top-sm <%=CssHelper.GetBodyCssClass() %>">
+    <form id="form1" runat="server" enctype="multipart/form-data">
+        <titan:UseTitanDemoHeader runat="server" />
+        <!-- begin #page-container -->
+        <div id="page-container" class="fade">
+
+            <!-- begin #header -->
+            <div id="header" class="header navbar navbar-default navbar-transparent navbar-fixed-top navbar-small" data-state-change="disabled">
+                <!-- begin container -->
+                <div class="container">
+                    <!-- begin navbar-header -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-navbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="default.aspx" class="navbar-brand p-10">
+                            <img src="<%=AppSettings.Site.LogoImageURL %>" alt="logo" class="height-full" />
+                            <% if (AppSettings.Site.ShowSiteName)
+                                { %>
+                            <span><%=AppSettings.Site.Name %></span>
+                            <% } %>
+                        </a>
+                    </div>
+                    <!-- end navbar-header -->
+                    <!-- begin navbar-collapse -->
+                    <div class="collapse navbar-collapse" id="header-navbar">
+                        <titan:MainMenu runat="server" />
+                    </div>
+
+                    <!-- end navbar-collapse -->
+                </div>
+                <!-- end container -->
+            </div>
+            <!-- end #header -->
+
+
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+                    <asp:ContentPlaceHolder ID="MainContentPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+
+
+            <!-- begin #footer -->
+            <div id="footer" class="footer">
+                <div class="container">
+                    <p class="m-b-30">
+                        <a class="m-5" href="sites/tos.aspx"><%=L1.TERMSOFSERVICE %></a>
+                        <a class="m-5" href="sites/privacy.aspx"><%=L1.PRIVACYPOLICY %></a>
+                        <a class="m-5" id="PaymentProofsLink" href="/sites/proofs.aspx" runat="server"><%=L1.PAYMENTPROOFS %></a>
+                        <a class="m-5" id="FooterNewsLink" href="/sites/news.aspx" runat="server"><%=U6002.NEWS %></a>
+                    </p>
+                    <div class="footer-brand">
+                        <img src="<%=AppSettings.Site.LogoImageURL %>" />
+                    </div>
+                    <p>
+                        &copy; Copyright <%=DateTime.Now.Year %> <%=AppSettings.Site.Name %>
+                    </p>
+                    <titan:TitanFooter runat="server" />
+                    <titan:SocialListFooter runat="server" />
+                </div>
+            </div>
+            <!-- end #footer -->
+        </div>
+        <!-- end #page-container -->
+
+        <%-- DO NOT REMOVE THIS LINE! (IMPORTANT FOR BACKWARD COMPATIBILITY) --%>
+        <asp:Label ID="UserName" runat="server" Visible="false"></asp:Label>
+        <%-- ############################################################### --%>
+
+        <script src="Scripts/default/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+        <script data-pace-options='{"ajax": false}' src="Scripts/assets/js/pace.min.js"></script>
+        <script src="Scripts/default/assets/plugins/scrollMonitor/scrollMonitor.js"></script>
+        <script src="Scripts/home/assets/js/apps.min.js"></script>
+        <asp:ContentPlaceHolder ID="FooterContentPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+
+        <script>
+            $(document).ready(function () {
+                App.init();
+            });
+        </script>
+
+        <asp:PlaceHolder ID="TawkChatPlaceHolder" Visible="false" runat="server">
+
+            <!--Start of Tawk.to Script-->
+            <script type="text/javascript">
+                var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+                (function () {
+                    var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+                    s1.async = true;
+                    s1.src = 'https://embed.tawk.to/<%=TawkSourceID%>/default';
+                    s1.charset = 'UTF-8';
+                    s1.setAttribute('crossorigin', '*');
+                    s0.parentNode.insertBefore(s1, s0);
+                })();
+            </script>
+            <!--End of Tawk.to Script-->
+
+        </asp:PlaceHolder>
+    </form>
+    <titan:CustomFooter runat="server" />
+</body>
+</html>

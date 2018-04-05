@@ -1,0 +1,1746 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ACCCANCELLED" xml:space="preserve">
+    <value>Akun ini telah dibatalkan</value>
+  </data>
+  <data name="ACCCHEAT" xml:space="preserve">
+    <value>Akun ini telah dihapus karena terdapat kecurangan</value>
+  </data>
+  <data name="ACCINACTIVE" xml:space="preserve">
+    <value>Akun ini telah dihapus karena tidak aktif</value>
+  </data>
+  <data name="ACCOUNT" xml:space="preserve">
+    <value>Akun</value>
+    <comment>Di menu atas</comment>
+  </data>
+  <data name="ACCSECURED" xml:space="preserve">
+    <value>Akun didisable untuk login. Silahkan kontak ke administrator</value>
+  </data>
+  <data name="ACCTOS" xml:space="preserve">
+    <value>Akun ini telah di hapus karena melanggar TOS.</value>
+  </data>
+  <data name="ADS" xml:space="preserve">
+    <value>Ads</value>
+    <comment>In top menu, in user top menu</comment>
+  </data>
+  <data name="ADVERTISE" xml:space="preserve">
+    <value>Advertise</value>
+    <comment>In top menu, in user top menu</comment>
+  </data>
+  <data name="BANNERS" xml:space="preserve">
+    <value>Banner</value>
+    <comment>In user top menu</comment>
+  </data>
+  <data name="CONFIRMPASSWORD" xml:space="preserve">
+    <value>Konfirmasi Password</value>
+  </data>
+  <data name="DIRECT" xml:space="preserve">
+    <value>Direct</value>
+    <comment>In user top menu</comment>
+  </data>
+  <data name="EARN" xml:space="preserve">
+    <value>Earn</value>
+    <comment>In user top menu</comment>
+  </data>
+  <data name="ER_ALLFIELDSREQUIRED" xml:space="preserve">
+    <value>Username dan Password diperlukan saat login</value>
+  </data>
+  <data name="ER_BADPASSWORD" xml:space="preserve">
+    <value>Password salah. Coba lagi</value>
+  </data>
+  <data name="ER_BADPWD2" xml:space="preserve">
+    <value>Secondary Password anda salah</value>
+  </data>
+  <data name="ER_DUPLICATEEMAIL" xml:space="preserve">
+    <value>Maaf, email ini sudah terdaftar . Pilih salah satu yang berbeda</value>
+  </data>
+  <data name="ER_INVALIDPASSWORD" xml:space="preserve">
+    <value>Sandi panjang harus antara 6 dan 30 karakter dan hanya dapat berisi huruf dan angka</value>
+  </data>
+  <data name="ER_INVALIDUSERNAME" xml:space="preserve">
+    <value>Format Username Salah</value>
+  </data>
+  <data name="ER_INVALIDPASS" xml:space="preserve">
+    <value>Format Password Salah</value>
+  </data>
+  <data name="ER_INVALIDUSERNAME3" xml:space="preserve">
+    <value>Maaf , username ini telah diambil . Pilih salah satu yang berbeda</value>
+  </data>
+  <data name="ER_LOGINUNSUCC" xml:space="preserve">
+    <value>Login gagal. Coba lagi</value>
+  </data>
+  <data name="ER_USERLOCKEDOUT" xml:space="preserve">
+    <value>Pengguna ini dikunci</value>
+  </data>
+  <data name="ER_USER_NOTFOUND" xml:space="preserve">
+    <value>Kami tidak dapat menemukan pengguna seperti</value>
+  </data>
+  <data name="FORUM" xml:space="preserve">
+    <value>Forum</value>
+    <comment>In top menu</comment>
+  </data>
+  <data name="GAMES" xml:space="preserve">
+    <value>Permainan</value>
+    <comment>In user top menu</comment>
+  </data>
+  <data name="HISTORY" xml:space="preserve">
+    <value>Histori</value>
+    <comment>In user top menu</comment>
+  </data>
+  <data name="HOME" xml:space="preserve">
+    <value>Home</value>
+    <comment>In top menu</comment>
+  </data>
+  <data name="LEAVEBLANKIFNOTPWD2" xml:space="preserve">
+    <value>Kosongkan jika Anda tidak memiliki password sekunder</value>
+  </data>
+  <data name="LIKES" xml:space="preserve">
+    <value>Likes</value>
+    <comment>In user top menu</comment>
+  </data>
+  <data name="LOGIN" xml:space="preserve">
+    <value>Login</value>
+    <comment>In top menu</comment>
+  </data>
+  <data name="LOGOUT" xml:space="preserve">
+    <value>Logout</value>
+    <comment>In top menu</comment>
+  </data>
+  <data name="MESSAGES" xml:space="preserve">
+    <value>Pesan</value>
+    <comment>In user top menu</comment>
+  </data>
+  <data name="OR" xml:space="preserve">
+    <value>Atau</value>
+  </data>
+  <data name="PASSWORD" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="REFERRALS" xml:space="preserve">
+    <value>Referrals</value>
+    <comment>In user top menu</comment>
+  </data>
+  <data name="REGISTER" xml:space="preserve">
+    <value>Register</value>
+    <comment>In top menu</comment>
+  </data>
+  <data name="REGISTERTEXT" xml:space="preserve">
+    <value>Ubah keuangan Anda selamanya. Mendaftar untuk account gratis.</value>
+  </data>
+  <data name="REG_EMAIL" xml:space="preserve">
+    <value>Ini harus alamat email yang valid dan aktif . Ini akan hanya digunakan untuk mengirimkan berita penting ( termasuk jawaban tiket dukungan ) , kembali password Anda atau mengkonfirmasi pembayaran</value>
+  </data>
+  <data name="REG_PASSWORD" xml:space="preserve">
+    <value>Pilih kata sandi Anda . Ini harus 4-80 karakter dan hanya dapat berisi huruf dan angka .</value>
+  </data>
+  <data name="REG_PIN" xml:space="preserve">
+    <value>Ini adalah keamanan tambahan Anda . Kami akan meminta sebelum cashout atau reset password . Ini hanya dapat mengandung 4 angka ( 0-9 )</value>
+  </data>
+  <data name="REG_REFERER" xml:space="preserve">
+    <value>Username dari anggota kami yang membuat Anda di sini. Dapat dibiarkan kosong</value>
+  </data>
+  <data name="REG_USERNAME" xml:space="preserve">
+    <value>Pilih nama pengguna yang Anda inginkan. Ini harus 4-20 karakter dan hanya dapat berisi huruf dan angka. Ini harus dimulai dengan huruf</value>
+  </data>
+  <data name="RENTED" xml:space="preserve">
+    <value>Rented</value>
+    <comment>In user top menu</comment>
+  </data>
+  <data name="RESETPWDSUCC" xml:space="preserve">
+    <value>Password baru Anda telah dikirim kepada Anda</value>
+  </data>
+  <data name="RESETPWDTEXT" xml:space="preserve">
+    <value>Masukan Username &amp; PIN dan kami akan mengirimkan password baru ke E-mail anda</value>
+  </data>
+  <data name="SECONDARYPASSWORD" xml:space="preserve">
+    <value>Secondary password</value>
+  </data>
+  <data name="SECURELOGINSSL" xml:space="preserve">
+    <value>Secure SSL login with secure Banjarbux</value>
+  </data>
+  <data name="SEEYOU" xml:space="preserve">
+    <value>See you again</value>
+  </data>
+  <data name="SEND" xml:space="preserve">
+    <value>Kirim</value>
+  </data>
+  <data name="SETTINGS" xml:space="preserve">
+    <value>Pengaturan</value>
+    <comment>In user top menu</comment>
+  </data>
+  <data name="STATS" xml:space="preserve">
+    <value>Stats</value>
+    <comment>In user top menu</comment>
+  </data>
+  <data name="SUMMARY" xml:space="preserve">
+    <value>Summary</value>
+    <comment>In user top menu</comment>
+  </data>
+  <data name="TRANSFER" xml:space="preserve">
+    <value>Transfer</value>
+    <comment>In user top menu</comment>
+  </data>
+  <data name="TRY_AGAIN" xml:space="preserve">
+    <value>Tolong coba lagi</value>
+  </data>
+  <data name="USERNAME" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="YOUWILLREDIRECT" xml:space="preserve">
+    <value>Anda akan diarahkan dalam hitungan detik ...</value>
+  </data>
+  <data name="ER_BADEMAILFORMAT" xml:space="preserve">
+    <value>Masukan Email yang valid</value>
+  </data>
+  <data name="ER_PASSDIFFER" xml:space="preserve">
+    <value>Password and it's confirmation doesn't match</value>
+  </data>
+  <data name="REG_CAPTCHA" xml:space="preserve">
+    <value>Masukkan teks yang ditampilkan pada gambar</value>
+  </data>
+  <data name="REG_REQ_CONFIRM" xml:space="preserve">
+    <value>Konfirmasi Password tidak bisa dibiarkan kosong</value>
+  </data>
+  <data name="REG_REQ_EMAIL" xml:space="preserve">
+    <value>Email tidak dapat dibiarkan kosong</value>
+  </data>
+  <data name="REG_REQ_PASS" xml:space="preserve">
+    <value>Password tidak bisa dibiarkan kosong</value>
+  </data>
+  <data name="REG_REQ_USERNAME" xml:space="preserve">
+    <value>Username dapat dibiarkan kosong</value>
+  </data>
+  <data name="REG_UNDERSTANDTOS" xml:space="preserve">
+    <value>Saya telah membaca, memahami, dan menerima</value>
+  </data>
+  <data name="TERMSOFSERVICE" xml:space="preserve">
+    <value>Terms of Service</value>
+  </data>
+  <data name="IFORGOTPWD" xml:space="preserve">
+    <value>Aku lupa kata sandiku</value>
+  </data>
+  <data name="ER_BADPIN" xml:space="preserve">
+    <value>Format PIN salah</value>
+  </data>
+  <data name="ER_BADREF" xml:space="preserve">
+    <value>Such referrer doesn't exist or reached his referral limit</value>
+  </data>
+  <data name="ER_BADYEAR" xml:space="preserve">
+    <value>Format Tahun Lahir salah</value>
+  </data>
+  <data name="REG_REQ_PIN" xml:space="preserve">
+    <value>PIN tidak dapat dibiarkan kosong</value>
+  </data>
+  <data name="REG_REQ_YEAR" xml:space="preserve">
+    <value>Tahun lahir dapat dibiarkan kosong</value>
+  </data>
+  <data name="ER_BADCAPTCHA" xml:space="preserve">
+    <value>Gambar verifikasi dan  teks verifikasi tidak sama</value>
+  </data>
+  <data name="REG_REQ_CAPTCHA" xml:space="preserve">
+    <value>Masukkan Kode Verifikasi</value>
+  </data>
+  <data name="REG_REQ_TOS" xml:space="preserve">
+    <value>You must accept the Terms of Service</value>
+  </data>
+  <data name="BIRTHYEAR" xml:space="preserve">
+    <value>Tahun lahir</value>
+  </data>
+  <data name="DESIREDPIN" xml:space="preserve">
+    <value>Desired PIN</value>
+  </data>
+  <data name="ENTERPIN" xml:space="preserve">
+    <value>Masukan PIN</value>
+  </data>
+  <data name="REFERER" xml:space="preserve">
+    <value>Referrer</value>
+  </data>
+  <data name="VERIFICATION" xml:space="preserve">
+    <value>Verifikasi</value>
+  </data>
+  <data name="ER_EMAILORPINBAD" xml:space="preserve">
+    <value>Email/PIN tidak sama dengan username</value>
+  </data>
+  <data name="CURRENTTIME" xml:space="preserve">
+    <value>Waktu Server</value>
+  </data>
+  <data name="RESETTIME" xml:space="preserve">
+    <value>Iklan akan direset pada pukul</value>
+  </data>
+  <data name="BYVIEWINGEARN" xml:space="preserve">
+    <value>Dengan melihat iklan ini anda akan mendapatkan</value>
+    <comment>In View Ads hint</comment>
+  </data>
+  <data name="MORE" xml:space="preserve">
+    <value>lebih</value>
+  </data>
+  <data name="THISADLASTS" xml:space="preserve">
+    <value>Iklan ini berlangsung</value>
+  </data>
+  <data name="ALLRIGHTS" xml:space="preserve">
+    <value>All rights reserved</value>
+  </data>
+  <data name="LANGUAGE" xml:space="preserve">
+    <value>Bahasa</value>
+  </data>
+  <data name="SMALLADS" xml:space="preserve">
+    <value>Iklan kecil</value>
+  </data>
+  <data name="STDADS" xml:space="preserve">
+    <value>Penghargaan standart</value>
+  </data>
+  <data name="WAITFORAD" xml:space="preserve">
+    <value>Menunggu untuk memuat iklan</value>
+  </data>
+  <data name="RESETPWD" xml:space="preserve">
+    <value>Reset my password</value>
+  </data>
+  <data name="DETECTEDCOUNTRY" xml:space="preserve">
+    <value>Negara terdeteksi</value>
+  </data>
+  <data name="ACCLOCKED" xml:space="preserve">
+    <value>Akun ini telah dikunci oleh administrator</value>
+  </data>
+  <data name="ACCNOTACTIVATED" xml:space="preserve">
+    <value>Akun ini belum aktif. Silahkan cek email anda</value>
+  </data>
+  <data name="ADBALANCE" xml:space="preserve">
+    <value>Balance Iklan</value>
+  </data>
+  <data name="ER_ALLFIELDSREQUIRED2" xml:space="preserve">
+    <value>Username, Password dan Verifikasi diperlukan</value>
+  </data>
+  <data name="EXPIRES" xml:space="preserve">
+    <value>Kadarluarsa</value>
+  </data>
+  <data name="MAINBALANCE" xml:space="preserve">
+    <value>Main balance</value>
+  </data>
+  <data name="MEMBERSHIP" xml:space="preserve">
+    <value>Membership</value>
+  </data>
+  <data name="NEVER" xml:space="preserve">
+    <value>tidak pernah</value>
+  </data>
+  <data name="OP_FAIL" xml:space="preserve">
+    <value>Operasi Gagal</value>
+  </data>
+  <data name="OP_SUCCESS" xml:space="preserve">
+    <value>Operasi Sukses</value>
+  </data>
+  <data name="POINTS" xml:space="preserve">
+    <value>Poin</value>
+  </data>
+  <data name="RENTALBALANCE" xml:space="preserve">
+    <value>Rental balance</value>
+  </data>
+  <data name="ST_ACTIVATED" xml:space="preserve">
+    <value>Akun Anda telah diaktifkan. Jangan ragu untuk login</value>
+  </data>
+  <data name="ST_REGISTER1" xml:space="preserve">
+    <value>Account Anda telah dibuat dan diaktifkan. Jangan ragu untuk login</value>
+  </data>
+  <data name="ST_REGISTER2" xml:space="preserve">
+    <value>Kami mengirimkan link aktivasi pada alamat yang Anda tentukan. Anda akan bisa login setelah Anda mengaktifkan account Anda</value>
+  </data>
+  <data name="ST_RESET" xml:space="preserve">
+    <value>Sandi Anda telah ulang. Kami mengirimkan email dengan password baru Anda</value>
+  </data>
+  <data name="TRANSFERMONEY" xml:space="preserve">
+    <value>Uang Transfer</value>
+  </data>
+  <data name="TRANSFERMONEYINFO" xml:space="preserve">
+    <value>Mentransfer uang Anda ke balance Anda. Hanya dalam beberapa klik</value>
+  </data>
+  <data name="HISTORYINFO" xml:space="preserve">
+    <value>Isi sejarah Anda dengan mudah . Semua tindakan utama Anda login dan ditampilkan di sini</value>
+  </data>
+  <data name="NOTENOUGHFUNDS" xml:space="preserve">
+    <value>Anda tidak memiliki cukup dana di balance Anda</value>
+  </data>
+  <data name="INBOX" xml:space="preserve">
+    <value>Pesan Masuk</value>
+  </data>
+  <data name="NEWMESSAGE" xml:space="preserve">
+    <value>Buat Pesan</value>
+  </data>
+  <data name="ER_DISABLEDMESSAGE" xml:space="preserve">
+    <value>Maaf, pengguna ini menonaktifkan sistem pesan</value>
+  </data>
+  <data name="ER_TEXT" xml:space="preserve">
+    <value>Teks hanya dapat berisi huruf, angka dan , @ $ &amp; : . ! ? ( ) + = % *</value>
+  </data>
+  <data name="ER_TEXT_TOLONG" xml:space="preserve">
+    <value>Teks dapat menampung max 300 karakter</value>
+  </data>
+  <data name="FROM" xml:space="preserve">
+    <value>Dari</value>
+    <comment>In send message</comment>
+  </data>
+  <data name="REQ_TEXT" xml:space="preserve">
+    <value>Bidang teks tidak dapat dibiarkan kosong</value>
+  </data>
+  <data name="REQ_TO" xml:space="preserve">
+    <value>Untuk bidang tidak dapat dibiarkan kosong</value>
+  </data>
+  <data name="TO" xml:space="preserve">
+    <value>Kepada</value>
+    <comment>In send message (To:)</comment>
+  </data>
+  <data name="NOMESSAGES" xml:space="preserve">
+    <value>Anda tidak memiliki pesan</value>
+  </data>
+  <data name="DATE" xml:space="preserve">
+    <value>Tanggal</value>
+  </data>
+  <data name="MESS_ERROR" xml:space="preserve">
+    <value>Anda tidak dapat menulis untuk diri sendiri . Selamanya sendiri?</value>
+  </data>
+  <data name="READ" xml:space="preserve">
+    <value>Read</value>
+    <comment>In messages</comment>
+  </data>
+  <data name="REMOVE" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="REPLY" xml:space="preserve">
+    <value>Balas</value>
+    <comment>In messages</comment>
+  </data>
+  <data name="SELECTED" xml:space="preserve">
+    <value>Selected</value>
+    <comment>selected checkbox actions</comment>
+  </data>
+  <data name="SUB_MESSAGES" xml:space="preserve">
+    <value>Mengirim dan menerima pesan dari pengguna lain.</value>
+  </data>
+  <data name="TEXT" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="AND" xml:space="preserve">
+    <value>dan</value>
+  </data>
+  <data name="FEELFREE" xml:space="preserve">
+    <value>Jangan ragu untuk mengunjungi website di bawah ini</value>
+    <comment>Surf</comment>
+  </data>
+  <data name="FORTHISAD" xml:space="preserve">
+    <value>untuk ad ini</value>
+    <comment>[money] for this ad (Surf)</comment>
+  </data>
+  <data name="YOUVEBEENCREDITED" xml:space="preserve">
+    <value>You've been credited</value>
+    <comment>Surf</comment>
+  </data>
+  <data name="NODATA" xml:space="preserve">
+    <value>Tidak ada data untuk ditampilkan</value>
+  </data>
+  <data name="REFLINK" xml:space="preserve">
+    <value>Referral link anda</value>
+  </data>
+  <data name="ALREADYWATCHED" xml:space="preserve">
+    <value>Anda telah melihat iklan ini</value>
+  </data>
+  <data name="CAMEFROMURL" xml:space="preserve">
+    <value>Came from</value>
+  </data>
+  <data name="CHART" xml:space="preserve">
+    <value>Chart</value>
+  </data>
+  <data name="CLICKS" xml:space="preserve">
+    <value>Klik</value>
+  </data>
+  <data name="DAYSAGO" xml:space="preserve">
+    <value>Hari yang lalu</value>
+    <comment>X days ago</comment>
+  </data>
+  <data name="LASTCLICK" xml:space="preserve">
+    <value>Klik terakhir</value>
+  </data>
+  <data name="NODIRECTREFERRALS" xml:space="preserve">
+    <value>Anda tidak memiliki direct referrals</value>
+  </data>
+  <data name="REFCODE" xml:space="preserve">
+    <value>Code Refferal</value>
+  </data>
+  <data name="REFERRALSINCE" xml:space="preserve">
+    <value>Referral sejak</value>
+  </data>
+  <data name="TODAY" xml:space="preserve">
+    <value>hari ini</value>
+  </data>
+  <data name="YESTERDAY" xml:space="preserve">
+    <value>kemarin</value>
+  </data>
+  <data name="DIRECTINFO" xml:space="preserve">
+    <value>Memberitahu orang lain tentang layanan kami dan mendapatkan bahkan lebih</value>
+  </data>
+  <data name="MANAGE" xml:space="preserve">
+    <value>Manage</value>
+  </data>
+  <data name="RENTEDINFO" xml:space="preserve">
+    <value>Menyewa referral dan mendapatkan keuntungan yang nyata. Pilih strategi menyewa Anda dan mulai mendapatkan</value>
+  </data>
+  <data name="RENTNEW" xml:space="preserve">
+    <value>Sewa baru</value>
+  </data>
+  <data name="CLICKEDINLAST" xml:space="preserve">
+    <value>Klik anda terakhir</value>
+    <comment>Clicked in the last X DAYS</comment>
+  </data>
+  <data name="DAYS" xml:space="preserve">
+    <value>Hari</value>
+    <comment>X days</comment>
+  </data>
+  <data name="ER_RENT_CLICKS" xml:space="preserve">
+    <value>Anda tidak harus klik cukup untuk menyewa</value>
+  </data>
+  <data name="ER_RENT_INTERVAL" xml:space="preserve">
+    <value>Anda belum dapat menyewa</value>
+  </data>
+  <data name="ER_RENT_LIMIT" xml:space="preserve">
+    <value>Anda tidak dapat melebihi batas referral Anda</value>
+  </data>
+  <data name="ER_RENT_NOREFS" xml:space="preserve">
+    <value>Kami tidak dapat menemukan begitu banyak arahan pada saat ini . Coba lagi nanti</value>
+  </data>
+  <data name="LASTRENTED" xml:space="preserve">
+    <value>Terakhir menyewa</value>
+  </data>
+  <data name="MINCLICKS" xml:space="preserve">
+    <value>Minimum Klik</value>
+  </data>
+  <data name="MINRENTINTERVAL" xml:space="preserve">
+    <value>Minimum interval sewa</value>
+  </data>
+  <data name="NONE" xml:space="preserve">
+    <value>none</value>
+    <comment>"brak"</comment>
+  </data>
+  <data name="NORENTEDREFERRALS" xml:space="preserve">
+    <value>Anda tidak memiliki rented referrals</value>
+  </data>
+  <data name="PRICEPERREF" xml:space="preserve">
+    <value>Harga per satu refferal</value>
+  </data>
+  <data name="RENTALGUARANTEE" xml:space="preserve">
+    <value>Garansi Rented referrals</value>
+  </data>
+  <data name="RENTALTIME" xml:space="preserve">
+    <value>Waktu rental</value>
+  </data>
+  <data name="REQUIREMENTS" xml:space="preserve">
+    <value>Persyaratan</value>
+  </data>
+  <data name="USEPOINTSDISCOUNT" xml:space="preserve">
+    <value>Coba diskon</value>
+  </data>
+  <data name="UPGRADE" xml:space="preserve">
+    <value>Upgrade</value>
+  </data>
+  <data name="UPGRADEINFO" xml:space="preserve">
+    <value>Meng-upgrade account Anda untuk mendapatkan keuntungan lebih. Periksa rencana Upgrade kami</value>
+  </data>
+  <data name="ADCLICKEARNINGS" xml:space="preserve">
+    <value>Pendapatan Klik per Iklan</value>
+  </data>
+  <data name="ADPOINTSEARNINGS" xml:space="preserve">
+    <value>Tambah pendapatan point</value>
+  </data>
+  <data name="AUTOPAY" xml:space="preserve">
+    <value>AutoPay</value>
+  </data>
+  <data name="AUTOPAYCOST" xml:space="preserve">
+    <value>AutoPay per referral</value>
+  </data>
+  <data name="BASIC" xml:space="preserve">
+    <value>Basic</value>
+    <comment>Reklamy: standardowe (in Upgrade Advertisements section)</comment>
+  </data>
+  <data name="COLOR" xml:space="preserve">
+    <value>Warna</value>
+  </data>
+  <data name="DIRECTREFADCLICKEARNINGS" xml:space="preserve">
+    <value>Pendapatan klik per iklan Direct referral </value>
+  </data>
+  <data name="DIRECTREFLIMIT" xml:space="preserve">
+    <value>Direct referrals limit</value>
+  </data>
+  <data name="PREMIUM" xml:space="preserve">
+    <value>Premium</value>
+    <comment>Reklamy: premium(in Upgrade Advertisements section)</comment>
+  </data>
+  <data name="PRICE" xml:space="preserve">
+    <value>Harga</value>
+  </data>
+  <data name="RECYCLECOST" xml:space="preserve">
+    <value>Harga Recycle referral</value>
+  </data>
+  <data name="RENEWALDISCOUNT" xml:space="preserve">
+    <value>Diskon pembaharuan</value>
+  </data>
+  <data name="RENTEDREFADCLICKEARNINGS" xml:space="preserve">
+    <value>Pendapatan klik per iklan Rented referral</value>
+  </data>
+  <data name="RENTEDREFERRALLIMIT" xml:space="preserve">
+    <value>Rented referrals limit</value>
+  </data>
+  <data name="YES" xml:space="preserve">
+    <value>Ya</value>
+  </data>
+  <data name="EXPIRESIN" xml:space="preserve">
+    <value>Kadarluarsa dalam</value>
+  </data>
+  <data name="ID" xml:space="preserve">
+    <value>Id</value>
+    <comment>In rented referrals table (nr)</comment>
+  </data>
+  <data name="ADVADSINFO" xml:space="preserve">
+    <value>Kelola iklan anda saat ini atau membuat yang baru</value>
+    <comment>Advertise: ads</comment>
+  </data>
+  <data name="DESCRIPTION" xml:space="preserve">
+    <value>Deskripsi</value>
+    <comment>advertise ads</comment>
+  </data>
+  <data name="ER_BADDESC" xml:space="preserve">
+    <value>Invalid description format. Check hint for more</value>
+  </data>
+  <data name="ER_BADURL" xml:space="preserve">
+    <value>URL anda salah</value>
+  </data>
+  <data name="ER_INVALIDTITLE" xml:space="preserve">
+    <value>Invalid title format. Check hint for more</value>
+  </data>
+  <data name="FONTBOLD" xml:space="preserve">
+    <value>Huruf Tebal</value>
+    <comment>Create ad (pogrubienie)</comment>
+  </data>
+  <data name="GEOLOCATION" xml:space="preserve">
+    <value>Wilayah</value>
+  </data>
+  <data name="H_DESCRIPTION" xml:space="preserve">
+    <value>Deskripsi tidak diperlukan . Ini harus 4-70 karakter dan hanya berisi huruf , angka dan , @ $ &amp; : . ! ? ( ) + = % *</value>
+  </data>
+  <data name="H_TITLE" xml:space="preserve">
+    <value>Judul harus 4-30 karakter dan hanya berisi huruf , angka dan , @ $ &amp; : . ! ? ( ) + = % *</value>
+  </data>
+  <data name="H_URL" xml:space="preserve">
+    <value>Target URL situs Anda : misalnya http://www.google.com</value>
+  </data>
+  <data name="NEWCAMPAIGN" xml:space="preserve">
+    <value>New campaign</value>
+  </data>
+  <data name="NOADCAMPAIGNS" xml:space="preserve">
+    <value>Anda tidak memiliki campaign iklan</value>
+  </data>
+  <data name="NOBANNERCAMPS" xml:space="preserve">
+    <value>Anda tidak memiliki campaign banner</value>
+  </data>
+  <data name="NOFBCAMPS" xml:space="preserve">
+    <value>Anda tidak memiliki Facebook campaigns</value>
+  </data>
+  <data name="OPTION" xml:space="preserve">
+    <value>Option</value>
+    <comment>Banner option</comment>
+  </data>
+  <data name="PACK" xml:space="preserve">
+    <value>Pack</value>
+    <comment>Create ad</comment>
+  </data>
+  <data name="PREVIEW" xml:space="preserve">
+    <value>Preview</value>
+    <comment>Create ad</comment>
+  </data>
+  <data name="REQ_TITLE" xml:space="preserve">
+    <value>Judul iklan diperlukan</value>
+  </data>
+  <data name="REQ_URL" xml:space="preserve">
+    <value>URL iklan Anda diperlukan</value>
+  </data>
+  <data name="TITLE" xml:space="preserve">
+    <value>Judul</value>
+  </data>
+  <data name="REFNOPROFITS" xml:space="preserve">
+    <value>Anda tidak mengklik minimal &lt;b&gt;%n%&lt;/b&gt; iklan kemarin sehingga Anda tidak akan mendapatkan keuntungan dari referral hari ini</value>
+    <comment>Leave '&lt;b&gt;%n%&lt;/b&gt;' unchanged!</comment>
+  </data>
+  <data name="RECYCLE" xml:space="preserve">
+    <value>Recycle</value>
+  </data>
+  <data name="RENEW" xml:space="preserve">
+    <value>Perbarui</value>
+  </data>
+  <data name="OPPREFAPARTIAL" xml:space="preserve">
+    <value>Operasi selesai sebagian . &lt;b&gt;%n%&lt;/b&gt; refferal dimodifikasi .</value>
+    <comment>Leave '&lt;b&gt;%n%&lt;/b&gt;' unchanged! </comment>
+  </data>
+  <data name="OPPREFPARTIAL" xml:space="preserve">
+    <value>Operasi selesai sebagian . &lt;b&gt;%n%&lt;/b&gt;  refferal dimodifikasi . Periksa dana anda</value>
+    <comment>Leave '&lt;b&gt;%n%&lt;/b&gt;' unchanged!</comment>
+  </data>
+  <data name="OPREFAP" xml:space="preserve">
+    <value>Autopay dapat diaktifkan hanya pada refferal berakhir pada &lt;b&gt;%n2%+&lt;/b&gt; hari</value>
+    <comment>Leave '&lt;b&gt;%n2%+&lt;/b&gt;' unchanged!</comment>
+  </data>
+  <data name="FREE" xml:space="preserve">
+    <value>Gratis</value>
+    <comment>Next geolocation prices</comment>
+  </data>
+  <data name="GEOHINT" xml:space="preserve">
+    <value>Penonton dari negara-negara berikut akan menjadi satu-satunya DIIZINKAN . Kotak di atas adalah kotak dengan semua negara . Kotak di bagian bawah adalah kotak negara wilayah diizinkan</value>
+  </data>
+  <data name="LASTS" xml:space="preserve">
+    <value>Terakhir</value>
+    <comment>ad </comment>
+  </data>
+  <data name="VIEWS" xml:space="preserve">
+    <value>terlihat</value>
+    <comment>Ad views (odslony)</comment>
+  </data>
+  <data name="ACTIVE" xml:space="preserve">
+    <value>Aktif</value>
+    <comment>Ad status</comment>
+  </data>
+  <data name="AFTERSTART" xml:space="preserve">
+    <value>Setelah mulai</value>
+    <comment>X days after start</comment>
+  </data>
+  <data name="AWAITINGAPPROVAL" xml:space="preserve">
+    <value>Awaiting approval</value>
+    <comment>Ad status</comment>
+  </data>
+  <data name="BUY" xml:space="preserve">
+    <value>Beli</value>
+  </data>
+  <data name="BUYCREDITS" xml:space="preserve">
+    <value>Beli kredit lebih</value>
+  </data>
+  <data name="CREATED" xml:space="preserve">
+    <value>Tanggal dibuat</value>
+    <comment>Created date</comment>
+  </data>
+  <data name="DESC" xml:space="preserve">
+    <value>Desc.</value>
+    <comment>Shorten form of description </comment>
+  </data>
+  <data name="ENDSON" xml:space="preserve">
+    <value>Selesai</value>
+    <comment>Ad ends: &lt;date&gt;</comment>
+  </data>
+  <data name="FINISHED" xml:space="preserve">
+    <value>Selesai</value>
+    <comment>Ad status</comment>
+  </data>
+  <data name="PAUSE" xml:space="preserve">
+    <value>Pause</value>
+    <comment>Pause ad</comment>
+  </data>
+  <data name="PAUSED" xml:space="preserve">
+    <value>Paused</value>
+    <comment>Ad status</comment>
+  </data>
+  <data name="PROGRESS" xml:space="preserve">
+    <value>Progress</value>
+  </data>
+  <data name="REJECTED" xml:space="preserve">
+    <value>Ditolak</value>
+    <comment>Ad status</comment>
+  </data>
+  <data name="STATUS" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="TIME" xml:space="preserve">
+    <value>Waktu</value>
+  </data>
+  <data name="VIEWSBIG" xml:space="preserve">
+    <value>Terlihat</value>
+  </data>
+  <data name="BURL" xml:space="preserve">
+    <value>Gambar banner</value>
+  </data>
+  <data name="CLICKSSMALL" xml:space="preserve">
+    <value>Klik</value>
+  </data>
+  <data name="H_BANNERURL" xml:space="preserve">
+    <value>Gambar banner Anda . Gambar dimensi harus sesuai dengan jenis banner Anda . Jenis didukung : JPG , PNG , GIF</value>
+  </data>
+  <data name="IMAGE" xml:space="preserve">
+    <value>Gambar</value>
+  </data>
+  <data name="EXPIREWARNING" xml:space="preserve">
+    <value>Upgrade Anda berakhir dalam 3 hari . Pastikan untuk membeli yang baru , untuk menjaga semua arahan dan bonus lainnya</value>
+  </data>
+  <data name="NOTENOUGHPOINTS" xml:space="preserve">
+    <value>Anda tidak memiliki cukup poin</value>
+  </data>
+  <data name="WARNINGUPGRADE" xml:space="preserve">
+    <value>Anda memiliki upgrade yang aktif. Pembelian Upgrade baru akan menghapus satu saat</value>
+  </data>
+  <data name="ACHIEVEMENTS" xml:space="preserve">
+    <value>Penghargaan</value>
+  </data>
+  <data name="ACHIEVEMENT_1" xml:space="preserve">
+    <value>Untuk siapa saja yang lebih dari %n% banner campaigns</value>
+    <comment>Tinggalkan %n% sendiri !!</comment>
+  </data>
+  <data name="ACHIEVEMENT_2" xml:space="preserve">
+    <value>Untuk siapa saja yang lebih dari %n% Facebook campaigns</value>
+    <comment>Tinggalkan %n% sendiri !!</comment>
+  </data>
+  <data name="ACHIEVEMENT_3" xml:space="preserve">
+    <value>Untuk seiapa saja yang lebih dari  %n% advertisement campaigns</value>
+    <comment>Tinggalkan %n% sendiri !!</comment>
+  </data>
+  <data name="ACHIEVEMENT_4" xml:space="preserve">
+    <value>Untuk siapa saya klik lebih dari %n% ads</value>
+    <comment>Tinggalkan %n% sendiri !!</comment>
+  </data>
+  <data name="ACHIEVEMENT_5" xml:space="preserve">
+    <value>Untuk siapa saja yang telah mendapat Rp%n%</value>
+    <comment>Tinggalkan %n% sendiri !!</comment>
+  </data>
+  <data name="ACHIEVEMENT_6" xml:space="preserve">
+    <value>Untuk siapa saja yang lebi hdari %n% direct referrals</value>
+    <comment>Tinggalkan %n% sendiri !!</comment>
+  </data>
+  <data name="ACHIEVEMENT_7" xml:space="preserve">
+    <value>Untuk siapa saja yang lebi hdari %n% rented referrals</value>
+    <comment>Tinggalkan %n% sendiri !!</comment>
+  </data>
+  <data name="ACHIEVEMENT_8" xml:space="preserve">
+    <value>Untuk siapa saya yang transfer lebih dari Rp%n% saat pertama</value>
+    <comment>Tinggalkan %n% sendiri !!</comment>
+  </data>
+  <data name="ENTRY" xml:space="preserve">
+    <value>Masuk</value>
+    <comment>HIstory entry</comment>
+  </data>
+  <data name="FORPURCHASED" xml:space="preserve">
+    <value>untuk</value>
+    <comment>purchased for $10</comment>
+  </data>
+  <data name="HISTORY_1" xml:space="preserve">
+    <value>Cashout dari</value>
+    <comment>Cashout dari Rp100</comment>
+  </data>
+  <data name="HISTORY_2" xml:space="preserve">
+    <value>Purchased</value>
+    <comment>Purchased 1000 ad clicks</comment>
+  </data>
+  <data name="HISTORY_3" xml:space="preserve">
+    <value>Akun Telah Terdaftar . Selamat Datang</value>
+  </data>
+  <data name="HISTORY_4" xml:space="preserve">
+    <value>Ditransfer</value>
+  </data>
+  <data name="HISTORY_5" xml:space="preserve">
+    <value>Upgrade Anda berakhir</value>
+  </data>
+  <data name="HISTORY_6" xml:space="preserve">
+    <value>Membeli upgrade yang baru</value>
+  </data>
+  <data name="ACHIEVEMENTSMENU" xml:space="preserve">
+    <value>Trofi</value>
+    <comment>shorten form is needed for menu (Achievements is too long)</comment>
+  </data>
+  <data name="ALLHISTORYLOGS" xml:space="preserve">
+    <value>Semua histori</value>
+  </data>
+  <data name="LATESTHISTORY" xml:space="preserve">
+    <value>Entri sejarah terbaru</value>
+  </data>
+  <data name="ACHIEVEMENTSINFO" xml:space="preserve">
+    <value>Kumpulkan poinnya dari setiap penghargaan yang kami berikan.</value>
+  </data>
+  <data name="ALLAVAILABLEACHIVS" xml:space="preserve">
+    <value>Semua Penghargaan</value>
+  </data>
+  <data name="NEWACHIEVEMENTS" xml:space="preserve">
+    <value>Anda mendapatkan penghargaan baru</value>
+  </data>
+  <data name="NOACHIVS" xml:space="preserve">
+    <value>Anda tidak memiliki penghargaan. Berusahalah lebih keras lagi.</value>
+  </data>
+  <data name="POINTSREWARD" xml:space="preserve">
+    <value>Hadiah Poin</value>
+    <comment>in achievements</comment>
+  </data>
+  <data name="CASHOUT" xml:space="preserve">
+    <value>Cashout</value>
+  </data>
+  <data name="CASHOUTINFO" xml:space="preserve">
+    <value>Withdraw uang anda kapanpun </value>
+  </data>
+  <data name="LIMIT" xml:space="preserve">
+    <value>Minimum</value>
+    <comment>Cashout limit</comment>
+  </data>
+  <data name="CASHOUTLIMITINFO" xml:space="preserve">
+    <value>Anda dapat cashout segera setelah Anda mencapai minimum cashout . Minimum tergantung pada jumlah cashout dan keanggotaan saat ini</value>
+  </data>
+  <data name="ER_BADPIN2" xml:space="preserve">
+    <value>PIN salah</value>
+  </data>
+  <data name="HAVENTREACHLIMIT" xml:space="preserve">
+    <value>Anda belum mencapai minimal cashout Anda belum</value>
+  </data>
+  <data name="REST" xml:space="preserve">
+    <value>Rest</value>
+    <comment>1,2,3 cashout limit Rest: $2.00</comment>
+  </data>
+  <data name="AVATARURL" xml:space="preserve">
+    <value>Avatar URL</value>
+  </data>
+  <data name="MESSAGEOFFINFO" xml:space="preserve">
+    <value>Anda mengubah sistem pesan off . Anda tidak dapat mengirim / mengelola / menerima pesan</value>
+  </data>
+  <data name="MESSAGESSYSTEM" xml:space="preserve">
+    <value>Sistem pesan</value>
+  </data>
+  <data name="OFF" xml:space="preserve">
+    <value>off</value>
+    <comment>turned off</comment>
+  </data>
+  <data name="ON" xml:space="preserve">
+    <value>on</value>
+    <comment>turned on</comment>
+  </data>
+  <data name="REQ_AVATARURL" xml:space="preserve">
+    <value>Avatar URL dibutuhkan</value>
+  </data>
+  <data name="SAVE" xml:space="preserve">
+    <value>Save</value>
+    <comment>Like Save settings</comment>
+  </data>
+  <data name="SETTINGSINFO" xml:space="preserve">
+    <value>Kelola akun Anda. Mengubah semua pengaturan Anda di sini</value>
+  </data>
+  <data name="ER_MUSTPNGJPG" xml:space="preserve">
+    <value>Avatar harus .JPG or .PNG image</value>
+  </data>
+  <data name="H_LEAVEBLANK" xml:space="preserve">
+    <value>Kosongkan jika Anda tidak ingin mengubahnya</value>
+  </data>
+  <data name="JPGPNG" xml:space="preserve">
+    <value>Harus JPG / PNG dan bagus</value>
+  </data>
+  <data name="MESSAGEONOFF" xml:space="preserve">
+    <value>Setelah Anda menonaktifkan sistem pesan Anda tidak akan dapat mengirim / mengelola dan menerima pesan dari orang lain</value>
+  </data>
+  <data name="NEWPASS" xml:space="preserve">
+    <value>Password baru</value>
+  </data>
+  <data name="NEWPASS2" xml:space="preserve">
+    <value>Konfirmasi password baru</value>
+  </data>
+  <data name="NEWPIN" xml:space="preserve">
+    <value>PIN baru</value>
+  </data>
+  <data name="NEWSECPASS" xml:space="preserve">
+    <value>Secondary Password baru</value>
+  </data>
+  <data name="SETTINGSSUCC" xml:space="preserve">
+    <value>Pengaturan berhasil diubah</value>
+  </data>
+  <data name="CONTACT" xml:space="preserve">
+    <value>Kontak</value>
+  </data>
+  <data name="FAQ" xml:space="preserve">
+    <value>Pertanyaan yang Sering Ditanyakan</value>
+  </data>
+  <data name="HELP" xml:space="preserve">
+    <value>Bantuan</value>
+  </data>
+  <data name="PAYMENTPROOFS" xml:space="preserve">
+    <value>Payment proofs</value>
+  </data>
+  <data name="PRIVACYPOLICY" xml:space="preserve">
+    <value>Privacy Policy</value>
+  </data>
+  <data name="CONTACTFORM" xml:space="preserve">
+    <value>Form Kontak</value>
+  </data>
+  <data name="CONTACTINFO" xml:space="preserve">
+    <value>Apakah Anda perlu menghubungi kami ? Isi formulir di bawah ini atau email kami langsung</value>
+  </data>
+  <data name="DIRECTCONTACT" xml:space="preserve">
+    <value>Direct Kontak</value>
+  </data>
+  <data name="HELP1" xml:space="preserve">
+    <value>Periksa Pertanyaan yang Sering Diajukan pertama . Mungkin masalah Anda adalah satu umum dan Anda akan menemukan solusi di sini</value>
+  </data>
+  <data name="HELP2" xml:space="preserve">
+    <value>Mungkin orang lain memiliki masalah ini juga? Periksa forum untuk jawaban Anda atau posting topik baru</value>
+  </data>
+  <data name="HELP3" xml:space="preserve">
+    <value>Akhirnya , jika kasus Anda sangat mendesak atau Anda tidak dapat menemukan jawaban , jangan ragu untuk menghubungi kami</value>
+  </data>
+  <data name="HELPINFO" xml:space="preserve">
+    <value>Apakah Anda perlu bantuan ? Anda berada di tempat yang tepat</value>
+  </data>
+  <data name="PROOFSINFO" xml:space="preserve">
+    <value>Lihat pembayaran terbaru kami di bawah ini . Screenshot pengguna yang diposting di forum</value>
+  </data>
+  <data name="AMOUNT" xml:space="preserve">
+    <value>Jumlah</value>
+  </data>
+  <data name="COUNTRY" xml:space="preserve">
+    <value>Negara</value>
+  </data>
+  <data name="INSTANT" xml:space="preserve">
+    <value>Instant</value>
+  </data>
+  <data name="MANUAL" xml:space="preserve">
+    <value>Manual</value>
+  </data>
+  <data name="NOPROOFS" xml:space="preserve">
+    <value>Kami baru saja meluncurkan dan kami tidak punya bukti pembayaran belum</value>
+  </data>
+  <data name="TYPE" xml:space="preserve">
+    <value>Tipe</value>
+  </data>
+  <data name="VIA" xml:space="preserve">
+    <value>Via</value>
+    <comment>Via PayPal</comment>
+  </data>
+  <data name="LATESTNEWS" xml:space="preserve">
+    <value>Berita terbaru</value>
+  </data>
+  <data name="SENDSUPPORTTICKET" xml:space="preserve">
+    <value>Kirim support tiket</value>
+  </data>
+  <data name="CONSTANTBANNER" xml:space="preserve">
+    <value>Constant banner</value>
+  </data>
+  <data name="CONSTANTBANNERINFO" xml:space="preserve">
+    <value>Shown on &lt;b&gt;all&lt;/b&gt; pages</value>
+  </data>
+  <data name="ER_BANNERISNOTVALID" xml:space="preserve">
+    <value>Banner salah (format atau dimensi)</value>
+  </data>
+  <data name="ER_BANNERNOTSELECTED" xml:space="preserve">
+    <value>Banner has not been submitted</value>
+  </data>
+  <data name="NORMALBANNER" xml:space="preserve">
+    <value>Normal banner</value>
+  </data>
+  <data name="NORMALBANNERINFO" xml:space="preserve">
+    <value>Tampil dengan setiap iklan menyaksikan</value>
+  </data>
+  <data name="BANNERDURT" xml:space="preserve">
+    <value>Ini bisa memakan waktu hingga %n% menit untuk membuat perubahan yang terlihat ( banner cache )</value>
+    <comment>Leave %n% unchanged</comment>
+  </data>
+  <data name="NORECORDS" xml:space="preserve">
+    <value>No records available</value>
+  </data>
+  <data name="COMPLETED" xml:space="preserve">
+    <value>Completed</value>
+  </data>
+  <data name="CONNECTWITHFACEBOOK" xml:space="preserve">
+    <value>Hubungkan ke akun Facebook Anda agar kami dapat memeriksa apakah Anda menyukai fanpage dan dibayar</value>
+  </data>
+  <data name="FRIENDS" xml:space="preserve">
+    <value>Teman</value>
+  </data>
+  <data name="HAVENTLIKED" xml:space="preserve">
+    <value>Anda tidak menyukai fanpage tersebut . Karena mungkin memerlukan waktu untuk memperbarui seperti di Facebook API , menyegarkan situs ini setelah 1 menit dan coba lagi</value>
+  </data>
+  <data name="MYFRIENDSNMBERLOW" xml:space="preserve">
+    <value>Jumlah teman-teman saya terlalu rendah . Mengapa ?</value>
+  </data>
+  <data name="MYFRIENDSNMBERLOWANSW" xml:space="preserve">
+    <value>Karena beberapa dari mereka menggunakan fitur Facebook " mematikan semua aplikasi Platform " dan tidak dapat diakses untuk semua aplikasi</value>
+  </data>
+  <data name="NOTCONNECTEDTOFB" xml:space="preserve">
+    <value>Not connected to Facebook</value>
+  </data>
+  <data name="NOTMEETREQUIREMENTS" xml:space="preserve">
+    <value>Anda tidak memenuhi persyaratan</value>
+  </data>
+  <data name="PICTURE" xml:space="preserve">
+    <value>Gambar</value>
+  </data>
+  <data name="WHATSREWARD" xml:space="preserve">
+    <value>Apa hadiah untuk saya?</value>
+  </data>
+  <data name="YOUCONNECTEDWITHFACEBOOK" xml:space="preserve">
+    <value>Anda telah berhasil terhubung ke Facebook. like fanpage, klik tombol dibayar</value>
+  </data>
+  <data name="NEEDED" xml:space="preserve">
+    <value>Dibutuhkan</value>
+    <comment>in Earn Facebook</comment>
+  </data>
+  <data name="YOUEARNPOINTS" xml:space="preserve">
+    <value>anda dapat %n% poin setiap like fanspage</value>
+    <comment>Leavce %n% unchanged</comment>
+  </data>
+  <data name="SHORTURL" xml:space="preserve">
+    <value>Short URL</value>
+  </data>
+  <data name="ER_BADFBURL" xml:space="preserve">
+    <value>Invalid Fanpage URL</value>
+  </data>
+  <data name="H_FBURL" xml:space="preserve">
+    <value>URL fanpage Facebook Anda . Hapus semua argumen GET dan hanya meninggalkan nama . Misalnya : http://www.facebook.com/asp.net OR https://www.facebook.com/asp.net</value>
+  </data>
+  <data name="NUMBEROFREQFRENDS" xml:space="preserve">
+    <value>Jumlah teman</value>
+  </data>
+  <data name="PROFILEPICREQ" xml:space="preserve">
+    <value>Profil gambar diperlukan</value>
+  </data>
+  <data name="OUTADSINFO" xml:space="preserve">
+    <value>Membuat campaign baru dan membayar melalui PayPal / Payza . Setelah Anda mengirim pembayaran kampanye Anda akan Menunggu Persetujuan . Setelah disetujui , maka akan langsung diaktifkan .</value>
+  </data>
+  <data name="OUTEMAILINFO" xml:space="preserve">
+    <value>Anda akan diberitahu tentang perubahan status promosi Anda ( Disetujui = Aktif atau Ditolak )</value>
+  </data>
+  <data name="PAYVIA" xml:space="preserve">
+    <value>Bayar via PayPal/Payza</value>
+  </data>
+  <data name="OUT1" xml:space="preserve">
+    <value>Anda dapat beriklan dengan berbagai cara , tergantung pada kebutuhan Anda . Pilih opsi yang paling cocok di bawah ini</value>
+  </data>
+  <data name="OUT10" xml:space="preserve">
+    <value>Beriklan tanpa mendaftar</value>
+  </data>
+  <data name="OUT11" xml:space="preserve">
+    <value>Jika Anda tidak ingin mendaftarkan akun</value>
+  </data>
+  <data name="OUT12" xml:space="preserve">
+    <value>Aktivasi instan setelah Persetujuan</value>
+  </data>
+  <data name="OUT13" xml:space="preserve">
+    <value>Pemberitahuan mengenai status campaign ( diemail )</value>
+  </data>
+  <data name="OUT2" xml:space="preserve">
+    <value>Daftar dan mengiklankan</value>
+  </data>
+  <data name="OUT3" xml:space="preserve">
+    <value>Jika Anda ingin menggunakan potensi iklan kami sepenuhnya</value>
+  </data>
+  <data name="OUT4" xml:space="preserve">
+    <value>Buat baru PTC / Banner / Facebook / TrafficGrid campaign</value>
+  </data>
+  <data name="OUT5" xml:space="preserve">
+    <value>Demographic filter</value>
+  </data>
+  <data name="OUT6" xml:space="preserve">
+    <value>Strong anti-cheat protection</value>
+  </data>
+  <data name="OUT7" xml:space="preserve">
+    <value>Start dan Pause campaign anda setiap saat</value>
+  </data>
+  <data name="OUT8" xml:space="preserve">
+    <value>Pembelian klik tambahan</value>
+  </data>
+  <data name="OUT9" xml:space="preserve">
+    <value>Progress charts</value>
+  </data>
+  <data name="STATISTICS" xml:space="preserve">
+    <value>Statistik</value>
+  </data>
+  <data name="LIKESSMALL" xml:space="preserve">
+    <value>likes</value>
+    <comment>Non-capitalized version of Facebook likes</comment>
+  </data>
+  <data name="CURRENTPIN" xml:space="preserve">
+    <value>Current PIN</value>
+  </data>
+  <data name="SECONDS" xml:space="preserve">
+    <value>detik</value>
+    <comment>Ad lasts X seconds</comment>
+  </data>
+  <data name="DEMOCHECK" xml:space="preserve">
+    <value>This operation has been disabled in demo version</value>
+  </data>
+  <data name="ALLCLICKSMADE" xml:space="preserve">
+    <value>Semua Klik Saya</value>
+  </data>
+  <data name="ALLCREDITEDMONEY" xml:space="preserve">
+    <value>Kredit Uang Saya</value>
+  </data>
+  <data name="CLICKSTOCHART" xml:space="preserve">
+    <value>Klik</value>
+    <comment>'Clicks' displayed on the charts NO SPECIAL CHARACTERS</comment>
+  </data>
+  <data name="DAYSTOCHART" xml:space="preserve">
+    <value>Hari</value>
+    <comment>'Days' displayed on the charts NO SPECIAL CHARACTERS</comment>
+  </data>
+  <data name="STATSINFO" xml:space="preserve">
+    <value>Berikut adalah data statistik yang terhubung ke akun Anda. Untuk melihat statistik refferal tertentu pergi ke daftar refferal dan klik 'Lihat grafik'.</value>
+  </data>
+  <data name="USERCLICKSMADE" xml:space="preserve">
+    <value>Klik anda</value>
+  </data>
+  <data name="YOUHAVE" xml:space="preserve">
+    <value>anda mempunyai</value>
+  </data>
+  <data name="ONOFF" xml:space="preserve">
+    <value>On/Off</value>
+  </data>
+  <data name="ACCBLACK" xml:space="preserve">
+    <value>Akun ini telah dibanned karena telah tercantum dalam blacklist</value>
+  </data>
+  <data name="COUNTRYFORBID" xml:space="preserve">
+    <value>Your country has been blacklisted. You can't register</value>
+  </data>
+  <data name="IPFORBID" xml:space="preserve">
+    <value>Alamat IP Anda telah daftar hitam . Anda tidak dapat mendaftar</value>
+  </data>
+  <data name="UNAMEFORBID" xml:space="preserve">
+    <value>Username ini dilarang</value>
+  </data>
+  <data name="MANUALPP" xml:space="preserve">
+    <value>Harus disetujui oleh administrator</value>
+  </data>
+  <data name="PAYOUTTYPE" xml:space="preserve">
+    <value>Tipe Payout</value>
+  </data>
+  <data name="PRNOTPAID" xml:space="preserve">
+    <value>Anda memiliki %var1% permintaan payout dibayar senilai %var2% . Pertama dari %var3%</value>
+    <comment>Dont change %var%</comment>
+  </data>
+  <data name="CLICKSSTRAIGHT" xml:space="preserve">
+    <value>Klik</value>
+  </data>
+  <data name="ERROR" xml:space="preserve">
+    <value>Error :(</value>
+  </data>
+  <data name="ERROR_INFO" xml:space="preserve">
+    <value>Coba menyegarkan / re - logging / lagi setelah 5 menit . Jika situasi terus berlanjut, hubungi administrator</value>
+  </data>
+  <data name="COMPLETEDTASKS" xml:space="preserve">
+    <value>Completed tasks</value>
+  </data>
+  <data name="FEATUREDISABLED" xml:space="preserve">
+    <value>Fitur dinonaktifkan oleh administrator</value>
+  </data>
+  <data name="HISTORY_7" xml:space="preserve">
+    <value>Dikreditkan untuk offerwall dengan</value>
+  </data>
+  <data name="OFFERCLICKINFO" xml:space="preserve">
+    <value>Klik pada gambar di bawah ini untuk mengaktifkan offerwall tersebut. Setelah Anda menyelesaikan tugas Anda akan dihargai di poin otomatis ( setelah tugas Anda diverifikasi ) . Tidak ada yang terjadi ketika Anda mengklik gambar ? Matikan AdBlock Anda</value>
+  </data>
+  <data name="OFFERSHORTINFO" xml:space="preserve">
+    <value>Setelah Anda menyelesaikan tugas Anda akan dihargai di poin otomatis ( setelah tugas Anda diverifikasi )</value>
+  </data>
+  <data name="ADDNEW" xml:space="preserve">
+    <value>Tambah Baru</value>
+  </data>
+  <data name="FRIENDSINFO" xml:space="preserve">
+    <value>Mengundang teman-teman baru dan berkomunikasi dengan mereka dengan mudah dengan satu klik</value>
+  </data>
+  <data name="NOFRIENDS" xml:space="preserve">
+    <value>Anda tidak memiliki teman :( . Jangan sedih ayo cari :)</value>
+  </data>
+  <data name="NOREFBACKDATA" xml:space="preserve">
+    <value>There are no RefBack websites right now</value>
+  </data>
+  <data name="PEOPLE" xml:space="preserve">
+    <value>Pertemanan</value>
+  </data>
+  <data name="REFBACK1" xml:space="preserve">
+    <value>Anda dapat menemukan daftar situs refback Sistem bawah .</value>
+  </data>
+  <data name="REFBACK2" xml:space="preserve">
+    <value>Mendaftar di situs menggunakan link referral dan menjadi clicker aktif ( referral ) . Setelah Anda mengklik tombol di bawah ini, administrator akan dapat memantau kemajuan Anda . Jika Anda adalah seorang clicker aktif , Anda akan dibayar secara manual oleh administrator ( begitu ia memutuskan ) .</value>
+  </data>
+  <data name="REFBACK3" xml:space="preserve">
+    <value>Pembayaran dilakukan secara manual , ofter setelah setiap cashout administrator . Semoga berhasil!</value>
+  </data>
+  <data name="REFBACK4" xml:space="preserve">
+    <value>Register as: %username1% or if it is occupied, use: %username2%</value>
+  </data>
+  <data name="REFBACK5" xml:space="preserve">
+    <value>Jangan klik tombol jika Anda tidak memahami aturan , tidak mendaftar atau tidak berencana untuk aktif . Anda mungkin bisa dilarang</value>
+  </data>
+  <data name="REFDECLARATION" xml:space="preserve">
+    <value>Aku sudah terdaftar di situs ini dan akan menjadi active referral</value>
+  </data>
+  <data name="REFDECLARED" xml:space="preserve">
+    <value>Anda telah menyatakan untuk menjadi active referral disini</value>
+  </data>
+  <data name="REQUESTSUCCESS" xml:space="preserve">
+    <value>Permintaan teman telah berhasil dikirim. Teman Anda harus mengkonfirmasi hubungan Anda sebelum ia akan ditambahkan ke daftar teman Anda</value>
+  </data>
+  <data name="GAMESWAR" xml:space="preserve">
+    <value>Tidak melihat leaderboard atau permainan ? Menonaktifkan AdBlock Anda</value>
+  </data>
+  <data name="ACHIEVEMENT_10" xml:space="preserve">
+    <value>Untuk siapa saja yang memenangkan lebih dari %n% kali di TrafficGrid</value>
+  </data>
+  <data name="ACHIEVEMENT_9" xml:space="preserve">
+    <value>Untuk siapa saja yang lebi hdari %n% TrafficGrid advertising campaigns</value>
+  </data>
+  <data name="HISTORY_8" xml:space="preserve">
+    <value>Anda menang di TrafficGrid</value>
+  </data>
+  <data name="TGCHANCES" xml:space="preserve">
+    <value>TrafficGrid peluang untuk memenangkan setiap jenis hadiah</value>
+  </data>
+  <data name="TGHITS" xml:space="preserve">
+    <value>Kesempatan harian TrafficGrid</value>
+  </data>
+  <data name="TGSHORTED" xml:space="preserve">
+    <value>Durasi iklan TrafficGrid</value>
+  </data>
+  <data name="TRAFFICGRIDADINFO1" xml:space="preserve">
+    <value>Jika Anda ingin mendapatkan banyak lalu lintas cepat dan murah, iklan TrafficGrid adalah pilihan terbaik bagi Anda. Murah, besar lalu lintas dari anggota yang ingin memenangkan hadiah pada grid iklan. Mencoba opsi ini iklan yang inovatif!</value>
+  </data>
+  <data name="WONERROR" xml:space="preserve">
+    <value>Anda memenangkan menyewa referral tapi kita tidak bisa menambahkannya karena Anda mencapai batas</value>
+  </data>
+  <data name="WONNOTHING" xml:space="preserve">
+    <value>Anda tidak menang :-( . Silahkan coba lagi</value>
+  </data>
+  <data name="DRRLIMITPLUS" xml:space="preserve">
+    <value>Direct ref limit</value>
+  </data>
+  <data name="FROMDR" xml:space="preserve">
+    <value>dari 1 direct ref klik</value>
+    <comment>KEEP IT SHORT</comment>
+  </data>
+  <data name="FROMRR" xml:space="preserve">
+    <value>dari 1 rented ref klik</value>
+    <comment>KEEP IT SHORT</comment>
+  </data>
+  <data name="LATESTWINNERS" xml:space="preserve">
+    <value>10 Pemenang terbaru</value>
+  </data>
+  <data name="PRIZES" xml:space="preserve">
+    <value>Harga</value>
+  </data>
+  <data name="REACHEDHITS" xml:space="preserve">
+    <value>Anda sudah mencapai hit harian Anda membatasi . Meng-upgrade atau datang kembali besok</value>
+  </data>
+  <data name="TGINFO" xml:space="preserve">
+    <value>Klik pada TrafficGrid, menonton iklan dan memenangkan hadiah yang menakjubkan!</value>
+  </data>
+  <data name="TOPWINNERS" xml:space="preserve">
+    <value>Top 10 pemenang</value>
+  </data>
+  <data name="YOURACCOUNT" xml:space="preserve">
+    <value>Akun Saya</value>
+  </data>
+  <data name="YOURCHANCES" xml:space="preserve">
+    <value>Kesempatan Saya</value>
+  </data>
+  <data name="YOUWON" xml:space="preserve">
+    <value>Anda menang</value>
+  </data>
+  <data name="PRIZE" xml:space="preserve">
+    <value>Harga</value>
+  </data>
+  <data name="YOUMUSTBELOGGED" xml:space="preserve">
+    <value>Anda harus login jika Anda ingin mendapatkan uang untuk menonton iklan</value>
+  </data>
+  <data name="ALREADYSENT" xml:space="preserve">
+    <value>Kami telah mengirimkan SMS dengan kode</value>
+  </data>
+  <data name="CONFIRM" xml:space="preserve">
+    <value>Konfirmasi</value>
+  </data>
+  <data name="IPAPROXY" xml:space="preserve">
+    <value>Alamat IP Anda telah diakui sebagai proxy</value>
+  </data>
+  <data name="RECPIN" xml:space="preserve">
+    <value>Received code</value>
+  </data>
+  <data name="SENDSMSBUTTON" xml:space="preserve">
+    <value>Kirim SMS dengan kode</value>
+  </data>
+  <data name="SMSINFO" xml:space="preserve">
+    <value>Memberikan kami nomor telepon Anda dan masukkan kode yang diterima di bidang di bawah ini</value>
+  </data>
+  <data name="SMSVERIFICATION" xml:space="preserve">
+    <value>SMS Verifikasi</value>
+  </data>
+  <data name="WRONGCODE" xml:space="preserve">
+    <value>Kode yang Anda masukkan salah</value>
+  </data>
+  <data name="ACCOUNTDAYS" xml:space="preserve">
+    <value>Umur akun</value>
+  </data>
+  <data name="CONTEST1" xml:space="preserve">
+    <value>Direct R. Kontes</value>
+  </data>
+  <data name="CONTEST2" xml:space="preserve">
+    <value>Rented R. Kontes</value>
+  </data>
+  <data name="CONTEST3" xml:space="preserve">
+    <value>Klik Kontes</value>
+  </data>
+  <data name="CONTEST4" xml:space="preserve">
+    <value>Transfer Kontes</value>
+  </data>
+  <data name="CONTEST5" xml:space="preserve">
+    <value>Offerwalls Kontes</value>
+  </data>
+  <data name="CONTEST6" xml:space="preserve">
+    <value>CrowdFlower </value>
+  </data>
+  <data name="CONTESTINFO" xml:space="preserve">
+    <value>Dalam rangka berpartisipasi dalam kontes , Anda harus memenuhi semua persyaratan dan klik tombol ' Berpartisipasi '</value>
+  </data>
+  <data name="CONTESTS" xml:space="preserve">
+    <value>Kontes</value>
+  </data>
+  <data name="DURATION" xml:space="preserve">
+    <value>Durasi</value>
+  </data>
+  <data name="LATESTKINDWINNERS" xml:space="preserve">
+    <value>Pemenang terbaru dari kontes</value>
+  </data>
+  <data name="NAME" xml:space="preserve">
+    <value>Nama</value>
+  </data>
+  <data name="PARTICIPATE" xml:space="preserve">
+    <value>Partisipasi</value>
+  </data>
+  <data name="HISTORY_9" xml:space="preserve">
+    <value>Anda memenangkan kontes</value>
+  </data>
+  <data name="NOCONTESTS" xml:space="preserve">
+    <value>Saat ini kami tidak memiliki kontes jenis ini</value>
+  </data>
+  <data name="YOUCANTMULTIPLE" xml:space="preserve">
+    <value>Anda tidak dapat melihat beberapa iklan sekaligus</value>
+  </data>
+  <data name="CATEGORIES" xml:space="preserve">
+    <value>Kategori</value>
+  </data>
+  <data name="DENIED" xml:space="preserve">
+    <value>Denied</value>
+  </data>
+  <data name="IGNORED" xml:space="preserve">
+    <value>Terabaikan</value>
+  </data>
+  <data name="NEW" xml:space="preserve">
+    <value>Baru</value>
+  </data>
+  <data name="PENDING" xml:space="preserve">
+    <value>Pending</value>
+  </data>
+  <data name="REPORTED" xml:space="preserve">
+    <value>Reported</value>
+  </data>
+  <data name="SEARCH" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="UNDERREVIEW" xml:space="preserve">
+    <value>Under review</value>
+  </data>
+  <data name="ADVERTISER" xml:space="preserve">
+    <value>Advertiser</value>
+  </data>
+  <data name="CATEGORY" xml:space="preserve">
+    <value>Kategori</value>
+  </data>
+  <data name="COMPLETEDTIMES" xml:space="preserve">
+    <value>Completed %n% kali</value>
+    <comment>Leave %n%</comment>
+  </data>
+  <data name="CREDITINGTIME" xml:space="preserve">
+    <value>Crediting time</value>
+  </data>
+  <data name="DATEADDED" xml:space="preserve">
+    <value>TAnggal ditambahkan</value>
+  </data>
+  <data name="IGNORE" xml:space="preserve">
+    <value>Abaikan</value>
+  </data>
+  <data name="LASTCREDITED" xml:space="preserve">
+    <value>Terakhir dikreditkan</value>
+  </data>
+  <data name="LOGINIDHINT" xml:space="preserve">
+    <value>Ini biasanya username , e -mail atau nomor identifikasi masuk</value>
+  </data>
+  <data name="OFFEMAILHINT" xml:space="preserve">
+    <value>Silahkan paste e -mail yang Anda terima saat mendaftar untuk penawaran ini</value>
+  </data>
+  <data name="OFFERRATING" xml:space="preserve">
+    <value>Offer rating</value>
+  </data>
+  <data name="REPORT" xml:space="preserve">
+    <value>Report</value>
+  </data>
+  <data name="SUBMIT" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="IMPRESSIONS" xml:space="preserve">
+    <value>Tayangan</value>
+  </data>
+  <data name="IMPRESSIONSSMALL" xml:space="preserve">
+    <value>Tayangan</value>
+  </data>
+  <data name="REQ_PP" xml:space="preserve">
+    <value>Anda harus memilih proses pembayaran Anda</value>
+  </data>
+  <data name="CASHOUTLIMIT" xml:space="preserve">
+    <value>Minimum cashout pertama</value>
+  </data>
+  <data name="CASHOUTLIMITNEXT" xml:space="preserve">
+    <value>Setiap minimum cashout berikutnya meningkat</value>
+  </data>
+  <data name="OFFERWALLSPROFIT" xml:space="preserve">
+    <value>Pendapatan Offerwalls</value>
+  </data>
+  <data name="CASHOUTINFO2" xml:space="preserve">
+    <value>nilai tergantung status member anda (see Upgrade section for full table)</value>
+  </data>
+  <data name="MAXCASHOUTLIMIT" xml:space="preserve">
+    <value>Maximal cashout minimum</value>
+  </data>
+  <data name="TOOMANYCASHOUTS" xml:space="preserve">
+    <value>Maaf, batas hari ini untuk cashout telah tercapai. Silakan coba lagi besok. Batas cashout saat ini per hari:</value>
+  </data>
+  <data name="ACHIEVEMENT_11" xml:space="preserve">
+    <value>Untuk siapa saja yang telah menyelesaikanlebih dari %n% CPA/GPT offers</value>
+  </data>
+  <data name="ACHIEVEMENT_12" xml:space="preserve">
+    <value>Untuk siapa saja yang telah mendapat lebih dari %n% Points per hari</value>
+  </data>
+  <data name="ADDRESS" xml:space="preserve">
+    <value>Alamat</value>
+  </data>
+  <data name="CITY" xml:space="preserve">
+    <value>Kota</value>
+  </data>
+  <data name="DETAILEDALLREQ" xml:space="preserve">
+    <value>This field is required</value>
+  </data>
+  <data name="DETAILEDNOSPECIAL" xml:space="preserve">
+    <value>This field contains illegal characters - field: </value>
+  </data>
+  <data name="FEMALE" xml:space="preserve">
+    <value>Perempuan</value>
+  </data>
+  <data name="FIRSTNAME" xml:space="preserve">
+    <value>Nama</value>
+  </data>
+  <data name="GENDER" xml:space="preserve">
+    <value>Jenis kelamin</value>
+  </data>
+  <data name="MALE" xml:space="preserve">
+    <value>Laki-laki</value>
+  </data>
+  <data name="SECONDNAME" xml:space="preserve">
+    <value>Nama Belakang</value>
+  </data>
+  <data name="STATEPROVINCE" xml:space="preserve">
+    <value>Propinsi</value>
+  </data>
+  <data name="ZIPCODE" xml:space="preserve">
+    <value>Kode Pos</value>
+  </data>
+  <data name="ASC" xml:space="preserve">
+    <value>ASC</value>
+  </data>
+  <data name="COMPLETEDXTIMES" xml:space="preserve">
+    <value>Completed %n% kali</value>
+    <comment>Leavce %n% unchanged</comment>
+  </data>
+  <data name="CPAPROFIT" xml:space="preserve">
+    <value>CPA/GPT offers earnings</value>
+  </data>
+  <data name="DESCR" xml:space="preserve">
+    <value>DESC</value>
+  </data>
+  <data name="MOVEBACK" xml:space="preserve">
+    <value>Undo</value>
+    <comment>Return button in CPAoffers</comment>
+  </data>
+  <data name="SORTBY" xml:space="preserve">
+    <value>Sort by</value>
+  </data>
+  <data name="WHATISPROBLEM" xml:space="preserve">
+    <value>Apa masalahnya?</value>
+  </data>
+  <data name="BADERRREP" xml:space="preserve">
+    <value>Laporan Anda mengandung karakter ilegal</value>
+  </data>
+  <data name="ONEFIELDSABAD" xml:space="preserve">
+    <value>Salah satu bidang Anda berisi karakter ilegal</value>
+  </data>
+  <data name="ADVCOSTS" xml:space="preserve">
+    <value>Pajak Pengiklanan</value>
+  </data>
+  <data name="AMOUNTPERONEACTION" xml:space="preserve">
+    <value>Harga per action</value>
+  </data>
+  <data name="DAILY1" xml:space="preserve">
+    <value>Periksa untuk memungkinkan tawaran untuk beberapa kali diselesaikan oleh pengguna yang sama setiap hari</value>
+  </data>
+  <data name="EBR" xml:space="preserve">
+    <value>EmailID box</value>
+  </data>
+  <data name="EBR1" xml:space="preserve">
+    <value>Does the user has to provide pasted email from the offer? It must be &lt;b&gt;MAX 400&lt;/b&gt; characters long</value>
+  </data>
+  <data name="HOWMANY" xml:space="preserve">
+    <value>Berapa banyak</value>
+  </data>
+  <data name="LBR" xml:space="preserve">
+    <value>LoginID box </value>
+  </data>
+  <data name="LBR1" xml:space="preserve">
+    <value>Apakah pengguna harus memberikan LoginId dari CPAOFFERS itu ? Ini harus menjadi &lt;b&gt; MAX 80 &lt;/b&gt; karakter</value>
+  </data>
+  <data name="OUT44" xml:space="preserve">
+    <value>Buat baru PTC / Banner / Facebook / TrafficGrid / GPT / CPA / PTSU etc. campaign</value>
+  </data>
+  <data name="REFDAILY" xml:space="preserve">
+    <value>Refreshed daily</value>
+  </data>
+  <data name="REQ_DESC" xml:space="preserve">
+    <value>Description dibutuhkan</value>
+  </data>
+  <data name="CAMPAIGN" xml:space="preserve">
+    <value>Campaign</value>
+  </data>
+  <data name="DAILY" xml:space="preserve">
+    <value>Tiap hari</value>
+  </data>
+  <data name="STOPPED" xml:space="preserve">
+    <value>Berhenti</value>
+  </data>
+  <data name="SUBMITED" xml:space="preserve">
+    <value>Tersubmit</value>
+  </data>
+  <data name="HISTORY_10" xml:space="preserve">
+    <value>Pengajuan CPA Anda telah disetujui</value>
+  </data>
+  <data name="HISTORY_11" xml:space="preserve">
+    <value>Pengajuan CPA Anda telah ditolak / diletakkan di bawah ulasan</value>
+  </data>
+  <data name="ERCPA" xml:space="preserve">
+    <value>Harga tidak valid Per Format Action ( itu harus lebih besar dari 0 ) , dan { X } .xxx</value>
+  </data>
+  <data name="TRAFFICEXCHANGE" xml:space="preserve">
+    <value>Traffic Exchange</value>
+  </data>
+  <data name="REFPROFIT" xml:space="preserve">
+    <value>Referral earnings from Offerwalls/CrowdFlower</value>
+  </data>
+</root>

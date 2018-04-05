@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BUYSURFADSSUCCESS" xml:space="preserve">
+    <value>You have successfully bought a Surf Ad.</value>
+  </data>
+  <data name="COMMISSION" xml:space="preserve">
+    <value>Commission</value>
+    <comment>Commission Balance</comment>
+  </data>
+  <data name="COMMISSIONBALANCE" xml:space="preserve">
+    <value>Commission Balance</value>
+  </data>
+  <data name="CREATESURFADSAD" xml:space="preserve">
+    <value>Create a new advertisement for your Surf Ads.</value>
+  </data>
+  <data name="DAILYREQIUREDCLICKS" xml:space="preserve">
+    <value>{0} clicks required daily</value>
+  </data>
+  <data name="MAIN" xml:space="preserve">
+    <value>Main</value>
+    <comment>Main Balance</comment>
+  </data>
+  <data name="MAXIMUM" xml:space="preserve">
+    <value>Maximum</value>
+  </data>
+  <data name="MAXIMUMWITHDRAWAL" xml:space="preserve">
+    <value>Maximum Withdrawal</value>
+  </data>
+  <data name="MAXINSTANCES" xml:space="preserve">
+    <value>Maximum Instances</value>
+  </data>
+  <data name="MAXWITHDRAWDESC" xml:space="preserve">
+    <value>Maximum Withdrawal = (Total money earned - Total paid out) * Paid in (%). Other limitations may apply (maximum daily payout, maximum single payout).</value>
+  </data>
+  <data name="MESSAGE" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="MINOFPREVIOUSTYPE" xml:space="preserve">
+    <value>Minimum Instances of previous type</value>
+  </data>
+  <data name="NOPAYOUTHISTORY" xml:space="preserve">
+    <value>At the moment you can payout money using any payment processor available. Once you pay some money in, you will only be able to withdraw money using the processors you used for depositing the money.</value>
+  </data>
+  <data name="OFFERCONTEST" xml:space="preserve">
+    <value>Offer Contest</value>
+  </data>
+  <data name="PAIDIN" xml:space="preserve">
+    <value>Total Paid in</value>
+  </data>
+  <data name="PAYMENTPROCESSOR" xml:space="preserve">
+    <value>Payment Processor</value>
+  </data>
+  <data name="PAYOUTREQUESTTOOHIGH" xml:space="preserve">
+    <value>You cannot withdraw more than %n%.</value>
+    <comment>Leave %n% unchanged</comment>
+  </data> 
+  <data name="RECEIVEMAINBALANCEFROMOTHERSFEE" xml:space="preserve">
+    <value>Fee for receiving transfers to Main Balance from other users</value>
+  </data>
+  <data name="RECEIVEPOINTSFROMOTHERSFEE" xml:space="preserve">
+    <value>Fee for receiving transfers to %n%  Balance from other users</value>
+    <comment>Leave %n% unchanged</comment>
+  </data> 
+  <data name="ROICREDITEDTOMAINBALANCE" xml:space="preserve">
+    <value>ROI credited to Main Balance</value>
+  </data>
+  <data name="ROIINCREASEDBY" xml:space="preserve">
+    <value>{0} ROI increase</value>
+  </data>
+  <data name="SHOW" xml:space="preserve">
+    <value>Show</value>
+  </data>
+  <data name="SURFADDESCRIPTION" xml:space="preserve">
+    <value>Surf Ads are advertisements which are viewed in the same surfing area as advertisements from %n%.</value>
+    <comment>Leave %n% unchanged</comment>
+  </data>
+  <data name="SURFADS" xml:space="preserve">
+    <value>Surf Ads</value>
+  </data>
+  <data name="THEFEE" xml:space="preserve">
+    <value>The fee for %a% transfer is %n% and it's paid by the recipient</value>
+    <comment>Leave %a% and %n% unchanged</comment>
+  </data>
+  <data name="TOOMANYADPACKOFTYPE" xml:space="preserve">
+    <value>The maximum amount of %a% of this type that you can buy is %b%.</value>
+    <comment>Leave %a% and %b% unchanged</comment>
+  </data>
+  <data name="TRAFFIC" xml:space="preserve">
+    <value>Traffic</value>
+  </data>
+  <data name="TRANSFERCOMMISSIONTOMAINFEE" xml:space="preserve">
+    <value>Fee for transferring Commission to Main Balance</value>
+  </data>
+  <data name="TYPES" xml:space="preserve">
+    <value>Types</value>
+  </data>
+  <data name="YOUMUST" xml:space="preserve">
+    <value>Your must setup your processor email/username first.</value>
+  </data>
+</root>

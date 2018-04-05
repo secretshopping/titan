@@ -1,0 +1,134 @@
+﻿//using System;
+//using System.Data;
+//using System.Collections.Generic;
+
+//namespace Prem.PTC.Payments
+//{
+//    /// <summary>
+//    /// Summary description for PayzaAccountDetails
+//    /// </summary>
+//    public class BlockchainAccountDetails : PaymentAccountDetails
+//    {
+//        public override Database Database { get { return Database.Client; } }
+//        public static new string TableName { get { return AppSettings.TableNames.PayzaGateways; } }
+//        protected override string dbTable { get { return TableName; } }
+
+//        public static readonly int ApiPasswordLength = 16;
+
+
+//        #region Columns
+
+//        public static new class Columns
+//        {
+//            public const string Id = "PayzaGatewayId";
+//            public const string APIPassword = "APIPassword";
+//            public const string SenderEmail = "SenderEmail";
+//        }
+
+//        [Column(Columns.Id, IsPrimaryKey = true)]
+//        public override int Id { get { return _id; } protected set { _id = value; SetUpToDateAsFalse(); } }
+
+//        // FIX: Keeping plaintext password to account with money in db is extremly irresponisble!
+//        // Someone may steal this password and withdraw whole money ;(
+//        /// <exception cref="ArgumentException" />
+//        [Column("APIPassword")]
+//        public string APIPassword
+//        {
+//            get { return _apiPassword; }
+//            set
+//            {
+//                if (value.Length != ApiPasswordLength)
+//                    throw new ArgumentException("Payza API password must have exactly " + ApiPasswordLength + " characters");
+
+//                _apiPassword = value; SetUpToDateAsFalse();
+//            }
+//        }
+
+//        [Column("SenderEmail")]
+//        public string SenderEmail { get { return _senderEmail; } set { _senderEmail = value; SetUpToDateAsFalse(); } }
+
+//        private int _id;
+//        private string _apiPassword, _senderEmail;
+
+//        #endregion
+
+
+//        public override string AccountType { get { return "Payza"; } }
+
+
+//        #region Constructors
+
+//        public PayzaAccountDetails() : base() { }
+//        public PayzaAccountDetails(int id) : base(id) { }
+//        public PayzaAccountDetails(DataRow row, bool isUpToDate = true) : base(row, isUpToDate) { }
+
+//        #endregion Constructors
+
+
+//        public override PaymentAccount Account
+//        {
+//            get { return new PayzaAccount(this); }
+//        }
+
+//        public static bool Exists(string username)
+//        {
+//            int e1 =  TableHelper.CountOf<PayzaAccountDetails>(TableHelper.MakeDictionary(PaymentAccountDetails.Columns.Username, username));
+//            int e2 = TableHelper.CountOf<PayzaAccountDetails>(TableHelper.MakeDictionary(PayzaAccountDetails.Columns.SenderEmail, username));
+
+//            if (e1 + e2 > 0)
+//                return true;
+
+//            return false;
+//        }
+
+//        public static PayzaAccountDetails GetFirstIncomePayzaGateway()
+//        {
+//            var gatewayList = TableHelper.SelectAllRows<PayzaAccountDetails>();
+//            PayzaAccountDetails thegateway = null;
+
+//            foreach (var gateway in gatewayList)
+//            {
+//                if (gateway.AccountType == "Payza" && gateway.IsActive && (gateway.Cashflow == GatewayCashflowDirection.ToGate ||
+//                    gateway.Cashflow == GatewayCashflowDirection.Both))
+//                {
+//                    thegateway = (PayzaAccountDetails)gateway;
+//                    break;
+//                }
+//            }
+
+//            return thegateway;
+//        }
+//        public static PayzaAccountDetails GetFirstOutcomePayzaGateway()
+//        {
+//            var gatewayList = TableHelper.SelectAllRows<PayzaAccountDetails>();
+//            PayzaAccountDetails thegateway = null;
+
+//            foreach (var gateway in gatewayList)
+//            {
+//                if (gateway.AccountType == "Payza" && gateway.IsActive && (gateway.Cashflow == GatewayCashflowDirection.FromGate ||
+//                    gateway.Cashflow == GatewayCashflowDirection.Both))
+//                {
+//                    thegateway = (PayzaAccountDetails)gateway;
+//                    break;
+//                }
+//            }
+
+//            return thegateway;
+//        }
+
+//        public static bool HasCashoutGateway()
+//        {
+//            var gatewayList = TableHelper.SelectAllRows<PayzaAccountDetails>();
+
+//            foreach (var gateway in gatewayList)
+//            {
+//                if (gateway.IsActive && (gateway.Cashflow == GatewayCashflowDirection.FromGate ||
+//                    gateway.Cashflow == GatewayCashflowDirection.Both))
+//                {
+//                    return true;
+//                }
+//            }
+//            return false;
+//        }
+//    }
+//}

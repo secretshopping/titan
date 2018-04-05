@@ -1,0 +1,91 @@
+#flags {
+    position: absolute;
+    width: 26px;
+    height: 20px;
+    overflow: hidden;
+    background: #fff;
+    margin-left: 15px;
+}
+
+    #flags:hover {
+        width: 26px;
+        overflow: visible;
+        opacity: 1;
+        background: #fff;
+        z-index: 999;
+    }
+
+    #flags input {
+        padding: 5px;
+    }
+
+
+
+        #flags>div {
+            background: #fff;
+        }
+
+.header.navbar.navbar-transparent #flags {
+    margin-top: 25px;
+    -webkit-transition: all 0.25s ease-out;
+       -moz-transition: all 0.25s ease-out;
+        -ms-transition: all 0.25s ease-out;
+         -o-transition: all 0.25s ease-out;
+            transition: all 0.25s ease-out;
+}
+
+.header.navbar.navbar-transparent.navbar-small #flags {
+    margin-top: 15px;
+}
+
+.header.navbar.navbar-inverse .navbar-nav>li>a, 
+.header.navbar.navbar-transparent .navbar-nav>li>a {
+    text-transform: uppercase;
+}
+
+.help-box a {
+    text-decoration: none !important;
+    color: #333 !important;
+}
+
+.header.navbar.navbar-inverse .navbar-nav>li>a, 
+.header.navbar.navbar-transparent .navbar-nav>li>a {
+    color: #fff;
+}
+
+.header.navbar.navbar-transparent {
+    border-bottom: none;
+}
+
+.home-content p {
+    color: #afadad;
+}
+
+.content.has-bg .content-bg:before {
+    background: rgba(0,0,0,.5);
+}
+
+.navbar.navbar-transparent.navbar-fixed-top .navbar-brand {
+    padding: 25px 0 25px 0;
+}
+
+.navbar.navbar-transparent.navbar-fixed-top.navbar-small .navbar-brand {
+    padding: 10px 0 10px 0;
+}
+
+.marquee {
+    overflow: hidden;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.marquee span {
+    margin-right: 50px;
+    margin-left: 10px;
+    color: #00acac;
+}
+
+.marquee img {
+    margin: 0 5px;
+}
