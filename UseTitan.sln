@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2015
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "src", ".", "{CF529033-6C84-467D-95AB-E5865817BBDB}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_50911"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\..\..\..\setup\SecretShopping\src\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50911\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_50911"
+		Release.AspNetCompiler.PhysicalPath = "..\..\..\..\..\setup\SecretShopping\src\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50911\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "50911"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF529033-6C84-467D-95AB-E5865817BBDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF529033-6C84-467D-95AB-E5865817BBDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3D9BCAFA-8214-42B8-A023-7B1CB731A4BF}
+	EndGlobalSection
+EndGlobal
