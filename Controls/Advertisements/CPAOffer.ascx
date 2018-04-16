@@ -19,7 +19,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <h4 class="title"><a href="<%=Object.GetTargetURL() %>" target="_blank"><%=Object.Title %></a></h4>
-                    <p class="desc"><%=Mailer.ReplaceNewLines(Object.Description) %></p>
+                    <p class="desc"><%=Server.HtmlDecode( Mailer.ReplaceNewLines(Object.Description)) %></p>
                 </div>
             </div>
             <div class="row">
